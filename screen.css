@@ -6,7 +6,7 @@
       
    This is the main CSS-file for the framework.
    Include this in the <head> of every page. See the
-   Readme file in this directory for further instructions.
+   Readme.txt file in this directory for further instructions.
    
 -------------------------------------------------------------- */
 
@@ -27,4 +27,3 @@
 
 /* Uncomment the line below to see the grid and baseline. */
 /* .container { background: url(lib/img/grid.png); } */
-/* .container { background: url(lib/img/baseline.png); }  */

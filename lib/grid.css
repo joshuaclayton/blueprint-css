@@ -41,7 +41,7 @@ body {
 
 /* Use this class together with the .span-x classes
    to create any composition of columns in a layout.
-   Nesting columns works like a charm (remember .first and .last). */
+   Nesting columns works like a charm (remember class="last" on the last column in a row). */
    
 .column {
   float: left;
@@ -58,7 +58,6 @@ body {
   margin-right: 5px;
   border-right: 1px solid #ddd;
 }
-
 
 /* Use these classes to set how wide a column should be. */
 .span-1   { width: 30px; }
@@ -89,8 +88,6 @@ body {
 /* The last element in a multi-column block needs this class. */
 .last     { margin-right: 0; }
 
-/* These are kept at 12 in order to minimise bloat. You can add/subtract as required */
-
 /* Add these to a column to append empty cols. */
 .append-1   { padding-right: 40px; }  
 .append-2   { padding-right: 80px; } 
@@ -104,6 +101,17 @@ body {
 .append-10  { padding-right: 400px; } 
 .append-11  { padding-right: 440px; } 
 .append-12  { padding-right: 480px; } 
+.append-13  { padding-right: 520px; } 
+.append-14  { padding-right: 560px; } 
+.append-15  { padding-right: 600px; } 
+.append-16  { padding-right: 640px; } 
+.append-17  { padding-right: 680px; } 
+.append-18  { padding-right: 720px; } 
+.append-19  { padding-right: 760px; } 
+.append-20  { padding-right: 800px; } 
+.append-21  { padding-right: 840px; } 
+.append-22  { padding-right: 880px; } 
+.append-23  { padding-right: 920px; } 
 
 /* Add these to a column to prepend empty cols. */
 .prepend-1   { padding-left: 40px; }  
@@ -118,7 +126,17 @@ body {
 .prepend-10  { padding-left: 400px; } 
 .prepend-11  { padding-left: 440px; } 
 .prepend-12  { padding-left: 480px; } 
-
+.prepend-13  { padding-left: 520px; } 
+.prepend-14  { padding-left: 560px; } 
+.prepend-15  { padding-left: 600px; } 
+.prepend-16  { padding-left: 640px; } 
+.prepend-17  { padding-left: 680px; } 
+.prepend-18  { padding-left: 720px; } 
+.prepend-19  { padding-left: 760px; } 
+.prepend-20  { padding-left: 800px; } 
+.prepend-21  { padding-left: 840px; } 
+.prepend-22  { padding-left: 880px; } 
+.prepend-23  { padding-left: 920px; } 
 
 
 /* Images
@@ -126,7 +144,6 @@ body {
 
 /* Remember the baseline (typography.css). */
 img { margin: 0 0 18px 0; }
-
 
 /* Use these classes to make an image flow into the column before 
    or after it. This technique can also be used on other objects. */

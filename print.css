@@ -6,12 +6,11 @@
    
    This file creates CSS styles for printing documents. 
    Include this in the <head> of every page. See the
-   Readme file in this directory for further instructions.
+   Readme.txt file in this directory for further instructions.
    
-   Some additions you'll want to make, 
-   customized to your markup:
+   Some additions you'll want to make, customized to your markup:
    
-   #heder, #footer, #navigation { display:none; }
+   #header, #footer, #navigation { display:none; }
    
 -------------------------------------------------------------- */
 
@@ -32,25 +31,27 @@ img {
   float:left; 
   margin:1.5em 1.5em 1.5em 0;
 }
-p img.top { 
-  margin-top: 0; 
+
+p img.top {
+  margin-top: 0;
 }
 
 hr { 
   background:#ccc; 
   color:#ccc;
-  width:100%; 
-  height:2px; 
-  margin:2em 0; 
-  padding:0; 
-  border:none; 
+  width:100%;
+  height:2px;
+  margin:2em 0;
+  padding:0;
+  border:none;
 }
-blockquote { 
-  margin:1.5em 0; 
-  padding:1em; 
-  border:0.2em solid #ccc; 
-  font-style:italic; 
-  font-size:0.9em; 
+
+blockquote {
+  margin:1.5em 0;
+  padding:1em;
+  border:0.2em solid #ccc;
+  font-style:italic;
+  font-size:0.9em;
 }
 
 .small, .small p  { font-size: 0.9em; }
@@ -70,10 +71,8 @@ a:link:after, a:visited:after {
 }
 
 /* If you're having trouble printing relative links, uncomment and customize this:
-   (note: This is valid CSS3, but it still won't go through the W3C CSS Validator) */ 
+   (note: This is valid CSS3, but it still won't go through the W3C CSS Validator) */
 
 /* a[href^="/"]:after {
   content: " (http://www.yourdomain.com" attr(href) ") ";
 } */
-
-
