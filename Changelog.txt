@@ -1,0 +1,28 @@
+Blueprint CSS framework Change Log
+(http://code.google.com/p/blueprintcss/)
+----------------------------------------------------------------
+
+Version 0.5 - 20070829
+--
+	*	Changed grid width from 14 to 24 columns
+	*	Removed 'first' CSS class and the need to apply it to the first column in a row of columns.
+	*	Reverted to using pixels instead of em units to specify vertical spacing due to baseline issues with all browsers except Firefox.
+	*	New set of default fonts. (Experimental)
+	*	Added test files
+
+
+Version 0.4 - 20070811
+--
+	*	All font sizes and vertical margins are now elastic, through the use of em units. Resizing works great in every tested browser.
+	*	Comes with a new, compressed version of BP, which reduces the size of the core files by 60 percent.
+	*	Support for incremental leading, contributed by Mark Boulton.
+	*	Adds perfected CSS buttons, by Kevin Hale of Particletree fame.
+	*	Fixes all known IE bugs.
+	*	Loads of minor fixes and additions.
+
+
+Initial Release - 20070803
+--
+	* Initial release of Blueprint CSS
+
+
