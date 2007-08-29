@@ -1,4 +1,8 @@
-/* Blueprint Compressed Version */
+/* 
+  Blueprint Compressed.css
+  * Version:   0.5 (28/8/2007)
+  * Website:   http://code.google.com/p/blueprintcss/
+*/
 
 
 /* reset.css */
@@ -135,3 +139,4 @@ a.positive:active{background-color:#529214;border:0.1em solid #529214;color:#fff
 a.negative:hover,button.negative:hover{background:#fbe3e4;border:0.1em solid #fbc2c4;}
 a.negative:active{background-color:#d12f19;border:0.1em solid #d12f19;color:#fff;}
 
+/* EOF */

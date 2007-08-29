@@ -40,7 +40,7 @@ body {
 -------------------------------------------------------------- */
 
 /* Use this class together with the .span-x classes
-   to create any compsition of columns in a layout.
+   to create any composition of columns in a layout.
    Nesting columns works like a charm (remember .first and .last). */
    
 .column {
@@ -89,6 +89,8 @@ body {
 /* The last element in a multi-column block needs this class. */
 .last     { margin-right: 0; }
 
+/* These are kept at 12 in order to minimise bloat. You can add/subtract as required */
+
 /* Add these to a column to append empty cols. */
 .append-1   { padding-right: 40px; }  
 .append-2   { padding-right: 80px; } 
@@ -127,7 +129,7 @@ img { margin: 0 0 18px 0; }
 
 
 /* Use these classes to make an image flow into the column before 
-   or after it. This techique can also be used on other objects. */
+   or after it. This technique can also be used on other objects. */
 
 .pull-1  { margin-left: -40px; }
 .pull-2  { margin-left: -80px; }
@@ -146,4 +148,3 @@ img { margin: 0 0 18px 0; }
 }
 
 /* EOF */
-
