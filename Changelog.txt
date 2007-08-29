@@ -12,6 +12,7 @@ Version 0.6 - TBD
 	* Added append-13 to append-23 and prepend-13 to prepend-23 to allow pushing elements
 		to both extreme sides of the grid. Added test cases to tests/grid.css [GR]
 	* Moved test sample files to blueprint/tests sub-directory so tests stay with the code. [GR]
+	* Consolidated all references to release version number to screen.css
 
 
 Version 0.5 - 28/8/2007

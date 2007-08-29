@@ -1,4 +1,8 @@
-Blueprint CSS framework 0.5 (http://bjorkoy.com/blueprint)
+Blueprint CSS Framework - Readme.txt
+
+http://code.google.com/p/blueprintcss/
+http://bjorkoy.com/blueprint
+
 ----------------------------------------------------------------
 
 Welcome to Blueprint! This is a CSS framework designed to 
@@ -11,7 +15,7 @@ features BP provides out-of-the-box:
 * A typographic baseline
 * Perfected browser CSS reset
 * A stylesheet for printing
-* Absolutely no bloat
+* Absolutely no bloat!
 
 
 Setup instructions
@@ -37,7 +41,7 @@ How to use Blueprint
 Here's a quick primer on how to use BP:
 http://code.google.com/p/blueprintcss/wiki/Tutorial
 
-Each file is also heavily commented, so you'll 
+Each CSS file is also heavily commented, so you'll 
 learn a lot by reading through them.
 
 
