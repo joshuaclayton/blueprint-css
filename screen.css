@@ -1,0 +1,30 @@
+/* -------------------------------------------------------------- 
+  
+   Blueprint CSS Framework Screen Styles
+   * Version:   0.5 (28/8/2007)
+   * Website:   http://code.google.com/p/blueprintcss/
+      
+   This is the main CSS-file for the framework.
+   Include this in the <head> of every page. See the
+   Readme file in this directory for further instructions.
+   
+-------------------------------------------------------------- */
+
+@import 'lib/reset.css';
+@import 'lib/typography.css';
+@import 'lib/grid.css';
+@import 'lib/buttons.css';
+
+
+/* Compressed version (re-compress if you change the core files): 
+   [http://teenage.cz/acidofil/tools/cssformat.php]
+   
+   Comment out @import statements above, and 
+   add this line instead, when your site has launched 
+   (compresses ca 60% of the core files in BP):
+   @import 'lib/compressed.css'; */
+
+
+/* Uncomment the line below to see the grid and baseline. */
+/* .container { background: url(lib/img/grid.png); } */
+/* .container { background: url(lib/img/baseline.png); }  */

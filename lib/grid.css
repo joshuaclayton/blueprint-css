@@ -1,0 +1,149 @@
+/* -------------------------------------------------------------- 
+  
+   Grid.css
+   * Version:   0.5 (28/8/2007)
+   * Website:   http://code.google.com/p/blueprintcss/
+   
+   Based on work by:
+   * Olav Bjorkoy      [bjorkoy.com]
+   * Nathan Borror     [playgroundblues.com]
+   * Jeff Croft        [jeffcroft.com]
+   * Christian Metts   [mintchaos.com]
+   * Khoi Vinh         [subtraction.com]
+   
+   By default, the grid is 950px wide, with 24 columns 
+   spanning 30px, and a 10px margin between columns.
+   
+   If you need fewer or more columns, use this 
+   formula to find the new total width: 
+   
+   Total width = (columns * 30) - 10
+  
+-------------------------------------------------------------- */
+
+body { 
+  text-align: center; /* IE6 Fix */
+  margin:36px 0;
+}
+
+/* A container should group all your columns. */
+.container {
+  text-align: left;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;   /* Centers layout */
+  width: 950px;     /* Total width */
+}
+
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Use this class together with the .span-x classes
+   to create any compsition of columns in a layout.
+   Nesting columns works like a charm (remember .first and .last). */
+   
+.column {
+  float: left;
+  margin-right: 10px;
+  padding: 0;
+}
+* html .column { overflow-x: hidden; } /* IE6 fix */
+
+/* Add this class to a column if you want a border on its 
+   right hand side. This should be customized to fit your needs. */
+
+.border {
+  padding-right: 4px;
+  margin-right: 5px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes to set how wide a column should be. */
+.span-1   { width: 30px; }
+.span-2   { width: 70px; }
+.span-3   { width: 110px; }
+.span-4   { width: 150px; }
+.span-5   { width: 190px; }
+.span-6   { width: 230px; }
+.span-7   { width: 270px; }
+.span-8   { width: 310px; }
+.span-9   { width: 350px; }
+.span-10  { width: 390px; }
+.span-11  { width: 430px; }
+.span-12  { width: 470px; }
+.span-13  { width: 510px; }
+.span-14  { width: 550px; }
+.span-15  { width: 590px; }
+.span-16  { width: 630px; }
+.span-17  { width: 670px; }
+.span-18  { width: 710px; }
+.span-19  { width: 750px; }
+.span-20  { width: 790px; }
+.span-21  { width: 830px; }
+.span-22  { width: 870px; }
+.span-23  { width: 910px; }
+.span-24  { width: 950px; margin: 0; }
+
+/* The last element in a multi-column block needs this class. */
+.last     { margin-right: 0; }
+
+/* Add these to a column to append empty cols. */
+.append-1   { padding-right: 40px; }  
+.append-2   { padding-right: 80px; } 
+.append-3   { padding-right: 120px; } 
+.append-4   { padding-right: 160px; } 
+.append-5   { padding-right: 200px; } 
+.append-6   { padding-right: 240px; } 
+.append-7   { padding-right: 280px; } 
+.append-8   { padding-right: 320px; } 
+.append-9   { padding-right: 360px; } 
+.append-10  { padding-right: 400px; } 
+.append-11  { padding-right: 440px; } 
+.append-12  { padding-right: 480px; } 
+
+/* Add these to a column to prepend empty cols. */
+.prepend-1   { padding-left: 40px; }  
+.prepend-2   { padding-left: 80px; } 
+.prepend-3   { padding-left: 120px; } 
+.prepend-4   { padding-left: 160px; } 
+.prepend-5   { padding-left: 200px; } 
+.prepend-6   { padding-left: 240px; } 
+.prepend-7   { padding-left: 280px; } 
+.prepend-8   { padding-left: 320px; } 
+.prepend-9   { padding-left: 360px; } 
+.prepend-10  { padding-left: 400px; } 
+.prepend-11  { padding-left: 440px; } 
+.prepend-12  { padding-left: 480px; } 
+
+
+
+/* Images
+-------------------------------------------------------------- */
+
+/* Remember the baseline (typography.css). */
+img { margin: 0 0 18px 0; }
+
+
+/* Use these classes to make an image flow into the column before 
+   or after it. This techique can also be used on other objects. */
+
+.pull-1  { margin-left: -40px; }
+.pull-2  { margin-left: -80px; }
+.pull-3  { margin-left: -120px; }
+.pull-4  { margin-left: -160px; }
+
+.push-0  { margin: 0 0 0 18px;      float: right; } /* Right aligns the image. */
+.push-1  { margin: 0 -40px 0 18px;  float: right; }
+.push-2  { margin: 0 -80px 0 18px;  float: right; }
+.push-3  { margin: 0 -120px 0 18px; float: right; }
+.push-4  { margin: 0 -160px 0 18px; float: right; }
+
+.pull-1, .pull-2, .pull-3, .pull-4,
+.push-1, .push-2, .push-3, .push-4 {
+  overflow-x: visible; /* Overrides previous IE6 fix (needs improvement). */
+}
+
+/* EOF */
+

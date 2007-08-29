@@ -1,0 +1,79 @@
+/* -------------------------------------------------------------- 
+  
+   Blueprint CSS Framework Print Styles
+   * Version:   0.5 (28/8/2007)
+   * Website:   http://code.google.com/p/blueprintcss/
+   
+   This file creates CSS styles for printing documents. 
+   Include this in the <head> of every page. See the
+   Readme file in this directory for further instructions.
+   
+   Some additions you'll want to make, 
+   customized to your markup:
+   
+   #heder, #footer, #navigation { display:none; }
+   
+-------------------------------------------------------------- */
+
+body {
+  line-height: 1.5;
+  color:#000;
+  background: none;
+  font-size: 11pt;
+}
+
+h1,h2,h3,
+h4,h5,h6  { font-family: Constantia, "Palatino Linotype", Palatino, Georgia, "Times New Roman", Times, serif; }
+body      { font-family: Frutiger, Univers, "Helvetica Neue", "Lucida Grande", Calibri, Helvetica, Arial, sans-serif; } 
+pre       { font-family: Corbel, Verdana, "Bitstream Vera Sans", sans-serif; } 
+code      { font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; } 
+
+img { 
+  float:left; 
+  margin:1.5em 1.5em 1.5em 0;
+}
+p img.top { 
+  margin-top: 0; 
+}
+
+hr { 
+  background:#ccc; 
+  color:#ccc;
+  width:100%; 
+  height:2px; 
+  margin:2em 0; 
+  padding:0; 
+  border:none; 
+}
+blockquote { 
+  margin:1.5em 0; 
+  padding:1em; 
+  border:0.2em solid #ccc; 
+  font-style:italic; 
+  font-size:0.9em; 
+}
+
+.small, .small p  { font-size: 0.9em; }
+.large, .large p  { font-size: 1.1em; }
+.quiet, .quiet p  { color: #999; }
+.hide             { display:none; }
+
+a:link, a:visited {
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:link:after, a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+}
+
+/* If you're having trouble printing relative links, uncomment and customize this:
+   (note: This is valid CSS3, but it still won't go through the W3C CSS Validator) */ 
+
+/* a[href^="/"]:after {
+  content: " (http://www.yourdomain.com" attr(href) ") ";
+} */
+
+
