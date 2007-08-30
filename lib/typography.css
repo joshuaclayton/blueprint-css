@@ -18,6 +18,7 @@
 body { 
   font-size: 12px;
   line-height: 18px; /* All elements should be a multiple of this value. */
+  color: #222;
 }
 
 /* Default fonts */
