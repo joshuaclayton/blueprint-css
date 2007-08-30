@@ -1,8 +1,6 @@
 /* -------------------------------------------------------------- 
-  
+   
    Grid.css
-
-
    
    Based on work by:
    * Olav Bjorkoy      [bjorkoy.com]
@@ -18,7 +16,7 @@
    formula to find the new total width: 
    
    Total width = (columns * 30) - 10
-  
+   
 -------------------------------------------------------------- */
 
 body { 
