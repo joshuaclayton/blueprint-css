@@ -63,18 +63,6 @@ strong      { font-weight: bold; }
 em          { font-style: italic; }
 pre         { margin-bottom: 18px; background: #eee; border:1px solid #ddd; padding:16px; }
 
-/* Use this to create a horizontal ruler across a column. */
-hr {
-  background: #B2CCFF; 
-  color: #B2CCFF;
-  clear: both; 
-  float: none; 
-  width: 100%; 
-  height: 2px;
-  margin: 0 0 16px 0;
-  border: none; 
-}
-
 
 /* Tables
 -------------------------------------------------------------- */
