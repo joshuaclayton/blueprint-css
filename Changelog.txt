@@ -5,6 +5,8 @@ Blueprint CSS Framework Change Log
 
 Version 0.6 - TBD
 --
+  * Changed some default fonts so that BP works better with ClearType in XP [OFB]
+  * Re-added the hack for clearing floats without extra markup. [OFB]
 	* Added Changelog.txt to track changes in each release. [GR]
 	* Cleaned up and rationalized SVN dir structure. [GR, OFB]
 	* print.css : removed reference to 'baseline.png' as it no longer exists. [GR]

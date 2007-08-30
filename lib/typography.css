@@ -20,13 +20,9 @@ body {
   line-height: 18px; /* All elements should be a multiple of this value. */
 }
 
-
 /* Default fonts */
-h1,h2,h3,
-h4,h5,h6  { font-family: Constantia, "Palatino Linotype", Palatino, Georgia, "Times New Roman", Times, serif; }
-body      { font-family: Frutiger, Univers, "Helvetica Neue", "Lucida Grande", Calibri, Helvetica, Verdana, sans-serif; } 
-pre       { font-family: Corbel, Verdana, "Bitstream Vera Sans", sans-serif; } 
-code      { font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; } 
+body { font-family: "Lucida Grande", "Helvetica Neue", Arial, Verdana, sans-serif; }
+h1,h2,h3,h4,h5,h6 { font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif; }
 
 
 /* Headings
