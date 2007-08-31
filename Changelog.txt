@@ -5,6 +5,9 @@ Blueprint CSS Framework Change Log
 
 Version 0.6 - TBD
 --
+  * Re-added improved support for em units [OFB]
+  * Lots of minor changes to typography.css and reset.css, provided by Christian Montoya [OFB]
+  * Extracted the fancy typography section in typography.css to a new plugin [OFB]
   * Extracted the support for CSS buttons into a new plugin. [OFB]
   * Added new plugin structure. [OFB]
   * Changed some default fonts so that BP works better with ClearType in XP [OFB]
