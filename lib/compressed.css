@@ -1,7 +1,4 @@
-/* 
-  Blueprint Compressed.css
-  * Website:   http://code.google.com/p/blueprintcss/
-*/
+/* Blueprint compressed version */
 
 /* reset.css */
 html,body,div,span,applet,object,iframe, h1,h2,h3,h4,h5,h6,p,blockquote,pre, a,abbr,acronym,address,big,cite,code, del,dfn,em,font,img,ins,kbd,q,s,samp, strike,strong,sub,sup,tt,var, dl,dt,dd,ol,ul,li, fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
@@ -10,52 +7,46 @@ table{border-collapse:separate;border-spacing:0;}
 caption,th,td{text-align:left;font-weight:normal;}
 blockquote:before,blockquote:after,q:before,q:after{content:"";}
 blockquote,q{quotes:"" "";}
-
+a img{border:none;}
 
 /* typography.css */
-body{font-size:12px;line-height:18px;}
-h1,h2,h3, h4,h5,h6{font-family:Constantia,"Palatino Linotype",Palatino,Georgia,"Times New Roman",Times,serif;}
-body{font-family:Frutiger,Univers,"Helvetica Neue","Lucida Grande",Calibri,Helvetica,Verdana,sans-serif;}
-pre{font-family:Corbel,Verdana,"Bitstream Vera Sans",sans-serif;}
-code{font-family:Consolas,"Bitstream Vera Sans Mono","Courier New",Monaco,Courier,monospace;}
-h1,h2,h3,h4,h5,h6{color:#111;clear:both;}
-h1{font-size:30px;line-height:36px;padding:0 0 18px 0;}
-h2{font-size:20px;line-height:36px;}
-h3{font-size:16px;line-height:36px;}
-h4{font-size:14px;font-weight:bold;}
-h5{font-size:12px;font-weight:bold;}
-h6{font-size:12px;}
-p{margin:0 0 18px 0;text-align:justify;}
+body{font-size:75%;}
+html > body{font-size:12px;}
+body{color:#222;font-family:"Lucida Grande","Helvetica Neue",Arial,Verdana,sans-serif;line-height:1.5;}
+h1,h2,h3,h4,h5,h6{color:#111;font-family:"Helvetica Neue",Arial,"Lucida Grande",sans-serif;}
+h1,h2,h3,h4,h5,h6{clear:both;}
+h1{font-size:3em;}
+h2{font-size:2em;}
+h3{font-size:1.5em;line-height:2;}
+h4{font-size:1.2em;line-height:1.25;font-weight:bold;}
+h5{font-size:1em;font-weight:bold;}
+h6{font-size:1em;}
+p{margin:0 0 1.5em 0;text-align:justify;}
 p.last{margin-bottom:0;}
-p img{float:left;margin:18px 18px 18px 0;padding:0;}
+p img{float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 p img.top{margin-top:0;}
-a{color:#125AA7;text-decoration:underline;}
-a:hover{color:#000;}
-ul,ol{margin:0 0 18px 18px;}
+ul,ol{margin:0 0 1.5em 1.5em;}
 ul{list-style-type:circle;}
 ol{list-style-type:decimal;}
-dl{margin:0 0 18px 0;}
+dl{margin:1.5em 0;}
 dl dt{font-weight:bold;}
-blockquote{margin:0 0 18px 18px;color:#666;font-style:italic;}
+a{color:#009;text-decoration:underline;}
+a:focus,  a:hover{color:#000;}
+blockquote{margin:1.5em;color:#666;font-style:italic;}
 strong{font-weight:bold;}
 em{font-style:italic;}
-pre{margin-bottom:18px;background:#eee;border:1px solid #ddd;padding:16px;}
-hr{background:#B2CCFF;color:#B2CCFF;clear:both;float:none;width:100%;height:2px;margin:0 0 16px 0;border:none;}
-table{margin-bottom:16px;border-top:1px solid #ddd;border-left:1px solid #ddd;}
-th,td{height:13px;padding:2px 4px;border-bottom:1px solid #ddd;border-right:1px solid #ddd;}
-th{font-weight:bold;}
-p.small{font-size:10px;margin-bottom:18px;}
-p.large{font-size:14px;line-height:36px;}
-p.quiet{color:#666;}
+pre{margin-bottom:1.3em;background:#eee;border:0.1em solid #ddd;padding:1.5em;}
+code{font:0.9em Consolas,"Bitstream Vera Sans Mono","Courier New",Monaco,Courier,monospace;}
+table{margin-bottom:1.4em;border-top:0.1em solid #ddd;border-left:0.1em solid #ddd;}
+th,td{height:1em;padding:0.2em 0.4em;border-bottom:0.1em solid #ddd;border-right:0.1em solid #ddd;}
+th{font-weight:bold;background:#eee;}
+.small{font-size:0.8em;margin-bottom:1.875em;line-height:1.875em;}
+.large{font-size:1.2em;line-height:2.5em;}
+.quiet{color:#666;}
 .hide{display:none;}
-.alt{color:#666;font-family:"Warnock Pro","Goudy Old Style","Palatino","Book Antiqua",Georgia,serif;font-size:1.2em;line-height:1%;font-style:italic;}
-.dquo{margin-left:-.7em;}
-p.incr,.incr p{font-size:10px;line-height:1.44em;margin-bottom:18px;}
-.caps{font-variant:small-caps;letter-spacing:1px;text-transform:lowercase;font-size:1.2em;line-height:1%;font-weight:bold;}
-
 
 /* grid.css */
-body{text-align:center;margin:36px 0;}
+body{text-align:center;margin:1.5em 0;}
 .container{text-align:left;position:relative;padding:0;margin:0 auto;width:950px;}
 .column{float:left;margin-right:10px;padding:0;}
 * html .column{overflow-x:hidden;}
@@ -97,6 +88,17 @@ body{text-align:center;margin:36px 0;}
 .append-10{padding-right:400px;}
 .append-11{padding-right:440px;}
 .append-12{padding-right:480px;}
+.append-13{padding-right:520px;}
+.append-14{padding-right:560px;}
+.append-15{padding-right:600px;}
+.append-16{padding-right:640px;}
+.append-17{padding-right:680px;}
+.append-18{padding-right:720px;}
+.append-19{padding-right:760px;}
+.append-20{padding-right:800px;}
+.append-21{padding-right:840px;}
+.append-22{padding-right:880px;}
+.append-23{padding-right:920px;}
 .prepend-1{padding-left:40px;}
 .prepend-2{padding-left:80px;}
 .prepend-3{padding-left:120px;}
@@ -109,7 +111,24 @@ body{text-align:center;margin:36px 0;}
 .prepend-10{padding-left:400px;}
 .prepend-11{padding-left:440px;}
 .prepend-12{padding-left:480px;}
-img{margin:0 0 18px 0;}
+.prepend-13{padding-left:520px;}
+.prepend-14{padding-left:560px;}
+.prepend-15{padding-left:600px;}
+.prepend-16{padding-left:640px;}
+.prepend-17{padding-left:680px;}
+.prepend-18{padding-left:720px;}
+.prepend-19{padding-left:760px;}
+.prepend-20{padding-left:800px;}
+.prepend-21{padding-left:840px;}
+.prepend-22{padding-left:880px;}
+.prepend-23{padding-left:920px;}
+.box{padding:1.5em;margin-bottom:1.5em;background:#f0f0f0;}
+hr{background:#B2CCFF;color:#B2CCFF;clear:both;float:none;width:100%;height:2px;margin:0 0 1.4em 0;border:none;}
+.clear{display:inline-block;}
+.clear:after,.container:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+* html .clear{height:1%;}
+.clear{display:block;}
+img{margin:0 0 1.5em 0;}
 .pull-1{margin-left:-40px;}
 .pull-2{margin-left:-80px;}
 .pull-3{margin-left:-120px;}
@@ -120,6 +139,3 @@ img{margin:0 0 18px 0;}
 .push-3{margin:0 -120px 0 18px;float:right;}
 .push-4{margin:0 -160px 0 18px;float:right;}
 .pull-1,.pull-2,.pull-3,.pull-4, .push-1,.push-2,.push-3,.push-4{overflow-x:visible;}
-
-
-/* EOF */
