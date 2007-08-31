@@ -9,37 +9,39 @@ Version 0.6 - TBD
   * Added new plugin structure. [OFB]
   * Changed some default fonts so that BP works better with ClearType in XP [OFB]
   * Re-added the hack for clearing floats without extra markup. [OFB]
-	* Added Changelog.txt to track changes in each release. [GR]
-	* Cleaned up and rationalized SVN dir structure. [GR, OFB]
-	* print.css : removed reference to 'baseline.png' as it no longer exists. [GR]
-	* grid.css : removed reference to '.first' css class as it no longer exists. [GR]
-	* Added append-13 to append-23 and prepend-13 to prepend-23 to allow pushing elements
-		to both extreme sides of the grid. Added test cases to tests/grid.css [GR]
-	* Moved test sample files to blueprint/tests sub-directory so tests stay with the code. [GR]
-	* Consolidated all references to release version number to screen.css [OFB]
-	* Added index.html page to tests, modified all test pages so they are now validating cleanly as 'XHTML 1.0 Strict'
+  * Added Changelog.txt to track changes in each release. [GR]
+  * Cleaned up and rationalized SVN dir structure. [GR, OFB]
+  * print.css : removed reference to 'baseline.png' as it no longer exists. [GR]
+  * grid.css : removed reference to '.first' css class as it no longer exists. [GR]
+  * Added append-13 to append-23 and prepend-13 to prepend-23 to allow pushing elements
+    to both extreme sides of the grid. Added test cases to tests/grid.css [GR]
+  * Moved test sample files to blueprint/tests sub-directory so tests stay with the code. [GR]
+  * Consolidated all references to release version number to screen.css [OFB]
+  * Added index.html page to tests, modified all test pages so they are now validating cleanly as 'XHTML 1.0 Strict'
 
 
 Version 0.5 - 28/8/2007
 --
-	* Changed grid width from 14 to 24 columns [OFB]
-	* Removed 'first' CSS class and the need to apply it to the first column in a row of columns. [OFB]
-	* Reverted to using pixels instead of em units to specify vertical spacing due to baseline issues with all browsers except Firefox. [OFB]
-	* New set of default fonts. (Experimental) [OFB]
-	* Added test files [OFB]
+  * Changed grid width from 14 to 24 columns [OFB]
+  * Removed 'first' CSS class and the need to apply it to the first column in a row of columns. [OFB]
+  * Reverted to using pixels instead of em units to specify vertical spacing due to baseline issues with 
+    all browsers except Firefox. [OFB]
+  * New set of default fonts. (Experimental) [OFB]
+  * Added test files [OFB]
 
 
 Version 0.4 - 11/08/2007
 --
-	* All font sizes and vertical margins are now elastic, through the use of em units. Resizing works great in every tested browser. [OFB]
-	* Comes with a new, compressed version of BP, which reduces the size of the core files by 60 percent. [OFB]
-	* Support for incremental leading, contributed by Mark Boulton. [OFB]
-	* Adds perfected CSS buttons, by Kevin Hale of Particletree fame. [OFB]
-	* Fixes all known IE bugs. [OFB]
-	* Loads of minor fixes and additions. [OFB]
+  * All font sizes and vertical margins are now elastic, through the use of em units. 
+    Resizing works great in every tested browser. [OFB]
+  * Comes with a new, compressed version of BP, which reduces the size of the core files by 60 percent. [OFB]
+  * Support for incremental leading, contributed by Mark Boulton. [OFB]
+  * Adds perfected CSS buttons, by Kevin Hale of Particletree fame. [OFB]
+  * Fixes all known IE bugs. [OFB]
+  * Loads of minor fixes and additions. [OFB]
 
 
 Initial Release - 03/08/2007
 --
-	* Initial release of Blueprint CSS
+  * Initial release of Blueprint CSS
 
