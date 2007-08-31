@@ -1,0 +1,48 @@
+IE5.5+ PNG Fix
+* Adds support for transparent PNG images for IE5.5+, both for <img> tags and backgrounds on <div>s.
+* Demo: http://www.twinhelix.com/css/iepngfix/demo/
+
+
+Credits & License
+----------------------------------------------------------------
+
+Created by Angus Turnbull [twinhelix.com]
+
+IE5.5+ PNG Alpha Fix v1.0RC4
+(c) 2004-2005 Angus Turnbull
+
+This is licensed under the CC-GNU LGPL, version 2.1 or later.
+[creativecommons.org/licenses/LGPL/2.1/]
+
+
+Usage
+----------------------------------------------------------------
+
+Add this CSS rule to "blueprint/ie.css":
+  img, div { behavior: url(plugins/iepngfix/iepngfix.htc) }
+
+   
+Known Issues
+----------------------------------------------------------------
+
+* Does NOT work with repeating background images
+* Can't help IE versions prior to 5.5, sorry.
+* Users can't right-click-save processed PNG images, they'll 
+  save the blank GIF file if they try that. In some cases 
+  this might be a feature, not a bug...
+* The script detects the ".png" extension in image URLs. 
+  So if you have a CGI script that generates a PNG image, you 
+  may have to rewrite parts of the script, or just cache them 
+  as PNG files somewhere.
+* It's most reliable on elements with non-'auto' dimensions 
+  set. So, give images and other elements width/height values; 
+  '100%', '10em' and '200px' and so on are all OK.
+* Background PNG images can't be tiled. This is a limitation 
+  of the IE filter.
+* Similarly, padding and borders don't indent the PNG image. 
+  An easy fix for this is wrapping your PNG images in container 
+  DIVs or similar.
+* There may be about a short time as soon as the image loads 
+  when images are not transparent, before the IE filter kicks in.
+
+
