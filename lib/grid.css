@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------- 
    
-   Grid.css
+   grid.css
    
    Based on work by:
    * Olav Bjorkoy      [bjorkoy.com]
@@ -46,7 +46,6 @@ body {
   margin-right: 10px;
   padding: 0;
 }
-* html .column { overflow-x: hidden; } /* IE6 fix */
 
 /* Add this class to a column if you want a border on its 
    right hand side. This should be customized to fit your needs. */
@@ -194,7 +193,3 @@ img { margin: 0 0 1.5em 0; }
 .push-3  { margin: 0 -120px 0 18px; float: right; }
 .push-4  { margin: 0 -160px 0 18px; float: right; }
 
-.pull-1, .pull-2, .pull-3, .pull-4,
-.push-1, .push-2, .push-3, .push-4 {
-  overflow-x: visible; /* Overrides previous IE6 fix (needs improvement). */
-}

@@ -31,6 +31,10 @@ Here's how you set up Blueprint on your site.
 
    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+   <!--[if lt IE 7]>
+     <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+   <![endif]-->
+   
 
 3) That's it! Blueprint is now ready to shine.
 
@@ -60,6 +64,10 @@ contains lots of (hopefully) clarifying comments.
   This file sets some default print rules, so that printed versions
   of your site looks better than they usually would. It should be
   included on every page.
+
+* print.css
+  Contains every core hack for IE versions less than IE7, so that
+  our core files stay sweet and nimble.
 
 * lib/grid.css
   This file sets up the grid (it's true). It has a lot of classes
