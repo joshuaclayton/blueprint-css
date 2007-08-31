@@ -6,6 +6,9 @@
    Original by Eric Meyer:
    * meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
    
+   Additional cleaning up by:
+   * Christian Montoya [christianmontoya.com]
+   
 -------------------------------------------------------------- */
 
 html, body, div, span, applet, object, iframe,
@@ -36,4 +39,4 @@ caption, th, td { text-align: left; font-weight: normal; }
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 
-/* EOF */
+a img { border:none; }

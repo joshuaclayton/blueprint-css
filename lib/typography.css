@@ -9,77 +9,95 @@
    * Jeff Croft        [jeffcroft.com]
    * Christian Metts   [mintchaos.com]
    * Wilson Miner      [wilsonminer.com]
+   * Christian Montoya [christianmontoya.com]
    
    Read more about using a baseline here:
    * alistapart.com/articles/settingtypeontheweb
   
 -------------------------------------------------------------- */
 
-body { 
-  font-size: 12px;
-  line-height: 18px; /* All elements should be a multiple of this value. */
-  color: #222;
-}
 
-/* Default fonts */
-body { font-family: "Lucida Grande", "Helvetica Neue", Arial, Verdana, sans-serif; }
-h1,h2,h3,h4,h5,h6 { font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif; }
+/* This is where you set your desired font size. The line-height 
+   and vertical margins are automatically calculated from this. 
+   
+   You have to add an extra calculation here because of IE, so that 
+   all users may resize text manually in their browsers.
+   
+   The top one is for IE: The percentage is of 16px (default IE text size)
+   10px is 62.5%, 12px is 75%, 13px is 81.25%, and so forth).
+   The second value is what all other browsers see (the wanted font size). */
+   
+body          { font-size: 75%;  }  /* IE */
+html > body   { font-size: 12px; }  /* Other browsers */
+
+
+/* Default fonts and colors. */
+body { 
+  color: #222; 
+  font-family: "Lucida Grande", "Helvetica Neue", Arial, Verdana, sans-serif; 
+  line-height: 1.5; /* 150% is always a good line-height. */
+}
+h1,h2,h3,h4,h5,h6 { 
+  color: #111; 
+  font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif; 
+}
 
 
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { 
-  color:#111; 
-  clear:both; 
-}
-
-h1 { font-size: 30px; line-height:36px; padding:0 0 18px 0; }
-h2 { font-size: 20px; line-height:36px; }
-h3 { font-size: 16px; line-height:36px; }
-h4 { font-size: 14px; font-weight:bold; }
-h5 { font-size: 12px; font-weight:bold; }
-h6 { font-size: 12px; }
+h1,h2,h3,h4,h5,h6 { clear:both; }
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; line-height:2; }
+h4 { font-size: 1.2em; line-height:1.25; font-weight:bold; }
+h5 { font-size: 1em; font-weight:bold; }
+h6 { font-size: 1em; }
 
 
 /* Text elements
 -------------------------------------------------------------- */
 
-p           { margin: 0 0 18px 0; text-align:justify; }
+p           { margin: 0 0 1.5em 0; text-align:justify; }
 p.last      { margin-bottom:0; }
-p img       { float: left; margin:18px 18px 18px 0; padding:0; }
+p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding:0; }
 p img.top   { margin-top:0; } /* Use this if the image is at the top of the <p>. */
 
-a           { color: #125AA7; text-decoration: underline; }
-a:hover     { color: #000; }
-
-ul, ol      { margin: 0 0 18px 18px; }
+ul, ol      { margin: 0 0 1.5em 1.5em; }
 ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
-dl          { margin: 0 0 18px 0; }
+dl          { margin: 1.5em 0; }
 dl dt       { font-weight: bold; }
 
-blockquote  { margin: 0 0 18px 18px; color: #666; font-style: italic; }
+a           { color: #009; text-decoration: underline; }
+a:focus, 
+a:hover     { color: #000; }
+
+
+blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
 em          { font-style: italic; }
-pre         { margin-bottom: 18px; background: #eee; border:1px solid #ddd; padding:16px; }
+pre         { margin-bottom: 1.3em; background: #eee; border:0.1em solid #ddd; padding:1.5em; }
+code        { font:0.9em Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; } 
+
+
 
 
 /* Tables
 -------------------------------------------------------------- */
 
-table   { margin-bottom: 16px; border-top:1px solid #ddd; border-left:1px solid #ddd; }
-th,td   { height: 13px; padding:2px 4px; border-bottom:1px solid #ddd; border-right:1px solid #ddd; }
-th      { font-weight:bold; }
+table   { margin-bottom: 1.4em; border-top:0.1em solid #ddd; border-left:0.1em solid #ddd; }
+th,td   { height: 1em; padding:0.2em 0.4em; border-bottom:0.1em solid #ddd; border-right:0.1em solid #ddd; }
+th      { font-weight:bold; background:#eee; }
 
 
 /* Some default classes
 -------------------------------------------------------------- */
 
-p.small   { font-size: 10px; margin-bottom: 18px; }
-p.large   { font-size: 14px; line-height:36px; }
-p.quiet   { color: #666; }
-.hide     { display: none; }
+.small  { font-size: 0.8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large  { font-size: 1.2em; line-height: 2.5em; }
+.quiet  { color: #666; }
+.hide   { display: none; }
 
 
 /* Extra fancy typography
@@ -141,5 +159,3 @@ p.incr, .incr p {
   line-height:1%;
   font-weight:bold;
 }
-
-/* EOF */
