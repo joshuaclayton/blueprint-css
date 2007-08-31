@@ -72,12 +72,14 @@ contains lots of (hopefully) clarifying comments.
 * lib/reset.css
   This file resets CSS values that browsers tend to set for you.
 
-* lib/buttons.css
-  Provides some great CSS-only buttons.
-
 * lib/compressed.css
   A compressed version of the core files. Use this on every live site.
   See screen.css for instructions.
+
+* plugins/
+	Contains additional functionality in the form of simple plugins
+	for Blueprint. See individual readme files in the directory
+	of each plugin for further instructions.
 
 
 Credits

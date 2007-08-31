@@ -122,19 +122,4 @@ img{margin:0 0 18px 0;}
 .pull-1,.pull-2,.pull-3,.pull-4, .push-1,.push-2,.push-3,.push-4{overflow-x:visible;}
 
 
-/* buttons.css */
-a.button,button{display:block;float:left;margin:0 0.583em 0.667em 0;padding:5px 10px 6px 7px;border:0.1em solid #dedede;border-top:0.1em solid #eee;border-left:0.1em solid #eee;background-color:#f5f5f5;font-family:"Lucida Grande",Tahoma,Arial,Verdana,sans-serif;font-size:100%;line-height:130%;text-decoration:none;font-weight:bold;color:#565656;cursor:pointer;}
-button{width:auto;overflow:visible;padding:4px 10px 3px 7px;}
-button[type]{padding:5px 10px 5px 7px;line-height:17px;}
-*:first-child+html button[type]{padding:4px 10px 3px 7px;}
-button img,a.button img{margin:0 3px -3px 0 !important;padding:0;border:none;width:16px;height:16px;}
-button:hover,a.button:hover{background-color:#dff4ff;border:0.1em solid #c2e1ef;color:#336699;}
-a.button:active{background-color:#6299c5;border:1px solid #6299c5;color:#fff;}
-.positive{color:#529214;}
-a.positive:hover,button.positive:hover{background-color:#E6EFC2;border:0.1em solid #C6D880;color:#529214;}
-a.positive:active{background-color:#529214;border:0.1em solid #529214;color:#fff;}
-.negative{color:#d12f19;}
-a.negative:hover,button.negative:hover{background:#fbe3e4;border:0.1em solid #fbc2c4;}
-a.negative:active{background-color:#d12f19;border:0.1em solid #d12f19;color:#fff;}
-
 /* EOF */

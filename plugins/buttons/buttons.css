@@ -5,25 +5,9 @@
    
    Created by Kevin Hale [particletree.com]
    * particletree.com/features/rediscovering-the-button-element
-   
-   W3C: "Buttons created with the BUTTON element function 
-   just like buttons created with the INPUT element, 
-   but they offer richer rendering possibilities."
-   
-   Usage:
-   
-   <button type="submit" class="button positive">
-     <img src="css/blueprint/lib/img/icons/tick.png" alt=""/> Save
-   </button>
 
-   <a class="button" href="/password/reset/">
-     <img src="css/blueprint/lib/img/icons/textfield_key.png" alt=""/> Change Password
-   </a>
+   See Readme.txt in this folder for instructions.
 
-   <a href="#" class="button negative">
-     <img src="css/blueprint/lib/img/icons/cross.png" alt=""/> Cancel
-   </a>
-   
 -------------------------------------------------------------- */
 
 a.button, button {
