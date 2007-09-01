@@ -53,10 +53,10 @@ blockquote {
   font-size:0.9em;
 }
 
-.small, .small p  { font-size: 0.9em; }
-.large, .large p  { font-size: 1.1em; }
-.quiet, .quiet p  { color: #999; }
-.hide             { display:none; }
+.small  { font-size: 0.9em; }
+.large  { font-size: 1.1em; }
+.quiet  { color: #999; }
+.hide   { display:none; }
 
 a:link, a:visited {
 	background: transparent;
