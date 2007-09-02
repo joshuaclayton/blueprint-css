@@ -34,8 +34,8 @@ html > body   { font-size: 12px; }  /* Other browsers */
 /* Default fonts and colors. */
 body { 
   color: #222; 
-  font-family: "Lucida Grande", "Helvetica Neue", Arial, Verdana, sans-serif; 
-  line-height: 1.5; /* 150% is always a good line-height. */
+  font-family: "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif; 
+  line-height: 1.5;
 }
 h1,h2,h3,h4,h5,h6 { 
   color: #111; 
@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { clear:both; }
+h1,h2,h3,h4,h5,h6 { clear:both; font-weight:normal; }
 h1 { font-size: 3em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.5em; line-height:2; }
@@ -78,7 +78,7 @@ blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
 em          { font-style: italic; }
 pre         { margin-bottom: 1.3em; background: #eee; border:0.1em solid #ddd; padding:1.5em; }
-code        { font:0.9em Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; } 
+code        { font:0.9em "Courier New", Monaco, Courier, monospace; } 
 
 
 /* Tables
