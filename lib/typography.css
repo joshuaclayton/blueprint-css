@@ -19,16 +19,9 @@
 
 /* This is where you set your desired font size. The line-height 
    and vertical margins are automatically calculated from this. 
+   The percentage is of 16px (0.75 * 16px = 12px). */
    
-   You have to add an extra calculation here because of IE, so that 
-   all users may resize text manually in their browsers.
-   
-   The top one is for IE: The percentage is of 16px (default IE text size)
-   10px is 62.5%, 12px is 75%, 13px is 81.25%, and so forth).
-   The second value is what all other browsers see (the wanted font size). */
-   
-body          { font-size: 80%;  }  /* IE */
-/* html > body   { font-size: 12px; }  Other browsers */ 
+body          { font-size: 75%;  }
 
 
 /* Default fonts and colors. */
@@ -48,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1,h2,h3,h4,h5,h6 { clear:both; font-weight:normal; }
 h1 { font-size: 3em; }
-h2 { font-size: 2em; }
+h2 { font-size: 2em; line-height:1.5; }
 h3 { font-size: 1.5em; line-height:2; }
 h4 { font-size: 1.2em; line-height:1.25; font-weight:bold; }
 h5 { font-size: 1em; font-weight:bold; }
