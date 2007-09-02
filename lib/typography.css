@@ -27,8 +27,8 @@
    10px is 62.5%, 12px is 75%, 13px is 81.25%, and so forth).
    The second value is what all other browsers see (the wanted font size). */
    
-body          { font-size: 75%;  }  /* IE */
-html > body   { font-size: 12px; }  /* Other browsers */
+body          { font-size: 80%;  }  /* IE */
+/* html > body   { font-size: 12px; }  Other browsers */ 
 
 
 /* Default fonts and colors. */
