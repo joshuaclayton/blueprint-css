@@ -51,6 +51,13 @@ blockquote {
 .quiet  { color: #999; }
 .hide   { display:none; }
 
+/* Incremental leading (Fancy-type plugin) */
+p.incr, .incr p {
+	font-size: 0.9em;
+	line-height: 1.44em;  
+	margin-bottom: 1.5em;
+}
+
 a:link, a:visited {
 	background: transparent;
 	font-weight: bold;

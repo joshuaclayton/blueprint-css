@@ -60,8 +60,9 @@ ol          { list-style-type: decimal; }
 dl          { margin: 1.5em 0; }
 dl dt       { font-weight: bold; }
 
+a:focus, 
+a:hover     { color: #000; }
 a           { color: #009; text-decoration: underline; }
-a:focus, a:hover { color: #000; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
