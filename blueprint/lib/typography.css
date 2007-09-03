@@ -37,19 +37,19 @@ h1,h2,h3,h4,h5,h6 {
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { clear:both; font-weight:normal; }
+h1,h2,h3,h4,h5,h6 { clear:both; font-weight:400; }
 h1 { font-size: 3em; }
 h2 { font-size: 2em; line-height:1.5; }
 h3 { font-size: 1.5em; line-height:2; }
-h4 { font-size: 1.2em; line-height:1.25; font-weight:bold; }
-h5 { font-size: 1em; font-weight:bold; }
+h4 { font-size: 1.2em; line-height:1.25; font-weight:700; }
+h5 { font-size: 1em; font-weight:700; }
 h6 { font-size: 1em; }
 
 
 /* Text elements
 -------------------------------------------------------------- */
 
-p           { margin: 0 0 1.5em 0; text-align:justify; }
+p           { margin: 0 0 1.5em; text-align:justify; }
 p.last      { margin-bottom:0; }
 p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding:0; }
 p img.top   { margin-top:0; } /* Use this if the image is at the top of the <p>. */
@@ -58,31 +58,31 @@ ul, ol      { margin: 0 0 1.5em 1.5em; }
 ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
 dl          { margin: 1.5em 0; }
-dl dt       { font-weight: bold; }
+dl dt       { font-weight:700; }
 
 a:focus, 
 a:hover     { color: #000; }
 a           { color: #009; text-decoration: underline; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
-strong      { font-weight: bold; }
+strong      { font-weight:700; }
 em          { font-style: italic; }
-pre         { margin-bottom: 1.3em; background: #eee; border:0.1em solid #ddd; padding:1.5em; }
-code        { font:0.9em "Courier New", Monaco, Courier, monospace; } 
+pre         { margin-bottom: 1.3em; background: #eee; border:.1em solid #ddd; padding:1.5em; }
+code        { font:.9em "Courier New", Monaco, Courier, monospace; } 
 
 
 /* Tables
 -------------------------------------------------------------- */
 
-table   { margin-bottom: 1.4em; border-top:0.1em solid #ddd; border-left:0.1em solid #ddd; }
-th,td   { height: 1em; padding:0.2em 0.4em; border-bottom:0.1em solid #ddd; border-right:0.1em solid #ddd; }
-th      { font-weight:bold; background:#eee; }
+table   { margin-bottom: 1.4em; border-top:.1em solid #ddd; border-left:.1em solid #ddd; }
+th,td   { height: 1em; padding:.2em .4em; border-bottom:.1em solid #ddd; border-right:.1em solid #ddd; }
+th      { font-weight:700; background:#eee; }
 
 
 /* Some default classes
 -------------------------------------------------------------- */
 
-.small  { font-size: 0.8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.small  { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
 .large  { font-size: 1.2em; line-height: 2.5em; }
 .quiet  { color: #666; }
 .hide   { display: none; }

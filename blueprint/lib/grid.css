@@ -151,8 +151,8 @@ hr {
   clear: both; 
   float: none; 
   width: 100%; 
-  height: 0.1em;
-  margin: 0 0 1.4em 0;
+  height: .1em;
+  margin: 0 0 1.4em;
   border: none; 
 }
 
@@ -177,7 +177,7 @@ hr {
 -------------------------------------------------------------- */
 
 /* Remember the baseline (typography.css). */
-img { margin: 0 0 1.5em 0; }
+img { margin: 0 0 1.5em; }
 
 /* Use these classes to make an image flow into the column before 
    or after it. This technique can also be used on other objects. */
