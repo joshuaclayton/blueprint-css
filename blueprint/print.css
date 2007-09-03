@@ -11,6 +11,11 @@
    
    #header, #footer, #navigation { display:none; }
    
+	Compressed version:
+	Include 'lib/print-compressed.css' in your html instead of this file 
+	if you want to use a reduced size version which has been stripped 
+	using csstidy.
+	
 -------------------------------------------------------------- */
 
 body {
