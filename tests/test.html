@@ -7,10 +7,13 @@
 
 	<title>Blueprint CSS - Test All (compressed CSS)</title>
 
-	<!-- choose the uncompressed (screen.css) or csstidy compressed (screen_compressed.css) version to test with -->
-	<!-- by default we should test with the compressed version to ensure that the entire chain of files works. -->
-	<!-- <link rel="stylesheet" href="../screen.css" type="text/css" media="screen, projection" /> -->
+	<!-- Choose the uncompressed (screen.css) or csstidy compressed (screen_compressed.css) version. -->
+	<link rel="stylesheet" href="../screen.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="../screen_compressed.css" type="text/css" media="screen, projection" />
+  
+  <!--[if lt IE 7]>
+    <link rel="stylesheet" href="../ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
 
 	<!-- there is no compressed version of print.css -->
 	<link rel="stylesheet" href="../print.css" type="text/css" media="print" />
@@ -21,7 +24,6 @@
 			.container { background: url('../lib/grid.png'); }
 	/*]]>*/
 	</style>
-
 </head>
 
 <body>
