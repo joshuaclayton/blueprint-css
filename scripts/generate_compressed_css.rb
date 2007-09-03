@@ -12,6 +12,9 @@
 # a binary for 'csstidy' or compile it yourself from source.
 CSSTIDY_BIN = "bin-osx/csstidy"
 
+# What is the main CSS dir for the framework?  (Where are screen.css and print.css?)
+CSS_DIR = "../blueprint"
+
 # What directory are the original CSS files stored in? (No trailing slash)
 CSS_LIB_DIR = "../blueprint/lib"
 
@@ -20,7 +23,7 @@ CSS_INPUT_FILES = %w( reset typography grid )
 
 # where are our output files?
 TEMP_FILE = "temp.css"
-OUTPUT_FILE = "#{CSS_LIB_DIR}/compressed.css"
+OUTPUT_FILE = "#{CSS_DIR}/screen-compressed.css"
 
 # start flags off with a nice safe empty value which we can append to if needed
 flags = ""
