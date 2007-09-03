@@ -23,8 +23,9 @@ Setup instructions
 
 Here's how you set up Blueprint on your site. 
 
-1) Upload BP to your server, and place it in whatever folder
-   you'd like. A good choice would be your CSS folder.
+1) Upload the "blueprint" folder in this folder to your server, 
+   and place it in whatever folder you'd like. A good choice 
+   would be your CSS folder.
 
 2) Add the following lines to every <head> section of your
    site. Make sure the link path is correct (here, BP is in my CSS folder):
@@ -80,6 +81,10 @@ contains lots of (hopefully) clarifying comments.
 * lib/compressed.css
   A compressed version of the core files. Use this on every live site.
   See screen.css for instructions.
+
+* lib/ie.css
+  Contains every hack for Internet Explorer, leaving our core files
+  sweet and valid.
 
 * plugins/
   Contains additional functionality in the form of simple plugins

@@ -27,6 +27,8 @@ Version 0.6 - TBD
   * Consolidated test pages into one single page (test.html).  Uses compressed stylesheet by default.  This ensures test of 
     the chain of generation.  (todo) Intention is to delete other test files if single file works well. (todo) ensure singular 
     test file contains latest changes to other test files.   [GR]
+  * Moved the blueprint framework to its own folder in the package, so that the tests, script,
+    license and readme don't clutter up our BP folder. [OFB]
 
 	
 
