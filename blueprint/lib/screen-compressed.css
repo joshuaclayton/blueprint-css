@@ -115,13 +115,13 @@ dl {
 margin:1.5em 0;
 }
 
+a:focus,a:hover {
+color:#000;
+}
+
 a {
 color:#009;
 text-decoration:underline;
-}
-
-a:focus,a:hover {
-color:#000;
 }
 
 blockquote {
