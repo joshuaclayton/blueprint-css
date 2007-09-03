@@ -8,8 +8,10 @@
 # BEGIN USER EDITABLE CONFIG
 
 # Where is the csstidy executable?
-# By default this is an OS X executable.  If you need it on another platform you need to get
-# a binary for 'csstidy' or compile it yourself from source.
+# By default this is an OS X executable.  Windows .exe is included but untested. If you need it 
+# on another platform you need to get a binary for 'csstidy' or compile it yourself from source
+# which we include in the src/ sub-directory.
+#CSSTIDY_BIN = "bin-win/csstidy.exe"
 CSSTIDY_BIN = "bin-osx/csstidy"
 
 # What is the main CSS dir for the framework?  (Where are screen.css and print.css?)
