@@ -14,10 +14,15 @@
 @import 'lib/typography.css';
 @import 'lib/grid.css';
 
+/* Compressed version:
+   Replace the lines above with this when your site is live:
+   (Remember to duplicate any changes you've done to the core files.)
+   @import 'lib/screen-compressed.css'; */
+
 /* Additional functionality can be found in the plugins directory.
    See the readme files for each plugin. Examples:
    @import 'plugins/buttons/buttons.css';
    @import 'plugins/fancy-type/fancy-type-compressed.css'; */
    
-/* Uncomment the line below to see the grid and baseline. */
-/* .container { background: url(lib/grid.png); } */
+/* Uncomment the line below to see the grid and baseline.
+   .container { background: url(lib/grid.png); } */
