@@ -30,8 +30,6 @@ Version 0.6 - TBD
   * Moved the blueprint framework to its own folder in the package, so that the tests, script,
     license and readme don't clutter up our BP folder. [OFB]
 	* Re-saved grid.png with Photoshop to remove Fireworks data which was bloating it.  Now its about 3KB instead of 40+KB. Resolves Issue 22. [GR]
-	* Moved blueprint/lib/compressed.css to blueprint/screen-compressed.css.  Modified Ruby script to generate to this new location. Include this file directly if you want to use.  Fixed test.html file to reference new location. [GR]
-	
 	
 
 Version 0.5 - 28/8/2007

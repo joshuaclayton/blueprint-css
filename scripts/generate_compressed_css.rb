@@ -23,7 +23,7 @@ CSS_INPUT_FILES = %w( reset typography grid )
 
 # where are our output files?
 TEMP_FILE = "temp.css"
-OUTPUT_FILE = "#{CSS_DIR}/screen-compressed.css"
+OUTPUT_FILE = "#{CSS_LIB_DIR}/screen-compressed.css"
 
 # start flags off with a nice safe empty value which we can append to if needed
 flags = ""
