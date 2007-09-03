@@ -1,0 +1,39 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version Information
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080004b0"
+        BEGIN
+            VALUE "Comments", "See http://csstidy.sf.net for more information"
+            VALUE "CompanyName", "test"
+            VALUE "FileDescription", "CSSTidy command line executable"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "csstidy.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2005-2006 by Florian Schmitz under the GPL"
+            VALUE "OriginalFilename", "csstidy.exe"
+            VALUE "ProductName", " CSSTidy"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+/////////////////////////////////////////////////////////////////////////////
