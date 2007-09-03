@@ -15,25 +15,18 @@
 
 body {
   line-height: 1.5;
+  font-family: "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;   
   color:#000;
   background: none;
   font-size: 11pt;
 }
 
-h1,h2,h3,
-h4,h5,h6  { font-family: Constantia, "Palatino Linotype", Palatino, Georgia, "Times New Roman", Times, serif; }
-body      { font-family: Frutiger, Univers, "Helvetica Neue", "Lucida Grande", Calibri, Helvetica, Arial, sans-serif; } 
-pre       { font-family: Corbel, Verdana, "Bitstream Vera Sans", sans-serif; } 
-code      { font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; } 
+h1,h2,h3,h4,h5,h6 { font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif; }
+code { font:0.9em "Courier New", Monaco, Courier, monospace; } 
 
-img { 
-  float:left; 
-  margin:1.5em 1.5em 1.5em 0;
-}
-
-p img.top {
-  margin-top: 0;
-}
+img { float:left; margin:1.5em 1.5em 1.5em 0; }
+a img { border:none; }
+p img.top { margin-top: 0; }
 
 hr { 
   background:#ccc; 
@@ -65,8 +58,8 @@ a:link, a:visited {
 }
 
 a:link:after, a:visited:after {
-   content: " (" attr(href) ") ";
-   font-size: 90%;
+  content: " (" attr(href) ") ";
+  font-size: 90%;
 }
 
 /* If you're having trouble printing relative links, uncomment and customize this:

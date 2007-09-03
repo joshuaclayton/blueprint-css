@@ -19,7 +19,7 @@
    and vertical margins are automatically calculated from this. 
    The percentage is of 16px (0.75 * 16px = 12px). */
    
-body          { font-size: 75%;  }
+body { font-size: 75%; }
 
 
 /* Default fonts and colors. */
@@ -61,9 +61,7 @@ dl          { margin: 1.5em 0; }
 dl dt       { font-weight: bold; }
 
 a           { color: #009; text-decoration: underline; }
-a:focus, 
-a:hover     { color: #000; }
-
+a:focus, a:hover { color: #000; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
