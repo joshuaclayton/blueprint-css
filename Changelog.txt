@@ -29,6 +29,7 @@ Version 0.6 - TBD
     test file contains latest changes to other test files.   [GR]
   * Moved the blueprint framework to its own folder in the package, so that the tests, script,
     license and readme don't clutter up our BP folder. [OFB]
+	* Re-saved grid.png with Photoshop to remove Fireworks data which was bloating it.  Now its about 3KB instead of 40+KB. Resolves Issue 22.
 
 	
 

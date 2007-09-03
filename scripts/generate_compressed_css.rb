@@ -12,12 +12,15 @@
 # a binary for 'csstidy' or compile it yourself from source.
 CSSTIDY_BIN = "bin-osx/csstidy"
 
+# What directory are the original CSS files stored in? (No trailing slash)
+CSS_LIB_DIR = "../blueprint/lib"
+
 # Which CSS files should we add to the compressed final version?  '.css' extension is not required or desired.
 CSS_INPUT_FILES = %w( reset typography grid )
 
 # where are our output files?
 TEMP_FILE = "temp.css"
-OUTPUT_FILE = "../lib/compressed.css"
+OUTPUT_FILE = "#{CSS_LIB_DIR}/compressed.css"
 
 # start flags off with a nice safe empty value which we can append to if needed
 flags = ""
@@ -93,7 +96,7 @@ File.open(TEMP_FILE,"w") do |outfile|
    
    # Add the contents (in order) of each of the CSS files we are concatenating
    CSS_INPUT_FILES.each do |file|
-     File.open("../lib/#{file}.css", "r+") do |oldfile|
+     File.open("#{CSS_LIB_DIR}/#{file}.css", "r+") do |oldfile|
           oldfile.each_line { |line| outfile.puts line}
      end
    end
