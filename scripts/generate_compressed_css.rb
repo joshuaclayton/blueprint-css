@@ -19,11 +19,13 @@ CSS_DIR = "../blueprint"
 CSS_LIB_DIR = "../blueprint/lib"
 
 # Which CSS files should we add to the compressed final version?  '.css' extension is not required or desired.
-CSS_INPUT_FILES = %w( reset typography grid )
+CSS_SCREEN_INPUT_FILES = %w( reset typography grid )
+CSS_PRINT_INPUT_FILES = %w( print )
 
 # where are our output files?
 TEMP_FILE = "temp.css"
-OUTPUT_FILE = "#{CSS_LIB_DIR}/screen-compressed.css"
+SCREEN_OUTPUT_FILE = "#{CSS_LIB_DIR}/screen-compressed.css"
+PRINT_OUTPUT_FILE = "#{CSS_LIB_DIR}/print-compressed.css"
 
 # start flags off with a nice safe empty value which we can append to if needed
 flags = ""
@@ -80,7 +82,7 @@ flags = ""
 # REALLY!  NO NEED TO CHANGE ANYTHING BELOW HERE!
 
 # Delete any pre-existing output files.  We'll re-generate them.
-[TEMP_FILE, OUTPUT_FILE].each do |file|
+[TEMP_FILE, SCREEN_OUTPUT_FILE].each do |file|
   begin
     File.delete(file)
   # Errno::ENOENT represents case where you try to delete a file that doesn't exist.
@@ -98,7 +100,7 @@ end
 File.open(TEMP_FILE,"w") do |outfile|
    
    # Add the contents (in order) of each of the CSS files we are concatenating
-   CSS_INPUT_FILES.each do |file|
+   CSS_SCREEN_INPUT_FILES.each do |file|
      File.open("#{CSS_LIB_DIR}/#{file}.css", "r+") do |oldfile|
           oldfile.each_line { |line| outfile.puts line}
      end
@@ -109,7 +111,53 @@ end
 
 # Do some csstidy magic on the temp file and send the results to the output file.
 begin
-  system("./#{CSSTIDY_BIN} #{TEMP_FILE} #{flags} #{OUTPUT_FILE}")
+  system("./#{CSSTIDY_BIN} #{TEMP_FILE} #{flags} #{SCREEN_OUTPUT_FILE}")
+rescue Exception => e
+  puts "Calling CSS Tidy executable failed with exception: " + e
+end
+
+
+# clean up the unneeded temp file
+begin
+  File.delete(TEMP_FILE)
+rescue Errno::ENOENT
+  # no need to do anything here.  No file found to delete.
+rescue Exception => e
+  # However this is a real exception (like maybe permission denied) that we should look at.
+  puts "Temp file deletion failed with exception: " + e
+end
+
+
+# Now do all the same steps for print.css
+
+# Delete any pre-existing temp files.  We'll re-generate them.
+begin
+  File.delete(TEMP_FILE)
+# Errno::ENOENT represents case where you try to delete a file that doesn't exist.
+# We don't need to do or display anything in this case.
+rescue Errno::ENOENT
+  # no need to do anything here
+# However this is a real exception (like maybe permission denied) that we should look at.
+rescue Exception => e
+  puts "File deletion failed with exception: " + e
+end
+
+
+# Create the temp file
+File.open(TEMP_FILE,"w") do |outfile|
+
+  CSS_PRINT_INPUT_FILES.each do |file|
+    File.open("#{CSS_DIR}/#{file}.css", "r+") do |oldfile|
+        oldfile.each_line { |line| outfile.puts line}
+    end
+  end
+
+end
+
+
+# Do some csstidy magic on the temp file and send the results to the print output file.
+begin
+  system("./#{CSSTIDY_BIN} #{TEMP_FILE} #{flags} #{PRINT_OUTPUT_FILE}")
 rescue Exception => e
   puts "Calling CSS Tidy executable failed with exception: " + e
 end

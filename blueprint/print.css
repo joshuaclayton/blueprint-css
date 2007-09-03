@@ -22,7 +22,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 { font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif; }
-code { font:0.9em "Courier New", Monaco, Courier, monospace; } 
+code { font:.9em "Courier New", Monaco, Courier, monospace; } 
 
 img { float:left; margin:1.5em 1.5em 1.5em 0; }
 a img { border:none; }
@@ -41,26 +41,26 @@ hr {
 blockquote {
   margin:1.5em 0;
   padding:1em;
-  border:0.2em solid #ccc;
+  border:.2em solid #ccc;
   font-style:italic;
-  font-size:0.9em;
+  font-size:.9em;
 }
 
-.small  { font-size: 0.9em; }
+.small  { font-size: .9em; }
 .large  { font-size: 1.1em; }
 .quiet  { color: #999; }
 .hide   { display:none; }
 
 /* Incremental leading (Fancy-type plugin) */
 p.incr, .incr p {
-	font-size: 0.9em;
+	font-size: .9em;
 	line-height: 1.44em;  
 	margin-bottom: 1.5em;
 }
 
 a:link, a:visited {
 	background: transparent;
-	font-weight: bold;
+	font-weight:700;
 	text-decoration: underline;
 }
 
