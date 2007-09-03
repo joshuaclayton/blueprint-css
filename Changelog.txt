@@ -22,12 +22,12 @@ Version 0.6 - TBD
     to both extreme sides of the grid. Added test cases to tests/grid.css [GR]
   * Moved test sample files to blueprint/tests sub-directory so tests stay with the code. [GR]
   * Consolidated all references to release version number to screen.css [OFB]
-	* Added ruby script (generate_compressed_css.rb) to scripts dir, and 'csstidy' binary (OS X Universal) 
-		for generating tidied version of Blueprint (lib/compressed.css).
-	* Added screen_compressed.css so compressed version of framework can be used without need to modify core screen.css file. [GR]
-	* Consolidated test pages into one single page (test.html).  Uses compressed stylesheet by default.  This ensures test of 
-		the chain of generation.  (todo) Intention is to delete other test files if single file works well. (todo) ensure singular 
-		test file contains latest changes to other test files.   [GR]
+  * Added ruby script (generate_compressed_css.rb) to scripts dir, and 'csstidy' binary (OS X Universal) 
+    for generating tidied version of Blueprint (lib/compressed.css).
+  * Added screen_compressed.css so compressed version of framework can be used without need to modify core screen.css file. [GR]
+  * Consolidated test pages into one single page (test.html).  Uses compressed stylesheet by default.  This ensures test of 
+    the chain of generation.  (todo) Intention is to delete other test files if single file works well. (todo) ensure singular 
+    test file contains latest changes to other test files.   [GR]
 
 	
 
