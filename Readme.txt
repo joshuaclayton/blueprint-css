@@ -82,9 +82,9 @@ contains lots of (hopefully) clarifying comments.
   See screen.css for instructions.
 
 * plugins/
-	Contains additional functionality in the form of simple plugins
-	for Blueprint. See individual readme files in the directory
-	of each plugin for further instructions.
+  Contains additional functionality in the form of simple plugins
+  for Blueprint. See individual readme files in the directory
+  of each plugin for further instructions.
 
 
 Credits
