@@ -6,17 +6,12 @@
    Original by Eric Meyer:
    * meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
    
-   Additional cleaning up by:
-   * Christian Montoya [christianmontoya.com]
-   
 -------------------------------------------------------------- */
 
-html, body, div, span, applet, object, iframe,
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
