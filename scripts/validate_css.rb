@@ -7,6 +7,8 @@
 # The script will iterate over all CSS files in the framework and report any validator warnings
 # or errors. 
 
+# Grabbed from : http://www.illumit.com/css-validator/
+
 # ===========================================================================================
 # BEGIN USER EDITABLE CONFIG
 
@@ -19,7 +21,7 @@ CSS_DIR = "../blueprint"
 # Where is the CSS lib dir (contains grid.css, reset.css, etc.)
 CSS_LIB_DIR = "#{CSS_DIR}/lib"
 
-# What directory are the original CSS files stored in? (No trailing slash)
+# What directory are the compressed CSS files stored in? (No trailing slash)
 CSS_COMPRESSED_DIR = "#{CSS_DIR}/compressed"
 
 # Which CSS files should we test?  '.css' extension is not required or desired.
@@ -78,3 +80,7 @@ CSS_COMPRESSED_FILES.each do |file|
 
 end
 
+
+puts "-------------------------------------------------------"
+puts "-------------------------------------------------------"
+puts "DONE TESTING!"
