@@ -14,11 +14,11 @@ a.button, button {
   display:block;
   float:left;
   margin:0 0.583em 0.667em 0;
-  padding:5px 10px 6px 7px;   /* Links */
+  padding:5px 10px 5px 7px;   /* Links */
   
-  border:0.1em solid #dedede;
-  border-top:0.1em solid #eee;
-  border-left:0.1em solid #eee;
+  border:1px solid #dedede;
+  border-top:1px solid #eee;
+  border-left:1px solid #eee;
 
   background-color:#f5f5f5;
   font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
@@ -35,7 +35,7 @@ button {
   padding:4px 10px 3px 7px;   /* IE6 */
 }
 button[type] {
-  padding:5px 10px 5px 7px;   /* Firefox */
+  padding:4px 10px 4px 7px;   /* Firefox */
   line-height:17px;           /* Safari */
 }
 *:first-child+html button[type] {
@@ -56,7 +56,7 @@ button img, a.button img{
 /* Standard */
 button:hover, a.button:hover{
   background-color:#dff4ff;
-  border:0.1em solid #c2e1ef;
+  border:1px solid #c2e1ef;
   color:#336699;
 }
 a.button:active{
@@ -71,12 +71,12 @@ body .positive {
 }
 a.positive:hover, button.positive:hover {
   background-color:#E6EFC2;
-  border:0.1em solid #C6D880;
+  border:1px solid #C6D880;
   color:#529214;
 }
 a.positive:active {
   background-color:#529214;
-  border:0.1em solid #529214;
+  border:1px solid #529214;
   color:#fff;
 }
 
@@ -86,12 +86,12 @@ body .negative {
 }
 a.negative:hover, button.negative:hover {
   background:#fbe3e4;
-  border:0.1em solid #fbc2c4;
+  border:1px solid #fbc2c4;
   color:#d12f19;
 }
 a.negative:active {
   background-color:#d12f19;
-  border:0.1em solid #d12f19;
+  border:1px solid #d12f19;
   color:#fff;
 }
 

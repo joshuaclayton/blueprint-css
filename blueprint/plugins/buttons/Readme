@@ -27,5 +27,5 @@ Usage
 	</a>
 
 	<a href="#" class="button negative">
-	  <img src="css/blueprint/lib/plugins/buttons/icons/cross.png" alt=""/> Cancel
+	  <img src="css/blueprint/plugins/buttons/icons/cross.png" alt=""/> Cancel
 	</a>
