@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6 { clear:both; font-weight:400; }
-h1 { font-size: 3em; }
+h1 { font-size: 3em; line-height:2; }
 h2 { font-size: 2em; line-height:1.5; }
 h3 { font-size: 1.5em; line-height:2; }
 h4 { font-size: 1.2em; line-height:1.25; font-weight:700; }

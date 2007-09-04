@@ -11,7 +11,8 @@
 
 
 // This must be a path to a blank image. That's all the configuration you need.
-if (typeof blankImg == 'undefined') var blankImg = 'blank.gif';
+// Note: Keep this relative to the HTML file.
+if (typeof blankImg == 'undefined') var blankImg = 'css/blueprint/plugins/iepngfix/blank.gif';
 
 
 var f = 'DXImageTransform.Microsoft.AlphaImageLoader';

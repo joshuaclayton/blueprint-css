@@ -19,7 +19,9 @@ Usage
 ----------------------------------------------------------------
 
 Add this CSS rule to "blueprint/ie.css":
-  img, div { behavior: url(plugins/iepngfix/iepngfix.htc) }
+  img, div { behavior: url(css/blueprint/plugins/iepngfix/iepngfix.htc) }
+
+NOTE: The url path has to be relative to the HTML file.
 
    
 Known Issues
