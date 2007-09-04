@@ -68,7 +68,7 @@ blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight:700; }
 em          { font-style: italic; }
 pre         { margin-bottom: 1.3em; background: #eee; border:.1em solid #ddd; padding:1.5em; }
-code        { font:.9em "Courier New", Monaco, Courier, monospace; } 
+code        { font:1em Monaco, Courier, monospace; } 
 
 
 /* Tables
