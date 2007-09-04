@@ -19,14 +19,10 @@
    
 -------------------------------------------------------------- */
 
-body { 
-  text-align: center; /* IE5 Fix */
-  margin:1.5em 0;
-}
+body { margin:1.5em 0; }
 
 /* A container should group all your columns. */
 .container {
-  text-align: left;
   position: relative;
   padding: 0;
   margin: 0 auto;   /* Centers layout */

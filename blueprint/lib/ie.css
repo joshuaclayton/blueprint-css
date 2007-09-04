@@ -2,10 +2,16 @@
    
    ie.css
    
-   Contains every hack for IE6, so that our core files stay
-   sweet and nimble.
+   Contains every hack for Internet Explorer versions prioer to IE7, 
+   so that our core files stay sweet and nimble.
    
 -------------------------------------------------------------- */
+
+
+/* Make sure the layout is centered in IE5 */
+body        { text-align: center; }
+.container  { text-align: left; }
+
 
 /* This fixes the problem where IE6 adds an extra 3px margin to
    two columns that are floated up against each other. */
