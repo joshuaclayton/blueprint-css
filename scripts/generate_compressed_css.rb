@@ -18,7 +18,7 @@ CSSTIDY_BIN = "bin-osx/csstidy"
 CSS_DIR = "../blueprint"
 
 # What directory are the original CSS files stored in? (No trailing slash)
-CSS_LIB_DIR = "../blueprint/lib"
+CSS_COMPRESSED_DIR = "../blueprint/compressed"
 
 # Which CSS files should we add to the compressed final version?  '.css' extension is not required or desired.
 CSS_SCREEN_INPUT_FILES = %w( reset typography grid )
@@ -26,8 +26,8 @@ CSS_PRINT_INPUT_FILES = %w( print )
 
 # where are our output files?
 TEMP_FILE = "temp.css"
-SCREEN_OUTPUT_FILE = "#{CSS_LIB_DIR}/screen-compressed.css"
-PRINT_OUTPUT_FILE = "#{CSS_LIB_DIR}/print-compressed.css"
+SCREEN_OUTPUT_FILE = "#{CSS_COMPRESSED_DIR}/screen.css"
+PRINT_OUTPUT_FILE = "#{CSS_COMPRESSED_DIR}/print.css"
 
 # start flags off with a nice safe empty value which we can append to if needed
 flags = ""
@@ -103,7 +103,7 @@ File.open(TEMP_FILE,"w") do |outfile|
    
    # Add the contents (in order) of each of the CSS files we are concatenating
    CSS_SCREEN_INPUT_FILES.each do |file|
-     File.open("#{CSS_LIB_DIR}/#{file}.css", "r+") do |oldfile|
+     File.open("#{CSS_COMPRESSED_DIR}/#{file}.css", "r+") do |oldfile|
           oldfile.each_line { |line| outfile.puts line}
      end
    end
