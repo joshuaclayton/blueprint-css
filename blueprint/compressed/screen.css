@@ -15,7 +15,6 @@ font-size:75%;
 color:#222;
 font-family:"Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
 line-height:1.5;
-text-align:center;
 margin:1.5em 0;
 }
 
@@ -53,6 +52,7 @@ font-weight:400;
 
 h1 {
 font-size:3em;
+line-height:2;
 }
 
 h2 {
@@ -142,7 +142,7 @@ padding:1.5em;
 }
 
 code {
-font:.9em "Courier New", Monaco, Courier, monospace;
+font:1em Monaco, Courier, monospace;
 }
 
 th,td {
@@ -177,7 +177,6 @@ display:none;
 }
 
 .container {
-text-align:left;
 position:relative;
 width:950px;
 margin:0 auto;
