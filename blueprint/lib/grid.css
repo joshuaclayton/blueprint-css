@@ -143,8 +143,8 @@ body { margin:1.5em 0; }
 
 /* Use this to create a horizontal ruler across a column. */
 hr {
-  background: #B2CCFF; 
-  color: #B2CCFF;
+  background: #69f; 
+  color: #69f;
   clear: both; 
   float: none; 
   width: 100%; 
