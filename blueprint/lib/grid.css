@@ -137,14 +137,14 @@ body { margin:1.5em 0; }
 .box { 
   padding: 1.5em; 
   margin-bottom: 1.5em; 
-  background: #f0f0f0; 
+  background: #eee; 
 }
 
 
 /* Use this to create a horizontal ruler across a column. */
 hr {
-  background: #69f; 
-  color: #69f;
+  background: #ddd; 
+  color: #ddd;
   clear: both; 
   float: none; 
   width: 100%; 
