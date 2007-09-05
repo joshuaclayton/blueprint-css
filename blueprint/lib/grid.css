@@ -35,7 +35,8 @@ body { margin:1.5em 0; }
 
 /* Use this class together with the .span-x classes
    to create any composition of columns in a layout.
-   Nesting columns works like a charm (remember class="last" on the last column in a row). */
+   Nesting columns works like a charm.
+   (remember class="last" on the last column in a row). */
    
 .column {
   float: left;
