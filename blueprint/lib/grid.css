@@ -158,7 +158,6 @@ body { margin:1.5em 0; }
   background: #eee; 
 }
 
-
 /* Use this to create a horizontal ruler across a column. */
 hr {
   background: #ddd; 
@@ -170,7 +169,6 @@ hr {
   margin: 0 0 1.4em;
   border: none; 
 }
-
 
 /* Clearing floats without extra markup
    Based on How To Clear Floats Without Structural Markup by PiE
@@ -186,4 +184,3 @@ hr {
 }
 * html .clear { height: 1%; }
 .clear { display: block; }
-

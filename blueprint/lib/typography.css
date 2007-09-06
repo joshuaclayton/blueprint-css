@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1,h2,h3,h4,h5,h6 { clear:both; font-weight:400; }
 h1 { font-size: 3em; line-height:2; }
-h2 { font-size: 2em; line-height:1.5; }
+h2 { font-size: 2em; }
 h3 { font-size: 1.5em; line-height:2; }
 h4 { font-size: 1.2em; line-height:1.25; font-weight:700; }
 h5 { font-size: 1em; font-weight:700; }
@@ -72,7 +72,7 @@ pre         { margin-bottom: 1.3em; background: #eee; border:.1em solid #ddd; pa
 code        { font:1em Monaco, Courier, monospace; } 
 
 
-/* Tables
+/* Tables (needs improvement)
 -------------------------------------------------------------- */
 
 table   { margin-bottom: 1.4em; border-top:.1em solid #ddd; border-left:.1em solid #ddd; }
