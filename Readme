@@ -1,4 +1,4 @@
-Blueprint CSS Framework - Readme.txt
+Blueprint CSS Framework Readme
 (http://code.google.com/p/blueprintcss)
 
 ----------------------------------------------------------------
@@ -51,6 +51,8 @@ Files in Blueprint
 The framework has a few files you should check out. Every file
 contains lots of (hopefully) clarifying comments.
 
+Include files:
+
 * screen.css
   This is the main file of the framework. It imports other CSS 
   files from the "lib" directory, and should be included on 
@@ -61,13 +63,11 @@ contains lots of (hopefully) clarifying comments.
   of your site looks better than they usually would. It should be
   included on every page.
 
-* print.css
-  Contains every core hack for IE versions less than IE7, so that
-  our core files stay sweet and nimble.
-
 * lib/grid.css
   This file sets up the grid (it's true). It has a lot of classes
   you apply to divs to set up any sort of column-based grid.
+
+Core files:
 
 * lib/typography.css
   This file sets some default typography. It also has a few
@@ -83,6 +83,8 @@ contains lots of (hopefully) clarifying comments.
 * lib/ie.css
   Contains every hack for Internet Explorer, leaving our core files
   sweet and valid.
+
+Other:
 
 * plugins/
   Contains additional functionality in the form of simple plugins
