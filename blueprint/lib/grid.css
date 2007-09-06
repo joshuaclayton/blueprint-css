@@ -176,11 +176,11 @@ hr {
 
 .clear { display: inline-block; }   
 .clear:after, .container:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
 }
 * html .clear { height: 1%; }
 .clear { display: block; }

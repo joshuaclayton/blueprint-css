@@ -32,7 +32,11 @@ Here's how you set up Blueprint on your site.
    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
    <!--[if lt IE 7]><link rel="stylesheet" href="css/blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
-3) That's it! Blueprint is now ready to shine.
+3) See screen.css for further configuration options, including 
+   advanced functionality through plugins, and how to use 
+   the compressed version for a live site.
+
+That's it! Blueprint is now ready to shine.
 
 
 How to use Blueprint

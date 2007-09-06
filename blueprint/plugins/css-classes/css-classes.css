@@ -1,7 +1,17 @@
-/* CSS development classes */
+/* -------------------------------------------------------------- 
+
+   css-classes.css
+   * Classes for CSS development
+   
+   See the Readme file in this directory
+   for further instructions.
+   
+-------------------------------------------------------------- */
 
 .left   { float:left; }
 .right  { float:right; }
+
+.hide   { display:none; }
 
 .reset-margin   { margin:0; } 
 .reset-padding  { padding:0; } 
