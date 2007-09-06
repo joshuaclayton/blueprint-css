@@ -133,6 +133,24 @@ body { margin:1.5em 0; }
 .prepend-23  { padding-left: 920px; } 
 
 
+/* Use these classes on an element to push it into the next column,
+   or to pull it into the previous column. */
+
+.pull-1  { margin-left: -40px; }
+.pull-2  { margin-left: -80px; }
+.pull-3  { margin-left: -120px; }
+.pull-4  { margin-left: -160px; }
+
+.push-0  { margin: 0 0 0 18px;      float: right; } /* Right aligns the element. */
+.push-1  { margin: 0 -40px 0 18px;  float: right; }
+.push-2  { margin: 0 -80px 0 18px;  float: right; }
+.push-3  { margin: 0 -120px 0 18px; float: right; }
+.push-4  { margin: 0 -160px 0 18px; float: right; }
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
 /* Use a .box to create a padded box inside a column.  */ 
 .box { 
   padding: 1.5em; 
@@ -168,25 +186,4 @@ hr {
 }
 * html .clear { height: 1%; }
 .clear { display: block; }
-
-
-/* Images
--------------------------------------------------------------- */
-
-/* Remember the baseline (typography.css). */
-img { margin: 0 0 1.5em; }
-
-/* Use these classes to make an image flow into the column before 
-   or after it. This technique can also be used on other objects. */
-
-.pull-1  { margin-left: -40px; }
-.pull-2  { margin-left: -80px; }
-.pull-3  { margin-left: -120px; }
-.pull-4  { margin-left: -160px; }
-
-.push-0  { margin: 0 0 0 18px;      float: right; } /* Right aligns the image. */
-.push-1  { margin: 0 -40px 0 18px;  float: right; }
-.push-2  { margin: 0 -80px 0 18px;  float: right; }
-.push-3  { margin: 0 -120px 0 18px; float: right; }
-.push-4  { margin: 0 -160px 0 18px; float: right; }
 

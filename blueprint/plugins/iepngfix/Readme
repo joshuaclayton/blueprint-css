@@ -18,10 +18,17 @@ This is licensed under the CC-GNU LGPL, version 2.1 or later.
 Usage
 ----------------------------------------------------------------
 
-Add this CSS rule to "blueprint/ie.css":
-  img, div { behavior: url(css/blueprint/plugins/iepngfix/iepngfix.htc) }
+Remember that all divs and images that uses this plugin
+must have both height and width specified.
 
-NOTE: The url path has to be relative to the HTML file.
+1) Add this CSS rule to "blueprint/ie.css":  
+   img, div { behavior: url(*YOURDOMAIN*/css/blueprint/plugins/iepngfix/iepngfix.htc) }
+
+2) Customize the *YOURDOMAIN* and the rest of the URL in the CSS rule
+   to be the http path to the iepngfix.htc file.
+
+3) Customize line 15 in iepngfix.htc so that the URL is the 
+   http path to blank.gif in this directory.
 
    
 Known Issues

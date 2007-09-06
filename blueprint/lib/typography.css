@@ -53,6 +53,7 @@ p           { margin: 0 0 1.5em; text-align:justify; }
 p.last      { margin-bottom:0; }
 p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding:0; }
 p img.top   { margin-top:0; } /* Use this if the image is at the top of the <p>. */
+img         { margin: 0 0 1.5em; }
 
 ul, ol      { margin: 0 0 1.5em 1.5em; }
 ul          { list-style-type: circle; }

@@ -3,7 +3,11 @@ line-height:1.5;
 font-family:"Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
 color:#000;
 background:none;
-font-size:11pt;
+font-size:10pt;
+}
+
+.container {
+background:none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -38,10 +42,9 @@ padding:0;
 }
 
 blockquote {
-border:.2em solid #ccc;
 font-style:italic;
 font-size:.9em;
-margin:1.5em 0;
+margin:1.5em;
 padding:1em;
 }
 
