@@ -1,0 +1,14 @@
+/* CSS development classes */
+
+.left   { float:left; }
+.right  { float:right; }
+
+.reset-margin   { margin:0; } 
+.reset-padding  { padding:0; } 
+.reset          { margin:0; padding:0; } 
+
+.align-justify  { text-align:justify; } 
+.align-left     { text-align:left; } 
+.align-center   { text-align:center; } 
+.align-right    { text-align:right; } 
+
