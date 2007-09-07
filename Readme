@@ -88,7 +88,7 @@ Core files:
   A compressed version of the core and print files. Use this on 
   every live site. See screen.css for instructions.
 
-* lib/ie.css
+* blueprint/lib/ie.css
   Contains every hack for Internet Explorer,so that our core 
   files stay sweet and valid.
 
@@ -125,5 +125,8 @@ them for support or any kind of help with BP.
 * Angus Turnbull            [twinhelix.com]
 * Khoi Vinh                 [subtraction.com]
 
-Questions, comments, suggestions or bug reports all go to
-olav at bjorkoy dot com. Thanks for your interest!
+Questions, comments, suggestions or bug reports go to
+olav at bjorkoy dot com. 
+
+Thanks for your interest!
+
