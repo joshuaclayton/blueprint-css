@@ -1,5 +1,7 @@
 Blueprint CSS Framework Readme
-(http://code.google.com/p/blueprintcss)
+
+* URL:    http://code.google.com/p/blueprintcss
+* News:   http://bjorkoy.com
 
 ----------------------------------------------------------------
 
@@ -53,6 +55,7 @@ Files in Blueprint
 The framework has a few files you should check out. Every file
 contains lots of (hopefully) clarifying comments.
 
+
 Main files:
 
 * blueprint/screen.css
@@ -65,6 +68,7 @@ Main files:
   This file sets some default print rules, so that printed versions
   of your site looks better than they usually would. It should be
   included on every page.
+
 
 Core files:
 
@@ -88,6 +92,7 @@ Core files:
   Contains every hack for Internet Explorer,so that our core 
   files stay sweet and valid.
 
+
 Other:
 
 * blueprint/plugins/
@@ -97,9 +102,11 @@ Other:
 
 * scripts/
   BP comes with two scripts: 
-  * One for re-compressing the files in the "compressed" folder, 
-    if you make any changes to the core files or print file.
+  * One for re-compressing the files in the "compressed" folder.
   * One for validating the CSS in the core files.
+
+* tests/
+  Contains a html file which tests most aspects of Blueprint.
 
 
 Credits
@@ -120,7 +127,3 @@ them for support or any kind of help with BP.
 
 Questions, comments, suggestions or bug reports all go to
 olav at bjorkoy dot com. Thanks for your interest!
-
-
-== By Olav Bjorkoy
-== http://bjorkoy.com
