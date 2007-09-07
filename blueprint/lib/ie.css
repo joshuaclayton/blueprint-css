@@ -2,11 +2,10 @@
    
    ie.css
    
-   Contains every hack for Internet Explorer versions prioer to IE7, 
-   so that our core files stay sweet and nimble.
+   Contains every hack for Internet Explorer versions prior 
+   to IE7, so that our core files stay sweet and nimble.
    
 -------------------------------------------------------------- */
-
 
 /* Make sure the layout is centered in IE5 */
 body        { text-align: center; }
