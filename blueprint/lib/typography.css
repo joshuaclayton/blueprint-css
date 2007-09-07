@@ -8,6 +8,7 @@
    * Jeff Croft        [jeffcroft.com]
    * Christian Metts   [mintchaos.com]
    * Wilson Miner      [wilsonminer.com]
+   * Richard Rutter    [clagnut.com]
    
    Read more about using a baseline here:
    * alistapart.com/articles/settingtypeontheweb
@@ -21,7 +22,11 @@
 body { font-size: 75%; }
 
 
-/* Default fonts and colors. */
+/* Default fonts and colors. 
+   If you prefer serif fonts, remove the font-family 
+   on the headings, and apply this one to the body:
+   font: 1em Georgia, "lucida bright", "times new roman", serif; */
+   
 body { 
   color: #222; 
   font-family: "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif; 
@@ -53,7 +58,7 @@ p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding:0; }
 p img.top   { margin-top:0; } /* Use this if the image is at the top of the <p>. */
 img         { margin: 0 0 1.5em; }
 
-ul, ol      { margin: 0 0 1.5em 1.5em; }
+ul, ol      { margin: 1.5em 0; }
 ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
 dl          { margin: 1.5em 0; }
@@ -66,8 +71,8 @@ a           { color: #009; text-decoration: underline; }
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight:bold; }
 em          { font-style: italic; }
-pre         { margin-bottom: 1.3em; background: #eee; border:.1em solid #ddd; padding:1.5em; }
-code        { font:1em Monaco, Courier, monospace; } 
+pre         { margin-bottom: 1.3em; margin:1.5em; }
+code        { font:1.1em 'andale mono', 'monotype.com', 'lucida console', monospace; } 
 
 
 /* Tables (needs improvement)
