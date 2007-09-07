@@ -181,16 +181,13 @@ display:none;
 }
 
 .container {
-position:relative;
 width:950px;
 margin:0 auto;
-padding:0;
 }
 
 .column {
 float:left;
 margin-right:10px;
-padding:0;
 }
 
 .border {
@@ -501,28 +498,27 @@ margin-left:-160px;
 }
 
 .push-0 {
-float:right;
 margin:0 0 0 18px;
 }
 
 .push-1 {
-float:right;
 margin:0 -40px 0 18px;
 }
 
 .push-2 {
-float:right;
 margin:0 -80px 0 18px;
 }
 
 .push-3 {
-float:right;
 margin:0 -120px 0 18px;
 }
 
 .push-4 {
-float:right;
 margin:0 -160px 0 18px;
+}
+
+.push-0,.push-1,.push-2,.push-3,.push-4 {
+float:right;
 }
 
 .box {

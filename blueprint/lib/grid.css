@@ -21,10 +21,8 @@
 
 /* A container should group all your columns. */
 .container {
-  position: relative;
-  padding: 0;
-  margin: 0 auto;   /* Centers layout */
   width: 950px;     /* Total width */
+  margin: 0 auto;   /* Centers layout */
 }
 
 
@@ -39,7 +37,6 @@
 .column {
   float: left;
   margin-right: 10px;
-  padding: 0;
 }
 
 /* Add this class to a column if you want a border on its 
@@ -139,11 +136,12 @@
 .pull-3  { margin-left: -120px; }
 .pull-4  { margin-left: -160px; }
 
-.push-0  { margin: 0 0 0 18px;      float: right; }
-.push-1  { margin: 0 -40px 0 18px;  float: right; }
-.push-2  { margin: 0 -80px 0 18px;  float: right; }
-.push-3  { margin: 0 -120px 0 18px; float: right; }
-.push-4  { margin: 0 -160px 0 18px; float: right; }
+.push-0  { margin: 0 0 0 18px; }
+.push-1  { margin: 0 -40px 0 18px; }
+.push-2  { margin: 0 -80px 0 18px; }
+.push-3  { margin: 0 -120px 0 18px; }
+.push-4  { margin: 0 -160px 0 18px; }
+.push-0, .push-1, .push-2, .push-3, .push-4 { float: right; }
 
 
 /* Misc classes and elements
