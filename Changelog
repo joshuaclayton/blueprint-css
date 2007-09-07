@@ -38,6 +38,7 @@ Version 0.6 - TBD
   * Created an experimental CSS classes plugin, by popular demand. [OFB]
   * Improved handling of multi-line headings. [OFB]
   * Improved styling of <table>s, you may now use .span classes on <th>s to create tables that follow the grid. [OFB]
+	* Added support for indented paragraphs to the Fancy-type plugin. [OFB]
 	
 
 Version 0.5 - 28/8/2007
