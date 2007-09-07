@@ -2,6 +2,3 @@
 .dquo{margin-left:-.7em;}
 p.incr,.incr p{font-size:10px;line-height:1.44em;margin-bottom:1.5em;}
 .caps{font-variant:small-caps;letter-spacing:1px;text-transform:lowercase;font-size:1.2em;line-height:1%;font-weight:bold;}
-a[href^="http:"] { background: url("icons/external.png") no-repeat right top; padding-right:16px; } 
-a[href^="mailto:"] { background: url("icons/email.png") no-repeat right top; padding-right:22px; }
-a[href^="http:"]:visited { background: url("icons/visited.png") no-repeat right top; padding-right:16px; }

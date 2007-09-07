@@ -1,0 +1,11 @@
+Link Icons
+* Icons for links based on protocol or file type.
+
+This is not supported in IE versions < 7.
+
+
+Usage
+----------------------------------------------------------------
+
+1) Add this line to "blueprint/screen.css", and you're done:
+	 @import 'plugins/link-icons/link-icons.css';

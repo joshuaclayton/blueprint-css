@@ -1,9 +1,9 @@
 /* -------------------------------------------------------------- 
   
-   Fancy-type.css
+   fancy-type.css
    * Lots of pretty advanced classes for manipulating text.
    
-   See Readme.txt in this folder for additional instructions.
+   See the Readme file in this folder for additional instructions.
 
 -------------------------------------------------------------- */
 
@@ -69,14 +69,3 @@ p.incr, .incr p {
   line-height:1%;
   font-weight:bold;
 }
-
-
-/* Icons for links that go to external pages or e-mail.
-   Contributed by Marc Morgan. */
-
-p a[href^="http:"] { background: url("icons/external.png") no-repeat right top; padding-right:16px; } 
-p a[href^="mailto:"] { background: url("icons/email.png") no-repeat right top; padding-right:22px; }
-p a[href^="http:"]:visited { background: url("icons/visited.png") no-repeat right top; padding-right:16px; }
-
-
-
