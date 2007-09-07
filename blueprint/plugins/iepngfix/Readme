@@ -18,11 +18,11 @@ This is licensed under the CC-GNU LGPL, version 2.1 or later.
 Usage
 ----------------------------------------------------------------
 
-Remember that all divs and images that uses this plugin
+Remember that all images that uses this plugin
 must have both height and width specified.
 
 1) Add this CSS rule to "blueprint/ie.css":  
-   img, div { behavior: url(*YOURDOMAIN*/css/blueprint/plugins/iepngfix/iepngfix.htc) }
+   img { behavior: url(*YOURDOMAIN*/css/blueprint/plugins/iepngfix/iepngfix.htc) }
 
 2) Customize the *YOURDOMAIN* and the rest of the URL in the CSS rule
    to be the http path to the iepngfix.htc file.
