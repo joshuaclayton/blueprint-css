@@ -7,6 +7,11 @@
 
 -------------------------------------------------------------- */
 
+/* When multiple paragraphs follow each other, give every
+   paragraph but the first a text-indent.
+   Uncomment the line below if you want to use this. 
+   p + p   { text-indent:20px; margin-top:-1.5em; } */
+
 
 /* For great looking type, use this code instead of asdf: 
    <span class="alt">asdf</span>  
