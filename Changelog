@@ -37,6 +37,7 @@ Version 0.6 - TBD
     a local java binary of the W3C validator.
   * Created an experimental CSS classes plugin, by popular demand. [OFB]
   * Improved handling of multi-line headings. [OFB]
+  * Improved styling of <table>s, you may now use .span classes on <th>s to create tables that follow the grid. [OFB]
 	
 
 Version 0.5 - 28/8/2007

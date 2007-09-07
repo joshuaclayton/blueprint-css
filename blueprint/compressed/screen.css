@@ -22,8 +22,6 @@ table {
 border-collapse:separate;
 border-spacing:0;
 margin-bottom:1.4em;
-border-top:.1em solid #ddd;
-border-left:.1em solid #ddd;
 }
 
 caption,th,td {
@@ -146,16 +144,21 @@ code {
 font:1em Monaco, Courier, monospace;
 }
 
-th,td {
-height:1em;
-border-bottom:.1em solid #ddd;
-border-right:.1em solid #ddd;
-padding:.2em .4em;
+th {
+border-bottom:2px solid #ccc;
+font-weight:700;
 }
 
-th {
-font-weight:700;
-background:#eee;
+td {
+border-bottom:1px solid #ddd;
+}
+
+th,td {
+padding:4px 10px 4px 0;
+}
+
+table .last {
+padding-right:0;
 }
 
 .small {
