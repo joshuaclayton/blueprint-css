@@ -35,13 +35,13 @@ h1,h2,h3,h4,h5,h6 {
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { clear:both; font-weight:400; }
+h1,h2,h3,h4,h5,h6 { clear:both; font-weight:normal; }
 h1 { font-size: 3em; line-height:1; margin-bottom:0.5em; }
-h2 { font-size: 2em; line-height:1.5; margin-bottom:0.75em; }
-h3 { font-size: 1.5em; line-height:1; margin-bottom:1em; font-weight:700; }
+h2 { font-size: 2em; margin-bottom:0.75em; }
+h3 { font-size: 1.5em; line-height:1; margin-bottom:1em; font-weight:bold; }
 h4 { font-size: 1.5em; line-height:1; margin-bottom:1em; }
-h5 { font-size: 1em; font-weight:700; margin-bottom:1.5em; }
-h6 { font-size: 1em; font-weight:700; }
+h5 { font-size: 1em; font-weight:bold; margin-bottom:1.5em; }
+h6 { font-size: 1em; font-weight:bold; }
 
 
 /* Text elements
@@ -57,14 +57,14 @@ ul, ol      { margin: 0 0 1.5em 1.5em; }
 ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
 dl          { margin: 1.5em 0; }
-dl dt       { font-weight:700; }
+dl dt       { font-weight:bold; }
 
 a:focus, 
 a:hover     { color: #000; }
 a           { color: #009; text-decoration: underline; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
-strong      { font-weight:700; }
+strong      { font-weight:bold; }
 em          { font-style: italic; }
 pre         { margin-bottom: 1.3em; background: #eee; border:.1em solid #ddd; padding:1.5em; }
 code        { font:1em Monaco, Courier, monospace; } 
