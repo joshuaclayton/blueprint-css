@@ -25,8 +25,8 @@ Here's how you set up Blueprint on your site.
    and place it in whatever folder you'd like. A good choice 
    would be your CSS folder.
 
-2) Add the following lines to every <head> section of your
-   site. Make sure the link path is correct (here, BP is in my CSS folder):
+2) Add the following three lines to every <head> section of your
+   site. Make sure the three href paths are correct (here, BP is in my CSS folder):
 
    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
@@ -35,8 +35,6 @@ Here's how you set up Blueprint on your site.
 3) See screen.css for further configuration options, including 
    advanced functionality through plugins, and how to use 
    the compressed version for a live site.
-
-That's it! Blueprint is now ready to shine.
 
 
 How to use Blueprint
@@ -55,45 +53,53 @@ Files in Blueprint
 The framework has a few files you should check out. Every file
 contains lots of (hopefully) clarifying comments.
 
-Include files:
+Main files:
 
-* screen.css
+* blueprint/screen.css
   This is the main file of the framework. It imports other CSS 
   files from the "lib" directory, and should be included on 
-  every page.
+  every page. We also call it the the configuration file, 
+  although you don't actually have to modify it.
 
-* print.css
+* blueprint/print.css
   This file sets some default print rules, so that printed versions
   of your site looks better than they usually would. It should be
   included on every page.
 
-* lib/grid.css
+Core files:
+
+* blueprint/lib/grid.css
   This file sets up the grid (it's true). It has a lot of classes
   you apply to divs to set up any sort of column-based grid.
 
-Core files:
-
-* lib/typography.css
+* blueprint/lib/typography.css
   This file sets some default typography. It also has a few
   methods for some really fancy stuff to do with your text.
 
-* lib/reset.css
+* blueprint/lib/reset.css
   This file resets CSS values that browsers tend to set for you.
 
-* lib/compressed.css
-  A compressed version of the core files. Use this on every live site.
-  See screen.css for instructions.
+* blueprint/compressed/screen.css & 
+  blueprint/compressed/print.css
+  A compressed version of the core and print files. Use this on 
+  every live site. See screen.css for instructions.
 
 * lib/ie.css
-  Contains every hack for Internet Explorer, leaving our core files
-  sweet and valid.
+  Contains every hack for Internet Explorer,so that our core 
+  files stay sweet and valid.
 
 Other:
 
-* plugins/
+* blueprint/plugins/
   Contains additional functionality in the form of simple plugins
   for Blueprint. See individual readme files in the directory
   of each plugin for further instructions.
+
+* scripts/
+  BP comes with two scripts: 
+  * One for re-compressing the files in the "compressed" folder, 
+    if you make any changes to the core files or print file.
+  * One for validating the CSS in the core files.
 
 
 Credits
