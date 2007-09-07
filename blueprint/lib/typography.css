@@ -73,6 +73,7 @@ strong      { font-weight:bold; }
 em          { font-style: italic; }
 pre         { margin-bottom: 1.3em; margin:1.5em; }
 code        { font:1.1em 'andale mono', 'monotype.com', 'lucida console', monospace; } 
+tt          { display:block; margin:1.5em 0; }
 
 
 /* Tables (needs improvement)
