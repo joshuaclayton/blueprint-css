@@ -7,6 +7,9 @@
 
 -------------------------------------------------------------- */
 
+/* Use this class if a link gets an icon when it shouldn't. */
+body a.noicon { background:none; padding:0; margin:0; }
+
 /* Make sure the icons are not cut */
 a[href^="http:"], a[href^="mailto:"], a[href^="http:"]:visited, 
 a[href$=".pdf"], a[href$=".doc"], a[href$=".xls"], a[href$=".rss"], 
