@@ -36,6 +36,7 @@ Version 0.6 - TBD
   * Added new script 'validate_css.rb' which will validate all css files and present a report with 
     a local java binary of the W3C validator.
   * Created an experimental CSS classes plugin, by popular demand. [OFB]
+  * Improved handling of multi-line headings. [OFB]
 	
 
 Version 0.5 - 28/8/2007

@@ -26,7 +26,6 @@ body { font-size: 75%; }
 body { 
   color: #222; 
   font-family: "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif; 
-  line-height: 1.5;
 }
 h1,h2,h3,h4,h5,h6 { 
   color: #111; 
@@ -38,18 +37,18 @@ h1,h2,h3,h4,h5,h6 {
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6 { clear:both; font-weight:400; }
-h1 { font-size: 3em; line-height:2; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; line-height:2; }
-h4 { font-size: 1.2em; line-height:1.25; font-weight:700; }
-h5 { font-size: 1em; font-weight:700; }
-h6 { font-size: 1em; }
+h1 { font-size: 3em; line-height:1; margin-bottom:0.5em; }
+h2 { font-size: 2em; line-height:1.5; margin-bottom:0.75em; }
+h3 { font-size: 1.5em; line-height:1; margin-bottom:1em; font-weight:700; }
+h4 { font-size: 1.5em; line-height:1; margin-bottom:1em; }
+h5 { font-size: 1em; font-weight:700; margin-bottom:1.5em; }
+h6 { font-size: 1em; font-weight:700; }
 
 
 /* Text elements
 -------------------------------------------------------------- */
 
-p           { margin: 0 0 1.5em; text-align:justify; }
+p           { margin: 0 0 1.5em; }
 p.last      { margin-bottom:0; }
 p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding:0; }
 p img.top   { margin-top:0; } /* Use this if the image is at the top of the <p>. */
