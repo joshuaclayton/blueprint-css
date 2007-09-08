@@ -164,6 +164,7 @@ line-height:1.875em;
 .large {
 font-size:1.2em;
 line-height:2.5em;
+margin-bottom:1.25em;
 }
 
 .quiet {
@@ -182,6 +183,10 @@ margin:0 auto;
 .column {
 float:left;
 margin-right:10px;
+}
+
+.last {
+margin-right:0;
 }
 
 .span-1 {
@@ -279,10 +284,6 @@ width:910px;
 .span-24 {
 width:950px;
 margin:0;
-}
-
-.last {
-margin-right:0;
 }
 
 .append-1 {

@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6 { clear:both; font-weight:normal; }
+
 h1 { font-size: 3em; line-height:1; margin-bottom:0.5em; }
 h2 { font-size: 2em; margin-bottom:0.75em; }
 h3 { font-size: 1.5em; line-height:1; margin-bottom:1em; font-weight:bold; }
@@ -83,13 +84,15 @@ table   { margin-bottom:1.4em; }
 th      { border-bottom:2px solid #ccc; font-weight:bold; }
 td      { border-bottom:1px solid #ddd; }
 th,td   { padding:4px 10px 4px 0; }
-table .last { padding-right:0; }
+
+/* Use this if you use a span-x class on th, td. */
+table .last { padding-right:0; } 
 
 
 /* Some default classes
 -------------------------------------------------------------- */
 
 .small  { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
-.large  { font-size: 1.2em; line-height: 2.5em; }
+.large  { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
 .quiet  { color: #666; }
 .hide   { display: none; }

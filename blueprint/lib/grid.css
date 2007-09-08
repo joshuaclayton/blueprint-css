@@ -23,8 +23,8 @@
 
 /* A container should group all your columns. */
 .container {
-  width: 950px;     /* Total width */
-  margin: 0 auto;   /* Centers layout */
+  width: 950px;
+  margin: 0 auto;
 }
 
 
@@ -32,16 +32,18 @@
 -------------------------------------------------------------- */
 
 /* Use this class together with the .span-x classes
-   to create any composition of columns in a layout.
-   Nesting columns works like a charm.
-   (remember class="last" on the last column in a row). */
+   to create any composition of columns in a layout. */
    
 .column {
   float: left;
   margin-right: 10px;
 }
 
-/* Use these classes to set how wide a column should be. */
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
 .span-1   { width: 30px; }
 .span-2   { width: 70px; }
 .span-3   { width: 110px; }
@@ -66,9 +68,6 @@
 .span-22  { width: 870px; }
 .span-23  { width: 910px; }
 .span-24  { width: 950px; margin: 0; }
-
-/* The last column in a row needs this class. */
-.last     { margin-right: 0; }
 
 /* Add these to a column to append empty cols. */
 .append-1   { padding-right: 40px; }  
