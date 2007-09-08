@@ -63,7 +63,7 @@ ul, ol      { margin: 1.5em 0; }
 ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
 dl          { margin: 1.5em 0; }
-dl dt       { font-weight:bold; }
+dl dt       { font-weight:700; }
 
 a:focus, 
 a:hover     { color: #000; }
@@ -71,7 +71,8 @@ a           { color: #009; text-decoration: underline; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight:bold; }
-em          { font-style: italic; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight:700; }
 pre,code    { margin:1.5em; white-space:pre; }
 pre,code,tt { font:1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height:1.5; } 
 tt          { display:block; margin:1.5em 0; line-height:1.5; }
