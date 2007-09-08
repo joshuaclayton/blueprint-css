@@ -163,8 +163,6 @@
 
 <blockquote>&lt;blockquote&gt; This is blockquote text which has no quote marks of any kind in the source.</blockquote>
 
-"<blockquote>&lt;blockquote&gt; This is blockquote text which has quote marks outside the source.  They should be removed by reset.css and you should not see them.</blockquote>"
-
 <blockquote>"&lt;blockquote&gt; This is blockquote text which has quote marks inside the source.  They should be removed by reset.css and you should not see them."</blockquote>
 
 <!-- Note: According to the HTML 4.01 spec, the q element should render with delimiting quotation marks. This works in Mozilla browsers (Firefox) and Opera. Internet Explorer ignores this entirely. -->
@@ -190,11 +188,16 @@ pre                  space2
 
 			<a href="http://www.google.com">&lt;a&gt; a + href</a>
 			
-			<abbr>&lt;abbr&gt; abbr</abbr>
+			<abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text should be seen when mouseover.</abbr>
 
-			<acronym>&lt;acronym&gt; acronym</acronym>
+			<acronym title="extended acronym text should show when mouse over">&lt;acronym&gt; acronym - extended text should be seen when mouseover.</acronym>
 
-			<address>&lt;address&gt; address</address>
+			<address>
+				&lt;address&gt;<br />
+				Donald Duck<br />
+				Box 555<br />
+				Disneyland
+			</address>
 
 <code>
 &lt;code&gt;
@@ -220,7 +223,7 @@ It should be the same size as &lt;p&gt; text.
 
 <em>&lt;em&gt; emphasis</em>
 
-<img src="test.jpg">&lt;img&gt; img</img>
+<img src="test.jpg"></img>
 
 <q>&lt;q&gt; quote</q>
 
