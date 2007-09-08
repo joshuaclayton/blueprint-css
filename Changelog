@@ -46,6 +46,7 @@ Version 0.6 - TBD
   * Seperated the plugins tests into their own file. [OFB]
   * Re-structured some of the tests.html sections. [OFB]
   * Added class ".colborder" to grid.css. [OFB]
+  * Added .error, .notice and .success classes to typography.css. [OFB]
 	
 
 Version 0.5 - 28/8/2007
