@@ -14,8 +14,10 @@
    
    If you need fewer or more columns, use this 
    formula to find the new total width: 
-   
    Total width = (columns * 30) - 10
+   
+   Read more about using a grid here:
+   * subtraction.com/archives/2007/0318_oh_yeeaahh.php
    
 -------------------------------------------------------------- */
 
@@ -74,7 +76,7 @@
 .span-23  { width: 910px; }
 .span-24  { width: 950px; margin: 0; }
 
-/* The last element in a multi-column block needs this class. */
+/* The last column in a row needs this class. */
 .last     { margin-right: 0; }
 
 /* Add these to a column to append empty cols. */

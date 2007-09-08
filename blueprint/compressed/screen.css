@@ -97,20 +97,12 @@ p img.top {
 margin-top:0;
 }
 
-ul,ol {
-margin:0 0 1.5em 1.5em;
-}
-
 ul {
 list-style-type:circle;
 }
 
 ol {
 list-style-type:decimal;
-}
-
-dl {
-margin:1.5em 0;
 }
 
 a:focus,a:hover {
@@ -133,14 +125,17 @@ font-style:italic;
 }
 
 pre {
-margin-bottom:1.3em;
-background:#eee;
-border:.1em solid #ddd;
-padding:1.5em;
+margin:1.5em;
 }
 
-code {
-font:1em Monaco, Courier, monospace;
+code,tt {
+font:1em 'andale mono', monotype.com, 'lucida console', monospace;
+}
+
+tt {
+display:block;
+line-height:1.5;
+margin:1.5em 0;
 }
 
 th {
@@ -555,6 +550,10 @@ height:1%;
 
 p,img {
 margin:0 0 1.5em;
+}
+
+ul,ol,dl {
+margin:1.5em 0;
 }
 
 dl dt,strong {
