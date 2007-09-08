@@ -107,7 +107,7 @@ Other:
   * One for validating the CSS in the core files.
 
 * tests/
-  Contains a html file which tests most aspects of Blueprint.
+  Contains html files which tests most aspects of Blueprint.
 
 
 Credits
