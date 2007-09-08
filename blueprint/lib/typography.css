@@ -72,8 +72,8 @@ blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight:bold; }
 em          { font-style: italic; }
 pre         { margin-bottom: 1.3em; margin:1.5em; }
-code        { font:1.1em 'andale mono', 'monotype.com', 'lucida console', monospace; } 
-tt          { display:block; margin:1.5em 0; }
+code,tt     { font:1em 'andale mono', 'monotype.com', 'lucida console', monospace; } 
+tt          { display:block; margin:1.5em 0; line-height:1.5; }
 
 
 /* Tables (needs improvement)
