@@ -184,12 +184,6 @@ float:left;
 margin-right:10px;
 }
 
-.border {
-padding-right:4px;
-margin-right:5px;
-border-right:1px solid #ddd;
-}
-
 .span-1 {
 width:30px;
 }
@@ -473,6 +467,18 @@ padding-left:880px;
 
 .prepend-23 {
 padding-left:920px;
+}
+
+.border {
+padding-right:4px;
+margin-right:5px;
+border-right:1px solid #ddd;
+}
+
+.colborder {
+padding-right:24px;
+margin-right:25px;
+border-right:1px solid #ddd;
 }
 
 .pull-1 {

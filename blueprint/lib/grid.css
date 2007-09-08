@@ -41,15 +41,6 @@
   margin-right: 10px;
 }
 
-/* Add this class to a column if you want a border on its 
-   right hand side. This should be customized to fit your needs. */
-
-.border {
-  padding-right: 4px;
-  margin-right: 5px;
-  border-right: 1px solid #ddd;
-}
-
 /* Use these classes to set how wide a column should be. */
 .span-1   { width: 30px; }
 .span-2   { width: 70px; }
@@ -128,6 +119,21 @@
 .prepend-21  { padding-left: 840px; } 
 .prepend-22  { padding-left: 880px; } 
 .prepend-23  { padding-left: 920px; } 
+
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 4px;
+  margin-right: 5px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
 
 
 /* Use these classes on an element to push it into the 
