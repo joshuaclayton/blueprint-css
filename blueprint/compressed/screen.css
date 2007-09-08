@@ -175,6 +175,30 @@ color:#666;
 display:none;
 }
 
+.error,.notice,.success {
+margin-bottom:1em;
+border:2px solid #ddd;
+padding:.8em;
+}
+
+.error {
+background:#FBE3E4;
+color:#D12F19;
+border-color:#FBC2C4;
+}
+
+.notice {
+background:#FFF6BF;
+color:#817134;
+border-color:#FFD324;
+}
+
+.success {
+background:#E6EFC2;
+color:#529214;
+border-color:#C6D880;
+}
+
 .container {
 width:950px;
 margin:0 auto;
