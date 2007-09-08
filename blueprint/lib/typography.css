@@ -66,6 +66,8 @@ dl          { margin: 1.5em 0; }
 dl dt       { font-weight:700; }
 dd          { margin-left: 1.5em;}
 
+address     { margin-top:1.5em; font-style: italic; }
+
 a:focus, 
 a:hover     { color: #000; }
 a           { color: #009; text-decoration: underline; }
