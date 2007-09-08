@@ -64,6 +64,7 @@ ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
 dl          { margin: 1.5em 0; }
 dl dt       { font-weight:700; }
+dd          { margin-left: 1.5em;}
 
 a:focus, 
 a:hover     { color: #000; }
