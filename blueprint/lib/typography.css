@@ -82,7 +82,7 @@ pre,code    { margin:1.5em; white-space:pre; }
 pre,code,tt { font:1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height:1.5; } 
 tt          { display:block; margin:1.5em 0; line-height:1.5; }
 
-fieldset    { padding:1.4em; margin:1.5em 0; border:0.1em solid #ddd; }
+fieldset    { padding:1.4em; margin:1.5em 0; border:1px solid #ddd; }
 legend      { font-weight: bold; }
 
 
