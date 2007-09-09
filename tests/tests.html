@@ -106,6 +106,15 @@
 				<li>Another list element</li>
 				<li>Yet another element in the list</li>
 			</ol>			
+      <dl>
+      	<dt>definition list dt
+      	<dd>definition list dd
+      	<dt>definition list dt
+      	<dd>definition list dd
+      	<dt>definition list dt
+      	<dd>definition list dd
+      </dl>			
+			
 			<blockquote>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</blockquote>
@@ -149,23 +158,16 @@
 				table, caption, tbody, tfoot, thead, tr, th, td
 			-->
 
-		  <h5>CSS RESET ELEMENTS</h5>
+		  <h5>MISC ELEMENTS</h5>
 			<p>The following elements were explicitly reset in reset.css.  We need to test them to make sure that they are now behaving as they should be.</p>
-		
-<h1>h1</h1>
-<h2>h2</h2>
-<h3>h3</h3>
-<h4>h4</h4>
-<h5>h5</h5>
-<h6>h6</h6>
 
-<p>&lt;p&gt; This is a paragraph with lots of text in it.  This should be long enough that it will wrap around to the next line.</p>
+      <p>&lt;p&gt; This is a paragraph with lots of text in it.  This should be long enough that it will wrap around to the next line.</p>
 
-<blockquote>&lt;blockquote&gt; This is blockquote text which has no quote marks of any kind in the source.</blockquote>
+      <blockquote>&lt;blockquote&gt; This is blockquote text which has no quote marks of any kind in the source.</blockquote>
 
-<blockquote>"&lt;blockquote&gt; This is blockquote text which has quote marks inside the source.  They should be removed by reset.css and you should not see them."</blockquote>
+      <blockquote>"&lt;blockquote&gt; This is blockquote text which has quote marks inside the source.  They should be removed by reset.css and you should not see them."</blockquote>
 
-<!-- Note: According to the HTML 4.01 spec, the q element should render with delimiting quotation marks. This works in Mozilla browsers (Firefox) and Opera. Internet Explorer ignores this entirely. -->
+      <!-- Note: According to the HTML 4.01 spec, the q element should render with delimiting quotation marks. This works in Mozilla browsers (Firefox) and Opera. Internet Explorer ignores this entirely. -->
 
 <q>&lt;q&gt; This is q text which has no quote marks of any kind in the source.</q>
 
@@ -175,7 +177,6 @@
 
 <pre>
 &lt;pre&gt;
-pre 'tabs' and 'space's should align vertically.
 pre		tab
 pre		tab
 pre          space1
@@ -224,27 +225,6 @@ It should be the same size as &lt;p&gt; text.
 <em>&lt;em&gt; emphasis</em><br />
 
 <img src="test.jpg"></img>
-
-<dl>
-	<dt>definition list dt
-	<dd>definition list dd
-	
-	<dt>definition list dt
-	<dd>definition list dd
-
-	<dt>definition list dt
-	<dd>definition list dd
-</dl>
-
-<ol>
-	<li>&lt;li&gt; ol li</li>
-	<li>&lt;li&gt; ol li</li>
-</ol>
-
-<ul>
-	<li>&lt;li&gt; ul li</li>
-	<li>&lt;li&gt; ul li</li>
-</ul>
 
 <fieldset>
 &lt;fieldset&gt;
@@ -328,8 +308,8 @@ Input 2 <input type="text" size="3" />
 <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
 	<caption><em>A standard test table with a caption, tr, td elements</em></caption>
 	<tr>
-		<th>Table Header One</th>
-  	<th>Table Header Two</th>
+		<th class="span-4">Table Header One</th>
+  	<th class="span-4 last">Table Header Two</th>
 	</tr>
 	<tr>
 		<td>TD One</td>
@@ -341,70 +321,40 @@ Input 2 <input type="text" size="3" />
 </table>
 
 
-<table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
-	<caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
-	<thead>
-		<tr>
-			<th>Table Header One</th>
-	  	<th>Table Header Two</th>
-		</tr>
-	</thead>
-	<tfoot>
-		<tr>
-			<td colspan="2">tfoot footer</td>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>TD One</td>
-	  	<td>TD Two</td>
-		</tr>
-		<tr>
-			<td>TD One</td>
-	  	<td>TD Two</td>
-		</tr>
-	</tbody>
-	<tbody>
-		<tr>
-			<td>TD One</td>
-	  	<td>TD Two</td>
-		</tr>
-		<tr>
-			<td>TD One</td>
-	  	<td>TD Two</td>
-		</tr>
-	</tbody>
-</table>
-
-<table border="0" cellspacing="0" cellpadding="0">
-	<caption><em>A standard test table which is setup to align to the Blueprint CSS grid</em></caption>
-	<tr>
-		<th class="span-2">Header</th>
-		<th class="span-2">Header</th>
-		<th class="span-2">Header</th>
-		<th class="span-2 last">Header</th>
-	</tr>
-	<tr>
-		<td>Data</td>
-		<td>Data</td>
-		<td>Data</td>
-		<td>Data</td>
-	</tr>
-	<tr>
-		<td>Data</td>
-		<td>Data</td>
-		<td>Data</td>
-		<td>Data</td>
-	</tr>
-	<tr>
-		<td>Data</td>
-		<td>Data</td>
-		<td>Data</td>
-		<td>Data</td>
-	</tr>
-</table>
-
-
+      <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
+      	<caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
+      	<thead>
+      		<tr>
+      			<th class="span-4">Table Header One</th>
+      	  	<th class="span-4 last">Table Header Two</th>
+      		</tr>
+      	</thead>
+      	<tfoot>
+      		<tr>
+      			<td colspan="2">tfoot footer</td>
+      		</tr>
+      	</tfoot>
+      	<tbody>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      	</tbody>
+      	<tbody>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      	</tbody>
+      </table>
   		
   		<div class="error">
   		  This is a &lt;div&gt; with the class <strong>.error</strong>.
