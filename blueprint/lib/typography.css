@@ -62,6 +62,11 @@ img         { margin: 0 0 1.5em; }
 ul, ol      { margin: 1.5em 0; list-style-position: inside; }
 ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
+ul ol, ul ol ul,
+ol ul, ol ul ol,
+ul ul, ul ul ol,
+ol ol { margin-left: 1.5em;}
+
 dl          { margin: 1.5em 0; }
 dl dt       { font-weight:bold; }
 dd          { margin-left: 1.5em;}
