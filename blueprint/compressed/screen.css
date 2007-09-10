@@ -114,10 +114,6 @@ dl {
 margin:1.5em 0;
 }
 
-dd {
-margin-left:1.5em;
-}
-
 abbr,acronym {
 border-bottom:1px dotted #666;
 }
@@ -607,6 +603,10 @@ height:1%;
 
 p,img {
 margin:0 0 1.5em;
+}
+
+ul ol,ol ul,ul ul,ol ol,dd {
+margin-left:1.5em;
 }
 
 dl dt,strong,dfn,legend {
