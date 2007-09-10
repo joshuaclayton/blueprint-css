@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Blueprint CSS Framework Test Suite</title>
+
+  <!-- Framework CSS -->
+	<link rel="stylesheet" href="../blueprint/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="../blueprint/print.css" type="text/css" media="print" />
+  <!--[if lt IE 7]><link rel="stylesheet" href="../blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	
+	<!-- Import fancy-type plugin for the sample section. -->
+	<link rel="stylesheet" href="../blueprint/plugins/fancy-type/fancy-type.css" type="text/css" media="screen, projection" />
+	
+	<!-- Show the grid and baseline -->
+	<style type="text/css">
+	/*<![CDATA[*/
+			.container { background: url('../blueprint/lib/grid.png'); }
+	/*]]>*/
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Typography: Sensible default values for fonts and vertical spacing</h2>
+		<hr />
+
+		<div class="column span-8">
+		  <h5>PARAGRAPHS, LISTS, BLOCKQUOTE</h5>
+		  
+			<p>Lorem ipsum dolor <span class="caps">NATO</span> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul>
+				<li>Unordered list test</li>
+				<li>Another list element</li>
+				<li>Yet another element in the list</li>
+			</ul>
+			<ol>
+				<li>Ordered list test</li>
+				<li>Another list element</li>
+				<li>Yet another element in the list</li>
+			</ol>
+			
+			<h6>NESTED LISTS TESTS</h6>
+			<ol>
+				<li>Ordered list</li>
+				<ul>
+  				<li>Nested Unordered list</li>
+  				<ol>
+  				  <li>Nested Ordered list</li>
+  				</ol>
+  			</ul>
+				<li>Ordered List item</li>
+				<ol>
+				  <li>Nested Ordered list</li>
+				  <ul>
+				    <li>Nested Unordered list</li>
+				  </ul>
+				</ol>
+			</ol>
+
+
+			<ul>
+				<li>Unordered list</li>
+				<ol>
+  				<li>Nested Ordered list</li>
+  				<ul>
+  				  <li>Nested Unordered list</li>
+  				</ul>
+  			</ol>
+				<li>Unordered List item</li>
+				<ul>
+				  <li>Nested Unordered list</li>
+				  <ol>
+				    <li>Ordered list</li>
+				  </ol>
+				  <li>Nested Unordered list</li>
+				</ul>
+				<li>Unordered list</li>
+			</ul>
+			
+			<hr>
+			
+      <dl>
+      	<dt>definition list dt</dt>
+      	<dd>definition list dd</dd>
+      	<dt>definition list dt</dt>
+      	<dd>definition list dd</dd>
+      	<dt>definition list dt</dt>
+      	<dd>definition list dd</dd>
+      </dl>			
+			
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</blockquote>
+			<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="box">
+				<p class="last">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  	</div>
+
+
+		<div class="column span-8">
+		  <h5>HEADINGS</h5>
+
+			<h1>H1: Lorem ipsum dolor sit amet</h1>
+			<h2>H2: Lorem ipsum dolor sit amet, consectetur elit</h2>
+			<h3>H3: Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+			<h4>H4: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipis</h4>
+			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h5>
+			<h6>H6: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h6>
+			<hr />
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
+		
+		<div class="column span-8 last">
+
+			<!--
+				The following elements are overriden in reset.css.
+				We need to make sure that these are still displaying properly.
+
+				html, body, div, span, object, iframe,
+				h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+				a, abbr, acronym, address, code,
+				del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+				fieldset, form, label, legend,
+				table, caption, tbody, tfoot, thead, tr, th, td
+			-->
+
+		  <h5>MISC ELEMENTS</h5>
+
+<pre>
+&lt;pre&gt;
+pre		tab
+pre		tab
+pre          space1
+pre          space1
+pre                  space2
+pre                  space2
+</pre>
+			
+<a>&lt;a&gt; anchor</a><br />
+
+<a href="http://www.google.com">&lt;a&gt; a + href</a><br />
+
+<abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr><br />
+
+<acronym title="extended acronym text should show when mouse over">&lt;acronym&gt; acronym - extended text when mouseover.</acronym><br />
+
+			<address>
+				&lt;address&gt;<br />
+				Donald Duck<br />
+				Box 555<br />
+				Disneyland
+			</address>
+
+<code>
+&lt;code&gt;
+Not indented
+  indent1
+  indent1
+    indent2
+      indent3
+</code>
+
+<tt>&lt;tt&gt;
+This tt text should be monospaced
+  and 
+  wrap as if 
+    one line of text
+      even though the code has newlines, spaces, and tabs. 
+It should be the same size as &lt;p&gt; text.
+</tt>
+
+<del>&lt;del&gt; deleted</del><br />
+
+<dfn>&lt;dfn&gt; dfn</dfn><br />
+
+<em>&lt;em&gt; emphasis</em><br />
+
+		</div>
+		<hr />
+		
+		<div class="column span-8">
+		  <h5>TABLES <span class="alt">&amp;</span> BOXES</h5>
+      
+      <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
+      	<caption><em>A standard test table with a caption, tr, td elements</em></caption>
+      	<tr>
+      		<th class="span-4">Table Header One</th>
+        	<th class="span-4 last">Table Header Two</th>
+      	</tr>
+      	<tr>
+      		<td>TD One</td>
+        	<td>TD Two</td>
+      	</tr>
+      	<tr>
+      		<td colspan="2">TD colspan 2</td>
+      	</tr>
+      </table>
+
+
+      <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
+      	<caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
+      	<thead>
+      		<tr>
+      			<th class="span-4">Table Header One</th>
+      	  	<th class="span-4 last">Table Header Two</th>
+      		</tr>
+      	</thead>
+      	<tfoot>
+      		<tr>
+      			<td colspan="2">tfoot footer</td>
+      		</tr>
+      	</tfoot>
+      	<tbody>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      	</tbody>
+      	<tbody>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      		<tr>
+      			<td>TD One</td>
+      	  	<td>TD Two</td>
+      		</tr>
+      	</tbody>
+      </table>
+
+  		<div class="error">
+  		  This is a &lt;div&gt; with the class <strong>.error</strong>.
+  		</div>
+			<div class="notice">
+  		  This is a &lt;div&gt; with the class <strong>.notice</strong>.
+  		</div>		
+			<div class="success">
+  		  This is a &lt;div&gt; with the class <strong>.success</strong>.
+  		</div>  		
+      
+		</div>
+		
+		<div class="column span-16 last">
+		  <h5>FORMS</h5>
+
+      <fieldset>
+      &lt;fieldset&gt;
+      Input 1 <input type="text" size="3" />
+      Input 2 <input type="text" size="3" />
+      </fieldset>
+
+      <form id="dummy" action="" method="post">
+
+      	<fieldset>
+      		<legend>This is the legend for this sample form</legend>
+
+      		<div class="column span-2">
+      		<label for="dummy0">dummy0 text</label>
+      		</div>
+
+      		<div class="column prepend-1 span-4 last">
+      		<input type="text" name="dummy0" id="dummy0" value="Sample Text" size="12" maxlength="16" tabindex="1" />
+      		</div>
+
+      		<div class="column span-2">
+      		<label for="dummy1">dummy1 text</label>
+      		</div>
+
+      		<div class="column prepend-1 span-4 last">
+      		<input type="text" id="dummy1" name="dummy1" />
+      		</div>
+
+      		<div class="column span-2">
+      	  <label for="dummy2">dummy2 textarea</label>
+      		</div>
+
+      		<div class="column prepend-1 span-4 last">
+      	  <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea>
+      		</div>
+
+      		<div class="column span-2">
+      		<label for="dummy3">dummy3 select</label>
+      		</div>
+
+      		<div class="column prepend-1 span-5 last">
+      		<select id="dummy3" name="dummy3">
+      			<option value="1">Ottawa</option>
+      			<option value="2">Calgary</option>
+      			<option value="3">Moosejaw</option>
+      		</select>
+      		</div>
+
+      		<div class="column span-2">
+      		<label for="dummy4">dummy4 select</label>
+      		</div>
+
+      		<div class="column span-6 last">
+      		<select id="dummy4" name="dummy4">
+      			<option>Favorite pet</option>
+      				<optgroup label="mammals">
+      					<option>dog</option>
+      					<option>cat</option>
+      					<option>rabbit</option>
+      					<option>horse</option>
+      				</optgroup>
+      				<optgroup label="reptiles">
+      					<option>iguana</option>
+      					<option>snake</option>
+      				</optgroup>
+      		</select>
+      		</div>
+
+      		<div class="column prepend-4 span-2">
+      			<input type="submit" value="Submit"/>
+      		</div>
+
+      		<div class="column span-2 last">
+      			<input type="reset" value="Reset"/>
+      		</div>
+
+      	</fieldset>
+
+      </form>
+
+
+		</div>
+		
+		
+	</div>
+
+</body>
+</html>
