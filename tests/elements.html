@@ -8,8 +8,8 @@
 	<title>Blueprint CSS Framework Test Suite</title>
 
   <!-- Framework CSS -->
-	<link rel="stylesheet" href="../blueprint/screen.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="../blueprint/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="../blueprint/compressed/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="../blueprint/compressed/print.css" type="text/css" media="print" />
   <!--[if lt IE 7]><link rel="stylesheet" href="../blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
 	
 	<!-- Import fancy-type plugin for the sample section. -->
@@ -186,160 +186,65 @@ It should be the same size as &lt;p&gt; text.
 
 <em>&lt;em&gt; emphasis</em><br />
 
-		</div>
-		<hr />
-		
-		<div class="column span-8">
-		  <h5>TABLES <span class="alt">&amp;</span> BOXES</h5>
-      
-      <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
-      	<caption><em>A standard test table with a caption, tr, td elements</em></caption>
-      	<tr>
-      		<th class="span-4">Table Header One</th>
-        	<th class="span-4 last">Table Header Two</th>
-      	</tr>
-      	<tr>
-      		<td>TD One</td>
-        	<td>TD Two</td>
-      	</tr>
-      	<tr>
-      		<td colspan="2">TD colspan 2</td>
-      	</tr>
-      </table>
+<table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
+	<caption><em>A standard test table with a caption, tr, td elements</em></caption>
+	<tr>
+		<th class="span-4">Table Header One</th>
+  	<th class="span-4 last">Table Header Two</th>
+	</tr>
+	<tr>
+		<td>TD One</td>
+  	<td>TD Two</td>
+	</tr>
+	<tr>
+		<td colspan="2">TD colspan 2</td>
+	</tr>
+</table>
 
 
-      <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
-      	<caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
-      	<thead>
-      		<tr>
-      			<th class="span-4">Table Header One</th>
-      	  	<th class="span-4 last">Table Header Two</th>
-      		</tr>
-      	</thead>
-      	<tfoot>
-      		<tr>
-      			<td colspan="2">tfoot footer</td>
-      		</tr>
-      	</tfoot>
-      	<tbody>
-      		<tr>
-      			<td>TD One</td>
-      	  	<td>TD Two</td>
-      		</tr>
-      		<tr>
-      			<td>TD One</td>
-      	  	<td>TD Two</td>
-      		</tr>
-      	</tbody>
-      	<tbody>
-      		<tr>
-      			<td>TD One</td>
-      	  	<td>TD Two</td>
-      		</tr>
-      		<tr>
-      			<td>TD One</td>
-      	  	<td>TD Two</td>
-      		</tr>
-      	</tbody>
-      </table>
+<table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
+	<caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
+	<thead>
+		<tr>
+			<th class="span-4">Table Header One</th>
+	  	<th class="span-4 last">Table Header Two</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="2">tfoot footer</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>TD One</td>
+	  	<td>TD Two</td>
+		</tr>
+		<tr>
+			<td>TD One</td>
+	  	<td>TD Two</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td>TD One</td>
+	  	<td>TD Two</td>
+		</tr>
+		<tr>
+			<td>TD One</td>
+	  	<td>TD Two</td>
+		</tr>
+	</tbody>
+</table>
 
-  		<div class="error">
-  		  This is a &lt;div&gt; with the class <strong>.error</strong>.
-  		</div>
-			<div class="notice">
-  		  This is a &lt;div&gt; with the class <strong>.notice</strong>.
-  		</div>		
-			<div class="success">
-  		  This is a &lt;div&gt; with the class <strong>.success</strong>.
-  		</div>  		
-      
-		</div>
-		
-		<div class="column span-16 last">
-		  <h5>FORMS</h5>
-
-      <fieldset>
-      &lt;fieldset&gt;
-      Input 1 <input type="text" size="3" />
-      Input 2 <input type="text" size="3" />
-      </fieldset>
-
-      <form id="dummy" action="" method="post">
-
-      	<fieldset>
-      		<legend>This is the legend for this sample form</legend>
-
-      		<div class="column span-2">
-      		<label for="dummy0">dummy0 text</label>
-      		</div>
-
-      		<div class="column prepend-1 span-4 last">
-      		<input type="text" name="dummy0" id="dummy0" value="Sample Text" size="12" maxlength="16" tabindex="1" />
-      		</div>
-
-      		<div class="column span-2">
-      		<label for="dummy1">dummy1 text</label>
-      		</div>
-
-      		<div class="column prepend-1 span-4 last">
-      		<input type="text" id="dummy1" name="dummy1" />
-      		</div>
-
-      		<div class="column span-2">
-      	  <label for="dummy2">dummy2 textarea</label>
-      		</div>
-
-      		<div class="column prepend-1 span-4 last">
-      	  <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea>
-      		</div>
-
-      		<div class="column span-2">
-      		<label for="dummy3">dummy3 select</label>
-      		</div>
-
-      		<div class="column prepend-1 span-5 last">
-      		<select id="dummy3" name="dummy3">
-      			<option value="1">Ottawa</option>
-      			<option value="2">Calgary</option>
-      			<option value="3">Moosejaw</option>
-      		</select>
-      		</div>
-
-      		<div class="column span-2">
-      		<label for="dummy4">dummy4 select</label>
-      		</div>
-
-      		<div class="column span-6 last">
-      		<select id="dummy4" name="dummy4">
-      			<option>Favorite pet</option>
-      				<optgroup label="mammals">
-      					<option>dog</option>
-      					<option>cat</option>
-      					<option>rabbit</option>
-      					<option>horse</option>
-      				</optgroup>
-      				<optgroup label="reptiles">
-      					<option>iguana</option>
-      					<option>snake</option>
-      				</optgroup>
-      		</select>
-      		</div>
-
-      		<div class="column prepend-4 span-2">
-      			<input type="submit" value="Submit"/>
-      		</div>
-
-      		<div class="column span-2 last">
-      			<input type="reset" value="Reset"/>
-      		</div>
-
-      	</fieldset>
-
-      </form>
+</div>
+<hr />
 
 
-		</div>
-		
+<p><a href="http://validator.w3.org/check?uri=referer">
+  <img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+</a></p>
+
 		
 	</div>
 
