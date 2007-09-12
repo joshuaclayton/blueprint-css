@@ -109,7 +109,10 @@ table .last { padding-right:0; }
 .quiet  { color: #666; }
 .hide   { display: none; }
 
-/* Success, error & notice boxes */
+
+/* Success, error & notice boxes.
+   Will be moved to forms.css when that file arrives. */
+   
 .error,
 .notice, 
 .success  { padding:.8em; margin-bottom:1em; border:2px solid #ddd; }
