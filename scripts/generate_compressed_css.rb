@@ -24,7 +24,7 @@ CSS_LIB_DIR = "#{CSS_DIR}/lib"
 CSS_COMPRESSED_DIR = "#{CSS_DIR}/compressed"
 
 # Which CSS files should we add to the compressed final version?  '.css' extension is not required or desired.
-CSS_SCREEN_INPUT_FILES = %w( reset typography grid )
+CSS_SCREEN_INPUT_FILES = %w( reset typography grid forms )
 CSS_PRINT_INPUT_FILES = %w( print )
 
 # where are our output files?

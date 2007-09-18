@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { clear:both; font-weight:normal; }
+h1,h2,h3,h4,h5,h6 { font-weight:normal; }
 
 h1 { font-size: 3em; line-height:1; margin-bottom:0.5em; }
 h2 { font-size: 2em; margin-bottom:0.75em; }
@@ -84,9 +84,6 @@ pre,code    { margin:1.5em; white-space:pre; }
 pre,code,tt { font:1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height:1.5; } 
 tt          { display:block; margin:1.5em 0; line-height:1.5; }
 
-fieldset    { padding:1.4em; margin:1.5em 0; border:1px solid #ddd; }
-legend      { font-weight: bold; }
-
 
 /* Tables (needs improvement)
 -------------------------------------------------------------- */
@@ -108,14 +105,3 @@ table .last { padding-right:0; }
 .large  { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
 .quiet  { color: #666; }
 .hide   { display: none; }
-
-
-/* Success, error & notice boxes.
-   Will be moved to forms.css when that file arrives. */
-   
-.error,
-.notice, 
-.success  { padding:.8em; margin-bottom:1em; border:2px solid #ddd; }
-.error    { background:#FBE3E4; color:#D12F19; border-color: #FBC2C4; }
-.notice   { background:#FFF6BF; color:#817134; border-color: #FFD324; }
-.success  { background:#E6EFC2; color:#529214; border-color: #C6D880; }

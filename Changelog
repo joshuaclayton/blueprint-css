@@ -48,6 +48,8 @@ Version 0.6 - TBD
   * Added class ".colborder" to grid.css. [OFB]
   * Added .error, .notice and .success classes to typography.css. [OFB]
   * Added tests for more elements which gets reset in reset.css [OFB, GR]
+  * Added forms.css, awaiting implementation. Moved form styling from typography.css [OFB]
+  * Updated compressor script to include forms.css [OFB]
 	
 
 Version 0.5 - 28/8/2007

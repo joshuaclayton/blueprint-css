@@ -172,6 +172,10 @@ hr {
   margin: 0 0 1.4em;
   border: none; 
 }
+hr.space {
+  background:#fff;
+  color:#fff;
+}
 
 /* Clearing floats without extra markup
    Based on How To Clear Floats Without Structural Markup by PiE

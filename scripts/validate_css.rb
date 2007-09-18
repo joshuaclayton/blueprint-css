@@ -26,7 +26,7 @@ CSS_COMPRESSED_DIR = "#{CSS_DIR}/compressed"
 
 # Which CSS files should we test?  '.css' extension is not required or desired.
 CSS_MAIN_FILES = %w( screen print )
-CSS_CORE_FILES = %w( reset typography grid ie )
+CSS_CORE_FILES = %w( reset typography grid forms ie )
 CSS_COMPRESSED_FILES = %w( screen print )
 
 # END USER EDITABLE CONFIG
