@@ -50,6 +50,8 @@ Version 0.6 - TBD
   * Added tests for more elements which gets reset in reset.css [OFB, GR]
   * Added forms.css, awaiting implementation. Moved form styling from typography.css [OFB]
   * Updated compressor script to include forms.css [OFB]
+  * Improved forms.html tests for upcoming forms.css implementation. This will change based on the 
+    markup that forms.css will use. [OFB]
 	
 
 Version 0.5 - 28/8/2007

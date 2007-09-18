@@ -22,3 +22,10 @@
 /* Fieldsets */
 fieldset    { padding:1.4em; margin:1.5em 0; border:1px solid #ddd; }
 legend      { font-weight: bold; }
+
+/* Form elements */
+input[type="text"],
+input.text          { width:250px; }
+textarea            { width:350px; height:250px; }
+
+label               { text-transform:uppercase; font-weight:bold; font-size:0.9em; }

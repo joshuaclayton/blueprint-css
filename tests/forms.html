@@ -3,17 +3,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 	<title>Blueprint CSS Framework Test Suite</title>
 
   <!-- Framework CSS -->
-	<link rel="stylesheet" href="../blueprint/compressed/screen.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="../blueprint/compressed/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="../blueprint/compressed/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="../blueprint/compressed/print.css" type="text/css" media="print">
   <!--[if lt IE 7]><link rel="stylesheet" href="../blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
 	
 	<!-- Import fancy-type plugin for the sample section. -->
-	<link rel="stylesheet" href="../blueprint/plugins/fancy-type/fancy-type.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="../blueprint/plugins/fancy-type/fancy-type.css" type="text/css" media="screen, projection">
 	
 	<!-- Show the grid and baseline -->
 	<style type="text/css">
@@ -26,103 +26,72 @@
 
 	<div class="container">
 		<h1>Forms</h1>
-		<hr />
+		<hr>
 		
 		<div class="error">
 		  The CSS file (forms.css) that this file tests is not yet implemented in Blueprint, so this page 
 		  looks quite bad at the moment. :)
 		</div>
-
-    <fieldset>
-    &lt;fieldset&gt;
-    Input 1 <input type="text" size="3" />
-    Input 2 <input type="text" size="3" />
-    </fieldset>
-
-    <form id="dummy" action="" method="post">
-
-    	<fieldset>
-    		<legend>This is the legend for this sample form</legend>
-
-    		<div class="column span-2">
-    		<label for="dummy0">dummy0 text</label>
-    		</div>
-
-    		<div class="column prepend-1 span-4 last">
-    		<input type="text" name="dummy0" id="dummy0" value="Sample Text" size="12" maxlength="16" tabindex="1" />
-    		</div>
-
-    		<div class="column span-2">
-    		<label for="dummy1">dummy1 text</label>
-    		</div>
-
-    		<div class="column prepend-1 span-4 last">
-    		<input type="text" id="dummy1" name="dummy1" />
-    		</div>
-
-    		<div class="column span-2">
-    	  <label for="dummy2">dummy2 textarea</label>
-    		</div>
-
-    		<div class="column prepend-1 span-4 last">
-    	  <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea>
-    		</div>
-
-    		<div class="column span-2">
-    		<label for="dummy3">dummy3 select</label>
-    		</div>
-
-    		<div class="column prepend-1 span-5 last">
-    		<select id="dummy3" name="dummy3">
-    			<option value="1">Ottawa</option>
-    			<option value="2">Calgary</option>
-    			<option value="3">Moosejaw</option>
-    		</select>
-    		</div>
-
-    		<div class="column span-2">
-    		<label for="dummy4">dummy4 select</label>
-    		</div>
-
-    		<div class="column span-6 last">
-    		<select id="dummy4" name="dummy4">
-    			<option>Favorite pet</option>
-    				<optgroup label="mammals">
-    					<option>dog</option>
-    					<option>cat</option>
-    					<option>rabbit</option>
-    					<option>horse</option>
-    				</optgroup>
-    				<optgroup label="reptiles">
-    					<option>iguana</option>
-    					<option>snake</option>
-    				</optgroup>
-    		</select>
-    		</div>
-
-    		<div class="column prepend-4 span-2">
-    			<input type="submit" value="Submit"/>
-    		</div>
-
-    		<div class="column span-2 last">
-    			<input type="reset" value="Reset"/>
-    		</div>
-
-    	</fieldset>
-
-    </form>
     
-    <div class="error">
-      This is a &lt;div&gt; with the class <strong>.error</strong>.
-    </div>
-    <div class="notice">
-      This is a &lt;div&gt; with the class <strong>.notice</strong>.
-    </div>		
-    <div class="success">
-      This is a &lt;div&gt; with the class <strong>.success</strong>.
-    </div>    
+    <div class="column span-12">
+    
+      <form id="dummy" action="" method="post">
 
-  </div>
-  
+      	<fieldset>
+      		<legend>This is the legend for this sample form</legend>
+
+      		<p><label for="dummy0">dummy0 text</label><br>
+      		  <input type="text" class="text" name="dummy0" id="dummy0" value="Sample Text" size="12" maxlength="16" tabindex="1"></p>
+        
+          <p><label for="dummy1">dummy1 text</label><br>
+      		  <input type="text" class="text" id="dummy1" name="dummy1"></p>
+
+      	  <p><label for="dummy2">dummy2 textarea</label><br>
+      	    <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea></p>
+
+      		<p><label for="dummy3">dummy3 select</label><br>
+      		  <select id="dummy3" name="dummy3">
+      			  <option value="1">Ottawa</option>
+      			  <option value="2">Calgary</option>
+      			  <option value="3">Moosejaw</option>
+      		  </select></p>
+
+      		<p><label for="dummy4">dummy4 select</label><br>
+      		  <select id="dummy4" name="dummy4">
+      			  <option>Favorite pet</option>
+      			  <optgroup label="mammals">
+      			    <option>dog</option>
+      			    <option>cat</option>
+      			    <option>rabbit</option>
+      			    <option>horse</option>
+      			  </optgroup>
+      			  <optgroup label="reptiles">
+      			    <option>iguana</option>
+      			    <option>snake</option>
+      			  </optgroup>
+      		  </select></p>
+
+      		<p><input type="submit" value="Submit"></p>
+      		<p><input type="reset" value="Reset"></p>
+
+      	</fieldset>
+      </form>
+    
+    </div>
+    <div class="column span-12 last">
+    
+      <div class="error">
+        This is a &lt;div&gt; with the class <strong>.error</strong>.
+      </div>
+      <div class="notice">
+        This is a &lt;div&gt; with the class <strong>.notice</strong>.
+      </div>		
+      <div class="success">
+        This is a &lt;div&gt; with the class <strong>.success</strong>.
+      </div>    
+    
+    </div>
+    
+  </div> <!-- end .container -->
 </body>
 </html>
