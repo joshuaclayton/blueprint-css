@@ -6,17 +6,6 @@
   
 -------------------------------------------------------------- */
 
-/* Success, error & notice boxes for messages and errors. */
-.error,
-.notice, 
-.success    { padding:.8em; margin-bottom:1em; border:2px solid #ddd; }
-.error      { background:#FBE3E4; color:#D12F19; border-color: #FBC2C4; }
-.notice     { background:#FFF6BF; color:#817134; border-color: #FFD324; }
-.success    { background:#E6EFC2; color:#529214; border-color: #C6D880; }
-
-.error a    { color:#D12F19; }
-.notice a   { color:#817134; }
-.success a  { color:#529214; }
 
 
 /* Fieldsets */
@@ -27,5 +16,16 @@ legend      { font-weight: bold; }
 input[type="text"],
 input.text          { width:250px; }
 textarea            { width:350px; height:250px; }
+label               { font-weight:bold; }
 
-label               { text-transform:uppercase; font-weight:bold; font-size:0.9em; }
+
+/* Success, error & notice boxes for messages and errors. */
+.error,
+.notice, 
+.success    { padding:.8em; margin-bottom:1em; border:2px solid #ddd; }
+.error      { background:#FBE3E4; color:#D12F19; border-color: #FBC2C4; }
+.notice     { background:#FFF6BF; color:#817134; border-color: #FFD324; }
+.success    { background:#E6EFC2; color:#529214; border-color: #C6D880; }
+.error a    { color:#D12F19; }
+.notice a   { color:#817134; }
+.success a  { color:#529214; }

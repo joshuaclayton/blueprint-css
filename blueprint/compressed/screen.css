@@ -575,6 +575,21 @@ visibility:hidden;
 height:1%;
 }
 
+fieldset {
+border:1px solid #ddd;
+margin:1.5em 0;
+padding:1.4em;
+}
+
+input[type=text],input.text {
+width:250px;
+}
+
+textarea {
+width:350px;
+height:250px;
+}
+
 .error,.notice,.success {
 margin-bottom:1em;
 border:2px solid #ddd;
@@ -611,27 +626,6 @@ color:#817134;
 color:#529214;
 }
 
-fieldset {
-border:1px solid #ddd;
-margin:1.5em 0;
-padding:1.4em;
-}
-
-input[type=text],input.text {
-width:250px;
-}
-
-textarea {
-width:350px;
-height:250px;
-}
-
-label {
-text-transform:uppercase;
-font-weight:700;
-font-size:.9em;
-}
-
 p,img {
 margin:0 0 1.5em;
 }
@@ -640,7 +634,7 @@ ul ol,ol ul,ul ul,ol ol,dd {
 margin-left:1.5em;
 }
 
-dl dt,strong,dfn,legend {
+dl dt,strong,dfn,legend,label {
 font-weight:700;
 }
 
