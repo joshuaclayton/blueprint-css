@@ -52,7 +52,7 @@ Version 0.6 - TBD
   * Updated compressor script to include forms.css [OFB]
   * Improved forms.html tests for upcoming forms.css implementation. This will change based on the 
     markup that forms.css will use. [OFB]
-	
+	* Fixed clearing image in button element bug in buttons.css [OFB]
 
 Version 0.5 - 28/8/2007
 --

@@ -47,6 +47,7 @@ button img, a.button img{
   border:none;
   width:16px;
   height:16px;
+  float:none;
 }
 
 
