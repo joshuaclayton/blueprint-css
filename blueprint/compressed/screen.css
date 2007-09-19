@@ -14,7 +14,7 @@ line-height:1.5;
 background:#fff;
 font-size:75%;
 color:#222;
-font-family:"Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
+font-family:"Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
 margin:1.5em 0;
 }
 
@@ -43,7 +43,7 @@ border:none;
 
 h1,h2,h3,h4,h5,h6 {
 color:#111;
-font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight:400;
 }
 
@@ -62,13 +62,12 @@ h3 {
 font-size:1.5em;
 line-height:1;
 margin-bottom:1em;
-font-weight:700;
 }
 
 h4 {
-font-size:1.5em;
-line-height:1;
-margin-bottom:1em;
+font-size:1.2em;
+line-height:1.25;
+margin-bottom:1.25em;
 }
 
 h5 {
@@ -97,8 +96,8 @@ margin-top:0;
 }
 
 ul,ol {
+margin-bottom:1.5em;
 list-style-position:inside;
-margin:1.5em 0;
 }
 
 ul {
@@ -139,7 +138,7 @@ margin:1.5em;
 
 pre,code {
 white-space:pre;
-margin:1.5em;
+margin:1.5em 0;
 }
 
 pre,code,tt {
@@ -581,7 +580,7 @@ margin:1.5em 0;
 padding:1.4em;
 }
 
-input[type=text],input.text {
+input.text {
 width:250px;
 }
 
