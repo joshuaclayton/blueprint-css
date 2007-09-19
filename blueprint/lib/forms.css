@@ -6,8 +6,6 @@
   
 -------------------------------------------------------------- */
 
-
-
 /* Fieldsets */
 fieldset    { padding:1.4em; margin:1.5em 0; border:1px solid #ddd; }
 legend      { font-weight: bold; }
@@ -17,7 +15,6 @@ input[type="text"],
 input.text          { width:250px; }
 textarea            { width:350px; height:250px; }
 label               { font-weight:bold; }
-
 
 /* Success, error & notice boxes for messages and errors. */
 .error,
