@@ -20,6 +20,6 @@ body        { text-align: center; }
 .pull-1, .pull-2, .pull-3, .pull-4,
 .push-1, .push-2, .push-3, .push-4, 
 ul, ol {
-  overflow-x: visible; /* Overrides previous IE6 fix (needs improvement). */
+  position:relative; /* Keeps IE6 from cutting pulled/pushed images */
 }
 
