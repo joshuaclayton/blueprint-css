@@ -55,6 +55,8 @@ Version 0.6 - TBD
   * Fixed clearing image in button element bug in buttons.css [OFB]
   * Fixed bug where IE6 clipps pushed/pulled elements. [OFB]
   * Fixed typo in grid.css formula. [OFB]
+  * Fixed varying formatting across core files. [OFB]
+  
 
 Version 0.5 - 28/8/2007
 --

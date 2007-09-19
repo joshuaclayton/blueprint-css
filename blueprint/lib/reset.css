@@ -34,5 +34,5 @@ caption, th, td { text-align: left; font-weight:400; }
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 
-a img { border:none; }
+a img { border: none; }
 

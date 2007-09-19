@@ -7,22 +7,21 @@
 -------------------------------------------------------------- */
 
 /* Fieldsets */
-fieldset    { padding:1.4em; margin:1.5em 0; border:1px solid #ddd; }
+fieldset    { padding:1.4em; margin: 1.5em 0; border: 1px solid #ddd; }
 legend      { font-weight: bold; }
 
 /* Form elements */
-input[type="text"],
-input.text          { width:250px; }
-textarea            { width:350px; height:250px; }
-label               { font-weight:bold; }
+input.text          { width: 250px; } /* Use .text on inputs with type="text" for proper styling. */
+textarea            { width: 350px; height: 250px; }
+label               { font-weight: bold; }
 
 /* Success, error & notice boxes for messages and errors. */
 .error,
 .notice, 
-.success    { padding:.8em; margin-bottom:1em; border:2px solid #ddd; }
-.error      { background:#FBE3E4; color:#D12F19; border-color: #FBC2C4; }
-.notice     { background:#FFF6BF; color:#817134; border-color: #FFD324; }
-.success    { background:#E6EFC2; color:#529214; border-color: #C6D880; }
-.error a    { color:#D12F19; }
-.notice a   { color:#817134; }
-.success a  { color:#529214; }
+.success    { padding: .8em; margin-bottom: 1em; border: 2px solid #ddd; }
+.error      { background: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.notice     { background: #FFF6BF; color: #817134; border-color: #FFD324; }
+.success    { background: #E6EFC2; color: #529214; border-color: #C6D880; }
+.error a    { color: #D12F19; }
+.notice a   { color: #817134; }
+.success a  { color: #529214; }
