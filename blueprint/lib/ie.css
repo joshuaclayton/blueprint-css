@@ -23,3 +23,5 @@ ul, ol {
   position: relative; /* Keeps IE6 from cutting pulled/pushed images */
 }
 
+/* Fixes incorrect styling of legend in IE6 fieldsets. */
+legend { margin-bottom:1.4em; }

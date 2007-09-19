@@ -56,6 +56,10 @@ Version 0.6 - TBD
   * Fixed bug where IE6 clipps pushed/pulled elements. [OFB]
   * Fixed typo in grid.css formula. [OFB]
   * Fixed varying formatting across core files. [OFB]
+  * Fixed legent element in IE6. [OFB]
+  * Fixed indentation in test files. [OFB]
+  * Removed tests for plugins not bundled with the next release. [OFB]
+  * Improved styling of <h3>. [OFB]
   
 
 Version 0.5 - 28/8/2007

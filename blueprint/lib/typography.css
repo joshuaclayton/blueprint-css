@@ -44,8 +44,8 @@ h1,h2,h3,h4,h5,h6 { font-weight: normal; }
 
 h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
 h2 { font-size: 2em; margin-bottom: 0.75em; }
-h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; font-weight: bold; }
-h4 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
 h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
 h6 { font-size: 1em; font-weight: bold; }
 
@@ -59,7 +59,7 @@ p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
 p img.top   { margin-top: 0; } /* Use this if the image is at the top of the <p>. */
 img         { margin: 0 0 1.5em; }
 
-ul, ol        { margin: 1.5em 0; list-style-position: inside; }
+ul, ol        { margin-bottom:1.5em; list-style-position: inside; }
 ul            { list-style-type: circle; }
 ol            { list-style-type: decimal; }
 ul ol, ol ul, 
@@ -80,7 +80,7 @@ blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
 em,dfn      { font-style: italic; }
 dfn         { font-weight: 700; }
-pre,code    { margin: 1.5em; white-space:pre; }
+pre,code    { margin: 1.5em 0; white-space:pre; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
 tt          { display: block; margin:1.5em 0; line-height:1.5; }
 

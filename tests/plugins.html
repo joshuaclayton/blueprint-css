@@ -7,10 +7,10 @@
 
 	<title>Blueprint CSS Framework Test Suite</title>
 
-  <!-- Framework CSS -->
+    <!-- Framework CSS -->
 	<link rel="stylesheet" href="../blueprint/compressed/screen.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="../blueprint/compressed/print.css" type="text/css" media="print" />
-  <!--[if lt IE 7]><link rel="stylesheet" href="../blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <!--[if lt IE 7]><link rel="stylesheet" href="../blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
 	
 	<!-- Import plugins for the sake of testing -->
 	<link rel="stylesheet" href="../blueprint/plugins/fancy-type/fancy-type.css" type="text/css" media="screen, projection" />
@@ -21,57 +21,51 @@
 	<style type="text/css">
 	/*<![CDATA[*/
 			.container { background: url('../blueprint/lib/grid.png'); }
-			
-			/* IE5.5+ PNG transparency plugin testing */
-			img { behavior: url(../blueprint/plugins/iepngfix/iepngfix.htc) }
 	/*]]>*/
 	</style>
 </head>
 
 <body>
-
-	<div class="container">
-    <h1>Tests <span class="alt">for</span> Blueprint Plugins</h1>
+<div class="container">
+	
+    <h1>Testing Bundled Plugins</h1>
     <hr />
     
-    <div class="column span-9">
-      <h3>Buttons plugin</h3>
-      <p>
-      	<button type="submit" class="button positive">
-      	  <img src="../blueprint/plugins/buttons/icons/tick.png" alt=""/> Save
-      	</button>
-      	<a class="button" href="/password/reset/">
-      	  <img src="../blueprint/plugins/buttons/icons/key.png" alt=""/> Change Password
-      	</a>
-      	<a href="#" class="button negative">
-      	  <img src="../blueprint/plugins/buttons/icons/cross.png" alt=""/> Cancel
-      	</a>
-      </p>
-      <p>
-      	<button type="submit" class="button positive">Positive</button>
-      	<a class="button" href="/password/reset/">Neutral</a>
-      	<a href="#" class="button negative">Negative</a>
-      </p>
-    </div>
-    <div class="column span-8">
-      <h3>IE5.5+ PNG transparency plugin</h3>
-      <p style="position:relative;"><strong>This text should display behind the transparent images layered on top.</strong> Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      <img src="transparent.png" style="position:absolute; top:-40px; left:0;" width="300" height="150" alt="Transparent PNG" /></p>
-    </div>
-    <div class="column span-7 last">
-      <h3>Link Icons Plugin</h3>
-      <p>Not supported in IE versions > 7.</p>
-      <ul>
-        <li><a href="http://bjorkoy.com">External link</a></li>
-        <li><a href="mailto:fake@mail.domain">Mailto link</a></li>
-        <li><a href="word.doc">Word link</a></li>
-        <li><a href="excel.xls">Excel link</a></li>
-        <li><a href="document.pdf">PDF link</a></li>
-        <li><a href="feed.rss">RSS link</a></li>
-        <li><a href="aim://imlink.com">IM link</a></li>
-      </ul>
-    </div>      
-    <hr />
+    <h3>Buttons plugin</h3>
+    <p>
+      <button type="submit" class="button positive">
+      	<img src="../blueprint/plugins/buttons/icons/tick.png" alt=""/> Save
+      </button>
+  	  <a class="button" href="/password/reset/">
+  	    <img src="../blueprint/plugins/buttons/icons/key.png" alt=""/> Change Password
+  	  </a>
+  	  <a href="#" class="button negative">
+  	    <img src="../blueprint/plugins/buttons/icons/cross.png" alt=""/> Cancel
+  	  </a>
+    </p>
+    <p>
+  	  <button type="submit" class="button positive">Positive</button>
+  	  <a class="button" href="/password/reset/">Neutral</a>
+  	  <a href="#" class="button negative">Negative</a>
+    </p>
+    <p>
+      <button type="submit" class="button positive">
+      	<img src="../blueprint/plugins/buttons/icons/tick.png" alt=""/> Save
+      </button>
+  	  <a class="button" href="/password/reset/">
+  	    <img src="../blueprint/plugins/buttons/icons/key.png" alt=""/> Change Password
+  	  </a>
+  	  <a href="#" class="button negative">
+  	    <img src="../blueprint/plugins/buttons/icons/cross.png" alt=""/> Cancel
+  	  </a>
+    </p>
+    <hr>
+    
+    <ul>
+    	<li>The Fancy-Type plugin is tested in sample.html.</li>
+    	<li>The CSS-Classes plugin is pretty self-explanatory.</li>
+    </ul>
+    <hr>
       
 	<div class="column span-24">
     <a href="http://validator.w3.org/check?uri=referer" class="noicon">
@@ -79,8 +73,6 @@
     </a>
 	</div>		
 
-	</div>
-	<!-- /div.container for plugins -->
-
+</div>
 </body>
 </html>
