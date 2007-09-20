@@ -83,7 +83,7 @@ pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospa
 tt          { display: block; margin:1.5em 0; line-height:1.5; }
 
 
-/* Tables (needs improvement)
+/* Tables
 -------------------------------------------------------------- */
 
 table   { margin-bottom: 1.4em; }
@@ -92,7 +92,7 @@ td      { border-bottom: 1px solid #ddd; }
 th,td   { padding: 4px 10px 4px 0; }
 tfoot   { font-style: italic; }
 
-/* Use this if you use a span-x class on th, td. */
+/* Use this if you use span-x classes on th/td. */
 table .last { padding-right: 0; } 
 
 
@@ -103,3 +103,7 @@ table .last { padding-right: 0; }
 .large  { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
 .quiet  { color: #666; }
 .hide   { display: none; }
+
+.top    { margin-top:0; padding-top:0; }
+.bottom { margin-bottom:0; padding-bottom:0; }
+
