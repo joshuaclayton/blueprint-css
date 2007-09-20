@@ -15,7 +15,7 @@
   
 -------------------------------------------------------------- */
 
-/* This is where you set your desired font size. The line-height 
+/* This is where you set your desired font size. The line-heights 
    and vertical margins are automatically calculated from this. 
    The percentage is of 16px (0.75 * 16px = 12px). */
    
@@ -59,14 +59,12 @@ p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
 p img.top   { margin-top: 0; } /* Use this if the image is at the top of the <p>. */
 img         { margin: 0 0 1.5em; }
 
-ul, ol        { margin-bottom:1.5em; list-style-position: inside; }
-ul            { list-style-type: circle; }
-ol            { list-style-type: decimal; }
-ul ol, ol ul, 
-ul ul, ol ol  { margin-left: 1.5em;}
-dl            { margin: 1.5em 0; }
-dl dt         { font-weight: bold; }
-dd            { margin-left: 1.5em;}
+ul, ol      { margin:0 0 1.5em 1.5em; }
+ul          { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
 
 abbr, 
 acronym     { border-bottom: 1px dotted #666; }

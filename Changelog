@@ -60,6 +60,7 @@ Version 0.6 - TBD
   * Fixed indentation in test files. [OFB]
   * Removed tests for plugins not bundled with the next release. [OFB]
   * Improved styling of <h3>. [OFB]
+  * Fixed indentation bug in ul/ol, removed some redundant styling. [OFB]
   
 
 Version 0.5 - 28/8/2007

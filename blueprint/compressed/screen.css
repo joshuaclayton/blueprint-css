@@ -96,8 +96,7 @@ margin-top:0;
 }
 
 ul,ol {
-margin-bottom:1.5em;
-list-style-position:inside;
+margin:0 0 1.5em 1.5em;
 }
 
 ul {
@@ -108,8 +107,8 @@ ol {
 list-style-type:decimal;
 }
 
-dl {
-margin:1.5em 0;
+dd {
+margin-left:1.5em;
 }
 
 abbr,acronym {
@@ -625,12 +624,8 @@ color:#817134;
 color:#529214;
 }
 
-p,img {
+p,img,dl {
 margin:0 0 1.5em;
-}
-
-ul ol,ol ul,ul ul,ol ol,dd {
-margin-left:1.5em;
 }
 
 dl dt,strong,dfn,legend,label {
