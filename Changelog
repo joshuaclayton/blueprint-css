@@ -62,6 +62,7 @@ Version 0.6 - TBD
   * Improved styling of <h3>. [OFB]
   * Fixed indentation bug in ul/ol, removed some redundant styling. [OFB]
   * Fixed validation errors in tests. [OFB]
+  * Changed IE stylesheet condition comment to include all versions of IE. [OFB]
   
 
 Version 0.5 - 28/8/2007
