@@ -77,10 +77,10 @@ a           { color: #009; text-decoration: underline; }
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
 em,dfn      { font-style: italic; }
-dfn         { font-weight: 700; }
-pre,code    { margin: 1.5em 0; white-space:pre; }
+dfn         { font-weight: bold; }
+pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
-tt          { display: block; margin:1.5em 0; line-height:1.5; }
+tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
 
 
 /* Tables
