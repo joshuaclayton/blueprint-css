@@ -36,9 +36,12 @@ Here's how you set up Blueprint on your site.
    <!--[if IE]><link rel="stylesheet" href="css/blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
 3) See screen.css for further configuration options, including 
-   advanced functionality through plugins, and how to use 
-   the compressed version for a live site.
-
+   advanced functionality through plugins.
+   
+4) To use the compressed version on a live site,edit the href 
+   paths above to point to the blueprint/compressed directory, 
+   where you'll find compressed versions of screen.css and print.css.    
+   
 
 How to use Blueprint
 ----------------------------------------------------------------
@@ -87,7 +90,7 @@ Core files:
 * blueprint/compressed/screen.css & 
   blueprint/compressed/print.css
   A compressed version of the core and print files. Use this on 
-  every live site. See screen.css for instructions.
+  every live site. Use the link tags in the HTML to include these.
 
 * blueprint/lib/ie.css
   Contains every hack for Internet Explorer,so that our core 
@@ -103,11 +106,13 @@ Other:
 
 * scripts/
   BP comes with two scripts: 
-  * One for re-compressing the files in the "compressed" folder.
+  * One for re-compressing the files in the "compressed" folder
+    from the core files, if you've made changes to the core.
   * One for validating the CSS in the core files.
 
 * tests/
   Contains html files which tests most aspects of Blueprint.
+  Open tests/index.html for further instructions.
 
 
 Credits

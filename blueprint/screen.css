@@ -17,8 +17,9 @@
 
 
 /* Compressed version:
-   Replace the lines above with this when your site is live:
-   @import 'compressed/screen.css'; */
+   Edit the path in the HMTL files from blueprint/screen.css to
+   blueprint/compressed/screen.css for both screen.css and 
+   print.css to use the compressed version. */
 
 /* Plugins:
    Additional functionality can be found in the plugins directory.
