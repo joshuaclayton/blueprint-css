@@ -173,8 +173,8 @@ hr {
   border: none; 
 }
 hr.space {
-  background: #fff;
-  color: #fff;
+  background: none;
+  color: none;
 }
 
 /* Clearing floats without extra markup
