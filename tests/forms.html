@@ -18,7 +18,6 @@
 	<!-- Show the grid and baseline -->
 	<style type="text/css">
 	/*<![CDATA[*/
-			.container { background: url('../blueprint/lib/grid.png'); }
 	/*]]>*/
 	</style>
 </head>
@@ -27,11 +26,6 @@
 	<div class="container">
 		<h1>Forms</h1>
 		<hr>
-		
-		<div class="error">
-		  The CSS file (forms.css) that this file tests is not yet implemented in Blueprint, so this page 
-		  looks quite bad at the moment. :)
-		</div>
     
     <div class="column span-12">
     
@@ -40,23 +34,23 @@
       	<fieldset>
       		<legend>This is the legend for this sample form</legend>
 
-      		<p><label for="dummy0">dummy0 text</label><br>
+      		<p><label for="dummy0">Text input</label><br>
       		  <input type="text" class="text" name="dummy0" id="dummy0" value="Sample Text" size="12" maxlength="16" tabindex="1"></p>
         
-          <p><label for="dummy1">dummy1 text</label><br>
+          <p><label for="dummy1">Another field</label><br>
       		  <input type="text" class="text" id="dummy1" name="dummy1"></p>
 
-      	  <p><label for="dummy2">dummy2 textarea</label><br>
+      	  <p><label for="dummy2">Textarea</label><br>
       	    <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea></p>
 
-      		<p><label for="dummy3">dummy3 select</label><br>
+      		<p><label for="dummy3">Select field</label><br>
       		  <select id="dummy3" name="dummy3">
       			  <option value="1">Ottawa</option>
       			  <option value="2">Calgary</option>
       			  <option value="3">Moosejaw</option>
       		  </select></p>
 
-      		<p><label for="dummy4">dummy4 select</label><br>
+      		<p><label for="dummy4">Select with groups</label><br>
       		  <select id="dummy4" name="dummy4">
       			  <option>Favorite pet</option>
       			  <optgroup label="mammals">
@@ -71,8 +65,8 @@
       			  </optgroup>
       		  </select></p>
 
-      		<p><input type="submit" value="Submit"></p>
-      		<p><input type="reset" value="Reset"></p>
+      		<p><input type="submit" value="Submit">
+      		  <input type="reset" value="Reset"></p>
 
       	</fieldset>
       </form>

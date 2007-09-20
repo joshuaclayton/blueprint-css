@@ -7,13 +7,20 @@
 -------------------------------------------------------------- */
 
 /* Fieldsets */
-fieldset    { padding:1.4em; margin: 1.5em 0; border: 1px solid #ddd; }
-legend      { font-weight: bold; }
+fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend      { font-weight: bold; font-size:1.2em; }
 
 /* Form elements */
+label               { font-weight: bold; }
+
 input.text          { width: 250px; } /* Use .text on inputs with type="text" for proper styling. */
 textarea            { width: 350px; height: 250px; }
-label               { font-weight: bold; }
+input.text,
+textarea            { border:1px solid #bbb; background:#eee; padding:5px; }
+input.text:focus,
+textarea:focus      { border:1px solid #999; background:#fff; }
+input, textarea     { margin:0.5em 0; }
+
 
 /* Success, error & notice boxes for messages and errors. */
 .error,
