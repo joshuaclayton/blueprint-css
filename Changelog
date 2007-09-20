@@ -61,6 +61,7 @@ Version 0.6 - TBD
   * Removed tests for plugins not bundled with the next release. [OFB]
   * Improved styling of <h3>. [OFB]
   * Fixed indentation bug in ul/ol, removed some redundant styling. [OFB]
+  * Fixed validation errors in tests. [OFB]
   
 
 Version 0.5 - 28/8/2007
