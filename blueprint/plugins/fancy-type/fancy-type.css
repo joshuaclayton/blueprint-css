@@ -7,8 +7,8 @@
 
 -------------------------------------------------------------- */
 
-/* Indentation instead of line shifts for sibling paragraphs.
-   p + p { text-indent:2em; margin-top:-1.5em; } */
+/* Indentation instead of line shifts for sibling paragraphs. */
+   p + p { text-indent:2em; margin-top:-1.5em; }
 
 /* Ornaments on first paragraph.
    Commented out by default. Use with care.
@@ -22,10 +22,8 @@
 .alt { 
   color: #666; 
   font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif; 
-  font-size: 1.2em;
-  line-height: 80%; /* Maintain correct baseline */
   font-style: italic;
-  font-weight:normal;
+  font-weight: normal;
 }
 
 
@@ -72,4 +70,5 @@ p.incr, .incr p {
   font-size:1.2em;
   line-height:1%;
   font-weight:bold;
+  padding:0 2px;
 }

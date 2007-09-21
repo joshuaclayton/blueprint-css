@@ -18,7 +18,7 @@ legend      { font-weight: bold; font-size:1.2em; }
 
 /* Text fields */
 input.text, input.title   { width: 300px; margin:0.5em 0.5em 0.5em 0; }
-input.text, input.title   { border:1px solid #bbb; background:#eee; padding:5px; }
+input.text, input.title   { border:1px solid #bbb; background:#f6f6f6; padding:5px; }
 input.text:focus,
 input.title:focus         { border:1px solid #999; background:#fff; }
 input.title               { font-size:1.5em; }
@@ -29,7 +29,7 @@ textarea            { border:1px solid #bbb; background:#eee; padding:5px; }
 textarea:focus      { border:1px solid #999; background:#fff; }
 
 /* Select fields */
-select              { border:1px solid #ccc; background:#eee; width:200px; }
+select              { border:1px solid #ccc; background:#f6f6f6; width:200px; }
 select:focus        { border:1px solid #999; background:#fff; }
 
 
