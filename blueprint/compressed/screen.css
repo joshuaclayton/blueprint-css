@@ -188,6 +188,16 @@ color:#666;
 display:none;
 }
 
+.top {
+margin-top:0;
+padding-top:0;
+}
+
+.bottom {
+margin-bottom:0;
+padding-bottom:0;
+}
+
 .container {
 width:950px;
 margin:0 auto;
@@ -553,8 +563,8 @@ margin:0 0 1.4em;
 }
 
 hr.space {
-background:#fff;
-color:#fff;
+background:none;
+color:none;
 }
 
 .clear {
@@ -574,9 +584,14 @@ height:1%;
 }
 
 fieldset {
-border:1px solid #ddd;
-margin:1.5em 0;
+border:1px solid #ccc;
+margin:0 0 1.5em;
 padding:1.4em;
+}
+
+legend {
+font-weight:700;
+font-size:1.2em;
 }
 
 input.text {
@@ -586,6 +601,21 @@ width:250px;
 textarea {
 width:350px;
 height:250px;
+}
+
+input.text,textarea {
+border:1px solid #bbb;
+background:#eee;
+padding:5px;
+}
+
+input.text:focus,textarea:focus {
+border:1px solid #999;
+background:#fff;
+}
+
+input,textarea {
+margin:.5em 0;
 }
 
 .error,.notice,.success {
@@ -628,7 +658,7 @@ p,img,dl {
 margin:0 0 1.5em;
 }
 
-dl dt,strong,dfn,legend,label {
+dl dt,strong,dfn,label {
 font-weight:700;
 }
 

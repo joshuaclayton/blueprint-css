@@ -38,7 +38,7 @@ Here's how you set up Blueprint on your site.
 3) See screen.css for further configuration options, including 
    advanced functionality through plugins.
    
-4) To use the compressed version on a live site,edit the href 
+4) To use the compressed version on a live site, edit the href 
    paths above to point to the blueprint/compressed directory, 
    where you'll find compressed versions of screen.css and print.css.    
    
@@ -106,9 +106,9 @@ Other:
 
 * scripts/
   BP comes with two scripts: 
+  * One for validating the CSS in the core files.
   * One for re-compressing the files in the "compressed" folder
     from the core files, if you've made changes to the core.
-  * One for validating the CSS in the core files.
 
 * tests/
   Contains html files which tests most aspects of Blueprint.

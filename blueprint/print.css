@@ -2,19 +2,11 @@
   
    print.css
    * Gives you some sensible styles for printing pages.
-   
-   This file creates CSS styles for printing documents. 
-   Include this in the <head> of every page. See the
-   Readme.txt file in this directory for further instructions.
-   
+   See Readme file in this directory for further instructions.
+      
    Some additions you'll want to make, customized to your markup:
    #header, #footer, #navigation { display:none; }
-   
-   Compressed version:
-   Include 'compressed/print.css' in your html instead of this 
-   file if you want to use a compressed version of this 
-   file (recommended).
-	
+	 
 -------------------------------------------------------------- */
 
 body {
