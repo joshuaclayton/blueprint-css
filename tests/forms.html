@@ -32,38 +32,16 @@
       <form id="dummy" action="" method="post">
 
       	<fieldset>
-      		<legend>This is the legend for this sample form</legend>
+      		<legend>Simple sample form</legend>
 
-      		<p><label for="dummy0">Text input</label><br>
-      		  <input type="text" class="text" name="dummy0" id="dummy0" value="Sample Text" size="12" maxlength="16" tabindex="1"></p>
+      		<p><label for="dummy0">Text input (title)</label><br>
+      		  <input type="text" class="title" name="dummy0" id="dummy0" value="Field with class .title"></p>
         
           <p><label for="dummy1">Another field</label><br>
-      		  <input type="text" class="text" id="dummy1" name="dummy1"></p>
+      		  <input type="text" class="text" id="dummy1" name="dummy1" value="Field with class .text"></p>
 
       	  <p><label for="dummy2">Textarea</label><br>
       	    <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea></p>
-
-      		<p><label for="dummy3">Select field</label><br>
-      		  <select id="dummy3" name="dummy3">
-      			  <option value="1">Ottawa</option>
-      			  <option value="2">Calgary</option>
-      			  <option value="3">Moosejaw</option>
-      		  </select></p>
-
-      		<p><label for="dummy4">Select with groups</label><br>
-      		  <select id="dummy4" name="dummy4">
-      			  <option>Favorite pet</option>
-      			  <optgroup label="mammals">
-      			    <option>dog</option>
-      			    <option>cat</option>
-      			    <option>rabbit</option>
-      			    <option>horse</option>
-      			  </optgroup>
-      			  <optgroup label="reptiles">
-      			    <option>iguana</option>
-      			    <option>snake</option>
-      			  </optgroup>
-      		  </select></p>
 
       		<p><input type="submit" value="Submit">
       		  <input type="reset" value="Reset"></p>
@@ -83,6 +61,43 @@
       <div class="success">
         This is a &lt;div&gt; with the class <strong>.success</strong>.
       </div>    
+      
+      <fieldset>
+        <legend>Select, checkboxes, lists</legend>
+
+    		<p><label for="dummy3">Select field</label><br>
+    		  <select id="dummy3" name="dummy3">
+    			  <option value="1">Ottawa</option>
+    			  <option value="2">Calgary</option>
+    			  <option value="3">Moosejaw</option>
+    		  </select></p>
+
+    		<p><label for="dummy4">Select with groups</label><br>
+    		  <select id="dummy4" name="dummy4">
+    			  <option>Favorite pet</option>
+    			  <optgroup label="mammals">
+    			    <option>dog</option>
+    			    <option>cat</option>
+    			    <option>rabbit</option>
+    			    <option>horse</option>
+    			  </optgroup>
+    			  <optgroup label="reptiles">
+    			    <option>iguana</option>
+    			    <option>snake</option>
+    			  </optgroup>
+    		  </select></p>
+    		  
+    		  <p><label>Radio buttons</label><br>
+    		    <input type="radio"> Radio one<br>
+    		    <input type="radio"> Radio two<br>
+    		    <input type="radio"> Radio three<br></p>
+          
+    		  <p><label>Checkboxes</label><br>
+    		    <input type="checkbox"> Check one<br>
+    		    <input type="checkbox"> Check two<br>
+    		    <input type="checkbox"> Check three<br></p>
+        
+      </fieldset>
     
     </div>
     <hr>

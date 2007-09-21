@@ -3,23 +3,34 @@
    forms.css
    * Sets up some default styling for forms
    * Gives you classes to enhance your forms
-  
+   
+   Usage:
+   * For text fields, use class .title or .text
+   
 -------------------------------------------------------------- */
+
+label { font-weight: bold; }
+
 
 /* Fieldsets */
 fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
 legend      { font-weight: bold; font-size:1.2em; }
 
-/* Form elements */
-label               { font-weight: bold; }
-
-input.text          { width: 250px; } /* Use .text on inputs with type="text" for proper styling. */
-textarea            { width: 350px; height: 250px; }
-input.text,
-textarea            { border:1px solid #bbb; background:#eee; padding:5px; }
+/* Text fields */
+input.text, input.title   { width: 300px; margin:0.5em 0.5em 0.5em 0; }
+input.text, input.title   { border:1px solid #bbb; background:#eee; padding:5px; }
 input.text:focus,
+input.title:focus         { border:1px solid #999; background:#fff; }
+input.title               { font-size:1.5em; }
+
+/* Textareas */
+textarea            { width: 400px; height: 250px; margin:0.5em 0.5em 0.5em 0; }
+textarea            { border:1px solid #bbb; background:#eee; padding:5px; }
 textarea:focus      { border:1px solid #999; background:#fff; }
-input, textarea     { margin:0.5em 0; }
+
+/* Select fields */
+select              { border:1px solid #ccc; background:#eee; width:200px; }
+select:focus        { border:1px solid #999; background:#fff; }
 
 
 /* Success, error & notice boxes for messages and errors. */
