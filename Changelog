@@ -6,7 +6,7 @@ Blueprint CSS Framework Change Log
 
 ----------------------------------------------------------------
 
-Version 0.6 - TBD
+Version 0.6 - 21.9.2007
 --
   * Created a new plugin, "iepngfix", that adds support for PNG transparency in IE5.5+ [OFB]
   * Added an IE stylesheet, updated the test files and the readme accordingly [OFB]
