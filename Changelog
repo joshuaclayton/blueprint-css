@@ -65,6 +65,7 @@ Version 0.6 - TBD
   * Changed IE stylesheet condition comment to include all versions of IE. [OFB]
   * Started on a new approach for the PNG plugin. Will not be included in this release. [OFB]
   * Fixed incorrect rendering of ol in IE6/7. [OFB]
+  * Created a new, spiffier sample page. [OFB]
   
 
 Version 0.5 - 28/8/2007
