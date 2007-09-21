@@ -25,3 +25,6 @@ ul, ol {
 
 /* Fixes incorrect styling of legend in IE6 fieldsets. */
 legend { margin-bottom:1.4em; }
+
+/* Fixes incorrect placement of numbers in ol's in IE6/7 */
+ol { margin-left:2em; }
