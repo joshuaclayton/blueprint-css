@@ -53,10 +53,10 @@ Version 0.6 - TBD
   * Improved forms.html tests for upcoming forms.css implementation. This will change based on the 
     markup that forms.css will use. [OFB]
   * Fixed clearing image in button element bug in buttons.css [OFB]
-  * Fixed bug where IE6 clipps pushed/pulled elements. [OFB]
+  * Fixed bug where IE6 clips pushed/pulled elements. [OFB]
   * Fixed typo in grid.css formula. [OFB]
   * Fixed varying formatting across core files. [OFB]
-  * Fixed legent element in IE6. [OFB]
+  * Fixed legend element in IE6. [OFB]
   * Fixed indentation in test files. [OFB]
   * Removed tests for plugins not bundled with the next release. [OFB]
   * Improved styling of <h3>. [OFB]
