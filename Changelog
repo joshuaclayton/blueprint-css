@@ -1,7 +1,7 @@
 Blueprint CSS Framework Change Log
 
 * URL:    code.google.com/p/blueprintcss
-* List:   groups.google.com/group/blueprintcss
+* Mail:   groups.google.com/group/blueprintcss
 * News:   bjorkoy.com
 
 ----------------------------------------------------------------
@@ -13,8 +13,8 @@ Version 0.x - Date TBD
     * 
   
   Bug fixes:
-    * Fixed wrong sidebar alignment in tests/sample.html. [OFB]
-    * Fixed wrong line-height on sub/sup. [OFB]
+    * Sidebar alignment in tests/sample.html. [OFB]
+    * Line-height on sub/sup. [OFB]
     * 
 
   Misc:
@@ -22,7 +22,7 @@ Version 0.x - Date TBD
     * 
 
 
-Version 0.6 - 21.9.2007
+Version 0.6 - 21/9/2007
 --
   * Created a new plugin, "iepngfix", that adds support for PNG transparency in IE5.5+ [OFB]
   * Added an IE stylesheet, updated the test files and the readme accordingly [OFB]
