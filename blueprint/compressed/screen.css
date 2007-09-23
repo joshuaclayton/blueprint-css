@@ -14,8 +14,6 @@ h5{font-size:1em;font-weight:700;margin-bottom:1.5em;}
 h6{font-size:1em;font-weight:700;}
 p.last{margin-bottom:0;}
 p img{float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
-p img.top{margin-top:0;}
-a:focus,a:hover{color:#000;}
 a{color:#009;text-decoration:underline;}
 ul,ol{margin:0 1.5em 1.5em;}
 ul{list-style-type:circle;}
@@ -40,8 +38,8 @@ table .last{padding-right:0;}
 .large{font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
 .hide{display:none;}
 .highlight{background:#ff0;}
-.added{color:#060;}
-.removed{color:#900;}
+.added{background:#060;color:#fff;}
+.removed{background:#900;color:#fff;}
 .top{margin-top:0;padding-top:0;}
 .bottom{margin-bottom:0;padding-bottom:0;}
 .container{width:950px;margin:0 auto;}
@@ -149,6 +147,7 @@ select{border:1px solid #ccc;background:#f6f6f6;width:200px;}
 .notice a{color:#817134;}
 .success a{color:#529214;}
 p,img,dl{margin:0 0 1.5em;}
+a:focus,a:hover,.loud{color:#000;}
 dl dt,strong,dfn,label{font-weight:700;}
 del,.quiet{color:#666;}
 input.text:focus,input.title:focus,textarea:focus,select:focus{background:#fff;border:1px solid #999;}

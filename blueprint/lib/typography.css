@@ -53,9 +53,7 @@ h6 { font-size: 1em; font-weight: bold; }
 
 p           { margin: 0 0 1.5em; }
 p.last      { margin-bottom: 0; }
-
 p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
-p img.top   { margin-top: 0; } /* Use this if the image is at the top of the <p>. */
 img         { margin: 0 0 1.5em; }
 
 a:focus, 
@@ -100,17 +98,18 @@ caption     { background: #ffc; }
 table .last { padding-right: 0; } 
 
 
-/* Some default classes
+/* Misc classes
 -------------------------------------------------------------- */
 
 .small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
 .large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
-.quiet      { color: #666; }
-
 .hide       { display: none; }
+
+.quiet      { color: #666; }
+.loud       { color: #000; }
 .highlight  { background:#ff0; }
-.added      { color:#060; }
-.removed    { color:#900; }
+.added      { background:#060; color: #fff; }
+.removed    { background:#900; color: #fff; }
 
 .top        { margin-top:0; padding-top:0; }
 .bottom     { margin-bottom:0; padding-bottom:0; }
