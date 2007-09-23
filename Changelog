@@ -13,7 +13,7 @@ Version 0.x - Date TBD
     * 
   
   Bug fixes:
-    * 
+    * Fixed wrong sidebar alignment in tests/sample.html. [OFB]
     * 
 
   Misc:
