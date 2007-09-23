@@ -89,12 +89,13 @@ sup, sub    { line-height: 0; }
 /* Tables
 -------------------------------------------------------------- */
 
-table   { margin-bottom: 1.4em; }
-th      { border-bottom: 2px solid #ccc; font-weight: bold; }
-td      { border-bottom: 1px solid #ddd; }
-th,td   { padding: 4px 10px 4px 0; }
-tfoot   { font-style: italic; }
-caption { background: #ffc; }
+table       { margin-bottom: 1.4em; }
+th          { border-bottom: 2px solid #ccc; font-weight: bold; background: #f6f6f6; }
+td          { border-bottom: 1px solid #ddd; }
+th,td       { padding: 4px 10px 4px 5px; }
+tr.even td  { background: #f0f6f9; }
+tfoot       { font-style: italic; }
+caption     { background: #ffc; }
 
 /* Use this if you use span-x classes on th/td. */
 table .last { padding-right: 0; } 
