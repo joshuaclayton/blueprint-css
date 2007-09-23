@@ -76,8 +76,9 @@ flags = ""
 #flags += '--template=default '
 #flags += '--template=filename '
 #flags += '--template=low '
-#flags += '--template=high '
+flags += '--template=high '
 #flags += '--template=highest '
+
 
 # END USER EDITABLE CONFIG
 # ===========================================================================================
