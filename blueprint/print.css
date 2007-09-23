@@ -2,7 +2,7 @@
   
    print.css
    * Gives you some sensible styles for printing pages.
-   See Readme file in this directory for further instructions.
+   * See Readme file in this directory for further instructions.
       
    Some additions you'll want to make, customized to your markup:
    #header, #footer, #navigation { display:none; }
