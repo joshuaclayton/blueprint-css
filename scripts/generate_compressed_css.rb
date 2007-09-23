@@ -53,21 +53,21 @@ flags = ""
 #flags += '--optimise_shorthands=0 '
 
 # had to change '--remove_last_;=true' to escape the semi-colon.  Really bad command option name...
-#flags += '--remove_last_\;=true'
+#flags += '--remove_last_\;=true '
 
-#flags += '--sort_properties=true'
+#flags += '--sort_properties=true '
 
-#flags += '--sort_selectors=true'
+#flags += '--sort_selectors=true '
 
 #flags += '--merge_selectors=2 '
 #flags += '--merge_selectors=1 '
 #flags += '--merge_selectors=0 '
 
-#flags += '--compress_font-weight=false'
+#flags += '--compress_font-weight=false '
 
-#flags += '--allow_html_in_templates=false'
+#flags += '--allow_html_in_templates=false '
 
-#flags += '--silent=true'
+#flags += '--silent=true '
 
 #flags += '--case_properties=0 '
 #flags += '--case_properties=1 '
