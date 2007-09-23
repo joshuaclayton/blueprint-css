@@ -28,3 +28,7 @@ legend { margin-bottom:1.4em; }
 
 /* Fixes incorrect placement of numbers in ol's in IE6/7 */
 ol { margin-left:2em; }
+
+/* Fixes wrong line-height on sup/sub in IE. */
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }

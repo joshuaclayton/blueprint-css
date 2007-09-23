@@ -156,6 +156,10 @@ line-height:1.5;
 margin:1.5em 0;
 }
 
+sup,sub {
+line-height:0;
+}
+
 th {
 border-bottom:2px solid #ccc;
 font-weight:700;

@@ -83,6 +83,8 @@ pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
 tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
 
+sup, sub    { line-height: 0; }
+
 
 /* Tables
 -------------------------------------------------------------- */
