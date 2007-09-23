@@ -15,20 +15,20 @@ h6{font-size:1em;font-weight:700;}
 p.last{margin-bottom:0;}
 p img{float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 p img.top{margin-top:0;}
+a:focus,a:hover{color:#000;}
+a{color:#009;text-decoration:underline;}
 ul,ol{margin:0 1.5em 1.5em;}
 ul{list-style-type:circle;}
 ol{list-style-type:decimal;}
 dd{margin-left:1.5em;}
-abbr,acronym{border-bottom:1px dotted #666;}
-address{margin-top:1.5em;font-style:italic;}
-a:focus,a:hover{color:#000;}
-a{color:#009;text-decoration:underline;}
 blockquote{color:#666;font-style:italic;margin:1.5em;}
 em,dfn{font-style:italic;background:#ffc;}
+sup,sub{line-height:0;}
+abbr,acronym{border-bottom:1px dotted #666;}
+address{margin-top:1.5em;font-style:italic;}
 pre,code{white-space:pre;margin:1.5em 0;}
 pre,code,tt{font:1em 'andale mono', monotype.com, 'lucida console', monospace;line-height:1.5;}
 tt{display:block;line-height:1.5;margin:1.5em 0;}
-sup,sub{line-height:0;}
 th{border-bottom:2px solid #ccc;font-weight:700;background:#f6f6f6;}
 td{border-bottom:1px solid #ddd;}
 th,td{padding:4px 10px 4px 5px;}

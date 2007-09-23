@@ -15,17 +15,15 @@
   
 -------------------------------------------------------------- */
 
-/* This is where you set your desired font size. The line-heights 
-   and vertical margins are automatically calculated from this. 
-   The percentage is of 16px (0.75 * 16px = 12px). */
+/* Default font size
+   The line-heights and vertical margins are automatically calculated 
+   from this. The percentage is of 16px (0.75 * 16px = 12px). */
    
 body { font-size: 75%; }
 
 
-/* Default fonts and colors. 
-   If you prefer serif fonts, remove the font-family 
-   on the headings, and apply this one to the body:
-   font: 1em Georgia, "lucida bright", "times new roman", serif; */
+/* Default fonts and colors. Use this if you want serifs:
+   font-family: Georgia, "lucida bright", "times new roman", serif; */
    
 body { 
   color: #222; 
@@ -55,9 +53,14 @@ h6 { font-size: 1em; font-weight: bold; }
 
 p           { margin: 0 0 1.5em; }
 p.last      { margin-bottom: 0; }
+
 p img       { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
 p img.top   { margin-top: 0; } /* Use this if the image is at the top of the <p>. */
 img         { margin: 0 0 1.5em; }
+
+a:focus, 
+a:hover     { color: #000; }
+a           { color: #009; text-decoration: underline; }
 
 ul, ol      { margin:0 1.5em 1.5em 1.5em; }
 ul          { list-style-type: circle; }
@@ -66,24 +69,20 @@ dl          { margin: 0 0 1.5em 0; }
 dl dt       { font-weight: bold; }
 dd          { margin-left: 1.5em;}
 
+blockquote  { margin: 1.5em; color: #666; font-style: italic; }
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; background: #ffc; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
 abbr, 
 acronym     { border-bottom: 1px dotted #666; }
 address     { margin-top: 1.5em; font-style: italic; }
 del         { color:#666; }
 
-a:focus, 
-a:hover     { color: #000; }
-a           { color: #009; text-decoration: underline; }
-
-blockquote  { margin: 1.5em; color: #666; font-style: italic; }
-strong      { font-weight: bold; }
-em,dfn      { font-style: italic; background: #ffc; }
-dfn         { font-weight: bold; }
 pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
 tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
-
-sup, sub    { line-height: 0; }
 
 
 /* Tables
@@ -115,5 +114,3 @@ table .last { padding-right: 0; }
 
 .top        { margin-top:0; padding-top:0; }
 .bottom     { margin-bottom:0; padding-bottom:0; }
-
-
