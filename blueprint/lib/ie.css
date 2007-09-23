@@ -2,33 +2,39 @@
    
    ie.css
    
-   Contains every hack for Internet Explorer versions prior 
-   to IE7, so that our core files stay sweet and nimble.
+   Contains every hack for IE6 & 7, 
+   so that our core files stay sweet and nimble.
    
 -------------------------------------------------------------- */
 
+
+/* Layout
+-------------------------------------------------------------- */
+
 /* Make sure the layout is centered in IE5 */
-body        { text-align: center; }
-.container  { text-align: left; }
+body { text-align: center; }
+.container { text-align: left; }
 
+/* Fixes IE6 3px margin bug */
+* html .column { overflow-x: hidden; }
 
-/* This fixes the problem where IE6 adds an extra 3px margin to
-   two columns that are floated up against each other. */
-
-* html .column { overflow-x: hidden; } /* IE6 fix */
-
-.pull-1, .pull-2, .pull-3, .pull-4,
-.push-1, .push-2, .push-3, .push-4, 
-ul, ol {
-  position: relative; /* Keeps IE6 from cutting pulled/pushed images */
+/* Keeps IE from cutting pulled/pushed elements */
+.pull-1, .pull-2, .pull-3, .pull-4, ul
+.push-1, .push-2, .push-3, .push-4, ol {
+  position: relative; 
 }
 
-/* Fixes incorrect styling of legend in IE6 fieldsets. */
+
+/* Elements
+-------------------------------------------------------------- */
+
+/* Fixes incorrect styling of legend in IE6. */
 legend { margin-bottom:1.4em; }
 
-/* Fixes incorrect placement of numbers in ol's in IE6/7 */
+/* Fixes incorrect placement of ol numbers in IE6/7. */
 ol { margin-left:2em; }
 
 /* Fixes wrong line-height on sup/sub in IE. */
 sup { vertical-align: text-top; }
 sub { vertical-align: text-bottom; }
+
