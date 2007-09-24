@@ -16,6 +16,7 @@ p.last{margin-bottom:0;}
 p img{float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 a{color:#009;text-decoration:underline;}
 ul,ol{margin:0 1.5em 1.5em;}
+li ul,li ol{margin:0 1.5em;}
 ul{list-style-type:circle;}
 ol{list-style-type:decimal;}
 dd{margin-left:1.5em;}

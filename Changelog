@@ -19,6 +19,7 @@ Version 0.x - Date TBD
     * Clearfix not properly applied to container. [OFB]
     * Misc validation errors in tests. [OFB]
     * Proper margin on address. [OFB]
+    * Unwanted bottom margin on nested lists. [OFB]
     * 
 
   Misc:

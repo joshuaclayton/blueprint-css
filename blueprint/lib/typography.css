@@ -60,7 +60,9 @@ a:focus,
 a:hover     { color: #000; }
 a           { color: #009; text-decoration: underline; }
 
-ul, ol      { margin:0 1.5em 1.5em 1.5em; }
+ul, ol      { margin: 0 1.5em 1.5em 1.5em; }
+li ul, 
+li ol       { margin:0 1.5em; }
 ul          { list-style-type: circle; }
 ol          { list-style-type: decimal; }
 dl          { margin: 0 0 1.5em 0; }
