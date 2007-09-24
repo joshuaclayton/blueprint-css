@@ -17,6 +17,8 @@ Version 0.x - Date TBD
     * Sidebar alignment in tests/sample.html. [OFB]
     * Line-height on sub/sup. [OFB]
     * Clearfix not properly applied to container. [OFB]
+    * Misc validation errors in tests. [OFB]
+    * Proper margin on address. [OFB]
     * 
 
   Misc:

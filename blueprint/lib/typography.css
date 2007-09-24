@@ -75,7 +75,7 @@ sup, sub    { line-height: 0; }
 
 abbr, 
 acronym     { border-bottom: 1px dotted #666; }
-address     { margin-top: 1.5em; font-style: italic; }
+address     { margin: 0 0 1.5em; font-style: italic; }
 del         { color:#666; }
 
 pre,code    { margin: 1.5em 0; white-space: pre; }
