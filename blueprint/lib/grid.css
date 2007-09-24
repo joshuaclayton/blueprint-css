@@ -181,7 +181,7 @@ hr.space {
    Based on How To Clear Floats Without Structural Markup by PiE
    [http://www.positioniseverything.net/easyclearing.html] */
 
-.clear { display: inline-block; }   
+.clear, .container { display: inline-block; }
 .clear:after, .container:after {
   content: "."; 
   display: block; 
@@ -189,5 +189,6 @@ hr.space {
   clear: both; 
   visibility: hidden;
 }
-* html .clear { height: 1%; }
-.clear { display: block; }
+* html .clear,
+* html .container   { height: 1%; }
+.clear, .container  { display: block; }

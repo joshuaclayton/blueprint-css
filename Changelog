@@ -16,6 +16,7 @@ Version 0.x - Date TBD
   Bug fixes:
     * Sidebar alignment in tests/sample.html. [OFB]
     * Line-height on sub/sup. [OFB]
+    * Clearfix not properly applied to container. [OFB]
     * 
 
   Misc:
