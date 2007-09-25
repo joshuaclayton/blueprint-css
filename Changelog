@@ -20,6 +20,7 @@ Version 0.x - Date TBD
     * Misc validation errors in tests. [OFB]
     * Proper margin on address. [OFB]
     * Unwanted bottom margin on nested lists. [OFB]
+    * Form labels with unwanted fancy-type indentation. [OFB]
     * 
 
   Misc:

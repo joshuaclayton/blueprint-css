@@ -136,6 +136,7 @@ hr.space{background:#fff;color:#fff;}
 * html .clear,* html .container{height:1%;}
 fieldset{border:1px solid #ccc;margin:0 0 1.5em;padding:1.4em;}
 legend{font-weight:700;font-size:1.2em;}
+form p + p{text-indent:0;}
 input.text,input.title{width:300px;border:1px solid #bbb;background:#f6f6f6;margin:.5em .5em .5em 0;padding:5px;}
 input.title{font-size:1.5em;}
 textarea{width:400px;height:250px;border:1px solid #bbb;background:#eee;margin:.5em .5em .5em 0;padding:5px;}

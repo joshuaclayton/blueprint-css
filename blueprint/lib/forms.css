@@ -15,6 +15,7 @@ label { font-weight: bold; }
 /* Fieldsets */
 fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
 legend      { font-weight: bold; font-size:1.2em; }
+form p + p  { text-indent: 0; } /* Fixes conflict with fancy-type plugin. */
 
 /* Text fields */
 input.text, input.title   { width: 300px; margin:0.5em 0.5em 0.5em 0; }
