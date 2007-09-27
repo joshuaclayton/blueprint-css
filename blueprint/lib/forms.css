@@ -17,15 +17,21 @@ fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
 legend      { font-weight: bold; font-size:1.2em; }
 form p + p  { text-indent: 0; } /* Fixes conflict with fancy-type plugin. */
 
+/* All fields */
+input.text, input.title,
+textarea, select {
+  margin:0.5em 0;
+}
+
 /* Text fields */
-input.text, input.title   { width: 300px; margin:0.5em 0.5em 0.5em 0; }
+input.text, input.title   { width: 300px; }
 input.text, input.title   { border:1px solid #bbb; background:#f6f6f6; padding:5px; }
 input.text:focus,
 input.title:focus         { border:1px solid #999; background:#fff; }
 input.title               { font-size:1.5em; }
 
 /* Textareas */
-textarea            { width: 400px; height: 250px; margin:0.5em 0.5em 0.5em 0; }
+textarea            { width: 400px; height: 250px; }
 textarea            { border:1px solid #bbb; background:#eee; padding:5px; }
 textarea:focus      { border:1px solid #999; background:#fff; }
 

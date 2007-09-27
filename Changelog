@@ -21,6 +21,8 @@ Version 0.x - Date TBD
     * Proper margin on address. [OFB]
     * Unwanted bottom margin on nested lists. [OFB]
     * Form labels with unwanted fancy-type indentation. [OFB]
+    * Proper margin on all form elements. [OFB]
+    * No margins for images in headings. [OFB]
     * 
 
   Misc:

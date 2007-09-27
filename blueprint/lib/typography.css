@@ -47,6 +47,11 @@ h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
 h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
 h6 { font-size: 1em; font-weight: bold; }
 
+h1 img, h2 img, h3 img, 
+h4 img, h5 img, h6 img {
+  margin:0;
+}
+
 
 /* Text elements
 -------------------------------------------------------------- */

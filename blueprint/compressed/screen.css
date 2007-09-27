@@ -12,6 +12,7 @@ h3{font-size:1.5em;line-height:1;margin-bottom:1em;}
 h4{font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
 h5{font-size:1em;font-weight:700;margin-bottom:1.5em;}
 h6{font-size:1em;font-weight:700;}
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img{margin:0;}
 p.last{margin-bottom:0;}
 p img{float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 a{color:#009;text-decoration:underline;}
@@ -137,9 +138,10 @@ hr.space{background:#fff;color:#fff;}
 fieldset{border:1px solid #ccc;margin:0 0 1.5em;padding:1.4em;}
 legend{font-weight:700;font-size:1.2em;}
 form p + p{text-indent:0;}
-input.text,input.title{width:300px;border:1px solid #bbb;background:#f6f6f6;margin:.5em .5em .5em 0;padding:5px;}
+input.text,input.title,textarea,select{margin:.5em 0;}
+input.text,input.title{width:300px;border:1px solid #bbb;background:#f6f6f6;padding:5px;}
 input.title{font-size:1.5em;}
-textarea{width:400px;height:250px;border:1px solid #bbb;background:#eee;margin:.5em .5em .5em 0;padding:5px;}
+textarea{width:400px;height:250px;border:1px solid #bbb;background:#eee;padding:5px;}
 select{border:1px solid #ccc;background:#f6f6f6;width:200px;}
 .error,.notice,.success{margin-bottom:1em;border:2px solid #ddd;padding:.8em;}
 .error{background:#FBE3E4;color:#D12F19;border-color:#FBC2C4;}
