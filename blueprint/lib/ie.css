@@ -15,7 +15,7 @@
 body { text-align: center; }
 .container { text-align: left; }
 
-/* Fixes IE6 3px margin bug */
+/* Fixes IE margin bugs */
 * html .column { overflow-x: hidden; }
 
 /* Keeps IE from cutting pulled/pushed elements */

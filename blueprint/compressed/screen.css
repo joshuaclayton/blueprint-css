@@ -27,8 +27,8 @@ sup,sub{line-height:0;}
 abbr,acronym{border-bottom:1px dotted #666;}
 address{font-style:italic;margin:0 0 1.5em;}
 pre,code{white-space:pre;margin:1.5em 0;}
-pre,code,tt{font:1em 'andale mono', monotype.com, 'lucida console', monospace;line-height:1.5;}
 tt{display:block;line-height:1.5;margin:1.5em 0;}
+pre,code,tt{font:1em 'andale mono', monotype.com, 'lucida console', monospace;line-height:1.5;}
 th{border-bottom:2px solid #ccc;font-weight:700;background:#f6f6f6;}
 td{border-bottom:1px solid #ddd;}
 th,td{padding:4px 10px 4px 5px;}
