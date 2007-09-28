@@ -16,16 +16,14 @@ body {
   background: none;
   font-size: 10pt;
 }
+
+
+/* Layout
+-------------------------------------------------------------- */
+
 .container {
   background: none;
 }
-
-h1,h2,h3,h4,h5,h6 { font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif; }
-code { font:.9em "Courier New", Monaco, Courier, monospace; } 
-
-img { float:left; margin:1.5em 1.5em 1.5em 0; }
-a img { border:none; }
-p img.top { margin-top: 0; }
 
 hr { 
   background:#ccc; 
@@ -36,6 +34,21 @@ hr {
   padding:0;
   border:none;
 }
+hr.space {
+  background: #fff;
+  color: #fff;
+}
+
+
+/* Text
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif; }
+code { font:.9em "Courier New", Monaco, Courier, monospace; } 
+
+img { float:left; margin:1.5em 1.5em 1.5em 0; }
+a img { border:none; }
+p img.top { margin-top: 0; }
 
 blockquote {
   margin:1.5em;
@@ -48,6 +61,10 @@ blockquote {
 .large  { font-size: 1.1em; }
 .quiet  { color: #999; }
 .hide   { display:none; }
+
+
+/* Links
+-------------------------------------------------------------- */
 
 a:link, a:visited {
 	background: transparent;
