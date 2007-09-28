@@ -142,13 +142,17 @@
 .pull-2  { margin-left: -80px; }
 .pull-3  { margin-left: -120px; }
 .pull-4  { margin-left: -160px; }
+.pull-5  { margin-left: -200px; }
 
 .push-0  { margin: 0 0 0 18px; }
 .push-1  { margin: 0 -40px 0 18px; }
 .push-2  { margin: 0 -80px 0 18px; }
 .push-3  { margin: 0 -120px 0 18px; }
 .push-4  { margin: 0 -160px 0 18px; }
-.push-0, .push-1, .push-2, .push-3, .push-4 { float: right; }
+.push-5  { margin: 0 -200px 0 18px; }
+
+.push-0, .push-1, .push-2, 
+.push-3, .push-4, .push.5 { float: right; }
 
 
 /* Misc classes and elements
