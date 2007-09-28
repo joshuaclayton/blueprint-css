@@ -8,16 +8,17 @@
    * Jeff Croft        [jeffcroft.com]
    * Christian Metts   [mintchaos.com]
    * Wilson Miner      [wilsonminer.com]
-   * Richard Rutter    [clagnut.com]
    
    Read more about using a baseline here:
    * alistapart.com/articles/settingtypeontheweb
   
 -------------------------------------------------------------- */
 
-/* Default font settings */
+/* Default font settings
+   The font-size percentage is of 16px (0.75 * 16px = 12px) */
+
 body { 
-  font-size: 75%; /* The percentage is of 16px (0.75 * 16px = 12px) */
+  font-size: 75%;
   color: #222; 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -53,15 +54,6 @@ a:focus,
 a:hover     { color: #000; }
 a           { color: #009; text-decoration: underline; }
 
-ul, ol      { margin: 0 1.5em 1.5em 1.5em; }
-li ul, 
-li ol       { margin:0 1.5em; }
-ul          { list-style-type: circle; }
-ol          { list-style-type: decimal; }
-dl          { margin: 0 0 1.5em 0; }
-dl dt       { font-weight: bold; }
-dd          { margin-left: 1.5em;}
-
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
 em,dfn      { font-style: italic; background: #ffc; }
@@ -76,6 +68,21 @@ del         { color:#666; }
 pre,code    { margin: 1.5em 0; white-space: pre; }
 tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+li ul, 
+li ol       { margin:0 1.5em; }
+ul, ol      { margin: 0 1.5em 1.5em 1.5em; }
+
+ul          { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
 
 
 /* Tables

@@ -24,12 +24,15 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 
-
-body { line-height: 1.5; background: #fff; margin:1.5em 0; }
+body { 
+  line-height: 1.5; 
+  background: #fff; 
+  margin:1.5em 0; 
+}
 
 /* Tables still need 'cellspacing="0"' in the markup. */
 table { border-collapse: separate; border-spacing: 0; }
-caption, th, td { text-align: left; font-weight:400; }
+caption, th, td { text-align: left; font-weight: normal; }
 
 /* Remove possible quote marks (") from <q>, <blockquote>. */
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
