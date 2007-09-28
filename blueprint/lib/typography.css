@@ -15,30 +15,18 @@
   
 -------------------------------------------------------------- */
 
-/* Default font size
-   The line-heights and vertical margins are automatically calculated 
-   from this. The percentage is of 16px (0.75 * 16px = 12px). */
-   
-body { font-size: 75%; }
-
-
-/* Default fonts and colors. Use this if you want serifs:
-   font-family: Georgia, "lucida bright", "times new roman", serif; */
-   
+/* Default font settings */
 body { 
+  font-size: 75%; /* The percentage is of 16px (0.75 * 16px = 12px) */
   color: #222; 
-  font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif; 
-}
-h1,h2,h3,h4,h5,h6 { 
-  color: #111; 
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
 
 h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
 h2 { font-size: 2em; margin-bottom: 0.75em; }
