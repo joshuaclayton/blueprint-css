@@ -9,6 +9,8 @@
 
 /* Indentation instead of line shifts for sibling paragraphs. */
    p + p { text-indent:2em; margin-top:-1.5em; }
+   form p + p  { text-indent: 0; } /* Don't want this in forms. */
+   
 
 /* Ornaments on first paragraph.
    Commented out by default. Use with care.
