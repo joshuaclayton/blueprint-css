@@ -29,10 +29,10 @@ ul,ol{margin:0 1.5em 1.5em;}
 ul{list-style-type:circle;}
 ol{list-style-type:decimal;}
 dd{margin-left:1.5em;}
-th{border-bottom:2px solid #ccc;font-weight:700;background:#f6f6f6;}
+th{border-bottom:2px solid #ccc;font-weight:700;background:#eee;}
 td{border-bottom:1px solid #ddd;}
 th,td{padding:4px 10px 4px 5px;}
-tr.even td{background:#f0f6f9;}
+tr.even td{background:#eef;}
 tfoot{font-style:italic;}
 caption{background:#ffc;}
 table .last{padding-right:0;}
