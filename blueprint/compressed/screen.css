@@ -23,7 +23,7 @@ abbr,acronym{border-bottom:1px dotted #666;}
 address{font-style:italic;margin:0 0 1.5em;}
 pre,code{white-space:pre;margin:1.5em 0;}
 tt{display:block;line-height:1.5;margin:1.5em 0;}
-pre,code,tt{font:1em 'andale mono', monotype.com, 'lucida console', monospace;line-height:1.5;}
+pre,code,tt{font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
 li ul,li ol{margin:0 1.5em;}
 ul,ol{margin:0 1.5em 1.5em;}
 ul{list-style-type:circle;}
