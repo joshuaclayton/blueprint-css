@@ -26,11 +26,13 @@ CSS_COMPRESSED_DIR = "#{CSS_DIR}/compressed"
 # Which CSS files should we add to the compressed final version?  '.css' extension is not required or desired.
 CSS_SCREEN_INPUT_FILES = %w( reset typography grid forms )
 CSS_PRINT_INPUT_FILES = %w( print )
+CSS_IE_INPUT_FILES = %w( ie )
 
 # where are our output files?
 TEMP_FILE = "temp.css"
 SCREEN_OUTPUT_FILE = "#{CSS_COMPRESSED_DIR}/screen.css"
 PRINT_OUTPUT_FILE = "#{CSS_COMPRESSED_DIR}/print.css"
+IE_OUTPUT_FILE = "#{CSS_COMPRESSED_DIR}/ie.css"
 
 # start flags off with a nice safe empty value which we can append to if needed
 flags = ""
@@ -178,3 +180,50 @@ rescue Exception => e
   # However this is a real exception (like maybe permission denied) that we should look at.
   puts "Temp file deletion failed with exception: " + e
 end
+
+
+# Now do all the same steps for ie.css
+
+# Delete any pre-existing temp files.  We'll re-generate them.
+begin
+  File.delete(TEMP_FILE)
+# Errno::ENOENT represents case where you try to delete a file that doesn't exist.
+# We don't need to do or display anything in this case.
+rescue Errno::ENOENT
+  # no need to do anything here
+# However this is a real exception (like maybe permission denied) that we should look at.
+rescue Exception => e
+  puts "File deletion failed with exception: " + e
+end
+
+
+# Create the temp file
+File.open(TEMP_FILE,"w") do |outfile|
+
+  CSS_IE_INPUT_FILES.each do |file|
+    File.open("#{CSS_LIB_DIR}/#{file}.css", "r+") do |oldfile|
+        oldfile.each_line { |line| outfile.puts line}
+    end
+  end
+
+end
+
+
+# Do some csstidy magic on the temp file and send the results to the print output file.
+begin
+  system("./#{CSSTIDY_BIN} #{TEMP_FILE} #{flags} #{IE_OUTPUT_FILE}")
+rescue Exception => e
+  puts "Calling CSS Tidy executable failed with exception: " + e
+end
+
+
+# clean up the unneeded temp file
+begin
+  File.delete(TEMP_FILE)
+rescue Errno::ENOENT
+  # no need to do anything here.  No file found to delete.
+rescue Exception => e
+  # However this is a real exception (like maybe permission denied) that we should look at.
+  puts "Temp file deletion failed with exception: " + e
+end
+

@@ -40,7 +40,8 @@ Here's how you set up Blueprint on your site.
    
 4) To use the compressed version on a live site, edit the href 
    paths above to point to the blueprint/compressed directory, 
-   where you'll find compressed versions of screen.css and print.css.    
+   where you'll find compressed versions of screen.css, 
+   print.css and ie.css.    
    
 
 How to use Blueprint
