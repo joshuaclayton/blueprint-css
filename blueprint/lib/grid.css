@@ -136,7 +136,8 @@
 
 
 /* Use these classes on an element to push it into the 
-   next column, or to pull it into the previous column. */
+   next column, or to pull it into the previous column. 
+   TODO: Add tests. */
 
 .pull-1  { margin-left: -40px; }
 .pull-2  { margin-left: -80px; }
@@ -154,6 +155,16 @@
 .push-3, .push-4, .push-5 { 
   float: right; margin-bottom:1.5em; margin-left:18px; 
 }
+
+
+/* Raise an element above parent.
+   TODO: Add tests. */
+   
+.raise-1  { margin-top: -1.5em; } 
+.raise-2  { margin-top: -3em; } 
+.raise-3  { margin-top: -4.5em; } 
+.raise-4  { margin-top: -6em; } 
+.raise-5  { margin-top: -7.5em; } 
 
 
 /* Misc classes and elements
