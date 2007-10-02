@@ -12,7 +12,8 @@ Version 0.x - Date TBD
     * Higher compression rate. [OFB]
     * Compressed version of ie.css. [OFB]
     * Alternating table row colors. [OFB]
-    * Added classes .raise-x to raise an element above its parent element. [OFB]
+    * Added classes to lift or drop an element into the element
+      above or below itself. [OFB]
     * 
   
   Bug fixes:

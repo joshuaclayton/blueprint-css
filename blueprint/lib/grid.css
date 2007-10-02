@@ -160,12 +160,21 @@
   float: right; margin-left:18px; margin-bottom:1.5em;
 }
 
-/* Raise an element above parent. */   
-.raise-1  { margin-top: -1.5em;   margin-bottom:1.5em; } 
-.raise-2  { margin-top: -3em;     margin-bottom:3em; } 
-.raise-3  { margin-top: -4.5em;   margin-bottom:4.5em; } 
-.raise-4  { margin-top: -6em;     margin-bottom:6em; } 
-.raise-5  { margin-top: -7.5em;   margin-bottom:7.5em; } 
+/* Lift an element into the element above it. */   
+.lift-1   { margin-top: -1.5em;   margin-bottom:1.5em; } 
+.lift-2   { margin-top: -3em;     margin-bottom:3em; } 
+.lift-3   { margin-top: -4.5em;   margin-bottom:4.5em; } 
+.lift-4   { margin-top: -6em;     margin-bottom:6em; } 
+.lift-5   { margin-top: -7.5em;   margin-bottom:7.5em; } 
+
+/* Drop an element into the element below it. */
+.drop-1   { margin-bottom:-1.5em; margin-top:1.5em; }
+.drop-2   { margin-bottom:-3em;   margin-top:3em; }
+.drop-3   { margin-bottom:-4.5em; margin-top:4.5em; }
+.drop-4   { margin-bottom:-6em;   margin-top:6em; }
+.drop-5   { margin-bottom:-7.5em; margin-top:7.5em; }
+
+
 
 
 /* Misc classes and elements
