@@ -15,6 +15,8 @@ Version 0.x - Date TBD
     * Added classes to lift or drop an element into the element
       above or below itself. [OFB]
     * Added class .showgrid to see the grid of any column or container. [OFB]
+    * Experimental support for Right-to-left languages through the RTL plugin. [OFB]
+    * 
   
   Bug fixes:
     * Sidebar alignment in tests/sample.html. [OFB]
