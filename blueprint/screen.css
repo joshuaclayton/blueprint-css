@@ -18,5 +18,6 @@
    @import 'plugins/buttons/buttons.css'; */
    
 /* See the grid:
-   Uncomment the line below to see the grid and baseline.
-   .container { background: url(lib/grid.png); } */
+   Add the following class to any column or 
+	 container to see the grid and baseline.
+	 .showgrid { background: url(lib/grid.png); } */

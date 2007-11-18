@@ -14,7 +14,7 @@ Version 0.x - Date TBD
     * Alternating table row colors. [OFB]
     * Added classes to lift or drop an element into the element
       above or below itself. [OFB]
-    * 
+    * Added class .showgrid to see the grid of any column or container. [OFB]
   
   Bug fixes:
     * Sidebar alignment in tests/sample.html. [OFB]
