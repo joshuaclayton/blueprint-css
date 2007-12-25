@@ -17,10 +17,14 @@ groups  = {
   'ie.css' => ie
 }
 
+
 # ------------------------------------------------------------------------ #
 
+
 # compress each file
-puts "** Blueprint CSS Framework Compressor **\nSee docs/Readme.txt for further instructions.\n\n"
+puts "** Blueprint CSS Framework Compressor **"
+puts "See docs/Readme.txt for further instructions.\n\n"
+
 header = File.new('lib/header.txt').read
 groups.each do |name, files|
   puts "Creating #{name}:"
@@ -34,5 +38,5 @@ groups.each do |name, files|
     f << css
   }
 end
-puts "\nDone!"
+puts "Done!"
 
