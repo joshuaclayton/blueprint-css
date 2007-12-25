@@ -7,6 +7,7 @@ class Parse
     # read the css file and remove unwanted whitespace
     data = File.new(path).read
     data = strip_sidespace(data) # remove space on sides
+    
     data.gsub!(': ', ':') # remove unwanted spaces
     data.gsub!(/\n/, '') # remove newlines
     data.gsub!(/(\s\s)/, ' ') # remove multiple spaces
@@ -18,6 +19,7 @@ class Parse
       parts.map! { |p| p = strip_sidespace(p) }
       selector = parts[0]
       
+      # find all properties for current selectors
       rules = ''
       parts[1].split(';').each do |str|
         split = str.split(':')
