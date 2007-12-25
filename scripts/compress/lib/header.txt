@@ -1,6 +1,8 @@
-/* -----------------------------------------------------------------------
-   Blueprint CSS Framework 0.x (Date TBD)
-   Copyright (c) Olav Bjorkoy 2007
------------------------------------------------------------------------ */
+/* Blueprint CSS Framework 0.x (Date TBD)
+ * Copyright (c) Olav Bjorkoy 2007
+ * 
+ * Blueprint is licensed under the terms of both the MIT
+ * license and the GPL license. See docs/License.txt for more info.
+ */  
 
 

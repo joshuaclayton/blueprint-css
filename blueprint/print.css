@@ -1,7 +1,9 @@
-/* -----------------------------------------------------------------------
-   Blueprint CSS Framework 0.x (Date TBD)
-   Copyright (c) Olav Bjorkoy 2007
------------------------------------------------------------------------ */
+/* Blueprint CSS Framework 0.x (Date TBD)
+ * Copyright (c) Olav Bjorkoy 2007
+ * 
+ * Blueprint is licensed under the terms of both the MIT
+ * license and the GPL license. See docs/License.txt for more info.
+ */  
 
 
 body { line-height:1.5; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; color:#000; background:none; font-size:10pt; }
