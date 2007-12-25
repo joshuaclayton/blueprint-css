@@ -2,8 +2,8 @@
 require 'lib/parse.rb'
 
 # directories
-source  = '../../blueprint/src/'
-dest    = '../../blueprint/'
+blueprint = '../../blueprint/'
+source = blueprint + 'src/'
 
 # files
 screen  = ['reset.css', 'typography.css', 'grid.css', 'forms.css']
@@ -17,26 +17,24 @@ groups  = {
   'ie.css' => ie
 }
 
-
 # ------------------------------------------------------------------------ #
 
-
 # compress each file
-puts "** Blueprint CSS Framework Compressor **"
-puts "See docs/Readme.txt for further instructions.\n\n"
+puts "** Blueprint CSS Framework Compressor"
+puts "** See docs/Readme.txt for further instructions."
 
 header = File.new('lib/header.txt').read
 groups.each do |name, files|
-  puts "Creating #{name}:"
-  
+  puts "\nCreating #{name}:"
   css = header
+  
   for file in files
-    puts "* Compressing /src/#{file}.."
+    puts "+ Compressing /src/#{file}.."
     css += Parse.new().path_to_string(source + file)    
   end
-  File.open(dest + name, 'w') { |f|
+  File.open(blueprint + name, 'w') do |f|
     f << css
-  }
+  end
 end
-puts "Done!"
+puts "\nDone!"
 
