@@ -45,6 +45,7 @@ table .last{padding-right:0;}
 .top{margin-top:0;padding-top:0;}
 .bottom{margin-bottom:0;padding-bottom:0;}
 .container{width:950px;margin:0 auto;}
+.showgrid{background:url(grid.png);}
 .column{float:left;margin-right:10px;}
 .last{margin-right:0;}
 .span-1{width:30px;}

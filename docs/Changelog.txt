@@ -16,6 +16,7 @@ Version 0.x - Date TBD
       above or below itself. [OFB]
     * Added class .showgrid to see the grid of any column or container. [OFB]
     * Experimental support for Right-to-left languages through the RTL plugin. [OFB]
+    * Lots of improvements to folder structure. [OFB]
     * 
   
   Bug fixes:

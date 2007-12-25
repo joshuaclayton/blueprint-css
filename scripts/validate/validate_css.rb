@@ -16,7 +16,7 @@
 VALIDATOR_BIN = "./css-validator/css-validator.jar"
 
 # What is the main CSS dir for the framework?  (Where are screen.css and print.css?)
-CSS_DIR = "../blueprint"
+CSS_DIR = "../../blueprint"
 
 # Where is the CSS lib dir (contains grid.css, reset.css, etc.)
 CSS_LIB_DIR = "#{CSS_DIR}/lib"
