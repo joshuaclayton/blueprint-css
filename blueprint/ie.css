@@ -1,0 +1,14 @@
+/* -----------------------------------------------------------------------
+   Blueprint CSS Framework 0.x (Date TBD)
+   Copyright (c) Olav Bjorkoy 2007
+----------------------------------------------------------------------- */
+
+
+body { text-align:center; }
+.container { text-align:left; }
+* html .column { overflow-x:hidden; }
+.pull-1, .pull-2, .pull-3, .pull-4, ul.push-1, .push-2, .push-3, .push-4, ol { position:relative; }
+legend { margin-bottom:1.4em; }
+ol { margin-left:2em; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }

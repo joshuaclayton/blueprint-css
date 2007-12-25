@@ -9,7 +9,7 @@ Blueprint CSS Framework Change Log
 Version 0.x - Date TBD
 --
   New features:
-    * Higher compression rate. [OFB]
+    * New compressor script. [OFB]
     * Compressed version of ie.css. [OFB]
     * Alternating table row colors. [OFB]
     * Added classes to lift or drop an element into the element

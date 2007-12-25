@@ -33,15 +33,11 @@ Here's how you set up Blueprint on your site.
 
    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-   <!--[if IE]><link rel="stylesheet" href="css/blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+   <!--[if IE]><link rel="stylesheet" href="css/blueprint/src/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
-3) See screen.css for further configuration options, including 
-   advanced functionality through plugins.
-   
-4) To use the compressed version on a live site, edit the href 
-   paths above to point to the blueprint/compressed directory, 
-   where you'll find compressed versions of screen.css, 
-   print.css and ie.css.    
+3) For development, add the .showgrid class to any container or column
+   to see the underlying grid. Check out the 'plugins' directory for
+   more advanced functionality.
    
 
 How to use Blueprint
@@ -61,39 +57,33 @@ The framework has a few files you should check out. Every file
 contains lots of (hopefully) clarifying comments.
 
 
-Main files:
+Compressed files (these go in the HTML):
 
 * blueprint/screen.css
-  This is the main file of the framework. It imports other CSS 
-  files from the "lib" directory, and should be included on 
-  every page. We also call it the the configuration file, 
-  although you don't actually have to modify it.
+  This is the main file of the framework. It is a compressed version
+  of all main CSS files in the 'src' directory. 
 
 * blueprint/print.css
   This file sets some default print rules, so that printed versions
   of your site looks better than they usually would. It should be
-  included on every page.
+  included on every page. The source for this file is also in the
+  'src' directory.
 
 
-Core files:
+Source files:
 
-* blueprint/lib/grid.css
+* blueprint/src/grid.css
   This file sets up the grid (it's true). It has a lot of classes
   you apply to divs to set up any sort of column-based grid.
 
-* blueprint/lib/typography.css
+* blueprint/src/typography.css
   This file sets some default typography. It also has a few
   methods for some really fancy stuff to do with your text.
 
-* blueprint/lib/reset.css
+* blueprint/src/reset.css
   This file resets CSS values that browsers tend to set for you.
 
-* blueprint/compressed/screen.css & 
-  blueprint/compressed/print.css
-  A compressed version of the core and print files. Use this on 
-  every live site. Use the link tags in the HTML to include these.
-
-* blueprint/lib/ie.css
+* blueprint/src/ie.css
   Contains every hack for Internet Explorer,so that our core 
   files stay sweet and valid.
 
@@ -108,8 +98,8 @@ Other:
 * scripts/
   BP comes with two scripts: 
   * One for validating the CSS in the core files.
-  * One for re-compressing the files in the "compressed" folder
-    from the core files, if you've made changes to the core.
+  * One for re-compressing the main CSS files from the 
+    source files, if you've made changes to the core.
 
 * tests/
   Contains html files which tests most aspects of Blueprint.
