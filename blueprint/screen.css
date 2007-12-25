@@ -3,7 +3,7 @@
    Blueprint CSS Framework Screen Styles
    Version: 0.x (Date TBD)
    
-   See Readme file in this directory for further instructions.
+   See the Readme.txt file in this directory for further instructions.
    
 -------------------------------------------------------------- */
 
@@ -12,12 +12,9 @@
 @import 'lib/grid.css';
 @import 'lib/forms.css';
 
-/* Plugins:
-   Additional functionality can be found in the plugins directory.
-   See the readme files for each plugin. Example:
-   @import 'plugins/buttons/buttons.css'; */
+/* Additional functionality can be found in the plugins directory. */
    
 /* See the grid:
-   Add the following class to any column or 
-	 container to see the grid and baseline.
+   Add the following class to any column or container to see the grid and baseline.
 	 .showgrid { background: url(lib/grid.png); } */
+

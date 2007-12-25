@@ -10,5 +10,7 @@ and preferably only in development. :)
 Usage
 ----------------------------------------------------------------
 
-1) Add this line to "blueprint/screen.css", and you're done:
-	 @import 'plugins/css-classes/css-classes.css';
+1) Add this line to your HTML:
+	 <link rel="stylesheet" href="css/blueprint/plugins/css-classes/css-classes.css" 
+	  type="text/css" media="screen, projection">	
+	 

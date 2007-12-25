@@ -14,5 +14,7 @@ Credits
 Usage
 ----------------------------------------------------------------
 
-1) Add this line to "blueprint/screen.css", and you're done:
-	 @import 'plugins/link-icons/link-icons.css';
+1) Add this line to your HTML:
+	 <link rel="stylesheet" href="css/blueprint/plugins/link-icons/link-icons.css" 
+	  type="text/css" media="screen, projection">	
+	 
