@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# 
+
 # Blueprint CSS Compressor
 # 
 # This script creates up-to-date compressed files from
@@ -11,9 +11,8 @@
 # 
 # Ruby has to be installed for this script to work.
 # You can then run the following command (without the $): 
-# 
-#   $ ruby compress.rb
-# 
+# $ ruby compress.rb
+
 
 require 'lib/parse.rb'
 
