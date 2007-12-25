@@ -35,6 +35,7 @@ Version 0.x - Date TBD
     * Improved structure in print.css. [OFB]
     * Added another level of pull/push. [OFB]
     * Dual-licensed under MIT and GPL licenses. [OFB]
+    * Cleaned up scripts directory. [OFB]
     * 
 
 
