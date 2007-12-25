@@ -9,9 +9,9 @@
 # The newly compressed files are placed in the
 # 'blueprint' directory.
 # 
-# To use this script, Ruby must be installed. 
-# To use the script, simply run this command (without the $):
-#
+# Ruby has to be installed for this script to work.
+# You can then run the following command (without the $): 
+# 
 #   $ ruby compress.rb
 # 
 
