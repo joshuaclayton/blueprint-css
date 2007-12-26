@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
+#
 # Blueprint CSS Compressor
+# By Olav Bjorkoy (www.bjorkoy.com)
 # 
 # This script creates up-to-date compressed files from
 # the 'blueprint/src' directory. Each source file belongs 
@@ -12,7 +14,7 @@
 # Ruby has to be installed for this script to work.
 # You can then run the following command (without the $): 
 # $ ruby compress.rb
-
+#
 
 require 'lib/parse.rb'
 
@@ -51,5 +53,6 @@ groups.each do |name, files|
     f << css
   end
 end
-puts "\n** Done! Your compressed files are now up-to-date! :)"
 
+puts "\n** Done!"
+puts "** Your compressed files are now up-to-date."
