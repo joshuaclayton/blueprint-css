@@ -1,11 +1,15 @@
-/* Blueprint CSS Framework 0.x (Date TBD)
- * Copyright (c) Olav Bjorkoy 2007
- * 
- * Blueprint is licensed under the terms of both the MIT
- * license and the GPL license. See docs/License.txt for more info.
- * 
- * (This is a compressed file. See the sources in the 'src' directory.)
- */  
+/* -----------------------------------------------------------------------
+
+   Blueprint CSS Framework 0.x (Date TBD)
+   http://blueprintcss.googlecode.com
+   
+   Copyright (c) Olav Bjorkoy 2007
+   Blueprint is licensed under the terms of both the MIT
+   license and the GPL license. See docs/License.txt for more info.
+   
+   (This is a compressed file. See the sources in the 'src' directory.)
+   
+----------------------------------------------------------------------- */
 
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
@@ -186,4 +190,4 @@ select { width:200px; }
 .success { background:#E6EFC2; border-color:#C6D880; }
 .error, .error a { color:#D12F19; }
 .notice, .notice a { color:#817134; }
-.notice, .success a { color:#529214; }
+.success, .success a { color:#529214; }

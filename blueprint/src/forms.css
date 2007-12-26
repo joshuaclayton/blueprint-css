@@ -48,5 +48,5 @@ select        { width:200px; }
 
 .error, .error a      { color: #D12F19; }
 .notice, .notice a    { color: #817134; }
-.notice, .success a   { color: #529214; }
+.success, .success a   { color: #529214; }
 
