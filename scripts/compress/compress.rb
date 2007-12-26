@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-#
+# 
 # Blueprint CSS Compressor
 # By Olav Bjorkoy (www.bjorkoy.com)
 # 
@@ -14,13 +14,13 @@
 # Ruby has to be installed for this script to work.
 # You can then run the following command (without the $): 
 # $ ruby compress.rb
-#
+# 
 
 require 'lib/parse.rb'
 
 # directories
-blueprint = '../../blueprint/'
-source = blueprint + 'src/'
+dest  = '../../blueprint/'
+src   = dest + 'src/'
 
 # grouped source files
 screen  = ['reset.css', 'typography.css', 'grid.css', 'forms.css']
@@ -45,11 +45,11 @@ groups.each do |name, files|
   puts "\nAssembling #{name}:"
   css = header
   
-  for file in files
-    puts "+ src/#{file}.."
-    css += Parse.new().path_to_string(source + file)    
+  files.each do |f|
+    puts "+ src/#{f}.."
+    css += Parse.new().path_to_string(src + f)
   end
-  File.open(blueprint + name, 'w') do |f|
+  File.open(dest + name, 'w') do |f|
     f << css
   end
 end
