@@ -11,7 +11,7 @@
 # the framework and report any validator errors. 
 # 
 # Ruby and Java must be installed for this to work.
-# You can then run this command (without the $):
+# You can then run this command:
 # $ ruby validate.rb
 # 
 

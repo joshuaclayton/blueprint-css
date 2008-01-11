@@ -54,23 +54,21 @@ Files in Blueprint
 ----------------------------------------------------------------
 
 The framework has a few files you should check out. Every file
-contains lots of (hopefully) clarifying comments.
+in the 'src' directory contains lots of (hopefully) clarifying 
+comments.
 
 
 Compressed files (these go in the HTML):
 
 * blueprint/screen.css
-  This is the main file of the framework. It is a compressed version
-  of all main CSS files in the 'src' directory. 
-
 * blueprint/print.css
-  This file sets some default print rules, so that printed versions
-  of your site looks better than they usually would. It should be
-  included on every page. The source for this file is also in the
-  'src' directory.
+* blueprint/ie.css
 
 
 Source files:
+
+* blueprint/src/reset.css
+  This file resets CSS values that browsers tend to set for you.
 
 * blueprint/src/grid.css
   This file sets up the grid (it's true). It has a lot of classes
@@ -80,12 +78,16 @@ Source files:
   This file sets some default typography. It also has a few
   methods for some really fancy stuff to do with your text.
 
-* blueprint/src/reset.css
-  This file resets CSS values that browsers tend to set for you.
+* blueprint/src/forms.css
+	Includes some minimal styling of forms.
+
+* blueprint/src/print.css
+  This file sets some default print rules, so that printed versions
+  of your site looks better than they usually would. It should be 
+  included on every page.
 
 * blueprint/src/ie.css
-  Contains every hack for Internet Explorer,so that our core 
-  files stay sweet and valid.
+  Includes every hack for our beloved IE6 and 7.
 
 
 Other:
@@ -119,7 +121,6 @@ them for support or any kind of help with BP.
 * Wilson Miner              [wilsonminer.com]
 * The Typogrify Project     [code.google.com/p/typogrify]
 * Eric Meyer                [meyerweb.com/eric]
-* Angus Turnbull            [twinhelix.com]
 * Khoi Vinh                 [subtraction.com]
 
 Questions, comments, suggestions or bug reports go to

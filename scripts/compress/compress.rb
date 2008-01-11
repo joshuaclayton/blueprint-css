@@ -12,15 +12,10 @@
 # 'blueprint' directory.
 # 
 # Ruby has to be installed for this script to work.
-# You can then run the following command (without the $): 
+# You can then run the following command: 
 # $ ruby compress.rb
 # 
 
-require 'lib/parse.rb'
-
-# directories
-dest  = '../../blueprint/'
-src   = dest + 'src/'
 
 # grouped source files
 screen  = ['reset.css', 'typography.css', 'grid.css', 'forms.css']
@@ -35,6 +30,13 @@ groups  = {
 }
 
 # ------------------------------------------------------------------------ #
+
+# for parsing the css
+require 'lib/parse.rb'
+
+# directories
+dest  = '../../blueprint/'
+src   = dest + 'src/'
 
 # compress each file
 puts "** Blueprint CSS Framework Compressor"
