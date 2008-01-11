@@ -2,7 +2,6 @@
 
 # 
 # Blueprint CSS Compressor
-# By Olav Bjorkoy (www.bjorkoy.com)
 # 
 # This script creates up-to-date compressed files from
 # the 'blueprint/src' directory. Each source file belongs 
@@ -17,40 +16,36 @@
 # 
 
 
-# grouped source files
-screen  = ['reset.css', 'typography.css', 'grid.css', 'forms.css']
-print   = ['print.css']
-ie      = ['ie.css']
-
-# compressed file names and related sources
-groups  = {
-  'screen.css' => screen,
-  'print.css' => print,
-  'ie.css' => ie
+# compressed file names and related sources, in order
+files  = {
+  'screen.css'  => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
+  'print.css'   => ['print.css'],
+  'ie.css'      => ['ie.css']
 }
 
-# ------------------------------------------------------------------------ #
+# -------------------------------------------------------- #
 
-# for parsing the css
-require 'lib/parse.rb'
+require 'lib/parse.rb' # for parsing the css
 
-# directories
-dest  = '../../blueprint/'
-src   = dest + 'src/'
+dest    = '../../blueprint/' # destionation directory
+src     = dest + 'src/' # source files directory
+header  = File.new('lib/header.txt').read # compressed file header
 
-# compress each file
 puts "** Blueprint CSS Framework Compressor"
 puts "** Builds compressed files from the source directory."
 
-header = File.new('lib/header.txt').read
-groups.each do |name, files|
+# start parsing and compressing
+files.each do |name, sources|
   puts "\nAssembling #{name}:"
   css = header
   
-  files.each do |f|
-    puts "+ src/#{f}.."
-    css += Parse.new().path_to_string(src + f)
+  # parse and compress each source file in this group
+  sources.each do |file|
+    puts "+ src/#{file}"
+    css += Parse.new(src + file).to_s
   end
+  
+  # write compressed css to destination file
   File.open(dest + name, 'w') do |f|
     f << css
   end

@@ -6,14 +6,12 @@ Blueprint CSS Framework Change Log
 
 ----------------------------------------------------------------
 
-Version 0.x - Date TBD
+Version 0.7 - Date TBD
 --
   New features:
     * New compressor script. [OFB]
     * Compressed version of ie.css. [OFB]
     * Alternating table row colors. [OFB]
-    * Added classes to lift or drop an element into the element
-      above or below itself. [OFB]
     * Added class .showgrid to see the grid of any column or container. [OFB]
     * Experimental support for Right-to-left languages through the RTL plugin. [OFB]
     * Lots of improvements to folder structure. [OFB]

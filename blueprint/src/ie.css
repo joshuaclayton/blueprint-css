@@ -19,8 +19,8 @@ body { text-align: center; }
 * html .column { overflow-x: hidden; }
 
 /* Keeps IE from cutting pulled/pushed elements */
-.pull-1, .pull-2, .pull-3, .pull-4, ul
-.push-1, .push-2, .push-3, .push-4, ol {
+.pull-1, .pull-2, .pull-3, .pull-4,
+.push-1, .push-2, .push-3, .push-4 {
   position: relative; 
 }
 
