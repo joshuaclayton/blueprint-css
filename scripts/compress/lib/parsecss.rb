@@ -24,7 +24,9 @@ class ParseCSS
     data.split('}').each do |var|
       parts = var.split('{')
       parts.map! { |p| p = strip_sidespace(p) }
+      
       selector = parts[0]
+      selector = remove_css_selector_space(selector)
       
       # find all properties for current selectors
       rules = ""
@@ -35,9 +37,6 @@ class ParseCSS
         split.map! { |s| s = strip_sidespace(s) } # strip sidespace
         rules += split[0] + ':' + split[1] + '; ' # add rule to list
       end
-      
-      # remove bogus selector whitespace
-      selector = remove_css_selector_space(selector)
       
       # add properly compressed css to the string
       css += selector + ' { ' + rules + '}' + "\n"

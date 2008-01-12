@@ -1,11 +1,11 @@
 /* -----------------------------------------------------------------------
-
+   
    Blueprint CSS Framework 0.7 (Date TBD) 
    http://blueprintcss.googlecode.com
    
    * Copyright (c) Olav Bjorkoy 2007. See docs/License.txt for more info.
    * See docs/readme.txt for instructions on how to use Blueprint.
    * This is a compressed file. See the sources in the 'src' directory.
-
+   
 ----------------------------------------------------------------------- */
 

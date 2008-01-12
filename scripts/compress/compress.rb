@@ -4,7 +4,7 @@
 # Blueprint CSS Compressor
 # 
 # This script creates up-to-date compressed files from
-# the 'blueprint/src' directory. Each source file belongs 
+# the 'blueprint/source' directory. Each source file belongs 
 # to a certain compressed file, as defined below. 
 # 
 # The newly compressed files are placed in the
@@ -15,7 +15,6 @@
 # $ ruby compress.rb
 # 
 
-
 # compressed file names and related sources, in order
 files = {
   'screen.css'  => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
@@ -25,11 +24,14 @@ files = {
 
 # -------------------------------------------------------- #
 
-require 'lib/parsecss.rb' # for parsing the css
+require 'lib/parsecss.rb'
 
-dest    = '../../blueprint/' # destionation directory
-src     = dest + 'src/' # source files directory
-header  = File.new('lib/header.txt').read # compressed file header
+# directories
+destination = '../../blueprint/'
+source = destination + 'src/'
+
+# compressed file header
+header = File.new('lib/header.txt').read
 
 puts "** Blueprint CSS Framework Compressor"
 puts "** Builds compressed files from the source directory."
@@ -42,11 +44,11 @@ files.each do |name, sources|
   # parse and compress each source file in this group
   sources.each do |file|
     puts "+ src/#{file}"
-    css += ParseCSS.new(src + file).to_s
+    css += ParseCSS.new(source + file).to_s
   end
   
-  # write compressed css to destination file
-  File.open(dest + name, 'w') do |f|
+  # write compressed css to destinationination file
+  File.open(destination + name, 'w') do |f|
     f << css
   end
 end
