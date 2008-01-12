@@ -8,10 +8,15 @@
 
 class ParseCSS
   
+  # read the file and start compressing
   def initialize(path)
-    @css = ""
-    
     data = path_to_string(path) # read the css file 
+    @css = compress(data)
+  end
+  
+  # compress a string of css
+  def compress(data)
+    css  = ""
     data = strip_sidespace(data) # remove unwanted sidespace
     data = remove_css_space(data) # remove other whitespace
     
@@ -35,9 +40,9 @@ class ParseCSS
       selector = remove_css_selector_space(selector)
       
       # add properly compressed css to the string
-      @css += selector + ' { ' + rules + '}' + "\n"
+      css += selector + ' { ' + rules + '}' + "\n"
     end
-    @css
+    css
   end
   
   # return the css when class 
