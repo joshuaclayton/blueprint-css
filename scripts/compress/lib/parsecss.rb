@@ -18,7 +18,7 @@ class ParseCSS
   def compress(data)
     css  = ""
     data = strip_sidespace(data) # remove unwanted sidespace
-    data = strip_space(data) # remove other whitespace
+    data = strip_space(data) # remove other whitespace and comments
     
     # find selectors and properties
     data.split('}').each do |var|

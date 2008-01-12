@@ -13,18 +13,20 @@
 # $ ruby validate.rb
 # 
 
-validator   = "lib/css-validator.jar"     # location of validator
-blueprint   = "../../blueprint"           # main css directory
-files       = ['screen', 'print', 'ie']   # files to test
+# files to test
+files = ['screen.css', 'print.css', 'ie.css']
 
-# ------------------------------------------------------------------------ #
+# -------------------------------------------------------- #
+
+directory = "../../blueprint"       # main css directory
+validator = "lib/css-validator.jar" # location of validator
 
 # start testing files
 files.each do |file|
-  puts "*** Testing #{blueprint}/#{file}.css"
+  puts "*** Testing #{directory}/#{file}"
   begin
     # the "-e" suppresses warnings, as they are quite useless.
-    system("java -jar #{validator} -e #{blueprint}/#{file}.css")
+    system("java -jar #{validator} -e #{directory}/#{file}")
   rescue Exception => e
     puts "Calling W3C validator failed with exception: " + e
   end

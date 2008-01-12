@@ -46,8 +46,11 @@ files.each do |name, sources|
   # parse and compress each source file in this group
   sources.each do |file|
     puts "+ src/#{file}"
+    css += "/* #{file} */\n" if sources.length > 1
     css += ParseCSS.new(source + file).to_s
+    css += "\n"
   end
+  css.rstrip! # remove unnecessary linebreaks 
   
   # write compressed css to destination file
   File.open(destination + name, 'w') do |f|

@@ -9,6 +9,7 @@
    
 ----------------------------------------------------------------------- */
 
+/* reset.css */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
 body { line-height:1.5; background:#fff; margin:1.5em 0; }
 table { border-collapse:separate; border-spacing:0; }
@@ -16,6 +17,8 @@ caption, th, td { text-align:left; font-weight:normal; }
 blockquote:before, blockquote:after, q:before, q:after { content:""; }
 blockquote, q { quotes:"" ""; }
 a img { border:none; }
+
+/* typography.css */
 body { font-size:75%; color:#222; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-weight:normal; color:#111; }
 h1 { font-size:3em; line-height:1; margin-bottom:0.5em; }
@@ -67,6 +70,8 @@ table .last { padding-right:0; }
 .removed { background:#900; color:#fff; }
 .top { margin-top:0; padding-top:0; }
 .bottom { margin-bottom:0; padding-bottom:0; }
+
+/* grid.css */
 .container { width:950px; margin:0 auto; }
 .showgrid { background:url(src/grid.png); }
 .column { float:left; margin-right:10px; }
@@ -162,6 +167,8 @@ hr.space { background:#fff; color:#fff; }
 .clear:after, .container:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
 * html .clear, * html .container { height:1%; }
 .clear, .container { display:block; }
+
+/* forms.css */
 label { font-weight:bold; }
 fieldset { padding:1.4em; margin:0 0 1.5em 0; border:1px solid #ccc; }
 legend { font-weight:bold; font-size:1.2em; }
