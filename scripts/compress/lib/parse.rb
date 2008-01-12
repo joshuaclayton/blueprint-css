@@ -1,6 +1,13 @@
+#
+# CSS Parser
+# Parses the css file at the given path 
+# into a string of compressed css.
+# 
+# string = Parse.new(path).to_s
+# 
+
 class Parse
   
-  # parses css file into compressed string of css
   def initialize(path)
     @css = ""
     
@@ -10,7 +17,7 @@ class Parse
     
     # find selectors and properties
     data.split('}').each do |var|
-      parts = var.split('{') 
+      parts = var.split('{')
       parts.map! { |p| p = strip_sidespace(p) }
       selector = parts[0]
       
@@ -33,27 +40,28 @@ class Parse
     @css
   end
   
-  # return the css when Parse class is printed
+  # return the css when class 
+  # instance gets turned into string
   def to_s
     @css
   end
   
-  # reads a file path into a string
+  # reads a file at path into a string
   def path_to_string(path)
     File.new(path).read    
   end
   
-  # removes unwanted space in css
+  # remove unwanted space and comments
   # keeps space inside properties
   def remove_css_space(data)
-    data.gsub!(': ', ':') # remove unwanted spaces
+    data.gsub!(': ', ':') # remove unwanted property spaces
     data.gsub!(/\n/, '') # remove newlines
     data.gsub!(/(\s\s)/, ' ') # remove multiple spaces
     data.gsub!(/(\/\*).*?(\*\/)/, '') # remove comments
     data
   end
   
-  # removes unwanted whitespace in selector
+  # remove unwanted whitespace in selector
   def remove_css_selector_space(selector)
     selector.gsub!(/(\n)/, '')
     selector.gsub!(',', ', ')
@@ -61,10 +69,10 @@ class Parse
     selector
   end
   
-  # strips all whitespace on both sides of a string
-  def strip_sidespace(str)
-    str.gsub!(/^\s+/, "")
-    str.gsub!(/\s+$/, $/)
-    str
+  # strip all whitespace on both sides of a string
+  def strip_sidespace(data)
+    data.gsub!(/^\s+/, "")
+    data.gsub!(/\s+$/, $/)
+    data
   end
 end

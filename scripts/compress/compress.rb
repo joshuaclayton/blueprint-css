@@ -17,7 +17,7 @@
 
 
 # compressed file names and related sources, in order
-files  = {
+files = {
   'screen.css'  => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
   'print.css'   => ['print.css'],
   'ie.css'      => ['ie.css']
