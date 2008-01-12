@@ -33,7 +33,7 @@ source = destination + 'src/'
 # compressed file header
 header = File.new('lib/header.txt').read
 
-puts "** Blueprint CSS Framework Compressor"
+puts "** Blueprint CSS Compressor"
 puts "** Builds compressed files from the source directory."
 
 # start parsing and compressing
@@ -47,7 +47,7 @@ files.each do |name, sources|
     css += ParseCSS.new(source + file).to_s
   end
   
-  # write compressed css to destinationination file
+  # write compressed css to destination file
   File.open(destination + name, 'w') do |f|
     f << css
   end

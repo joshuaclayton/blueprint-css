@@ -18,7 +18,7 @@ class ParseCSS
   def compress(data)
     css  = ""
     data = strip_sidespace(data) # remove unwanted sidespace
-    data = remove_css_space(data) # remove other whitespace
+    data = strip_space(data) # remove other whitespace
     
     # find selectors and properties
     data.split('}').each do |var|
@@ -26,7 +26,7 @@ class ParseCSS
       parts.map! { |p| p = strip_sidespace(p) }
       
       selector = parts[0]
-      selector = remove_css_selector_space(selector)
+      selector = strip_selector_space(selector)
       
       # find all properties for current selectors
       rules = ""
@@ -34,7 +34,7 @@ class ParseCSS
         split = str.split(':') # seperate properties and values
         break unless split[0] && split[1] # something's missing
         
-        split.map! { |s| s = strip_sidespace(s) } # strip sidespace
+        split.map! { |s| s = strip_sidespace(s) }
         rules += split[0] + ':' + split[1] + '; ' # add rule to list
       end
       
@@ -57,7 +57,7 @@ class ParseCSS
   
   # remove unwanted space and comments
   # keeps space inside properties
-  def remove_css_space(data)
+  def strip_space(data)
     data.gsub!(': ', ':') # remove unwanted property spaces
     data.gsub!(/\n/, '') # remove newlines
     data.gsub!(/(\s\s)/, ' ') # remove multiple spaces
@@ -66,7 +66,7 @@ class ParseCSS
   end
   
   # remove unwanted whitespace in selector
-  def remove_css_selector_space(selector)
+  def strip_selector_space(selector)
     selector.gsub!(/(\n)/, '')
     selector.gsub!(',', ', ')
     selector.gsub!(',  ', ', ')
