@@ -2,6 +2,8 @@
 
 # 
 # Blueprint CSS Compressor
+# Copyright (c) Olav Bjorkoy 2007. 
+# See docs/License.txt for more info.
 # 
 # This script creates up-to-date compressed files from
 # the 'blueprint/source' directory. Each source file belongs 

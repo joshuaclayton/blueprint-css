@@ -2,9 +2,7 @@
 
 # 
 # Blueprint CSS Validator
-# Created by Glenn Rempe on 2007-08-29.
-# 
-# Copyright (c) 2007. All rights reserved.
+# By Glenn Rempe & Olav Bjorkoy.
 # Grabbed from http://illumit.com/css-validator
 # 
 # This script will iterate over all CSS files in 
