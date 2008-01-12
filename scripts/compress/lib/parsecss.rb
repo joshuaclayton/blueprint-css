@@ -6,7 +6,7 @@
 # string = Parse.new(path).to_s
 # 
 
-class Parse
+class ParseCSS
   
   def initialize(path)
     @css = ""

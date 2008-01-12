@@ -25,7 +25,7 @@ files = {
 
 # -------------------------------------------------------- #
 
-require 'lib/parse.rb' # for parsing the css
+require 'lib/parsecss.rb' # for parsing the css
 
 dest    = '../../blueprint/' # destionation directory
 src     = dest + 'src/' # source files directory
@@ -42,7 +42,7 @@ files.each do |name, sources|
   # parse and compress each source file in this group
   sources.each do |file|
     puts "+ src/#{file}"
-    css += Parse.new(src + file).to_s
+    css += ParseCSS.new(src + file).to_s
   end
   
   # write compressed css to destination file
