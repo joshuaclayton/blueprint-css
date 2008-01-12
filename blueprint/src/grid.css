@@ -4,11 +4,11 @@
    * Sets up an easy-to-use grid of 24 columns.
    
    Based on work by:
-   * Olav Bjorkoy      [bjorkoy.com]
-   * Nathan Borror     [playgroundblues.com]
    * Jeff Croft        [jeffcroft.com]
+   * Nathan Borror     [playgroundblues.com]
    * Christian Metts   [mintchaos.com]
    * Khoi Vinh         [subtraction.com]
+   * Olav Bjorkoy      [bjorkoy.com]
    
    By default, the grid is 950px wide, with 24 columns 
    spanning 30px, and a 10px margin between columns.

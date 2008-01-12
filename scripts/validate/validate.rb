@@ -5,8 +5,8 @@
 # By Glenn Rempe & Olav Bjorkoy.
 # Grabbed from http://illumit.com/css-validator
 # 
-# This script will iterate over all CSS files in 
-# the framework and report any validator errors. 
+# This script will iterate over compressed CSS files in 
+# the framework and report any validation errors. 
 # 
 # Ruby and Java must be installed for this to work.
 # You can then run this command:

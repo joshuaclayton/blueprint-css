@@ -8,9 +8,9 @@
 
 class ParseCSS
   
-  # read the file and start compressing
+  # read the file and compress
   def initialize(path)
-    data = path_to_string(path) # read the css file 
+    data = path_to_string(path)
     @css = compress(data)
   end
   
@@ -35,7 +35,7 @@ class ParseCSS
         break unless split[0] && split[1] # something's missing
         
         split.map! { |s| s = strip_sidespace(s) }
-        rules += split[0] + ':' + split[1] + '; ' # add rule to list
+        rules += split[0] + ':' + split[1] + '; '
       end
       
       # add properly compressed css to the string
