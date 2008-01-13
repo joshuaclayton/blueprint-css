@@ -38,3 +38,5 @@ ol { margin-left:2em; }
 sup { vertical-align: text-top; }
 sub { vertical-align: text-bottom; }
 
+/* Fixes IE7 missing wrapping of code elements. */
+html>body p code { *white-space: normal; } 
