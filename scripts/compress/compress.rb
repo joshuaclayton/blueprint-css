@@ -53,10 +53,7 @@ files.each do |name, sources|
   css.rstrip! # remove unnecessary linebreaks 
   
   # find original and dermine if anything changed
-  original = File.new(destination + name).read
-  if original == css
-    puts "~ no changes made"
-  end
+  puts "(no changes made)" if css == File.new(destination + name).read
   
   # write compressed css to destination file
   File.open(destination + name, 'w') do |f|
