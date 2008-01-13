@@ -53,12 +53,11 @@ dl { margin:0 0 1.5em 0; }
 dl dt { font-weight:bold; }
 dd { margin-left:1.5em; }
 table { margin-bottom:1.4em; }
-th { border-bottom:2px solid #ccc; font-weight:bold; background:#ddd; }
-td { border-bottom:1px solid #ddd; }
+th { font-weight:bold; background:#C3D9FF; }
 th, td { padding:4px 10px 4px 5px; }
-tr.even td { background:#eee; }
+tr.even td { background:#E5ECF9; }
 tfoot { font-style:italic; }
-caption { background:#ffc; }
+caption { background:#eee; }
 table .last { padding-right:0; }
 .small { font-size:.8em; margin-bottom:1.875em; line-height:1.875em; }
 .large { font-size:1.2em; line-height:2.5em; margin-bottom:1.25em; }
@@ -160,13 +159,14 @@ table .last { padding-right:0; }
 .push-4 { margin-right:-160px; }
 .push-5 { margin-right:-200px; }
 .push-0, .push-1, .push-2, .push-3, .push-4, .push-5 { float:right; margin-left:18px; margin-bottom:1.5em; }
-.box { padding:1.5em; margin-bottom:1.5em; background:#eee; }
+.box { padding:1.5em; margin-bottom:1.5em; background:#E5ECF9; }
 hr { background:#ddd; color:#ddd; clear:both; float:none; width:100%; height:.1em; margin:0 0 1.4em; border:none; }
 hr.space { background:#fff; color:#fff; }
-.clear, .container { display:inline-block; }
-.clear:after, .container:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
-* html .clear, * html .container { height:1%; }
-.clear, .container { display:block; }
+.clearfix, .container { display:inline-block; }
+.clearfix:after, .container:after { content:"."; display:block; height:0; clearfix:both; visibility:hidden; }
+* html .clearfix, * html .container { height:1%; }
+.clearfix, .container { display:block; }
+.clear { clear:both; }
 
 /* forms.css */
 label { font-weight:bold; }

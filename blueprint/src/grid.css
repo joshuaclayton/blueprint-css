@@ -172,7 +172,7 @@
 .box { 
   padding: 1.5em; 
   margin-bottom: 1.5em; 
-  background: #eee; 
+  background: #E5ECF9; 
 }
 
 /* Use this to create a horizontal ruler across a column. */
@@ -195,14 +195,22 @@ hr.space {
    Based on How To Clear Floats Without Structural Markup by PiE
    [http://www.positioniseverything.net/easyclearing.html] */
 
-.clear, .container { display: inline-block; }
-.clear:after, .container:after {
+.clearfix, .container { display: inline-block; }
+.clearfix:after, .container:after {
   content: "."; 
   display: block; 
   height: 0; 
-  clear: both; 
+  clearfix: both; 
   visibility: hidden;
 }
-* html .clear,
+* html .clearfix,
 * html .container   { height: 1%; }
-.clear, .container  { display: block; }
+.clearfix, .container  { display: block; }
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+
+
+

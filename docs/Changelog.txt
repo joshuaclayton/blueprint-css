@@ -31,6 +31,8 @@ Version 0.7 - Date TBD
     * Improved structure in print.css.
     * Dual-licensed under MIT and GPL licenses.
     * Cleaned up scripts directory.
+    * Changed name of .clear to .clearfix, and
+      added .clear (clear:both;) to avoid confusion.
 
 
 Version 0.6 - 21/9/2007
