@@ -52,6 +52,12 @@ files.each do |name, sources|
   end
   css.rstrip! # remove unnecessary linebreaks 
   
+  # find original and dermine if anything changed
+  original = File.new(destination + name).read
+  if original == css
+    puts "~ no changes made"
+  end
+  
   # write compressed css to destination file
   File.open(destination + name, 'w') do |f|
     f << css
