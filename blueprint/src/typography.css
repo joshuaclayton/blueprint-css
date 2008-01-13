@@ -78,7 +78,7 @@ li ul,
 li ol       { margin:0 1.5em; }
 ul, ol      { margin: 0 1.5em 1.5em 1.5em; }
 
-ul          { list-style-type: circle; }
+ul          { list-style-type: disc; }
 ol          { list-style-type: decimal; }
 
 dl          { margin: 0 0 1.5em 0; }
@@ -90,10 +90,10 @@ dd          { margin-left: 1.5em;}
 -------------------------------------------------------------- */
 
 table       { margin-bottom: 1.4em; }
-th          { border-bottom: 2px solid #ccc; font-weight: bold; background: #eee; }
+th          { border-bottom: 2px solid #ccc; font-weight: bold; background: #ddd; }
 td          { border-bottom: 1px solid #ddd; }
 th,td       { padding: 4px 10px 4px 5px; }
-tr.even td  { background: #eef; }
+tr.even td  { background: #eee; }
 tfoot       { font-style: italic; }
 caption     { background: #ffc; }
 
