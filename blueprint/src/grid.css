@@ -153,15 +153,15 @@
   float:left;
 }
 
-.push-1  { margin-right: -40px; }
-.push-2  { margin-right: -80px; }
-.push-3  { margin-right: -120px; }
-.push-4  { margin-right: -160px; }
-.push-5  { margin-right: -200px; }
+.push-1  { margin: 0 -40px 1.5em 40px; }
+.push-2  { margin: 0 -80px 1.5em 80px; }
+.push-3  { margin: 0 -120px 1.5em 120px; }
+.push-4  { margin: 0 -160px 1.5em 160px; }
+.push-5  { margin: 0 -200px 1.5em 200px; }
 
 .push-0, .push-1, .push-2, 
 .push-3, .push-4, .push-5 { 
-  float: right; margin-left:18px; margin-bottom:1.5em;
+  float: right;
 }
 
 
@@ -200,7 +200,7 @@ hr.space {
   content: "."; 
   display: block; 
   height: 0; 
-  clearfix: both; 
+  clear: both; 
   visibility: hidden;
 }
 * html .clearfix,
