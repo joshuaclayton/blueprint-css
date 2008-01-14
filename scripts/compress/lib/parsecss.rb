@@ -61,22 +61,19 @@ class ParseCSS
     data.gsub!(': ', ':') # remove unwanted property spaces
     data.gsub!(/\n/, '') # remove newlines
     data.gsub!(/(\s\s)/, ' ') # remove multiple spaces
-    data.gsub!(/(\/\*).*?(\*\/)/, '') # remove comments
-    data
+    data.gsub(/(\/\*).*?(\*\/)/, '') # remove comments
   end
   
   # remove unwanted whitespace in selector
   def strip_selector_space(selector)
     selector.gsub!(/(\n)/, '')
     selector.gsub!(',', ', ')
-    selector.gsub!(',  ', ', ')
-    selector
+    selector.gsub(',  ', ', ')
   end
   
   # strip all whitespace on both sides of a string
   def strip_sidespace(data)
     data.gsub!(/^\s+/, '')
-    data.gsub!(/\s+$/, $/)
-    data
+    data.gsub(/\s+$/, $/)
   end
 end
