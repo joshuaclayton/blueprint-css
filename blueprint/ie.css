@@ -13,7 +13,7 @@ body { text-align:center; }
 .container { text-align:left; }
 * html .column { overflow-x:hidden; }
 .pull-1, .pull-2, .pull-3, .pull-4, .push-1, .push-2, .push-3, .push-4 { position:relative; }
-legend { margin-bottom:-18px -8px 16px 0; padding:0; }
+legend { margin:-18px -8px 16px 0; padding:0; }
 ol { margin-left:2em; }
 sup { vertical-align:text-top; }
 sub { vertical-align:text-bottom; }
