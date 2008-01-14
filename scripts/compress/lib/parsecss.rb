@@ -3,7 +3,7 @@
 # Parses the css file at the given path 
 # into a string of compressed css.
 # 
-# string = Parse.new(path).to_s
+# string = ParseCSS.new(path).to_s
 # 
 
 class ParseCSS
@@ -75,7 +75,7 @@ class ParseCSS
   
   # strip all whitespace on both sides of a string
   def strip_sidespace(data)
-    data.gsub!(/^\s+/, "")
+    data.gsub!(/^\s+/, '')
     data.gsub!(/\s+$/, $/)
     data
   end

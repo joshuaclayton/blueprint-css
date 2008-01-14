@@ -26,6 +26,7 @@ Version 0.7 - Date TBD
     * Proper margin on all form elements.
     * No margins for images in headings.
     * Push-x bottom margin.
+    * Vertical align set to middle on tables.
 
   Misc:
     * Improved structure in print.css.
