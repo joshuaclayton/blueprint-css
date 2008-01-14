@@ -3,14 +3,14 @@
 # Parses the css file at the given path 
 # into a string of compressed css.
 # 
-# string = ParseCSS.new(path).to_s
+# string = ParseCSS.new(path, namespace).to_s
 # 
 
 class ParseCSS
   
-  # read the file and compress
-  def initialize(path)
+  def initialize(path, namespace='')
     data = path_to_string(path)
+    @namespace = namespace
     @css = compress(data)
   end
   
@@ -27,6 +27,9 @@ class ParseCSS
       
       selector = parts[0]
       selector = strip_selector_space(selector)
+      
+      # add namespace to classes if @namespace is set
+      selector.gsub!(/\./, '.' + @namespace) if @namespace != ''
       
       # find all properties for current selectors
       rules = ""

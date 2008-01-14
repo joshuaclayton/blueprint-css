@@ -24,19 +24,24 @@ files = {
   'ie.css'      => ['ie.css']
 }
 
-# -------------------------------------------------------- #
-
-require 'lib/parsecss.rb'
-
 # directories
 destination = '../../blueprint/'
 source = destination + 'src/'
+
+# To namespace each Blueprint class, set this variable.
+# Example: namespace = 'bp-' gives you: .container => .bp-container
+namespace = ''
+
+# -------------------------------------------------------- #
+
+require 'lib/parsecss.rb'
 
 # compressed file header
 header = File.new('lib/header.txt').read
 
 puts "** Blueprint CSS Compressor"
 puts "** Builds compressed files from the source directory."
+puts "** Namespace: #{namespace}" if namespace != ''
 
 # start parsing and compressing
 files.each do |name, sources|
@@ -47,10 +52,10 @@ files.each do |name, sources|
   sources.each do |file|
     puts "+ src/#{file}"
     css += "/* #{file} */\n" if sources.length > 1
-    css += ParseCSS.new(source + file).to_s
+    css += ParseCSS.new(source + file, namespace).to_s
     css += "\n"
   end
-  css.rstrip! # remove unnecessary linebreaks 
+  css.rstrip! # remove unnecessary linebreaks
   
   # find original and dermine if anything changed
   puts "(no changes made)" if css == File.new(destination + name).read

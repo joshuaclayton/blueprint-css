@@ -15,6 +15,7 @@ Version 0.7 - Date TBD
     * Compressed version of ie.css.
     * Alternating table row colors.
     * Added class .showgrid to see the grid of any column or container.
+		* You can now set a namespace for BP classes in the compressor.
   
   Bug fixes:
     * Sidebar alignment in tests/sample.html.
