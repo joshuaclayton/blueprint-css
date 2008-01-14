@@ -6,6 +6,7 @@ Blueprint CSS Framework Change Log
 
 ----------------------------------------------------------------
 
+
 Version 0.7 - Date TBD
 --
   New features:
