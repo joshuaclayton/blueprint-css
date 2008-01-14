@@ -1,6 +1,6 @@
 Blueprint CSS Framework Change Log
 
-* URL:    code.google.com/p/blueprintcss
+* Web:    blueprintcss.googlecode.com
 * Mail:   groups.google.com/group/blueprintcss
 * News:   bjorkoy.com
 
@@ -15,7 +15,7 @@ Version 0.7 - Date TBD
     * Compressed version of ie.css.
     * Alternating table row colors.
     * Added class .showgrid to see the grid of any column or container.
-		* You can now set a namespace for BP classes in the compressor.
+    * You can now set a namespace for BP classes in the compressor.
   
   Bug fixes:
     * Sidebar alignment in tests/sample.html.
