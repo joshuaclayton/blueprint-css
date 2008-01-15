@@ -28,9 +28,9 @@ files = {
 destination = '../../blueprint/'
 source = destination + 'src/'
 
-# To namespace each Blueprint class, set this variable.
-# Example: namespace = 'bp-' gives you: .container => .bp-container
-namespace = ''
+# To namespace each Blueprint class, pass an argument to the script.
+# Example: $ ruby compress.rb bp- => .container becomes .bp-container
+namespace = ARGV[0] ||= ''
 
 # -------------------------------------------------------- #
 
