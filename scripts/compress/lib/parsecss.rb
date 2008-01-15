@@ -9,7 +9,7 @@
 class ParseCSS
   
   def initialize(path, namespace='')
-    data = path_to_string(path)
+    data = File.path_to_string(path)
     @namespace = namespace
     @css = compress(data)
   end
@@ -51,11 +51,6 @@ class ParseCSS
   # instance gets turned into string
   def to_s
     @css
-  end
-  
-  # reads a file at path into a string
-  def path_to_string(path)
-    File.new(path).read    
   end
   
   # remove unwanted space and comments

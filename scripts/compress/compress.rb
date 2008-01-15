@@ -24,17 +24,26 @@ files = {
   'ie.css'      => ['ie.css']
 }
 
-# directories
-destination = '../../blueprint/'
-source = destination + 'src/'
-
+# WARNING: Experimental feature
 # To namespace each Blueprint class, pass an argument to the script.
 # Example: $ ruby compress.rb bp- => .container becomes .bp-container
 namespace = ARGV[0] ||= ''
 
+# directories
+destination = '../../blueprint/'
+source = destination + 'src/'
+
+# test files
+test_directory = '../../tests/'
+test_files = ['index.html', 'parts/elements.html', 'parts/forms.html', 'parts/grid.html', 'parts/sample.html']
+
+
 # -------------------------------------------------------- #
 
+
+require 'lib/file.rb'
 require 'lib/parsecss.rb'
+require 'lib/namespace.rb'
 
 # compressed file header
 header = File.new('lib/header.txt').read
@@ -61,10 +70,14 @@ files.each do |name, sources|
   puts "(no changes made)" if css == File.new(destination + name).read
   
   # write compressed css to destination file
-  File.open(destination + name, 'w') do |f|
-    f << css
-  end
+  File.string_to_file(destination + name, css)
+end
+
+puts "\n** Updating namespace to \"#{namespace}\" in test files"
+for file in test_files
+  puts "+ #{file}"
+  Namespace.new(test_directory + file, namespace)
 end
 
 puts "\n** Done!"
-puts "** Your compressed files are now up-to-date."
+puts "** Your compressed css files and test files are now up-to-date."
