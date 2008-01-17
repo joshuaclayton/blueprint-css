@@ -29,8 +29,7 @@ Version 0.7 - Date TBD
     * No margins for images in headings.
     * Push-x bottom margin.
     * Vertical align set to middle on tables.
-    * Improved .notice, .error and .success box and text 
-      colors after testing against color blindness.
+    * Improved .notice, .error and .success color contrast.
   
   Misc:
     * Improved structure in print.css.

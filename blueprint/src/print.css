@@ -6,7 +6,7 @@
       
    Some additions you'll want to make, customized to your markup:
    #header, #footer, #navigation { display:none; }
-	 
+   
 -------------------------------------------------------------- */
 
 body {
@@ -67,9 +67,9 @@ blockquote {
 -------------------------------------------------------------- */
 
 a:link, a:visited {
-	background: transparent;
-	font-weight:700;
-	text-decoration: underline;
+  background: transparent;
+  font-weight:700;
+  text-decoration: underline;
 }
 
 a:link:after, a:visited:after {
