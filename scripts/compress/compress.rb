@@ -66,18 +66,15 @@ files.each do |name, sources|
   end
   css.rstrip! # remove unnecessary linebreaks
   
-  # find original and dermine if anything changed
-  puts "(no changes made)" if css == File.new(destination + name).read
-  
   # write compressed css to destination file
   File.string_to_file(destination + name, css)
 end
 
-puts "\n** Updating namespace to \"#{namespace}\" in test files"
+puts "\nUpdating namespace to \"#{namespace}\" in test files:"
 for file in test_files
   puts "+ #{file}"
   Namespace.new(test_directory + file, namespace)
 end
 
 puts "\n** Done!"
-puts "** Your compressed css files and test files are now up-to-date."
+puts "** Your compressed files and test files are now up-to-date."

@@ -15,8 +15,7 @@
   
 -------------------------------------------------------------- */
 
-/* Default font settings
-   The font-size percentage is of 16px (0.75 * 16px = 12px) */
+/* Default font settings. The font-size percentage is of 16px. */
 
 body { 
   font-size: 75%;
