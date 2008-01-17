@@ -27,10 +27,17 @@ class Namespace
   
   # removes a namespace from a string of html
   def remove_current_namespace(html)
+    current = current_namespace(html)
+    html.gsub!(current, '')
+    html
+  end
+  
+  # returns current namespace in test files
+  # based on container class
+  def current_namespace(html)
     html =~ /class="([\S]+)container/
     current_namespace = $1 if $1
-    html.gsub!(current_namespace, '') if current_namespace
-    html
+    return current_namespace || ''
   end
 
 end

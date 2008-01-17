@@ -32,6 +32,7 @@ Version 0.7 - Date TBD
     * Improved .notice, .error and .success color contrast.
   
   Misc:
+    * Increased default font size to 80% (13px).
     * Improved structure in print.css.
     * Dual-licensed under MIT and GPL licenses.
     * Cleaned up scripts directory.

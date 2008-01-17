@@ -37,9 +37,7 @@ source = destination + 'src/'
 test_directory = '../../tests/'
 test_files = ['index.html', 'parts/elements.html', 'parts/forms.html', 'parts/grid.html', 'parts/sample.html']
 
-
 # -------------------------------------------------------- #
-
 
 require 'lib/file.rb'
 require 'lib/parsecss.rb'
