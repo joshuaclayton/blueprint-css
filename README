@@ -97,11 +97,11 @@ Other:
   for Blueprint. See individual readme files in the directory
   of each plugin for further instructions.
 
-* scripts/
-  BP comes with two scripts: 
-  * One for validating the CSS in the core files.
+* lib/
+  BP comes with two scripts to run: 
+  * One for validating the CSS in the core files (validate.rb).
   * One for re-compressing the main CSS files from the 
-    source files, if you've made changes to the core.
+    source files, if you've made changes to the core (compress.rb).
 
 * tests/
   Contains html files which tests most aspects of Blueprint.

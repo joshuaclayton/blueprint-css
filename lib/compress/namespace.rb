@@ -4,7 +4,7 @@
 # so that the tests will work even if you set your own namespace.
 #
 
-class Namespace
+class Namespace < Blueprint
   
   # Read html to string, remove namespace if any,
   # set the new namespace, and update the test file.
@@ -12,16 +12,16 @@ class Namespace
     html = File.path_to_string(path)
     remove_current_namespace(html)
     add_namespace(html, namespace)
-    File.string_to_file(path, html)
+    File.string_to_file(html, path)
   end
   
   # adds namespace to BP classes in a html file
   def add_namespace(html, namespace)    
-    html.gsub!(/(class=")([a-zA-Z0-9\-_ ]*)(")/) { |m|
+    html.gsub!(/(class=")([a-zA-Z0-9\-_ ]*)(")/) do |m|
       classes = m.to_s.split('"')[1].split(' ')
       classes.map! { |c| c = namespace + c }
       'class="' + classes.join(' ') + '"'
-    }
+    end
     html
   end
   
@@ -37,7 +37,6 @@ class Namespace
   def current_namespace(html)
     html =~ /class="([\S]+)container/
     current_namespace = $1 if $1
-    return current_namespace || ''
+    current_namespace || ''
   end
-
 end
