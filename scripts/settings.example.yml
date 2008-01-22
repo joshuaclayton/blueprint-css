@@ -1,0 +1,17 @@
+# refer to http://www.yaml.org/spec/1.1/ for clarification on YAML collections
+projectname: # must be a unique key
+  path: /Users/username/Sites/project name/public/stylesheets # path to output folder
+  namespace: my-custom-namespace- #custom namespace (if used)
+  custom_css:
+    ie.css:
+      - my-ie.css # compressed and appended on to ie.css
+    screen.css:
+      - validation.css # both validation.css and calendar-date-select/styles.css would be compressed and appended onto screen.css
+      - calendar-date-select/styles.css
+projectname2:
+  path: /Users/username/Sites/different-project-name/styles
+  custom_css:
+    print.css:
+      - pages.css
+      - pretty-print.css
+      - prince/document.css

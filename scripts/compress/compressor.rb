@@ -1,10 +1,12 @@
+require 'yaml'
+
 class Compressor < Blueprint
   # class constants
-  CSS_FILES = {
-    'screen.css'   => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
-    'print.css'    => ['print.css'],
-    'ie.css'       => ['ie.css']
-  }
+    CSS_FILES = {
+      'screen.css'   => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
+      'print.css'    => ['print.css'],
+      'ie.css'       => ['ie.css']
+    } unless const_defined?("CSS_FILES")
   
   TEST_FILES = [
     'index.html', 
@@ -12,23 +14,32 @@ class Compressor < Blueprint
     'parts/forms.html', 
     'parts/grid.html', 
     'parts/sample.html'
-  ]
+  ] unless const_defined?("TEST_FILES")
   
   # properties
-  attr_accessor :namespace, :destination_path
-  attr_reader   :custom_path
+  attr_accessor :namespace, :destination_path, :custom_css
+  attr_reader   :custom_path, :loaded_from_settings
   
   # constructor
   def initialize(options = {})
-    @namespace =          options[:namespace]   || ""
-    @destination_path =   options[:destination] || Blueprint::BLUEPRINT_ROOT_PATH
-    @custom_path =        @destination_path != Blueprint::BLUEPRINT_ROOT_PATH
+    @loaded_from_settings = false
+    self.custom_css = {}
+
+    initialize_project_from_yaml(options[:project])
+
+    self.namespace =          options[:namespace]   ? options[:namespace]   : self.namespace || ""
+    self.destination_path =   options[:destination] ? options[:destination] : self.destination_path || Blueprint::BLUEPRINT_ROOT_PATH
 
     # iterates through lib/compress folder
-    Dir["#{File.join(Blueprint::ROOT_PATH, "lib", "compress")}/*"].each do |file|
+    Dir["#{File.join(Blueprint::LIB_PATH, "compress")}/*"].each do |file|
       # require ruby files not including compressor.rb
       require "#{file}" if file =~ /.rb$/ && file !~ /^compressor/
     end
+  end
+  
+  def destination_path=(path)
+    @destination_path = path
+    @custom_path = @destination_path != Blueprint::BLUEPRINT_ROOT_PATH
   end
   
   # instance methods
@@ -53,20 +64,19 @@ class Compressor < Blueprint
       # check to see if a custom (non-default) location was used for output files
       # if custom path is used, handle custom CSS, if any
       if custom_path
-        overwrite_path = File.join(destination_path, "my-#{output_file_name}")
+        overwrite_path = File.join(destination_path, (custom_css[output_file_name] || "my-#{output_file_name}"))
         overwrite_css = File.exists?(overwrite_path) ? File.path_to_string(overwrite_path) : ""
         
         # if there's CSS present, add it to the CSS output
         unless overwrite_css.blank?
           puts "      + custom styles\n"
-          css_output += CSSParser.new(:css_string => overwrite_css, :namespace => namespace).to_s
+          css_output += CSSParser.new(:css_string => overwrite_css).to_s
         end
       end
       
       #save CSS to correct path
       File.string_to_file(css_output, css_output_path)
     end
-
     
     # TODO: have tests kick out to custom location
     generate_tests
@@ -74,7 +84,23 @@ class Compressor < Blueprint
   end
 
   private 
-
+  
+  # attempts to load output settings from settings.yml
+  def initialize_project_from_yaml(project_name = nil)
+    # ensures project_name is set and settings.yml is present
+    return unless (project_name && File.exist?(Blueprint::SETTINGS_FILE))
+    
+    # loads yaml into hash
+    projects = YAML::load(File.path_to_string(Blueprint::SETTINGS_FILE))
+    
+    if (project = projects[project_name]) # checks to see if project info is present
+      self.namespace =        project['namespace']  || ""
+      self.destination_path = project['path']       || Blueprint::BLUEPRINT_ROOT_PATH
+      self.custom_css =       project['custom_css'] || {}
+      @loaded_from_settings = true
+    end
+  end
+  
   def generate_tests
     puts "\n    Updating namespace to \"#{namespace}\" in test files:"
     test_files = Compressor::TEST_FILES.map {|f| File.join(Blueprint::TEST_PATH, f)}
@@ -91,6 +117,7 @@ class Compressor < Blueprint
     puts "  **"
     puts "  **   Blueprint CSS Compressor"
     puts "  **   Builds compressed files from the source directory."
+    puts "  **   Loaded from settings.yml" if loaded_from_settings
     puts "  **   Namespace: '#{namespace}'" unless namespace.blank?
     puts "  **   Output to: #{destination_path}"
     puts "  **"
