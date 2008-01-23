@@ -1,5 +1,4 @@
 require 'yaml'
-
 class Compressor < Blueprint
   # class constants
     CSS_FILES = {
@@ -52,9 +51,10 @@ class Compressor < Blueprint
 
       # CSS file generation
       css_output = css_file_header # header included on all three Blueprint-generated files
+      css_output += "\n\n"
       
       # Iterate through src/ .css files and compile to individual core compressed file
-      css_source_file_names.each do |css_source_file|
+      css_source_file_names.each_with_index do |css_source_file, index|
         puts "      + src/#{css_source_file}"
         css_output += "/* #{css_source_file} */\n" if css_source_file_names.any?
         css_output += CSSParser.new(:file_path => File.join(Blueprint::SOURCE_PATH, css_source_file), :namespace => namespace).to_s
@@ -144,7 +144,6 @@ class Compressor < Blueprint
    * See docs/readme.txt for instructions on how to use Blueprint.
    * This is a compressed file. See the sources in the 'src' directory.
 
------------------------------------------------------------------------ */
-    )
+----------------------------------------------------------------------- */)
   end
 end

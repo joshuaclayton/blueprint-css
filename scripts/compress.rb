@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'blueprint.rb'
+require 'blueprint'
 require 'compress/compressor'
 
 # **Basic
@@ -85,7 +85,7 @@ require 'compress/compressor'
 #         path: /path/to/different/stylesheets
 #         namespace: different-namespace-
 #         custom_css:
-#           screen.css
+#           screen.css:
 #             - custom_screen.css
 #       project3:
 #         path: /path/to/another/projects/styles
