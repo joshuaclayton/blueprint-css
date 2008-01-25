@@ -50,7 +50,7 @@ class Compressor < Blueprint
   def process_required_files
     # iterates through lib/compress folder and requires ruby files not including compressor.rb
     Dir["#{File.join(Blueprint::LIB_PATH, "compress")}/*"].each do |file|
-      require "#{file}" if file =~ /.rb$/ && file !~ /^compressor/
+      require "#{file}" if file =~ /\.rb$/ && file !~ /^compressor/
     end
   end
   
