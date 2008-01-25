@@ -1,7 +1,7 @@
 require 'erb'
 class CustomLayout < Blueprint
   # class constants
-  CSS_ERB_FILE = File.join(Blueprint::LIB_PATH, 'compress', 'grid.erb.css')
+  CSS_ERB_FILE = File.join(Blueprint::LIB_PATH, 'compress', 'grid.css.erb')
   
   # properties
   attr_writer :column_count, :column_width, :gutter_width
