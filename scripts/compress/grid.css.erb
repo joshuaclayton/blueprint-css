@@ -47,9 +47,9 @@
   .last { margin-right: 0; }
 
   /* Use these classes to set the width of a column. */
-
-  <% (1..column_count).each do |column| %>
-    .span-<%= column %> {width: <%= (column * column_width).to_i %>px;<%= "margin: 0;" if column == column_count %>}
+  .span-1 {width: <%= column_width %>px;}
+  <% (2..column_count).each do |column| %>
+    .span-<%= column %> {width: <%= (column * (column_width + gutter_width)).to_i %>px;<%= "margin: 0;" if column == column_count %>}
   <% end %>
 
   /* Add these to a column to append empty cols. */
