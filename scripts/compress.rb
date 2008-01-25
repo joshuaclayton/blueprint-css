@@ -38,7 +38,7 @@ require 'compress/compressor'
 # 
 # **Custom Settings
 #   
-#   To use custom settings, the file should be stored in settings.yml within this directory.
+#   To use custom settings, the file need to be stored in settings.yml within this directory.  An example YAML file has been included.
 #   
 #   Another ability is to use YAML (spec is at http://www.yaml.org/spec/1.1/) for project settings in a predefined structure and 
 #   store all pertinent information there.  The YAML file has multiple keys (usually a named project) with a set of data that defines 
@@ -81,6 +81,10 @@ require 'compress/compressor'
 #             - my-print-styles.css
 #           screen.css:
 #             - subfolder-of-stylesheets/sub_css.css
+#         custom_layout:
+#            column_count: 12
+#            column_width: 70
+#            gutter_width: 10
 #       project2:
 #         path: /path/to/different/stylesheets
 #         namespace: different-namespace-
@@ -93,6 +97,16 @@ require 'compress/compressor'
 #     In a structure like this, a lot more assignment is occurring.  Custom namespaces are being set for two projects, while 
 #     the third (project3) is just a simple path setting.
 #     
+#     Also, custom CSS is being used that is appended at the end of its respective file.  So, in project1, print.css will have docs.css 
+#     and my-print-styles.css instead of the default my-print.css.  Note that these files are relative to the path that you defined above;
+#     you can use subdirectories from the default path if you would like.
+#     
+#     Another thing to note here is the custom_layout; if not defined, your generated CSS will default to the 24 column, 950px wide grid that 
+#     has been standard with Blueprint for quite some time.  However, you can specify a custom grid setup if you would like.  The three options 
+#     are column_count (the number of columns you want your grid to have), column width (the width in pixels that you want your columns to be), and 
+#     gutter_width (the width in pixels you want your gutters - space between columns - to be).  To use the Blueprint default, do not define this 
+#     in your settings file.
+#     
 #     In Ruby, the structure would look like this:
 #     
 #       {
@@ -103,6 +117,11 @@ require 'compress/compressor'
 #             'ie.css' => ['custom-ie.css'],
 #             'print.css' => ['docs.css', 'my-print-styles.css'],
 #             'screen.css' => ['subfolder-of-stylesheets/sub_css.css']
+#           },
+#           'custom_layout' => {
+#             'column_count' => 12,
+#             'column_width' => 70,
+#             'gutter_width' => 10
 #           }
 #         },
 #         'project2' => {

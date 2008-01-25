@@ -1,18 +1,16 @@
-#
-# CSS Parser
-# Parses the css file at the given path 
-# into a string of compressed css.
-
 class CSSParser < Blueprint
+  # attributes
   attr_accessor :namespace
   attr_reader   :css_output, :raw_data
   
+  # constructor
   def initialize(options = {})
-    @raw_data     = options[:file_path] ? File.path_to_string(options[:file_path]) : options[:css_string] ||= ""
+    @raw_data     = options[:file_path] ? File.path_to_string(options[:file_path]) : options[:css_string] || ""
     @namespace    = options[:namespace] || ""
     compress(@raw_data)
   end
   
+  # instance methods
   def to_s
     @css_output
   end
@@ -31,9 +29,11 @@ class CSSParser < Blueprint
       
       rules = []
       styles.split(';').each do |key_val_pair|
-        property, value = key_val_pair.split(':').map{|kv| kv.strip_side_space!}
-        break unless property && value
-        rules << "#{property}:#{value};"
+        unless key_val_pair.nil?
+          property, value = key_val_pair.split(':').map{|kv| kv.strip_side_space!}
+          break unless property && value
+          rules << "#{property}:#{value};"
+        end
       end
       
       @css_output += "#{tags} {#{rules}}\n"
