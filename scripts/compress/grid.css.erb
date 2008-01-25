@@ -49,7 +49,7 @@
   /* Use these classes to set the width of a column. */
   .span-1 {width: <%= column_width %>px;}
   <% (2..column_count).each do |column| %>
-    .span-<%= column %> {width: <%= (column * (column_width + gutter_width)).to_i %>px;<%= "margin: 0;" if column == column_count %>}
+    .span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin: 0;" if column == column_count %>}
   <% end %>
 
   /* Add these to a column to append empty cols. */
@@ -86,7 +86,7 @@
 
   <%= (1..(0.5*column_count).to_i).map {|c| ".pull-#{c}" }.join(", ") %> {float: left;}
 
-  <% (1..5).each do |column| %>
+  <% (1..(0.5*column_count)).each do |column| %>
     .push-<%= column %> { margin: 0 -<%= (column * (column_width + gutter_width)).to_i %>px 1.5em <%= (column * (column_width + gutter_width)).to_i %>px; }
   <% end %>
 
