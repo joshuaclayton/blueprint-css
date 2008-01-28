@@ -98,10 +98,11 @@ class Compressor < Blueprint
         css_output += "\n"
       end
       
+      # append CSS from custom files
       css_output = append_custom_css(css_output, output_file_name)
       
       # append semantic class names if set
-      css_output += SemanticClassNames.new(:namespace => self.namespace).css_from_assignments(semantic_classes) if output_file_name == 'screen.css'
+      css_output = append_semantic_classes(css_output, output_file_name)
       
       #save CSS to correct path, stripping out any extra whitespace at the end of the file
       File.string_to_file(css_output.rstrip, css_output_path)
@@ -118,10 +119,19 @@ class Compressor < Blueprint
       # if there's CSS present, add it to the CSS output
       unless overwrite_css.blank?
         puts "      + custom styles\n"
-        css += CSSParser.new(:css_string => overwrite_css).to_s
+        css += "/* #{overwrite_path} */\n"
+        css += CSSParser.new(:css_string => overwrite_css).to_s + "\n"
       end
     end
     css
+  end
+  
+  def append_semantic_classes(css, current_file_name)
+    semantic_styles = SemanticClassNames.new(:namespace => self.namespace).css_from_assignments(self.semantic_classes)
+    return css unless current_file_name == 'screen.css' && !semantic_styles.blank?
+    
+    css += "/* semantic class names */\n"
+    css += semantic_styles + "\n"
   end
   
   def generate_tests

@@ -33,7 +33,7 @@ class SemanticClassNames < Blueprint
       
       # set the semantic class to the rules gathered in classes, sorted by index
       # this way, the styles will be applied in the correct order from top of file to bottom
-      output_css[".#{semantic_class}"] = "#{classes.sort_by {|i| i[:idx]}.map {|i| i[:rules]}}"
+      output_css[semantic_class] = "#{classes.sort_by {|i| i[:idx]}.map {|i| i[:rules]}}"
     end
     
     # return the css in proper format

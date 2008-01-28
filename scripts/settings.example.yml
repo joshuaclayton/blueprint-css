@@ -1,5 +1,5 @@
 # refer to http://www.yaml.org/spec/1.1/ for clarification on YAML collections
-projectname: # must be a unique key
+projectname:
   path: /Users/username/Sites/project name/public/stylesheets # path to output folder
   namespace: my-custom-namespace- #custom namespace (if used)
   custom_css:
@@ -19,3 +19,9 @@ projectname2:
       - pages.css
       - pretty-print.css
       - prince/document.css
+  semantic_classes:
+    "#footer, #header": column span-24 last
+    "#content": column span-18 border
+    "#extra-content": last span-6 column
+    "div#navigation": last span-24 column
+    "div.section, div.entry, .feeds": span-6 column

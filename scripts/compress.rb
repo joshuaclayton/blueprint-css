@@ -92,10 +92,11 @@ require 'compress/compressor'
 #           screen.css:
 #             - custom_screen.css
 #         semantic_classes:
-#           footer: span-24 column last
-#           header: span-24 column last
-#           content: span-18 column border
-#           extra-content: span-6 column last
+#           "#footer, #header": column span-24 last
+#           "#content": column span-18 border
+#           "#extra-content": last span-6 column
+#           "div#navigation": last span-24 column
+#           "div.section, div.entry, .feeds": span-6 column
 #       project3:
 #         path: /path/to/another/projects/styles
 # 
@@ -115,43 +116,45 @@ require 'compress/compressor'
 #     Semantic classes are still in the works within Blueprint, but a simple implementation has been created.
 #     
 #     Defining semantic_classes, with nodes underneath, will generate a class for each node which has rules of each class assigned to it.  For example,
-#     in project2 above, 'footer' is assigned all the rules from the classes 'span-24, column, and last', while 'content' is assigned all the rules from 
-#     'span-18, column, and border'.  Although it is a crude way do accomplish this, it keeps the generated CSS separate from the core BP CSS.
+#     in project2 above, for '#footer, #header', elements with id's of footer and header will be assigned all the rules from the 
+#     classes 'span-24, column, and last', while divs with classes either entry or section, as well as any element with class of feed, is 
+#     assigned all the rules from 'span-6 and column'.  Although it is a crude way do accomplish this, it keeps the generated CSS separate from the core BP CSS.
 #     
 #     In Ruby, the structure would look like this:
 #     
-#       {
-#         'project1' => {
-#           'path' => '/path/to/my/project/stylesheets',
-#           'namespace' => 'custom-namespace-1-',
-#           'custom_css' => {
-#             'ie.css' => ['custom-ie.css'],
-#             'print.css' => ['docs.css', 'my-print-styles.css'],
-#             'screen.css' => ['subfolder-of-stylesheets/sub_css.css']
-#           },
-#           'custom_layout' => {
-#             'column_count' => 12,
-#             'column_width' => 70,
-#             'gutter_width' => 10
-#           }
+#     {
+#       'project1' => {
+#         'path' => '/path/to/my/project/stylesheets',
+#         'namespace' => 'custom-namespace-1-',
+#         'custom_css' => {
+#           'ie.css' => ['custom-ie.css'],
+#           'print.css' => ['docs.css', 'my-print-styles.css'],
+#           'screen.css' => ['subfolder-of-stylesheets/sub_css.css']
 #         },
-#         'project2' => {
-#           'path' => '/path/to/different/stylesheets',
-#           'namespace' => 'different-namespace-',
-#           'custom_css' => {
-#             'screen.css' => ['custom_screen.css']
-#           },
-#           'semantic_classes' => {
-#             'footer' => 'span-24 column last',
-#             'header' => 'span-24 column last',
-#             'content' => 'span-18 column border',
-#             'extra-content' => 'span-6 column last'
-#           }
-#         },
-#         'project3' => {
-#           'path' => '/path/to/another/projects/styles'
+#         'custom_layout' => {
+#           'column_count' => 12,
+#           'column_width' => 70,
+#           'gutter_width' => 10
 #         }
+#       },
+#       'project2' => {
+#         'path' => '/path/to/different/stylesheets',
+#         'namespace' => 'different-namespace-',
+#         'custom_css' => {
+#           'screen.css' => ['custom_screen.css']
+#         },
+#         'semantic_classes' => {
+#           '#footer, #header' => 'column span-24 last',
+#           '#content' => 'column span-18 border',
+#           '#extra-content' => 'last span-6 column',
+#           'div#navigation' => 'last span-24 column',
+#           'div.section, div.entry, .feeds' => 'span-6 column'
+#         }
+#       },
+#       'project3' => {
+#         'path' => '/path/to/another/projects/styles'
 #       }
+#     }
 
 # instantiate new Compressor, passing in variables set in call
 c = Compressor.new(:destination => ENV['LOCATION'], :namespace => ENV['NAMESPACE'], :project => ENV['PROJECT'])
