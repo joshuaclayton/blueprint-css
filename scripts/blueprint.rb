@@ -9,9 +9,8 @@ class Blueprint
   SETTINGS_FILE =         File.join(Blueprint::LIB_PATH, 'settings.yml')
   
   # Default column layout
-  #
   # 24 columns * (30px + 10px) - 10px = 950px width
   COLUMN_COUNT =          24
   COLUMN_WIDTH =          30
-  GUTTER_WIDTH =         10
+  GUTTER_WIDTH =          10
 end

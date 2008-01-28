@@ -91,6 +91,11 @@ require 'compress/compressor'
 #         custom_css:
 #           screen.css:
 #             - custom_screen.css
+#         semantic_classes:
+#           footer: span-24 column last
+#           header: span-24 column last
+#           content: span-18 column border
+#           extra-content: span-6 column last
 #       project3:
 #         path: /path/to/another/projects/styles
 # 
@@ -106,6 +111,12 @@ require 'compress/compressor'
 #     are column_count (the number of columns you want your grid to have), column width (the width in pixels that you want your columns to be), and 
 #     gutter_width (the width in pixels you want your gutters - space between columns - to be).  To use the Blueprint default, do not define this 
 #     in your settings file.
+#     
+#     Semantic classes are still in the works within Blueprint, but a simple implementation has been created.
+#     
+#     Defining semantic_classes, with nodes underneath, will generate a class for each node which has rules of each class assigned to it.  For example,
+#     in project2 above, 'footer' is assigned all the rules from the classes 'span-24, column, and last', while 'content' is assigned all the rules from 
+#     'span-18, column, and border'.  Although it is a crude way do accomplish this, it keeps the generated CSS separate from the core BP CSS.
 #     
 #     In Ruby, the structure would look like this:
 #     
@@ -129,6 +140,12 @@ require 'compress/compressor'
 #           'namespace' => 'different-namespace-',
 #           'custom_css' => {
 #             'screen.css' => ['custom_screen.css']
+#           },
+#           'semantic_classes' => {
+#             'footer' => 'span-24 column last',
+#             'header' => 'span-24 column last',
+#             'content' => 'span-18 column border',
+#             'extra-content' => 'span-6 column last'
 #           }
 #         },
 #         'project3' => {

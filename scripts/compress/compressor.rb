@@ -16,7 +16,7 @@ class Compressor < Blueprint
   ] unless const_defined?("TEST_FILES")
   
   # properties
-  attr_accessor :namespace, :custom_css, :custom_layout
+  attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes
   attr_reader   :custom_path, :loaded_from_settings, :destination_path
   
   def destination_path=(path)
@@ -30,7 +30,8 @@ class Compressor < Blueprint
     
     @loaded_from_settings = false
     self.custom_css = {}
-
+    self.semantic_classes = {}
+    
     initialize_project_from_yaml(options[:project])
 
     self.namespace =          options[:namespace]   ? options[:namespace]   : self.namespace || ""
@@ -63,9 +64,10 @@ class Compressor < Blueprint
     projects = YAML::load(File.path_to_string(Blueprint::SETTINGS_FILE))
     
     if (project = projects[project_name]) # checks to see if project info is present
-      self.namespace =        project['namespace']  || ""
-      self.destination_path = project['path']       || Blueprint::BLUEPRINT_ROOT_PATH
-      self.custom_css =       project['custom_css'] || {}
+      self.namespace =        project['namespace']        || ""
+      self.destination_path = project['path']             || Blueprint::BLUEPRINT_ROOT_PATH
+      self.custom_css =       project['custom_css']       || {}
+      self.semantic_classes = project['semantic_classes'] || {}
       if (layout = project['custom_layout'])
         self.custom_layout = CustomLayout.new(:column_count => layout['column_count'], :column_width => layout['column_width'], :gutter_width => layout['gutter_width'])
       end
@@ -98,8 +100,11 @@ class Compressor < Blueprint
       
       css_output = append_custom_css(css_output, output_file_name)
       
-      #save CSS to correct path
-      File.string_to_file(css_output, css_output_path)
+      # append semantic class names if set
+      css_output += SemanticClassNames.new(:namespace => self.namespace).css_from_assignments(semantic_classes) if output_file_name == 'screen.css'
+      
+      #save CSS to correct path, stripping out any extra whitespace at the end of the file
+      File.string_to_file(css_output.rstrip, css_output_path)
     end
   end
   
