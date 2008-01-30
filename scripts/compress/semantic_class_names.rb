@@ -26,8 +26,9 @@ class SemanticClassNames < Blueprint
       classes = []
       # loop through each BP class, grabbing the full hash (containing tags, index, and CSS rules)
       blueprint_classes.each do |bp_class|
-        classes << blueprint_assignments.find_all {|line| line[:tags] =~ Regexp.new(/^(\w+, ?)*\.#{bp_class}(, \w+)?$/)}.uniq
+        classes << blueprint_assignments.find_all {|line| line[:tags] =~ Regexp.new(/^(\w+, ?)*\.#{self.namespace}#{bp_class}(, \w+)?$/)}.uniq
       end
+      
       # clean up the array
       classes = classes.flatten.uniq
       
@@ -43,5 +44,4 @@ class SemanticClassNames < Blueprint
     end
     css
   end
-  
 end

@@ -1,4 +1,5 @@
 require 'core_ext'
+require 'fileutils'
 
 class Blueprint
   ROOT_PATH =             File.dirname(File.expand_path(File.dirname(__FILE__)))

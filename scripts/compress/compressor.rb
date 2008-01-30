@@ -1,4 +1,6 @@
 require 'yaml'
+require 'optparse'
+
 class Compressor < Blueprint
   # class constants
     CSS_FILES = {
@@ -16,8 +18,8 @@ class Compressor < Blueprint
   ] unless const_defined?("TEST_FILES")
   
   # properties
-  attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes
-  attr_reader   :custom_path, :loaded_from_settings, :destination_path
+  attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name
+  attr_reader   :custom_path, :loaded_from_settings, :destination_path, :script_name
   
   def destination_path=(path)
     @destination_path = path
@@ -26,16 +28,20 @@ class Compressor < Blueprint
   
   # constructor
   def initialize(options = {})
-    process_required_files
-    
+    # set up defaults
+    @script_name = File.basename($0) 
     @loaded_from_settings = false
+    self.namespace = ""
+    self.destination_path = Blueprint::BLUEPRINT_ROOT_PATH
+    self.custom_layout = CustomLayout.new
+    self.project_name = nil
     self.custom_css = {}
     self.semantic_classes = {}
     
-    initialize_project_from_yaml(options[:project])
-
-    self.namespace =          options[:namespace]   ? options[:namespace]   : self.namespace || ""
-    self.destination_path =   options[:destination] ? options[:destination] : self.destination_path || Blueprint::BLUEPRINT_ROOT_PATH
+    process_required_files
+    
+    self.options.parse!(ARGV)
+    initialize_project_from_yaml(self.project_name)
   end
   
   # instance methods
@@ -44,6 +50,38 @@ class Compressor < Blueprint
     generate_css_files  # loops through Compressor::CSS_FILES to generate output CSS
     generate_tests      # updates HTML with custom namespaces in order to test the generated library.  TODO: have tests kick out to custom location
     output_footer       # informs the user that the CSS generation process is complete
+  end
+
+  def options
+    OptionParser.new do |o|
+      o.set_summary_indent('  ')
+      o.banner =    "Usage: #{@script_name} [options]"
+      o.define_head "Blueprint Compressor"
+      
+      o.separator ""
+      o.separator "options"
+      
+      o.on( "-o", "--output_path=OUTPUT_PATH", String,
+            "Define a different path to output generated CSS files to.") { |path| self.destination_path = path }
+
+      o.on( "-n", "--namespace=BP_NAMESPACE", String,
+            "Define a namespace prepended to all Blueprint classes (e.g. .your-ns-span-24)") { |ns| self.namespace = ns }
+            
+      o.on( "-p", "--project=PROJECT_NAME", String,
+            "If using the settings.yml file, PROJECT_NAME is the project name you want to export") {|project| @project_name = project }
+            
+      o.on( nil, "--column_width=COLUMN_WIDTH", Integer,
+            "Set a new column width (in pixels) for the output grid") {|cw| self.custom_layout.column_width = cw }
+      
+      o.on( nil, "--gutter_width=GUTTER_WIDTH", Integer,
+            "Set a new gutter width (in pixels) for the output grid") {|gw| self.custom_layout.gutter_width = gw }
+
+      o.on( nil, "--column_count=COLUMN_COUNT", Integer,
+            "Set a new column count for the output grid") {|cc| self.custom_layout.column_count = cc }
+      
+      #o.on("-v", "--verbose", "Turn on verbose output.") { |$verbose| }
+      o.on("-h", "--help", "Show this help message.") { puts o; exit }
+    end
   end
 
   private 
@@ -65,7 +103,7 @@ class Compressor < Blueprint
     
     if (project = projects[project_name]) # checks to see if project info is present
       self.namespace =        project['namespace']        || ""
-      self.destination_path = project['path']             || Blueprint::BLUEPRINT_ROOT_PATH
+      self.destination_path = self.destination_path == Blueprint::BLUEPRINT_ROOT_PATH ? project['path'] : self.destination_path || Blueprint::BLUEPRINT_ROOT_PATH
       self.custom_css =       project['custom_css']       || {}
       self.semantic_classes = project['semantic_classes'] || {}
       if (layout = project['custom_layout'])
@@ -85,7 +123,7 @@ class Compressor < Blueprint
       css_output += "\n\n"
       
       # Iterate through src/ .css files and compile to individual core compressed file
-      css_source_file_names.each_with_index do |css_source_file, index|
+      css_source_file_names.each do |css_source_file|
         puts "      + src/#{css_source_file}"
         css_output += "/* #{css_source_file} */\n" if css_source_file_names.any?
         
@@ -106,6 +144,11 @@ class Compressor < Blueprint
       
       #save CSS to correct path, stripping out any extra whitespace at the end of the file
       File.string_to_file(css_output.rstrip, css_output_path)
+    end
+    
+    #attempt to generate a grid.png file
+    if (grid_builder = GridBuilder.new(:column_width => self.custom_layout.column_width, :gutter_width => self.custom_layout.gutter_width, :output_path => File.join(self.destination_path, 'src')))
+      grid_builder.generate!
     end
   end
   
@@ -145,26 +188,31 @@ class Compressor < Blueprint
   end
 
   def output_header
-    puts "\n\n"
-    puts "  ************************************************************"
+    puts "\n"
+    puts "  #{"*" * 100}"
     puts "  **"
     puts "  **   Blueprint CSS Compressor"
     puts "  **   Builds compressed files from the source directory."
     puts "  **   Loaded from settings.yml" if loaded_from_settings
     puts "  **   Namespace: '#{namespace}'" unless namespace.blank?
     puts "  **   Output to: #{destination_path}"
+    puts "  **   Grid Settings:"
+    puts "  **     - Column Count: #{self.custom_layout.column_count}"
+    puts "  **     - Column Width: #{self.custom_layout.column_width}px"
+    puts "  **     - Gutter Width: #{self.custom_layout.gutter_width}px"
+    puts "  **     - Total Width : #{self.custom_layout.page_width}px"
     puts "  **"
-    puts "  ************************************************************"
+    puts "  #{"*" * 100}"
   end
 
   def output_footer
     puts "\n\n"
-    puts "  ************************************************************"
+    puts "  #{"*" * 100}"
     puts "  **"
     puts "  **   Done!"
     puts "  **   Your compressed files and test files are now up-to-date."
     puts "  **"
-    puts "  ************************************************************"
+    puts "  #{"*" * 100}\n\n"
   end
   
   def css_file_header
@@ -178,5 +226,9 @@ class Compressor < Blueprint
    * This is a compressed file. See the sources in the 'src' directory.
 
 ----------------------------------------------------------------------- */)
+  end
+  
+  def putsv(str)
+    puts str if $verbose
   end
 end

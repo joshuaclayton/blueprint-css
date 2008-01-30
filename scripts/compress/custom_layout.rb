@@ -1,7 +1,8 @@
 require 'erb'
+
 class CustomLayout < Blueprint
   # class constants
-  CSS_ERB_FILE = File.join(Blueprint::LIB_PATH, 'compress', 'grid.css.erb')
+  CSS_ERB_FILE = File.join(Blueprint::LIB_PATH, 'compress', 'grid.css.erb') unless const_defined?("CSS_ERB_FILE")
   
   # properties
   # widths/column count default to core BP settings
@@ -25,12 +26,17 @@ class CustomLayout < Blueprint
   
   # constructor
   def initialize(options = {})
-    self.column_count = options[:column_count]
-    self.column_width = options[:column_width]
-    self.gutter_width = options[:gutter_width]
+    @column_count = options[:column_count]
+    @column_width = options[:column_width]
+    @gutter_width = options[:gutter_width]
   end
   
   # instance methods
+  
+  def default?
+    self.column_width == Blueprint::COLUMN_WIDTH && self.column_count == Blueprint::COLUMN_COUNT && self.gutter_width == Blueprint::GUTTER_WIDTH
+  end
+  
   def generate_grid_css
     # loads up erb template to evaluate custom widths
     css = ERB::new(File.path_to_string(CustomLayout::CSS_ERB_FILE))
