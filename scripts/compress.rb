@@ -9,11 +9,13 @@ require 'compress/custom_layout'
 # 
 #     ruby compress.rb
 # 
-#   However, variables can be set to change how this works.
+#   However, argument variables can be set to change how this works.
 # 
+#   Calling
+#
 #     ruby compress.rb -h
 #
-#   Will reveal basic arguments you can pass to the compress.rb file.
+#   will reveal basic arguments you can pass to the compress.rb file.
 # 
 # **Custom Settings
 #   

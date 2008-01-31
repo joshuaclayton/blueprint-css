@@ -61,22 +61,22 @@ class Compressor < Blueprint
       o.separator ""
       o.separator "options"
       
-      o.on( "-o", "--output_path=OUTPUT_PATH", String,
+      o.on( "-oOUTPUT_PATH", "--output_path=OUTPUT_PATH", String,
             "Define a different path to output generated CSS files to.") { |path| self.destination_path = path }
 
-      o.on( "-n", "--namespace=BP_NAMESPACE", String,
+      o.on( "-nBP_NAMESPACE", "--namespace=BP_NAMESPACE", String,
             "Define a namespace prepended to all Blueprint classes (e.g. .your-ns-span-24)") { |ns| self.namespace = ns }
             
-      o.on( "-p", "--project=PROJECT_NAME", String,
+      o.on( "-pPROJECT_NAME", "--project=PROJECT_NAME", String,
             "If using the settings.yml file, PROJECT_NAME is the project name you want to export") {|project| @project_name = project }
             
-      o.on( nil, "--column_width=COLUMN_WIDTH", Integer,
+      o.on( "--column_width=COLUMN_WIDTH", Integer,
             "Set a new column width (in pixels) for the output grid") {|cw| self.custom_layout.column_width = cw }
       
-      o.on( nil, "--gutter_width=GUTTER_WIDTH", Integer,
+      o.on( "--gutter_width=GUTTER_WIDTH", Integer,
             "Set a new gutter width (in pixels) for the output grid") {|gw| self.custom_layout.gutter_width = gw }
 
-      o.on( nil, "--column_count=COLUMN_COUNT", Integer,
+      o.on( "--column_count=COLUMN_COUNT", Integer,
             "Set a new column count for the output grid") {|cc| self.custom_layout.column_count = cc }
       
       #o.on("-v", "--verbose", "Turn on verbose output.") { |$verbose| }
@@ -179,7 +179,7 @@ class Compressor < Blueprint
   
   def generate_tests
     puts "\n    Updating namespace to \"#{namespace}\" in test files:"
-    test_files = Compressor::TEST_FILES.map {|f| File.join(Blueprint::TEST_PATH, f)}
+    test_files = Compressor::TEST_FILES.map {|f| File.join(Blueprint::TEST_PATH, *f.split(/\//))}
     
     test_files.each do |file|
       puts "      + #{file}"

@@ -2,6 +2,7 @@ begin
   require 'rubygems'
   gem 'rmagick'
   require 'rvg/rvg'
+rescue Gem::LoadError
 rescue
 end
 
