@@ -153,13 +153,27 @@ table .last {padding-right:0;}
 .pull-3 {margin-left:-120px;}
 .pull-4 {margin-left:-160px;}
 .pull-5 {margin-left:-200px;}
-.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-5 {float:left;}
+.pull-6 {margin-left:-240px;}
+.pull-7 {margin-left:-280px;}
+.pull-8 {margin-left:-320px;}
+.pull-9 {margin-left:-360px;}
+.pull-10 {margin-left:-400px;}
+.pull-11 {margin-left:-440px;}
+.pull-12 {margin-left:-480px;}
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12 {float:left;}
 .push-1 {margin:0 -40px 1.5em 40px;}
 .push-2 {margin:0 -80px 1.5em 80px;}
 .push-3 {margin:0 -120px 1.5em 120px;}
 .push-4 {margin:0 -160px 1.5em 160px;}
 .push-5 {margin:0 -200px 1.5em 200px;}
-.push-0, .push-1, .push-2, .push-3, .push-4, .push-5 {float:right;}
+.push-6 {margin:0 -240px 1.5em 240px;}
+.push-7 {margin:0 -280px 1.5em 280px;}
+.push-8 {margin:0 -320px 1.5em 320px;}
+.push-9 {margin:0 -360px 1.5em 360px;}
+.push-10 {margin:0 -400px 1.5em 400px;}
+.push-11 {margin:0 -440px 1.5em 440px;}
+.push-12 {margin:0 -480px 1.5em 480px;}
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12 {float:right;}
 .box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
 hr.space {background:#fff;color:#fff;}
@@ -186,4 +200,3 @@ select {width:200px;}
 .error a {color:#8a1f11;}
 .notice a {color:#514721;}
 .success a {color:#264409;}
-

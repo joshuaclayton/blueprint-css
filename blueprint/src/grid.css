@@ -13,9 +13,8 @@
    By default, the grid is 950px wide, with 24 columns 
    spanning 30px, and a 10px margin between columns.
    
-   If you need fewer or more columns, use this 
-   formula to find the new total width: 
-   Total width = (columns * 40) - 10
+   If you need fewer or more columns, namespaces or semantic
+   element names, use the compressor script (scripts/compress.rb)
    
    Read more about using a grid here:
    * subtraction.com/archives/2007/0318_oh_yeeaahh.php
