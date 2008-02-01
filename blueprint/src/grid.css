@@ -14,7 +14,7 @@
    spanning 30px, and a 10px margin between columns.
    
    If you need fewer or more columns, namespaces or semantic
-   element names, use the compressor script (scripts/compress.rb)
+   element names, use the compressor script (lib/compress.rb)
    
    Read more about using a grid here:
    * subtraction.com/archives/2007/0318_oh_yeeaahh.php

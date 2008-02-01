@@ -1,7 +1,7 @@
 class Validator < Blueprint
   # class constants
   CSS_FILES_TO_TEST = ['screen.css', 'print.css', 'ie.css']
-  VALIDATOR_PATH    = File.join(Blueprint::ROOT_PATH, 'scripts', 'validate', 'css-validator.jar')
+  VALIDATOR_PATH    = File.join(Blueprint::ROOT_PATH, 'lib', 'validate', 'css-validator.jar')
   
   # instance variables
   attr_reader :error_count
