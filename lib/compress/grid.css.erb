@@ -79,17 +79,17 @@
   /* Use these classes on an element to push it into the 
   next column, or to pull it into the previous column.  */
 
-  <% (1..column_count/2).each do |column| %>
+  <% (1..column_count).each do |column| %>
     .pull-<%= column %> { margin-left: -<%= (column * (column_width + gutter_width)).to_i %>px; }
   <% end %>
 
-  <%= (1..column_count/2).map {|c| ".pull-#{c}" }.join(", ") %> {float: left;}
+  <%= (1..column_count).map {|c| ".pull-#{c}" }.join(", ") %> {float: left;}
 
-  <% (1..(column_count/2)).each do |column| %>
+  <% (1..(column_count)).each do |column| %>
     .push-<%= column %> { margin: 0 -<%= (column * (column_width + gutter_width)).to_i %>px 1.5em <%= (column * (column_width + gutter_width)).to_i %>px; }
   <% end %>
 
-  <%= (1..column_count/2).map {|c| ".push-#{c}" }.join(", ") %> {float: right;}
+  <%= (1..column_count).map {|c| ".push-#{c}" }.join(", ") %> {float: right;}
 
 
   /* Misc classes and elements
