@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'blueprint'
-require 'validate/validator'
+require 'blueprint/blueprint'
+require 'blueprint/validate/validator'
 
 v = Validator.new
 v.validate
