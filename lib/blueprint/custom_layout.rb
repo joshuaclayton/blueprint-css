@@ -2,7 +2,7 @@ require 'erb'
 
 class CustomLayout < Blueprint
   # class constants
-  CSS_ERB_FILE = File.join(Blueprint::LIB_PATH, 'compress', 'grid.css.erb') unless const_defined?("CSS_ERB_FILE")
+  CSS_ERB_FILE = File.join(Blueprint::LIB_PATH, 'grid.css.erb') unless const_defined?("CSS_ERB_FILE")
   
   # properties
   # widths/column count default to core BP settings

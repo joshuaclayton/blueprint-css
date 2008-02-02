@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
-require 'blueprint'
-require 'compress/compressor'
-require 'compress/custom_layout'
+require 'blueprint/blueprint'
 
 # **Basic
 # 
