@@ -1,4 +1,4 @@
-Blueprint CSS Framework Readme
+Blueprint CSS Framework
 
 * URL:    code.google.com/p/blueprintcss
 * List:   groups.google.com/group/blueprintcss
@@ -58,13 +58,11 @@ The framework has a few files you should check out. Every file
 in the 'src' directory contains lots of (hopefully) clarifying 
 comments.
 
-
 Compressed files (these go in the HTML):
 
 * blueprint/screen.css
 * blueprint/print.css
 * blueprint/ie.css
-
 
 Source files:
 
@@ -90,7 +88,6 @@ Source files:
 * blueprint/src/ie.css
   Includes every hack for our beloved IE6 and 7.
 
-
 Scripts:
 
 * lib/compress.rb
@@ -100,11 +97,9 @@ Scripts:
   or run $ruby compress.rb -h for more information.
   Here's a more comprehensive tutorial: 
   http://www.jdclayton.com/blueprints_compress_a_walkthrough.html
-  
 
 * lib/validate.rb
   Validates the Blueprint core files with the W3C CSS validator.
-
 
 Other:
 
@@ -120,11 +115,6 @@ Other:
 
 Credits
 ----------------------------------------------------------------
-
-Blueprint team:
-
-* Olav Bjorkoy              [bjorkoy.com]
-* Joshua Clayton            [jdclayton.com]
 
 Many parts of BP are directly inspired by other peoples work. 
 You may thank them for their brilliance. However, *do not* ask 
