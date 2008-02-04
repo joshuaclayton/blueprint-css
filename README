@@ -16,6 +16,7 @@ features BP provides out-of-the-box:
 * A typographic baseline
 * Perfected browser CSS reset
 * A stylesheet for printing
+* Powerful scripts for customization
 * Absolutely no bloat!
 
 
@@ -90,18 +91,27 @@ Source files:
   Includes every hack for our beloved IE6 and 7.
 
 
+Scripts:
+
+* lib/compress.rb
+  A Ruby script for compressing and customizing your CSS. Set a
+  custom namespace, column count, widths, output paths, multiple 
+  projects, and semantic class names. See commenting in compress.rb 
+  or run $ruby compress.rb -h for more information.
+  Here's a more comprehensive tutorial: 
+  http://www.jdclayton.com/blueprints_compress_a_walkthrough.html
+  
+
+* lib/validate.rb
+  Validates the Blueprint core files with the W3C CSS validator.
+
+
 Other:
 
 * blueprint/plugins/
   Contains additional functionality in the form of simple plugins
   for Blueprint. See individual readme files in the directory
   of each plugin for further instructions.
-
-* lib/
-  BP comes with two scripts to run: 
-  * One for validating the CSS in the core files (validate.rb).
-  * One for re-compressing the main CSS files from the 
-    source files, if you've made changes to the core (compress.rb).
 
 * tests/
   Contains html files which tests most aspects of Blueprint.
@@ -110,6 +120,11 @@ Other:
 
 Credits
 ----------------------------------------------------------------
+
+Blueprint team:
+
+* Olav Bjorkoy              [bjorkoy.com]
+* Joshua Clayton            [jdclayton.com]
 
 Many parts of BP are directly inspired by other peoples work. 
 You may thank them for their brilliance. However, *do not* ask 
