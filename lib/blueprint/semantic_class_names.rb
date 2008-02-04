@@ -1,11 +1,12 @@
 class SemanticClassNames < Blueprint
   # attributes
   attr_accessor :class_assignments
-  attr_reader   :namespace
+  attr_reader   :namespace, :source_file
   
   # constructor
   def initialize(options = {})
     @namespace = options[:namespace] || ""
+    @source_file = options[:source_file] || File.join(Blueprint::BLUEPRINT_ROOT_PATH, 'screen.css')
     self.class_assignments = options[:class_assignments] || {}
   end
   
@@ -17,7 +18,7 @@ class SemanticClassNames < Blueprint
     output_css = {}
     
     #loads full stylesheet into an array of hashes
-    blueprint_assignments = CSSParser.new(:file_path => File.join(Blueprint::BLUEPRINT_ROOT_PATH, 'screen.css'), :namespace => namespace).parse
+    blueprint_assignments = CSSParser.new(:file_path => self.source_file, :namespace => self.namespace).parse
     
     # iterates through each class assignment ('footer' => 'span-# column last', 'header' => 'span-# column last')
     assignments.each do |semantic_class, blueprint_classes|

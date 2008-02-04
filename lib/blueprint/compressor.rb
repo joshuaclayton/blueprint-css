@@ -38,8 +38,6 @@ class Compressor < Blueprint
     self.custom_css = {}
     self.semantic_classes = {}
     
-    process_required_files
-    
     self.options.parse!(ARGV)
     initialize_project_from_yaml(self.project_name)
   end
@@ -85,13 +83,6 @@ class Compressor < Blueprint
   end
 
   private 
-  
-  def process_required_files
-    # iterates through lib/compress folder and requires ruby files not including compressor.rb
-    # Dir["#{File.join(Blueprint::LIB_PATH)}/*"].each do |file|
-    #   require "#{file}" if file =~ /\.rb$/ && file !~ /^compressor/
-    # end
-  end
   
   # attempts to load output settings from settings.yml
   def initialize_project_from_yaml(project_name = nil)
@@ -139,12 +130,12 @@ class Compressor < Blueprint
       # append CSS from custom files
       css_output = append_custom_css(css_output, output_file_name)
       
-      # append semantic class names if set
-      css_output = append_semantic_classes(css_output, output_file_name)
-      
       #save CSS to correct path, stripping out any extra whitespace at the end of the file
       File.string_to_file(css_output.rstrip, css_output_path)
     end
+
+    # append semantic class names if set
+    append_semantic_classes
     
     #attempt to generate a grid.png file
     if (grid_builder = GridBuilder.new(:column_width => self.custom_layout.column_width, :gutter_width => self.custom_layout.gutter_width, :output_path => File.join(self.destination_path, 'src')))
@@ -169,12 +160,15 @@ class Compressor < Blueprint
     css
   end
   
-  def append_semantic_classes(css, current_file_name)
-    semantic_styles = SemanticClassNames.new(:namespace => self.namespace).css_from_assignments(self.semantic_classes)
-    return css unless current_file_name == 'screen.css' && !semantic_styles.blank?
-    
-    css += "/* semantic class names */\n"
-    css += semantic_styles + "\n"
+  def append_semantic_classes
+    screen_output_path = File.join(self.destination_path, "screen.css")
+    semantic_styles = SemanticClassNames.new(:namespace => self.namespace, :source_file => screen_output_path).css_from_assignments(self.semantic_classes)
+    return if semantic_styles.blank?
+
+    css = File.path_to_string(screen_output_path)
+    css += "\n\n/* semantic class names */\n"
+    css += semantic_styles
+    File.string_to_file(css.rstrip, screen_output_path)
   end
   
   def generate_tests
@@ -216,7 +210,7 @@ class Compressor < Blueprint
   end
   
   def css_file_header
-    %(/* -----------------------------------------------------------------------
+%(/* -----------------------------------------------------------------------
 
    Blueprint CSS Framework 0.7
    http://blueprintcss.googlecode.com
