@@ -73,8 +73,8 @@ table .last {padding-right:0;}
 /* grid.css */
 .container {width:950px;margin:0 auto;}
 .showgrid {background:url(src/grid.png);}
-.column {float:left;margin-right:10px;}
-.last {margin-right:0;}
+div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, div.span-11, div.span-12, div.span-13, div.span-14, div.span-15, div.span-16, div.span-17, div.span-18, div.span-19, div.span-20, div.span-21, div.span-22, div.span-23, div.span-24 {float:left;margin-right:10px;}
+div.last {margin-right:0;}
 .span-1 {width:30px;}
 .span-2 {width:70px;}
 .span-3 {width:110px;}
@@ -145,8 +145,8 @@ table .last {padding-right:0;}
 .prepend-21 {padding-left:840px;}
 .prepend-22 {padding-left:880px;}
 .prepend-23 {padding-left:920px;}
-.border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
-.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;}
+div.border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
+div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;}
 .pull-1 {margin-left:-40px;}
 .pull-2 {margin-left:-80px;}
 .pull-3 {margin-left:-120px;}

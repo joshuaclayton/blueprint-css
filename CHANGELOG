@@ -21,6 +21,9 @@ Version 0.7 - Date TBD
     * Compressed version of ie.css. [OB]
     * Alternating table row colors. [OB]
     * Added class .showgrid to see the grid of any column or container. [OB]
+    * No need for .column! You now have to use divs for columns,
+      but you can still use span/prepend/append for other elements as well.
+      In other words, div.span-x now implies that the element is a .column. [OB]
   
   Bug fixes:
     * Sidebar alignment in tests/sample.html. [OB]
