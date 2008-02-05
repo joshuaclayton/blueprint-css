@@ -1,11 +1,5 @@
 Blueprint CSS Framework Change Log
-
-* Web:    blueprintcss.googlecode.com
-* Mail:   groups.google.com/group/blueprintcss
-* News:   bjorkoy.com
-
 ----------------------------------------------------------------
-
 
 Version 0.7 - Date TBD
 --
@@ -129,7 +123,6 @@ Version 0.4 - 11/8/2007
   * Loads of minor fixes and additions. [OB]
 
 
-Initial Release - 3/8/2007
+Version 0.3 - 3/8/2007
 --
-  * Initial release of Blueprint
-
+  * Initial release of Blueprint (versions 0.1 and 0.2 were internal only).
