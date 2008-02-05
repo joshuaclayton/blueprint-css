@@ -30,9 +30,8 @@ h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 p {margin:0 0 1.5em;}
-p.last {margin-bottom:0;}
 p img {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
-img {margin:0 0 1.5em;}
+p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
 a:focus, a:hover {color:#000;}
 a {color:#009;text-decoration:underline;}
 blockquote {margin:1.5em;color:#666;font-style:italic;}
