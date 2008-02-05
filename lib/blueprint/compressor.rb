@@ -215,7 +215,7 @@ class Compressor < Blueprint
    Blueprint CSS Framework 0.7
    http://blueprintcss.googlecode.com
 
-   * Copyright (c) Olav Bjorkoy 2007 - 2008. See LICENSE for more info.
+   * Copyright (c) 2007-2008. See LICENSE for more info.
    * See README for instructions on how to use Blueprint.
    * This is a compressed file. See the sources in the 'src' directory.
 

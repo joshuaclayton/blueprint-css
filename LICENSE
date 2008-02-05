@@ -1,13 +1,15 @@
-Copyright (c) 2007 Olav Bjorkoy (http://bjorkoy.com)
+Blueprint CSS Framework License
+----------------------------------------------------------------
+
+Copyright (c) 2007-2008 Olav Bjorkoy (olav at bjorkoy.com)
 
 The Blueprint CSS Framework is available for use in all personal or 
 commercial projects, under both the MIT and the GPL license. You
 may choose the one that fits your project.
 
 
-
 The MIT License
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,9 +31,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-
 The GPL License
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
         GNU GENERAL PUBLIC LICENSE
            Version 2, June 1991

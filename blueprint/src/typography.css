@@ -2,21 +2,10 @@
    
    typography.css
    * Sets up some sensible default typography.
-  
-   Based on work by:
-   * Jeff Croft        [jeffcroft.com]
-   * Nathan Borror     [playgroundblues.com]
-   * Christian Metts   [mintchaos.com]
-   * Wilson Miner      [wilsonminer.com]
-   * Olav Bjorkoy      [bjorkoy.com]
-   
-   Read more about using a baseline here:
-   * alistapart.com/articles/settingtypeontheweb
-  
+      
 -------------------------------------------------------------- */
 
 /* Default font settings. The font-size percentage is of 16px. */
-
 body { 
   font-size: 80%;
   color: #222; 

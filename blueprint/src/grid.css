@@ -3,21 +3,11 @@
    grid.css
    * Sets up an easy-to-use grid of 24 columns.
    
-   Based on work by:
-   * Jeff Croft        [jeffcroft.com]
-   * Nathan Borror     [playgroundblues.com]
-   * Christian Metts   [mintchaos.com]
-   * Khoi Vinh         [subtraction.com]
-   * Olav Bjorkoy      [bjorkoy.com]
-   
    By default, the grid is 950px wide, with 24 columns 
    spanning 30px, and a 10px margin between columns.
    
    If you need fewer or more columns, namespaces or semantic
    element names, use the compressor script (lib/compress.rb)
-   
-   Read more about using a grid here:
-   * subtraction.com/archives/2007/0318_oh_yeeaahh.php
    
 -------------------------------------------------------------- */
 
@@ -41,7 +31,7 @@ div.span-11, div.span-12, div.span-13, div.span-14, div.span-15,
 div.span-16, div.span-17, div.span-18, div.span-19, div.span-20, 
 div.span-21, div.span-22, div.span-23, div.span-24 {
   float: left;
-  margin-right: 10px;	
+  margin-right: 10px; 
 }
 
 /* The last column in a row needs this class. */

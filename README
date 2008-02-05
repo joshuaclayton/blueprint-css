@@ -1,4 +1,4 @@
-Blueprint CSS Framework
+Blueprint CSS Framework Readme
 
 * URL:    code.google.com/p/blueprintcss
 * List:   groups.google.com/group/blueprintcss
@@ -72,10 +72,12 @@ Source files:
 * blueprint/src/grid.css
   This file sets up the grid (it's true). It has a lot of classes
   you apply to divs to set up any sort of column-based grid.
+  Further reading: subtraction.com/archives/2007/0318_oh_yeeaahh.php
 
 * blueprint/src/typography.css
   This file sets some default typography. It also has a few
   methods for some really fancy stuff to do with your text.
+  Further reading: alistapart.com/articles/settingtypeontheweb
 
 * blueprint/src/forms.css
 	Includes some minimal styling of forms.
@@ -95,8 +97,7 @@ Scripts:
   custom namespace, column count, widths, output paths, multiple 
   projects, and semantic class names. See commenting in compress.rb 
   or run $ruby compress.rb -h for more information.
-  Here's a more comprehensive tutorial: 
-  http://www.jdclayton.com/blueprints_compress_a_walkthrough.html
+  Further reading: jdclayton.com/blueprints_compress_a_walkthrough.html
 
 * lib/validate.rb
   Validates the Blueprint core files with the W3C CSS validator.
@@ -113,26 +114,12 @@ Other:
   Open tests/index.html for further instructions.
 
 
-Credits
+Also
 ----------------------------------------------------------------
 
-Active contributors:
-
-* Olav Bjorkoy              [bjorkoy.com]
-* Kim Joar Bekkelund        [kimjoar.net]
-* Josh Clayton              [jdclayton.com]
-
-Many parts of BP are directly inspired by other peoples work. 
-You may thank them for their brilliance. However, *do not* ask 
-them for support or any kind of help with BP.
-
-* Jeff Croft                [jeffcroft.com]
-* Nathan Borror             [playgroundblues.com]
-* Christian Metts           [mintchaos.com]
-* Wilson Miner              [wilsonminer.com]
-* The Typogrify Project     [code.google.com/p/typogrify]
-* Eric Meyer                [meyerweb.com/eric]
-* Khoi Vinh                 [subtraction.com]
+* For credits and origins, see AUTHORS.
+* For license instructions, see LICENSE.
+* For the latest updates, see CHANGELOG.
 
 Questions, comments, suggestions and bug reports goes 
 to olav at bjorkoy dot com. Thanks!
