@@ -217,6 +217,7 @@ class Compressor < Blueprint
 
    * Copyright (c) 2007-2008. See LICENSE for more info.
    * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
    * This is a compressed file. See the sources in the 'src' directory.
 
 ----------------------------------------------------------------------- */)
