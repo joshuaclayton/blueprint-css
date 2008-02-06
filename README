@@ -33,7 +33,7 @@ Here's how you set up Blueprint on your site.
    site. Make sure the three href paths are correct (here, BP is in my CSS folder):
 
    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-   <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+   <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
    <!--[if IE]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
 3) For development, add the .showgrid class to any container or column
@@ -44,11 +44,20 @@ Here's how you set up Blueprint on your site.
 How to use Blueprint
 ----------------------------------------------------------------
 
-Here's a quick primer on how to use BP:
-http://code.google.com/p/blueprintcss/wiki/Tutorial
+Here's a quick primer on how to use the CSS:
+* code.google.com/p/blueprintcss/wiki/Tutorial
 
-Each CSS file is also heavily commented, so you'll 
-learn a lot by reading through them.
+Another tutorial on Blueprint:
+* blueflavor.com/blog/design/blueprintcss_101.php
+
+How to customize BP with the compressor script:
+* jdclayton.com/blueprints_compress_a_walkthrough.html
+
+How to use a grid for your layout:
+* subtraction.com/archives/2007/0318_oh_yeeaahh.php
+
+How to use a baseline in your typography:
+* alistapart.com/articles/settingtypeontheweb
 
 
 Files in Blueprint
@@ -72,15 +81,14 @@ Source files:
 * blueprint/src/grid.css
   This file sets up the grid (it's true). It has a lot of classes
   you apply to divs to set up any sort of column-based grid.
-  Further reading: subtraction.com/archives/2007/0318_oh_yeeaahh.php
+  Further reading: 
 
 * blueprint/src/typography.css
   This file sets some default typography. It also has a few
   methods for some really fancy stuff to do with your text.
-  Further reading: alistapart.com/articles/settingtypeontheweb
 
 * blueprint/src/forms.css
-	Includes some minimal styling of forms.
+  Includes some minimal styling of forms.
 
 * blueprint/src/print.css
   This file sets some default print rules, so that printed versions
@@ -97,7 +105,6 @@ Scripts:
   custom namespace, column count, widths, output paths, multiple 
   projects, and semantic class names. See commenting in compress.rb 
   or run $ruby compress.rb -h for more information.
-  Further reading: jdclayton.com/blueprints_compress_a_walkthrough.html
 
 * lib/validate.rb
   Validates the Blueprint core files with the W3C CSS validator.
