@@ -13,19 +13,22 @@ asking them for help or support.)
 Original authors
 ----------------------------------------------------------------
 
-grid.css is based on work by:
+The idea for a designers framework comes from:
+* Jeff Croft          [alistapart.com/articles/frameworksfordesigners]
+
+The grid is based on work by:
 * Jeff Croft          [jeffcroft.com]
 * Nathan Borror       [playgroundblues.com]
 * Christian Metts     [mintchaos.com]
 * Khoi Vinh           [subtraction.com]
 
-typography.css is based on work by:
+The typography is based on work by:
 * Jeff Croft          [jeffcroft.com]
 * Nathan Borror       [playgroundblues.com]
 * Christian Metts     [mintchaos.com]
 * Wilson Miner        [wilsonminer.com]
 
-reset.css is based on work by:
+The CSS reset is based on work by:
 * Eric Meyer          [meyerweb.com/eric]
 
 The Fancy Type plugin is based on work by: 
