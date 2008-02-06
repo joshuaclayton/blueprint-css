@@ -1,10 +1,9 @@
 Blueprint CSS Framework Readme
+----------------------------------------------------------------
 
 * Web:    blueprintcss.googlecode.com
 * Mail:   groups.google.com/group/blueprintcss
 * News:   bjorkoy.com
-
-----------------------------------------------------------------
 
 Welcome to Blueprint! This is a CSS framework designed to 
 cut down on your CSS development time. It gives you a solid 
@@ -44,16 +43,16 @@ Here's how you set up Blueprint on your site.
 How to use Blueprint
 ----------------------------------------------------------------
 
-Here's a quick primer on how to use the CSS:
+Here's a quick primer on how to use the CSS in Blueprint:
 * code.google.com/p/blueprintcss/wiki/Tutorial
 
-Another tutorial on Blueprint:
+Another tutorial on the Blueprint CSS:
 * blueflavor.com/blog/design/blueprintcss_101.php
 
 How to customize BP with the compressor script:
 * jdclayton.com/blueprints_compress_a_walkthrough.html
 
-How to use a grid for your layout:
+How to use a grid in a layout:
 * subtraction.com/archives/2007/0318_oh_yeeaahh.php
 
 How to use a baseline in your typography:
@@ -128,5 +127,8 @@ Also
 * For license instructions, see LICENSE.
 * For the latest updates, see CHANGELOG.
 
-Questions, comments, suggestions and bug reports goes 
+To post bugs and issues, use our Google Code site:
+* code.google.com/p/blueprintcss/issues/list
+
+Questions, comments and suggestions goes to
 to olav at bjorkoy dot com. Thanks!
