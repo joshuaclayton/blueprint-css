@@ -94,7 +94,7 @@ class Compressor < Blueprint
     
     if (project = projects[project_name]) # checks to see if project info is present
       self.namespace =        project['namespace']        || ""
-      self.destination_path = self.destination_path == Blueprint::BLUEPRINT_ROOT_PATH ? project['path'] : self.destination_path || Blueprint::BLUEPRINT_ROOT_PATH
+      self.destination_path = (self.destination_path == Blueprint::BLUEPRINT_ROOT_PATH ? project['path'] : self.destination_path) || Blueprint::BLUEPRINT_ROOT_PATH
       self.custom_css =       project['custom_css']       || {}
       self.semantic_classes = project['semantic_classes'] || {}
       if (layout = project['custom_layout'])
