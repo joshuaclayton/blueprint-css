@@ -14,7 +14,7 @@
 body {text-align:center;}
 .container {text-align:left;}
 * html .column {overflow-x:hidden;}
-.pull-1, .pull-2, .pull-3, .pull-4, .push-1, .push-2, .push-3, .push-4 {position:relative;}
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24, .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {position:relative;}
 * html legend {margin:-18px -8px 16px 0;padding:0;}
 ol {margin-left:2em;}
 sup {vertical-align:text-top;}
