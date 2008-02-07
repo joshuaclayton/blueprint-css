@@ -213,10 +213,10 @@ fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
 legend {font-weight:bold;font-size:1.2em;}
 input.text, input.title, textarea, select {margin:0.5em 0;border:1px solid #bbb;}
 input.text:focus, input.title:focus, textarea:focus, select:focus {border:1px solid #666;}
-input.text, input.title {width:300px;padding:5px;}
+input.text, input.title {width:220px;padding:5px;}
 input.title {font-size:1.5em;}
-textarea {width:400px;height:250px;padding:5px;}
-select {width:200px;}
+textarea {width:390px;height:250px;padding:5px;}
+select {width:220px;}
 .error, .notice, .success {padding:.8em;margin-bottom:1em;border:2px solid #ddd;}
 .error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
 .notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}
