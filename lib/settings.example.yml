@@ -20,8 +20,8 @@ projectname2:
       - pretty-print.css
       - prince/document.css
   semantic_classes:
-    "#footer, #header": column span-24 last
-    "#content": column span-18 border
-    "#extra-content": last span-6 column
-    "div#navigation": last span-24 column
-    "div.section, div.entry, .feeds": span-6 column
+    "#footer, #header": span-24 last
+    "#content": span-18 border
+    "#extra-content": last span-6
+    "div#navigation": last span-24
+    "div.section, div.entry, .feeds": span-6
