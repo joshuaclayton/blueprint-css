@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
+
 require 'blueprint/blueprint'
-require 'blueprint/validate/validator'
+require 'blueprint/validator'
 
 # This script will validate the core Blueprint files. 
 # 
@@ -9,7 +10,6 @@ require 'blueprint/validate/validator'
 # consistent rendering across browsers.
 #
 # To add your own CSS files for validation, see
-# /lib/blueprint/validate/validator.rb
+# /lib/blueprint/validator.rb
 
-v = Validator.new
-v.validate
+Validator.new.validate

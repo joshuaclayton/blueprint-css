@@ -6,8 +6,10 @@ class Blueprint
   SOURCE_PATH =           File.join(Blueprint::BLUEPRINT_ROOT_PATH, 'src')
   TEST_PATH =             File.join(Blueprint::ROOT_PATH, 'tests')
   LIB_PATH =              File.join(Blueprint::ROOT_PATH, 'lib', 'blueprint')
+  PLUGINS_PATH =          File.join(Blueprint::BLUEPRINT_ROOT_PATH, 'plugins')
   SETTINGS_FILE =         File.join(Blueprint::ROOT_PATH, 'lib', 'settings.yml')
-  VALIDATOR_FILE    = File.join(Blueprint::LIB_PATH, 'validate', 'css-validator.jar')
+  VALIDATOR_FILE =        File.join(Blueprint::LIB_PATH, 'validate', 'css-validator.jar')
+  
   # Default column layout
   # 24 columns * (30px + 10px) - 10px = 950px width
   COLUMN_COUNT =          24

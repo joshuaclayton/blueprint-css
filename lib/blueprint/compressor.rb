@@ -18,7 +18,7 @@ class Compressor < Blueprint
   ] unless const_defined?("TEST_FILES")
   
   # properties
-  attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name
+  attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name, :plugins
   attr_reader   :custom_path, :loaded_from_settings, :destination_path, :script_name
   
   def destination_path=(path)
@@ -37,6 +37,7 @@ class Compressor < Blueprint
     self.project_name = nil
     self.custom_css = {}
     self.semantic_classes = {}
+    self.plugins = []
     
     self.options.parse!(ARGV)
     initialize_project_from_yaml(self.project_name)
@@ -55,28 +56,20 @@ class Compressor < Blueprint
       o.set_summary_indent('  ')
       o.banner =    "Usage: #{@script_name} [options]"
       o.define_head "Blueprint Compressor"
-      
       o.separator ""
       o.separator "options"
-      
       o.on( "-oOUTPUT_PATH", "--output_path=OUTPUT_PATH", String,
             "Define a different path to output generated CSS files to.") { |path| self.destination_path = path }
-
       o.on( "-nBP_NAMESPACE", "--namespace=BP_NAMESPACE", String,
             "Define a namespace prepended to all Blueprint classes (e.g. .your-ns-span-24)") { |ns| self.namespace = ns }
-            
       o.on( "-pPROJECT_NAME", "--project=PROJECT_NAME", String,
             "If using the settings.yml file, PROJECT_NAME is the project name you want to export") {|project| @project_name = project }
-            
       o.on( "--column_width=COLUMN_WIDTH", Integer,
             "Set a new column width (in pixels) for the output grid") {|cw| self.custom_layout.column_width = cw }
-      
       o.on( "--gutter_width=GUTTER_WIDTH", Integer,
             "Set a new gutter width (in pixels) for the output grid") {|gw| self.custom_layout.gutter_width = gw }
-
       o.on( "--column_count=COLUMN_COUNT", Integer,
             "Set a new column count for the output grid") {|cc| self.custom_layout.column_count = cc }
-      
       #o.on("-v", "--verbose", "Turn on verbose output.") { |$verbose| }
       o.on("-h", "--help", "Show this help message.") { puts o; exit }
     end
@@ -97,6 +90,8 @@ class Compressor < Blueprint
       self.destination_path = (self.destination_path == Blueprint::BLUEPRINT_ROOT_PATH ? project['path'] : self.destination_path) || Blueprint::BLUEPRINT_ROOT_PATH
       self.custom_css =       project['custom_css']       || {}
       self.semantic_classes = project['semantic_classes'] || {}
+      self.plugins =          project['plugins']          || []
+      
       if (layout = project['custom_layout'])
         self.custom_layout = CustomLayout.new(:column_count => layout['column_count'], :column_width => layout['column_width'], :gutter_width => layout['gutter_width'])
       end
@@ -130,12 +125,15 @@ class Compressor < Blueprint
       # append CSS from custom files
       css_output = append_custom_css(css_output, output_file_name)
       
+      #append CSS from plugins
+      css_output = append_plugin_css(css_output, output_file_name)
+      
       #save CSS to correct path, stripping out any extra whitespace at the end of the file
       File.string_to_file(css_output.rstrip, css_output_path)
     end
 
     # append semantic class names if set
-    append_semantic_classes
+    append_semantic_classes!
     
     #attempt to generate a grid.png file
     if (grid_builder = GridBuilder.new(:column_width => self.custom_layout.column_width, :gutter_width => self.custom_layout.gutter_width, :output_path => File.join(self.destination_path, 'src')))
@@ -146,21 +144,48 @@ class Compressor < Blueprint
   def append_custom_css(css, current_file_name)
     # check to see if a custom (non-default) location was used for output files
     # if custom path is used, handle custom CSS, if any
-    if custom_path
-      overwrite_path = File.join(destination_path, (custom_css[current_file_name] || "my-#{current_file_name}"))
-      overwrite_css = File.exists?(overwrite_path) ? File.path_to_string(overwrite_path) : ""
-      
-      # if there's CSS present, add it to the CSS output
-      unless overwrite_css.blank?
-        puts "      + custom styles\n"
-        css += "/* #{overwrite_path} */\n"
-        css += CSSParser.new(:css_string => overwrite_css).to_s + "\n"
-      end
+    return css unless self.custom_path
+
+    overwrite_path = File.join(destination_path, (self.custom_css[current_file_name] || "my-#{current_file_name}"))
+    overwrite_css = File.exists?(overwrite_path) ? File.path_to_string(overwrite_path) : ""
+    
+    # if there's CSS present, add it to the CSS output
+    unless overwrite_css.blank?
+      puts "      + custom styles\n"
+      css += "/* #{overwrite_path} */\n"
+      css += CSSParser.new(:css_string => overwrite_css).to_s + "\n"
     end
+    
     css
   end
-  
-  def append_semantic_classes
+
+  def append_plugin_css(css, current_file_name)
+    return css unless self.plugins.any?
+    
+    plugin_css = ""
+    
+    self.plugins.each do |plugin|
+      plugin_file_specific  = File.join(Blueprint::PLUGINS_PATH, plugin, current_file_name)
+      plugin_file_generic   = File.join(Blueprint::PLUGINS_PATH, plugin, "#{plugin}.css")
+      
+
+      file = nil || if File.exists?(plugin_file_specific) 
+        plugin_file_specific
+      elsif File.exists?(plugin_file_generic)
+        plugin_file_generic
+      end
+      
+      if file
+        puts "      + #{plugin} plugin\n"
+        plugin_css += "/* #{plugin} */\n"
+        plugin_css += CSSParser.new(:file_path => file).to_s + "\n"
+      end
+    end
+    
+    css += plugin_css
+  end
+    
+  def append_semantic_classes!
     screen_output_path = File.join(self.destination_path, "screen.css")
     semantic_styles = SemanticClassNames.new(:namespace => self.namespace, :source_file => screen_output_path).css_from_assignments(self.semantic_classes)
     return if semantic_styles.blank?
