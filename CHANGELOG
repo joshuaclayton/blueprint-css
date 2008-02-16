@@ -33,6 +33,8 @@ Version 0.7 - Date TBD
     * Push-x bottom margin. [OFB]
     * Vertical align set to middle on tables. [OFB]
     * Improved .notice, .error and .success color contrast. [OFB]
+    * Size of input[text]. [OFB]
+    * Baseline alignment of <h4>. [OFB]
   
   Misc:
     * Increased default font size to 80% (13px). [OFB]

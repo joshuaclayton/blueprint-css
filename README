@@ -34,6 +34,8 @@ Here's how you set up Blueprint on your site.
    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
    <!--[if IE]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	
+	 Remember to include trailing slashes (" />") in these lines if you're using XHTML.
 
 3) For development, add the .showgrid class to any container or column
    to see the underlying grid. Check out the 'plugins' directory for
