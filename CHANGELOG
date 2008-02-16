@@ -37,7 +37,6 @@ Version 0.7 - Date TBD
     * Baseline alignment of <h4>. [OFB]
   
   Misc:
-    * Increased default font size to 80% (13px). [OFB]
     * Improved structure in print.css. [OFB]
     * Dual-licensed under MIT and GPL licenses. [OFB]
     * Changed name of .clear to .clearfix, and added .clear (clear:both;). [OFB]
