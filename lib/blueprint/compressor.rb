@@ -163,10 +163,9 @@ class Compressor < Blueprint
       plugin_file_specific  = File.join(Blueprint::PLUGINS_PATH, plugin, current_file_name)
       plugin_file_generic   = File.join(Blueprint::PLUGINS_PATH, plugin, "#{plugin}.css")
       
-
-      file = nil || if File.exists?(plugin_file_specific) 
+      file = if File.exists?(plugin_file_specific)
         plugin_file_specific
-      elsif File.exists?(plugin_file_generic)
+      elsif File.exists?(plugin_file_generic) && current_file_name =~ /^screen|print/
         plugin_file_generic
       end
       
