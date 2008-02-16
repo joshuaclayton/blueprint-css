@@ -9,6 +9,11 @@ class Blueprint
   PLUGINS_PATH =          File.join(Blueprint::BLUEPRINT_ROOT_PATH, 'plugins')
   SETTINGS_FILE =         File.join(Blueprint::ROOT_PATH, 'lib', 'settings.yml')
   VALIDATOR_FILE =        File.join(Blueprint::LIB_PATH, 'validate', 'css-validator.jar')
+  CSS_FILES = {
+    'screen.css'   => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
+    'print.css'    => ['print.css'],
+    'ie.css'       => ['ie.css']
+  }
   
   # Default column layout
   # 24 columns * (30px + 10px) - 10px = 950px width

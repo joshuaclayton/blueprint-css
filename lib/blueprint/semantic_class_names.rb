@@ -18,16 +18,17 @@ class SemanticClassNames < Blueprint
     output_css = {}
     
     #loads full stylesheet into an array of hashes
-    blueprint_assignments = CSSParser.new(:file_path => self.source_file, :namespace => self.namespace).parse
+    blueprint_assignments = CSSParser.new(:file_path => self.source_file).parse
     
-    # iterates through each class assignment ('footer' => 'span-# column last', 'header' => 'span-# column last')
+    # iterates through each class assignment ('#footer' => '.span-24 div.span-24', '#header' => '.span-24 div.span-24')
     assignments.each do |semantic_class, blueprint_classes|
       # gathers all BP classes we're going to be mimicing
-      blueprint_classes = blueprint_classes.split(/,|\s/).find_all {|c| !c.blank? }
+      blueprint_classes = blueprint_classes.split(/,|\s/).find_all {|c| !c.blank? }.flatten.map {|c| c.strip }
       classes = []
       # loop through each BP class, grabbing the full hash (containing tags, index, and CSS rules)
       blueprint_classes.each do |bp_class|
-        classes << blueprint_assignments.find_all {|line| line[:tags] =~ Regexp.new(/^(\w+, ?)*\.#{self.namespace}#{bp_class}(, \w+)?$/)}.uniq
+        match = bp_class.include?('.') ? bp_class.gsub(".", ".#{self.namespace}") : ".#{self.namespace}#{bp_class}"
+        classes << blueprint_assignments.find_all {|line| line[:tags] =~ Regexp.new(/^([\w\.\-]+, ?)*#{match}(, ?[\w\.\-]+)*$/) }.uniq
       end
       
       # clean up the array

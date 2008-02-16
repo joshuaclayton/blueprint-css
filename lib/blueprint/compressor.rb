@@ -3,12 +3,6 @@ require 'optparse'
 
 class Compressor < Blueprint
   # class constants
-    CSS_FILES = {
-      'screen.css'   => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
-      'print.css'    => ['print.css'],
-      'ie.css'       => ['ie.css']
-    } unless const_defined?("CSS_FILES")
-  
   TEST_FILES = [
     'index.html', 
     'parts/elements.html', 
@@ -46,7 +40,7 @@ class Compressor < Blueprint
   # instance methods
   def generate!
     output_header       # information to the user (in the console) describing custom settings
-    generate_css_files  # loops through Compressor::CSS_FILES to generate output CSS
+    generate_css_files  # loops through Blueprint::CSS_FILES to generate output CSS
     generate_tests      # updates HTML with custom namespaces in order to test the generated library.  TODO: have tests kick out to custom location
     output_footer       # informs the user that the CSS generation process is complete
   end
@@ -100,7 +94,7 @@ class Compressor < Blueprint
   end
   
   def generate_css_files
-    Compressor::CSS_FILES.each do |output_file_name, css_source_file_names|
+    Blueprint::CSS_FILES.each do |output_file_name, css_source_file_names|
       css_output_path = File.join(destination_path, output_file_name)
       puts "\n    Assembling to #{custom_path ? css_output_path : "default blueprint path"}"
 
@@ -113,12 +107,13 @@ class Compressor < Blueprint
         puts "      + src/#{css_source_file}"
         css_output += "/* #{css_source_file} */\n" if css_source_file_names.any?
         
-        css_output += if self.custom_layout && css_source_file == 'grid.css'
-          CSSParser.new(:css_string => self.custom_layout.generate_grid_css, :namespace => namespace).to_s
+        source_options = if self.custom_layout && css_source_file == 'grid.css'
+          {:css_string => self.custom_layout.generate_grid_css}
         else
-          CSSParser.new(:file_path => File.join(Blueprint::SOURCE_PATH, css_source_file), :namespace => namespace).to_s
+          {:file_path => File.join(Blueprint::SOURCE_PATH, css_source_file)}
         end
         
+        css_output += CSSParser.new(source_options.merge(:namespace => namespace)).to_s
         css_output += "\n"
       end
       
@@ -133,7 +128,7 @@ class Compressor < Blueprint
     end
 
     # append semantic class names if set
-    append_semantic_classes!
+    append_semantic_classes
     
     #attempt to generate a grid.png file
     if (grid_builder = GridBuilder.new(:column_width => self.custom_layout.column_width, :gutter_width => self.custom_layout.gutter_width, :output_path => File.join(self.destination_path, 'src')))
@@ -185,7 +180,7 @@ class Compressor < Blueprint
     css += plugin_css
   end
     
-  def append_semantic_classes!
+  def append_semantic_classes
     screen_output_path = File.join(self.destination_path, "screen.css")
     semantic_styles = SemanticClassNames.new(:namespace => self.namespace, :source_file => screen_output_path).css_from_assignments(self.semantic_classes)
     return if semantic_styles.blank?

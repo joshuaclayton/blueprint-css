@@ -1,7 +1,4 @@
 class Validator < Blueprint
-  # class constants
-  CSS_FILES_TO_TEST = ['screen.css', 'print.css', 'ie.css']
-  
   # instance variables
   attr_reader :error_count
     
@@ -12,15 +9,16 @@ class Validator < Blueprint
 
   # instance methods
   def validate
-    raise "You do not have a Java installed, but it is required." if `which java`.blank?
+    java_path = `which java`.rstrip
+    raise "You do not have a Java installed, but it is required." if java_path.blank?
     
     output_header
     
-    Validator::CSS_FILES_TO_TEST.each do |file_name|
+    Blueprint::CSS_FILES.keys.each do |file_name|
       css_output_path = File.join(Blueprint::BLUEPRINT_ROOT_PATH, file_name)
       puts "\n\n  Testing #{css_output_path}"
       puts "  Output ============================================================\n\n"
-      @error_count += 1 if !system("java -jar '#{Validator::VALIDATOR_FILE}' -e '#{css_output_path}'")
+      @error_count += 1 if !system("#{java_path} -jar '#{Validator::VALIDATOR_FILE}' -e '#{css_output_path}'")
     end
     
     output_footer
