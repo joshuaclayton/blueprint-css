@@ -53,7 +53,7 @@ ol {list-style-type:decimal;}
 dl {margin:0 0 1.5em 0;}
 dl dt {font-weight:bold;}
 dd {margin-left:1.5em;}
-table {margin-bottom:1.4em;}
+table {margin-bottom:1.4em;width:100%;}
 th {font-weight:bold;background:#C3D9FF;}
 th, td {padding:4px 10px 4px 5px;}
 tr.even td {background:#E5ECF9;}
