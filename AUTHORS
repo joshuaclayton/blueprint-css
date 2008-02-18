@@ -13,16 +13,7 @@ asking them for help or support.)
 Original CSS authors
 ----------------------------------------------------------------
 
-The idea for a designers framework comes from:
-* Jeff Croft          [alistapart.com/articles/frameworksfordesigners]
-
-The grid is based on work by:
-* Jeff Croft          [jeffcroft.com]
-* Nathan Borror       [playgroundblues.com]
-* Christian Metts     [mintchaos.com]
-* Khoi Vinh           [subtraction.com]
-
-The typography is based on work by:
+The grid and typography is based on work by:
 * Jeff Croft          [jeffcroft.com]
 * Nathan Borror       [playgroundblues.com]
 * Christian Metts     [mintchaos.com]

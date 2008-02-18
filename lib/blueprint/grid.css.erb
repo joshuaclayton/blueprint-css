@@ -71,13 +71,13 @@ next column, or to pull it into the previous column.  */
   .pull-<%= column %> { margin-left: -<%= (column * (column_width + gutter_width)).to_i %>px; }
 <% end %>
 
-<%= (1..column_count).map {|c| ".pull-#{c}" }.join(", ") %> {float: left;}
+<%= (1..column_count).map {|c| ".pull-#{c}" }.join(", ") %> {float: left; position:relative;}
 
 <% (1..(column_count)).each do |column| %>
   .push-<%= column %> { margin: 0 -<%= (column * (column_width + gutter_width)).to_i %>px 1.5em <%= (column * (column_width + gutter_width)).to_i %>px; }
 <% end %>
 
-<%= (1..column_count).map {|c| ".push-#{c}" }.join(", ") %> {float: right;}
+<%= (1..column_count).map {|c| ".push-#{c}" }.join(", ") %> {float: right; position:relative;}
 
 
 /* Misc classes and elements

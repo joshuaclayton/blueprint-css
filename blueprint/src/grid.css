@@ -151,6 +151,7 @@ div.colborder {
 .pull-1, .pull-2, .pull-3, 
 .pull-4, .pull-5, .pull-5 {
   float:left;
+	position:relative;
 }
 
 .push-1 { margin: 0 -40px 1.5em 40px; }
@@ -162,6 +163,7 @@ div.colborder {
 .push-0, .push-1, .push-2, 
 .push-3, .push-4, .push-5 { 
   float: right;
+	position:relative;
 }
 
 
