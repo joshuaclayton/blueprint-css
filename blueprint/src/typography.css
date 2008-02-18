@@ -46,7 +46,7 @@ a           { color: #009; text-decoration: underline; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
-em,dfn      { font-style: italic; background: #ffc; }
+em,dfn      { font-style: italic; }
 dfn         { font-weight: bold; }
 sup, sub    { line-height: 0; }
 
