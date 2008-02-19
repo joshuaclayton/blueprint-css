@@ -82,7 +82,6 @@ Source files:
 * blueprint/src/grid.css
   This file sets up the grid (it's true). It has a lot of classes
   you apply to divs to set up any sort of column-based grid.
-  Further reading: 
 
 * blueprint/src/typography.css
   This file sets some default typography. It also has a few
