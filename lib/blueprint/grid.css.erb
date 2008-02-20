@@ -107,23 +107,24 @@ hr.space {
   color: #fff;
 }
 
-/* Clearing floats without extra markup
-Based on How To Clear Floats Without Structural Markup by PiE
-[http://www.positioniseverything.net/easyclearing.html] */
 
-.clearfix, .container { display: inline-block; }
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
 .clearfix:after, .container:after {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  clear: both; 
-  visibility: hidden;
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
 }
+.clearfix, .container {display: inline-block;}
 * html .clearfix,
-* html .container   { height: 1%; }
-.clearfix, .container  { display: block; }
+* html .container {height: 1%;}
+.clearfix, .container {display: block;}
 
 /* Regular clearing
-apply to column that should drop below previous ones. */
+   apply to column that should drop below previous ones. */
 
 .clear { clear:both; }

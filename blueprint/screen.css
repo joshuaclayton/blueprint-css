@@ -202,8 +202,8 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
 hr.space {background:#fff;color:#fff;}
-.clearfix, .container {display:inline-block;}
 .clearfix:after, .container:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix, .container {display:inline-block;}
 * html .clearfix, * html .container {height:1%;}
 .clearfix, .container {display:block;}
 .clear {clear:both;}
