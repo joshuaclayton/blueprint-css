@@ -1,9 +1,10 @@
 Blueprint CSS Framework Change Log
 ----------------------------------------------------------------
 
-Version x.x - Date TBD
+Version 0.7.1 - Date 21/02/2007
 --
   Bug fixes:
+    * Fixed bug in the compressor related to Rubygems. [JC] 
     * <tt> should be inline, not block. [OFB]
 
 

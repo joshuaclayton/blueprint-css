@@ -231,7 +231,7 @@ class Compressor < Blueprint
   def css_file_header
 %(/* -----------------------------------------------------------------------
 
-   Blueprint CSS Framework 0.7
+   Blueprint CSS Framework 0.7.1
    http://blueprintcss.googlecode.com
 
    * Copyright (c) 2007-2008. See LICENSE for more info.
