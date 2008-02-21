@@ -2,8 +2,7 @@ begin
   require 'rubygems'
   gem 'rmagick'
   require 'rvg/rvg'
-rescue Gem::LoadError
-rescue
+rescue Exception => e
 end
 
 class GridBuilder < Blueprint
