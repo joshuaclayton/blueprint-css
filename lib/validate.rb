@@ -12,4 +12,4 @@ require 'blueprint/validator'
 # To add your own CSS files for validation, see
 # /lib/blueprint/validator.rb
 
-Validator.new.validate
+Blueprint::Validator.new.validate

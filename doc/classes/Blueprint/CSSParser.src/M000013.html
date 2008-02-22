@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>parse (Blueprint::CSSParser)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/blueprint/css_parser.rb, line 26</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">data</span> = <span class="ruby-keyword kw">nil</span>)
+      <span class="ruby-identifier">data</span> <span class="ruby-operator">||=</span> <span class="ruby-ivar">@raw_data</span>
+    
+      <span class="ruby-comment cmt"># wrapper array holding hashes of css tags/rules</span>
+      <span class="ruby-identifier">css_out</span> = []
+      <span class="ruby-comment cmt"># clear initial spaces</span>
+      <span class="ruby-identifier">data</span>.<span class="ruby-identifier">strip_side_space!</span>.<span class="ruby-identifier">strip_space!</span>
+    
+      <span class="ruby-comment cmt"># split on end of assignments</span>
+      <span class="ruby-identifier">data</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'}'</span>).<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">assignments</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+        <span class="ruby-comment cmt"># split again to separate tags from rules</span>
+        <span class="ruby-identifier">tags</span>, <span class="ruby-identifier">styles</span> = <span class="ruby-identifier">assignments</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'{'</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">strip_side_space!</span>}
+      
+        <span class="ruby-comment cmt"># clean up tags and apply namespaces as needed</span>
+        <span class="ruby-identifier">tags</span>.<span class="ruby-identifier">strip_selector_space!</span>
+        <span class="ruby-identifier">tags</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp re">/\./</span>, <span class="ruby-node">&quot;.#{namespace}&quot;</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">namespace</span>.<span class="ruby-identifier">blank?</span>
+      
+        <span class="ruby-comment cmt"># split on semicolon to iterate through each rule</span>
+        <span class="ruby-identifier">rules</span> = []
+        <span class="ruby-identifier">styles</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">';'</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key_val_pair</span><span class="ruby-operator">|</span>
+          <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">key_val_pair</span>.<span class="ruby-identifier">nil?</span>
+            <span class="ruby-comment cmt"># split by property/val and append to rules array with correct declaration</span>
+            <span class="ruby-identifier">property</span>, <span class="ruby-identifier">value</span> = <span class="ruby-identifier">key_val_pair</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">':'</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">kv</span><span class="ruby-operator">|</span> <span class="ruby-identifier">kv</span>.<span class="ruby-identifier">strip_side_space!</span>}
+            <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">property</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">value</span>
+            <span class="ruby-identifier">rules</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{property}:#{value};&quot;</span>
+          <span class="ruby-keyword kw">end</span>
+        <span class="ruby-keyword kw">end</span>
+        <span class="ruby-comment cmt"># now keeps track of index as hashes don't keep track of position (which will be fixed in Ruby 1.9)</span>
+        <span class="ruby-identifier">css_out</span> <span class="ruby-operator">&lt;&lt;</span> {<span class="ruby-identifier">:tags</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">tags</span>, <span class="ruby-identifier">:rules</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">rules</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-identifier">:idx</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">index</span>} <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">tags</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">rules</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-identifier">css_out</span>
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

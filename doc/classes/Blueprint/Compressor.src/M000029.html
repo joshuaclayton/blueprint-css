@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>generate! (Blueprint::Compressor)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/blueprint/compressor.rb, line 40</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">generate!</span>
+      <span class="ruby-identifier">output_header</span>       <span class="ruby-comment cmt"># information to the user (in the console) describing custom settings</span>
+      <span class="ruby-identifier">generate_css_files</span>  <span class="ruby-comment cmt"># loops through Blueprint::CSS_FILES to generate output CSS</span>
+      <span class="ruby-identifier">generate_tests</span>      <span class="ruby-comment cmt"># updates HTML with custom namespaces in order to test the generated library.  TODO: have tests kick out to custom location</span>
+      <span class="ruby-identifier">output_footer</span>       <span class="ruby-comment cmt"># informs the user that the CSS generation process is complete</span>
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

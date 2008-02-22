@@ -146,4 +146,4 @@ require 'blueprint/blueprint'
 #       }
 #     }
 
-Compressor.new.generate!
+Blueprint::Compressor.new.generate!

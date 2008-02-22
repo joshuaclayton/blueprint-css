@@ -1,5 +1,5 @@
 class String
-  # quick method to see if string has any content
+  # see if string has any content
   def blank?; self.length.zero?; end
   
   # strip space after :, remove newlines, replace multiple spaces with only one space, remove comments
