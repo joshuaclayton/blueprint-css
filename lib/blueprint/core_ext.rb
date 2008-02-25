@@ -18,6 +18,12 @@ class String
   end
 end
 
+class NilClass
+  def blank?
+    true
+  end
+end
+
 class File
   # string output from file
   def self.path_to_string(path)
