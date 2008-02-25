@@ -26,7 +26,8 @@ class File
   
   # saves a string to a specified file path
   def self.string_to_file(string, path)
-    FileUtils.mkdir_p path unless File.directory?(File.dirname(path))
+    directory = File.dirname(path)
+    FileUtils.mkdir_p directory unless File.directory?(directory)
     File.open(path, 'w') { |f| f << string }
   end
 end
