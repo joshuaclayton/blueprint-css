@@ -172,6 +172,14 @@ module Blueprint
           puts "      + #{plugin} plugin\n"
           plugin_css += "/* #{plugin} */\n"
           plugin_css += CSSParser.new(File.path_to_string(file)).to_s + "\n"
+
+          Dir.glob(File.join(File.dirname(file), "**", "**")).each do |cp|
+            short_path = cp.gsub(/#{File.dirname(file)}./ , '')
+            # make directory if it doesn't exist
+            directory = File.dirname(short_path)
+            FileUtils.mkdir_p(File.join(destination_path, directory)) unless directory == "."
+            FileUtils.cp cp, File.join(destination_path, short_path) unless File.directory?(File.join(File.dirname(file), short_path)) || cp == file
+          end
         end
       end
     
