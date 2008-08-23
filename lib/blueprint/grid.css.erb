@@ -22,7 +22,7 @@ body {
 /* Columns
 -------------------------------------------------------------- */
 
-/* Sets up basic grid flaoting and margin. */
+/* Sets up basic grid floating and margin. */
 <%= (1..column_count).map {|c| "div.span-#{c}" }.join(", ") %> {
 	float: left;
 	margin-right: <%= gutter_width %>px;	
