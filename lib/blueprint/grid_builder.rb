@@ -32,7 +32,7 @@ module Blueprint
     def generate!
       return false unless self.able_to_generate
       total_width = self.column_width + self.gutter_width
-      height = 20
+      height = 18
       RVG::dpi = 100
 
       rvg = RVG.new((total_width.to_f/RVG::dpi).in, (height.to_f/RVG::dpi).in).viewbox(0, 0, total_width, height) do |canvas|
