@@ -99,13 +99,13 @@ So how do you set up a grid? By using classes provided by Blueprint. To create a
   		The header
   	</div>
 
-  	<div class="span-8">
+  	<div class="span-4">
   		The first column
   	</div>
   	<div class="span-16">
   		The center column
   	</div>
-  	<div class="span-8 last">
+  	<div class="span-4 last">
   		The last column
   	</div>
 	
