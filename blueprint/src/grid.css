@@ -164,6 +164,14 @@ body { margin:1.5em 0; }
 /* Misc classes and elements
 -------------------------------------------------------------- */
 
+/* In case you need to add a gutter above/below an element */
+.prepend-top { 
+	margin-top:1.5em; 
+}
+.append-bottom { 
+	margin-bottom:1.5em; 
+}
+
 /* Use a .box to create a padded box inside a column.  */ 
 .box { 
   padding: 1.5em; 
