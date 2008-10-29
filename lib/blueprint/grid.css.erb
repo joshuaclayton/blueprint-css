@@ -29,16 +29,16 @@ body {
 }
 
 /* The last column in a row needs this class. */
-div.last { margin-right: 0; }
+.last { margin-right: 0; }
 
 /* Use these classes to set the width of a column. */
-.span-1 {width: <%= column_width %>px;}
+.column, .span-1 {width: <%= column_width %>px;}
 <% (2..column_count-1).each do |column| %>
   .span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin: 0;" if column == column_count %>}
 <% end %>
 .span-<%= column_count %>, div.span-<%= column_count %> { width:<%= page_width %>px; margin:0; }
 
-/* Use these classes to set the width of a input. */
+/* Use these classes to set the width of an input. */
 input.span-1, textarea.span-1, select.span-1 {width: <%= column_width %>px!important;}
 <% (2..column_count-1).each do |column| %>
   input.span-<%= column %>, textarea.span-<%= column %>, select.span-<%= column %> {width: <%= (column_width - 10 - gutter_width + ((column - 1) * (column_width + gutter_width))).to_i %>px!important;<%= "margin: 0;" if column == column_count %>}
@@ -125,9 +125,6 @@ hr.space {
     clear: both; 
     visibility: hidden;
 }
-.clearfix, .container {display: inline-block;}
-* html .clearfix,
-* html .container {height: 1%;}
 .clearfix, .container {display: block;}
 
 /* Regular clearing

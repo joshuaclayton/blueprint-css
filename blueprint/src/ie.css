@@ -33,3 +33,12 @@ html>body p code { *white-space: normal; }
 
 /* IE 6&7 has problems with setting proper <hr> margins. */
 hr  { margin: -8px auto 11px; }
+
+
+/* Clearing 
+-------------------------------------------------------------- */
+
+/* Makes clearfix actually work in IE */ 
+.clearfix, .container {display: inline-block;}
+* html .clearfix,
+* html .container {height: 1%;}

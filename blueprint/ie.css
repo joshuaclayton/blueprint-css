@@ -1,7 +1,8 @@
 /* -----------------------------------------------------------------------
 
-   Blueprint CSS Framework 0.7.1
-   http://blueprintcss.googlecode.com
+
+ Blueprint CSS Framework 0.7.1
+ http://blueprintcss.googlecode.com
 
    * Copyright (c) 2007-2008. See LICENSE for more info.
    * See README for instructions on how to use Blueprint.
@@ -20,3 +21,5 @@ sup {vertical-align:text-top;}
 sub {vertical-align:text-bottom;}
 html>body p code {*white-space:normal;}
 hr {margin:-8px auto 11px;}
+.clearfix, .container {display:inline-block;}
+* html .clearfix, * html .container {height:1%;}
