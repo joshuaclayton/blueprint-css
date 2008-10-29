@@ -23,7 +23,7 @@ body {
 -------------------------------------------------------------- */
 
 /* Sets up basic grid floating and margin. */
-<%= (1..column_count).map {|c| "div.span-#{c}" }.join(", ") %> {
+.column, <%= (1..column_count).map {|c| ".span-#{c}" }.join(", ") %> {
 	float: left;
 	margin-right: <%= gutter_width %>px;	
 }
@@ -32,7 +32,7 @@ body {
 .last { margin-right: 0; }
 
 /* Use these classes to set the width of a column. */
-.column, .span-1 {width: <%= column_width %>px;}
+.span-1 {width: <%= column_width %>px;}
 <% (2..column_count-1).each do |column| %>
   .span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin: 0;" if column == column_count %>}
 <% end %>
