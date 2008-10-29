@@ -41,7 +41,7 @@ div.span-21, div.span-22, div.span-23, div.span-24 {
 }
 
 /* The last column in a row needs this class. */
-.last { margin-right: 0; }
+.last, div.last { margin-right: 0; }
 
 /* Use these classes to set the width of a column. */
 .span-1  { width: 30px; }
