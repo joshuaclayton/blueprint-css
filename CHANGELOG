@@ -1,18 +1,27 @@
 Blueprint CSS Framework Change Log
 ----------------------------------------------------------------
 
-Version 0.7.1 - Date 21/02/2008
+Version 0.8 - Date November 11, 2008
+--
+	New features: 
+		* Much of the flexibility of 0.6 has been pushed back into the core [CMM]
+		* Plugins from 0.6 are now back in the core [CMM]
+	
+	Bug fixes: 
+		* Lots. See http://blueprintcss.lighthouseapp.com/projects/15318-blueprint-css
+
+
+Version 0.7.1 - Date February 21, 2008
 --
   New features:
     * Rubydoc for compressor [JC]
-    * 
     
   Bug fixes:
     * Fixed bug in the compressor related to Rubygems. [JC] 
     * <tt> should be inline, not block. [OFB]
 
 
-Version 0.7 - Date 19/02/2008
+Version 0.7 - February 19, 2008
 --
   New features:
     * New directory structure. [OFB]
@@ -53,7 +62,7 @@ Version 0.7 - Date 19/02/2008
     * Changed name of .clear to .clearfix, and added .clear (clear:both;). [OFB]
 
 
-Version 0.6 - 21/9/2007
+Version 0.6 - September 21, 2007
 --
   * Created a new plugin, "iepngfix", that adds support for PNG transparency in IE5.5+ [OFB]
   * Added an IE stylesheet, updated the test files and the readme accordingly [OFB]
@@ -115,7 +124,7 @@ Version 0.6 - 21/9/2007
   * Created a new, spiffier sample page. [OFB]
   
 
-Version 0.5 - 28/8/2007
+Version 0.5 - August 28, 2007
 --
   * Changed grid width from 14 to 24 columns [OFB]
   * Removed 'first' CSS class and the need to apply it to the first column in a row of columns. [OFB]
@@ -125,7 +134,7 @@ Version 0.5 - 28/8/2007
   * Added test files [OFB]
 
 
-Version 0.4 - 11/8/2007
+Version 0.4 - August 11, 2007
 --
   * All font sizes and vertical margins are now elastic, through the use of em units. 
     Resizing works great in every tested browser. [OFB]
@@ -136,6 +145,6 @@ Version 0.4 - 11/8/2007
   * Loads of minor fixes and additions. [OFB]
 
 
-Version 0.3 - 3/8/2007
+Version 0.3 - March 8, 2007
 --
   * Initial release of Blueprint (versions 0.1 and 0.2 were internal only).
