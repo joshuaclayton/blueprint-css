@@ -23,3 +23,4 @@ html>body p code {*white-space:normal;}
 hr {margin:-8px auto 11px;}
 .clearfix, .container {display:inline-block;}
 * html .clearfix, * html .container {height:1%;}
+fieldset {padding-top:0;}

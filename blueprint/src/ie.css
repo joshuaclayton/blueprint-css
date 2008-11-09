@@ -42,3 +42,10 @@ hr  { margin: -8px auto 11px; }
 .clearfix, .container {display: inline-block;}
 * html .clearfix,
 * html .container {height: 1%;}
+
+
+/* Forms 
+-------------------------------------------------------------- */
+
+/* Fixes padding on fieldset */
+fieldset {padding-top: 0;}
