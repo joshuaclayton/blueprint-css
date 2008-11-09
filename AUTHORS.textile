@@ -25,10 +25,14 @@ The Fancy Type plugin is based on work by:
 
 h2. Current Team
 
-Admin:
-* "Olav Bjorkoy":http://bjorkoy.com
+Blueprint was realized and maintained through version 0.7.1 by 
+"Olav Bjorkoy":http://bjorkoy.com who has sinced passed the torch 
+to the current team. They are: 
+
+Admins:
+* "Christian Montoya":http://christianmontoya.com
+* "Josh Clayton":http://jdclayton.com
 
 Contributors:
-* "Josh Clayton":http://jdclayton.com
-* "Kim Joar Bekkelund":http://www.kimjoar.net
 * "Glenn Rempe":http://blog.rempe.us/
+* Chris Eppstein

@@ -12,7 +12,9 @@ Welcome to Blueprint! This is a CSS framework designed to cut down on your CSS d
 
 h2. Project Info
 
-* *Web*: "http://github.com/joshuaclayton/blueprint-css":http://github.com/joshuaclayton/blueprint-css
+* *Web*: "http://blueprintcss.org":http://blueprintcss.org
+* *Source*: "http://github.com/joshuaclayton/blueprint-css":http://github.com/joshuaclayton/blueprint-css
+* *Wiki*: "http://github.com/joshuaclayton/blueprint-css/wikis/home":http://github.com/joshuaclayton/blueprint-css/wikis/home
 * *Bug/Feature Tracking*: "http://blueprintcss.lighthouseapp.com":http://blueprintcss.lighthouseapp.com
 
 h2. Setup Instructions
