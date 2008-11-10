@@ -54,11 +54,11 @@ dl {margin:0 0 1.5em 0;}
 dl dt {font-weight:bold;}
 dd {margin-left:1.5em;}
 table {margin-bottom:1.4em;width:100%;}
-th {font-weight:bold;background:#C3D9FF;}
+th {font-weight:bold;background:#c3d9ff;}
 th, td {padding:4px 10px 4px 5px;}
-tr.even td {background:#E5ECF9;}
+tr.even td {background:#e5ecf9;}
 tfoot {font-style:italic;}
-caption {background:#eee;}
+caption {background:#eee;padding:4px 10px 4px 5px;}
 .small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
 .large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
 .hide {display:none;}
