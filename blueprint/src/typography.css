@@ -78,11 +78,12 @@ dd          { margin-left: 1.5em;}
 -------------------------------------------------------------- */
 
 table       { margin-bottom: 1.4em; width:100%; }
-th          { font-weight: bold; background: #c3d9ff; }
-th,td       { padding: 4px 10px 4px 5px; }
+th          { font-weight: bold; }
+thead th 		{ background: #c3d9ff; }
+th,td,caption { padding: 4px 10px 4px 5px; }
 tr.even td  { background: #e5ecf9; }
 tfoot       { font-style: italic; }
-caption     { background: #eee; padding: 4px 10px 4px 5px; }
+caption     { background: #eee; }
 
 
 /* Misc classes
