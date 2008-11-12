@@ -202,7 +202,8 @@ hr.space {
     display: block; 
     height: 0; 
     clear: both; 
-    visibility: hidden;
+    visibility: hidden; 
+    overflow:hidden; 
 }
 .clearfix, .container {display: block;}
 
