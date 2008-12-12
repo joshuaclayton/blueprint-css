@@ -198,7 +198,7 @@ hr.space {
    [http://www.positioniseverything.net/easyclearing.html] */
 
 .clearfix:after, .container:after {
-    content: "."; 
+    content: "\0020"; 
     display: block; 
     height: 0; 
     clear: both; 
