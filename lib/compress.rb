@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'blueprint/blueprint'
+require File.join(File.dirname(__FILE__), %w(blueprint blueprint))
 
 # **Basic
 # 
