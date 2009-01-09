@@ -111,7 +111,7 @@ So how do you set up a grid? By using classes provided by Blueprint. To create a
 	
   	<div class="span-24">
   		The footer
-  	</div
+  	</div>
   </div>
 </pre>
   			
