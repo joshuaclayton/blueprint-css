@@ -118,14 +118,14 @@ div.span-21, div.span-22, div.span-23, div.span-24 {
 
 
 /* Border on right hand side of a column. */
-.border {
+div.border {
   padding-right: 4px;
   margin-right: 5px;
   border-right: 1px solid #eee;
 }
 
 /* Border with more whitespace, spans one column. */
-.colborder {
+div.colborder {
   padding-right: 24px;
   margin-right: 25px;
   border-right: 1px solid #eee;
