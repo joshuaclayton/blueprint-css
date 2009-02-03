@@ -86,7 +86,7 @@ body .negative {
   color:#d12f19;
 }
 a.negative:hover, button.negative:hover {
-  background:#fbe3e4;
+  background-color:#fbe3e4;
   border:1px solid #fbc2c4;
   color:#d12f19;
 }
