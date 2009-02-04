@@ -27,7 +27,7 @@ body { text-align: center; }
 -------------------------------------------------------------- */
 
 /* Fixes incorrect styling of legend in IE6. */
-* html legend { margin:-18px -8px 16px 0; padding:0; }
+* html legend { margin:0px -8px 16px 0; padding:0; }
 
 /* Fixes incorrect placement of ol numbers in IE6/7. */
 ol { margin-left:2em; }
