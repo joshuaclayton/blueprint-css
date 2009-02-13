@@ -60,8 +60,8 @@ div.border {
 
 /* Border with more whitespace, spans one column. */
 div.colborder {
-  padding-right: <%= (column_width - 0.5*gutter_width - 1).to_i %>px;
-  margin-right: <%= (column_width - 0.5 * gutter_width).to_i %>px;
+  padding-right: <%= (column_width + 2*gutter_width - 1)/2.to_i %>px;
+  margin-right: <%= (column_width + 2 * gutter_width)/2.to_i %>px;
   border-right: 1px solid #eee;
 }
 
