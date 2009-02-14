@@ -14,7 +14,7 @@ body .column {
   margin-left: 10px;
 }
 
-body .last { margin-left: 0; }
+body div.last { margin-left: 0; }
 body table .last { padding-left: 0; }
 
 body .append-1   { padding-right: 0; padding-left: 40px; }  
