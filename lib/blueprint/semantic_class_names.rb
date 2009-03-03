@@ -35,7 +35,7 @@ module Blueprint
         # loop through each BP class, grabbing the full hash (containing tags, index, and CSS rules)
         blueprint_classes.each do |bp_class|
           match = bp_class.include?('.') ? bp_class.gsub(".", ".#{self.namespace}") : ".#{self.namespace}#{bp_class}"
-          classes << blueprint_assignments.find_all {|line| line[:tags] =~ Regexp.new(/^([\w\.\-]+, ?)*#{match}(, ?[\w\.\-]+)*$/) }.uniq
+          classes << blueprint_assignments.find_all {|line| line[:tags] =~ Regexp.new(/^([\w\.\-\:]+, ?)*#{match}(, ?[\w\.\-\:]+)*$/) }.uniq
         end
       
         # clean up the array
