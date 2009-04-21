@@ -19,8 +19,8 @@
 
 /* Sets up basic grid floating and margin. */
 .column, <%= (1..column_count).map {|c| "div.span-#{c}" }.join(", ") %> {
-	float: left;
-	margin-right: <%= gutter_width %>px;	
+  float: left;
+  margin-right: <%= gutter_width %>px;
 }
 
 /* The last column in a row needs this class. */
@@ -29,26 +29,26 @@
 /* Use these classes to set the width of a column. */
 .span-1 {width: <%= column_width %>px;}
 <% (2..column_count-1).each do |column| %>
-  .span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin: 0;" if column == column_count %>}
-<% end %>
+.span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin: 0;" if column == column_count %>}<% end %>
 .span-<%= column_count %>, div.span-<%= column_count %> { width:<%= page_width %>px; margin:0; }
 
 /* Use these classes to set the width of an input. */
-input.span-1, textarea.span-1, select.span-1 {width: <%= column_width %>px!important;}
-<% (2..column_count-1).each do |column| %>
-  input.span-<%= column %>, textarea.span-<%= column %>, select.span-<%= column %> {width: <%= (column_width - 10 - gutter_width + ((column - 1) * (column_width + gutter_width))).to_i %>px!important;<%= "margin: 0;" if column == column_count %>}
-<% end %>
-input.span-<%= column_count %>, textarea.span-<%= column_count %>, select.span-<%= column_count %> { width:<%= page_width - 10 %>px!important; }
+<%= (1..column_count).map {|column| "input.span-#{column}, textarea.span-#{column}"}.join(", ") %> {
+  border-left-width: <%= input_border %>px!important;
+  border-right-width: <%= input_border %>px!important;
+  padding-left: <%= input_padding %>px!important;
+  padding-right: <%= input_padding %>px!important;
+}
+<% (1..column_count).each do |column| %>
+input.span-<%= column %>, textarea.span-<%= column %> { width: <%= ((column_width + gutter_width) * (column - 1) + column_width - 2*(input_padding + input_border))%>px!important; }<% end %>
 
 /* Add these to a column to append empty cols. */
 <% (1..(column_count-1)).each do |column| %>
-  .append-<%= column %> { padding-right: <%= (column * (column_width + gutter_width)).to_i %>px;}
-<% end %>
+.append-<%= column %> { padding-right: <%= (column * (column_width + gutter_width)).to_i %>px;}<% end %>
 
 /* Add these to a column to prepend empty cols. */
 <% (1..(column_count-1)).each do |column| %>
-  .prepend-<%= column %> { padding-left: <%= (column * (column_width + gutter_width)).to_i %>px;}
-<% end %>
+.prepend-<%= column %> { padding-left: <%= (column * (column_width + gutter_width)).to_i %>px;}<% end %>
 
 
 /* Border on right hand side of a column. */
@@ -70,14 +70,12 @@ div.colborder {
 next column, or to pull it into the previous column.  */
 
 <% (1..column_count).each do |column| %>
-  .pull-<%= column %> { margin-left: -<%= (column * (column_width + gutter_width)).to_i %>px; }
-<% end %>
+.pull-<%= column %> { margin-left: -<%= (column * (column_width + gutter_width)).to_i %>px; }<% end %>
 
 <%= (1..column_count).map {|c| ".pull-#{c}" }.join(", ") %> {float: left; position:relative;}
 
 <% (1..(column_count)).each do |column| %>
-  .push-<%= column %> { margin: 0 -<%= (column * (column_width + gutter_width)).to_i %>px 1.5em <%= (column * (column_width + gutter_width)).to_i %>px; }
-<% end %>
+.push-<%= column %> { margin: 0 -<%= (column * (column_width + gutter_width)).to_i %>px 1.5em <%= (column * (column_width + gutter_width)).to_i %>px; }<% end %>
 
 <%= (1..column_count).map {|c| ".push-#{c}" }.join(", ") %> {float: right; position:relative;}
 
@@ -87,10 +85,10 @@ next column, or to pull it into the previous column.  */
 
 /* In case you need to add a gutter above/below an element */
 .prepend-top { 
-	margin-top:1.5em; 
+  margin-top:1.5em; 
 }
 .append-bottom { 
-	margin-bottom:1.5em; 
+  margin-bottom:1.5em; 
 }
 
 /* Use a .box to create a padded box inside a column.  */ 
@@ -111,6 +109,7 @@ hr {
   margin: 0 0 1.45em;
   border: none; 
 }
+
 hr.space {
   background: #fff;
   color: #fff;
@@ -122,12 +121,12 @@ hr.space {
    [http://www.positioniseverything.net/easyclearing.html] */
 
 .clearfix:after, .container:after {
-    content: "\0020"; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
-    overflow:hidden; 
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+  overflow:hidden; 
 }
 .clearfix, .container {display: block;}
 

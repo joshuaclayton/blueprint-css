@@ -86,7 +86,7 @@ module Blueprint
         self.plugins =          project['plugins']          || []
       
         if (layout = project['custom_layout'])
-          self.custom_layout = CustomLayout.new(:column_count => layout['column_count'], :column_width => layout['column_width'], :gutter_width => layout['gutter_width'])
+          self.custom_layout = CustomLayout.new(:column_count => layout['column_count'], :column_width => layout['column_width'], :gutter_width => layout['gutter_width'], :input_padding => layout['input_padding'], :input_border => layout['input_border'])
         end
         @loaded_from_settings = true
       end

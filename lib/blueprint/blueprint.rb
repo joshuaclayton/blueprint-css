@@ -18,7 +18,7 @@ module Blueprint
   VALIDATOR_FILE =        File.join(Blueprint::LIB_PATH, 'validate', 'css-validator.jar')
   # hash of compressed and source CSS files
   CSS_FILES = {
-    'screen.css'   => ['reset.css', 'typography.css', 'grid.css', 'forms.css'],
+    'screen.css'   => ['reset.css', 'typography.css', 'forms.css', 'grid.css'],
     'print.css'    => ['print.css'],
     'ie.css'       => ['ie.css']
   }
@@ -29,6 +29,9 @@ module Blueprint
   COLUMN_WIDTH =          30
   # default gutter width (in pixels) for Blueprint layout
   GUTTER_WIDTH =          10
+  
+  INPUT_PADDING =         5
+  INPUT_BORDER =          1
 end
 
 Dir["#{File.join(Blueprint::LIB_PATH)}/*"].each do |file|
