@@ -25,7 +25,7 @@ Here's how you set up Blueprint on your site.
 # Add the following three lines to every @<head/>@ of your site. Make sure the three @href@ paths are correct (here, BP is in my CSS folder): <pre>
 <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
-<!--[if IE]>
+<!--[if lt IE 8]>
   <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
 <![endif]-->
 </pre>
