@@ -59,3 +59,18 @@ img { -ms-interpolation-mode: bicubic; }
 
 /* Fixes padding on fieldset */
 fieldset {padding-top: 0;}
+
+/* Fixes rule that IE 6 ignores */
+input.text, input.title {background-color:#fff;border:1px solid #bbb;}
+input.text:focus, input.title:focus {border-color:#666;}
+input.text, input.title, textarea, select {margin:0.5em 0;}
+input.checkbox, input.radio {position:relative; top:.25em;}
+
+/* Fixes alignment of inline form elements */ 
+form.inline div, form.inline p {vertical-align:middle;}
+form.inline label {position:relative;top:-0.25em;}
+form.inline input.checkbox, form.inline input.radio,
+form.inline input.button, form.inline button { 
+  margin:0.5em 0; 
+}
+button, input.button {position:relative;top:0.25em;}

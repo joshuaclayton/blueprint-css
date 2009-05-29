@@ -25,3 +25,11 @@ img {-ms-interpolation-mode:bicubic;}
 .clearfix, .container {display:inline-block;}
 * html .clearfix, * html .container {height:1%;}
 fieldset {padding-top:0;}
+input.text, input.title {background-color:#fff;border:1px solid #bbb;}
+input.text:focus, input.title:focus {border-color:#666;}
+input.text, input.title, textarea, select {margin:0.5em 0;}
+input.checkbox, input.radio {position:relative;top:.25em;}
+form.inline div, form.inline p {vertical-align:middle;}
+form.inline label {position:relative;top:-0.25em;}
+form.inline input.checkbox, form.inline input.radio, form.inline input.button, form.inline button {margin:0.5em 0;}
+button, input.button {position:relative;top:0.25em;}
