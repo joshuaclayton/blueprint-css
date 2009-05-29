@@ -1,6 +1,15 @@
 Blueprint CSS Framework Change Log
 ----------------------------------------------------------------
 
+Version 0.9 - Date May 29, 2009
+--
+	New features: 
+		* Changed all conditional comments to [if lt IE 8] for IE 8 compatibility [CMM]
+		* Updated forms code to align inline form elements, with additions for IE 6 [CMM]
+			* Use <form class="inline"> for inline forms
+			* Use classes "text", "button", "radio" and "checkbox" on inputs for IE 6 compatibility
+
+
 Version 0.8 - Date November 11, 2008
 --
 	New features: 
