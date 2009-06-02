@@ -1,11 +1,12 @@
 /* -------------------------------------------------------------- 
-   
+
    forms.css
    * Sets up some default styling for forms
    * Gives you classes to enhance your forms
    
    Usage:
    * For text fields, use class .title or .text
+   * For inline forms, use .inline (even when using columns)
    
 -------------------------------------------------------------- */
 

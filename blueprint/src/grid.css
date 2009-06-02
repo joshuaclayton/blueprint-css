@@ -1,5 +1,17 @@
 /* --------------------------------------------------------------
-   grid.css - mirror version of src/grid.css
+
+	grid.css
+	* Sets up an easy-to-use grid of 24 columns.
+	
+	By default, the grid is 950px wide, with 24 columns
+	spanning 30px, and a 10px margin between columns.
+	
+	If you need fewer or more columns, namespaces or semantic
+	element names, use the compressor script (lib/compress.rb)
+	
+	Note: Changes made in this file will not be applied when
+	using the compressor: make changes in lib/blueprint/grid.css.rb
+	
 -------------------------------------------------------------- */
 
 /* A container should group all your columns. */

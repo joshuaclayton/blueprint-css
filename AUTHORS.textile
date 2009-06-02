@@ -36,3 +36,4 @@ Admins:
 Contributors:
 * "Glenn Rempe":http://blog.rempe.us/
 * "Chris Eppstein":http://twitter.com/chriseppstein
+* "Sean K. Stewart":http://seankstewart.com/
