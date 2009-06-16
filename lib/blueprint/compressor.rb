@@ -23,6 +23,7 @@ module Blueprint
       # set up defaults
       @script_name = File.basename($0) 
       @loaded_from_settings = false
+      @settings_file = Blueprint::SETTINGS_FILE
       self.namespace = ""
       self.destination_path = Blueprint::BLUEPRINT_ROOT_PATH
       self.custom_layout = CustomLayout.new
@@ -51,6 +52,8 @@ module Blueprint
         o.define_head "Blueprint Compressor"
         o.separator ""
         o.separator "options"
+        o.on( "-fSETTINGS_FILE", "--settings_file=SETTINGS_FILE", String,
+              "Specify a non-default settings file path.") { |file| @settings_file = file }
         o.on( "-oOUTPUT_PATH", "--output_path=OUTPUT_PATH", String,
               "Define a different path to output generated CSS files to.") { |path| self.destination_path = path }
         o.on( "-nBP_NAMESPACE", "--namespace=BP_NAMESPACE", String,
@@ -73,10 +76,10 @@ module Blueprint
     # attempts to load output settings from settings.yml
     def initialize_project_from_yaml(project_name = nil)
       # ensures project_name is set and settings.yml is present
-      return unless (project_name && File.exist?(Blueprint::SETTINGS_FILE))
+      return unless (project_name && File.exist?(@settings_file))
     
       # loads yaml into hash
-      projects = YAML::load(File.path_to_string(Blueprint::SETTINGS_FILE))
+      projects = YAML::load(File.path_to_string(@settings_file))
     
       if (project = projects[project_name]) # checks to see if project info is present
         self.namespace =        project['namespace']        || ""
