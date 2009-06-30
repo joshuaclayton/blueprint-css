@@ -45,7 +45,7 @@ module Blueprint
           styles.split(';').each do |key_val_pair|
             unless key_val_pair.nil?
               # split by property/val and append to rules array with correct declaration
-              property, value = key_val_pair.split(':').map{|kv| kv.strip_side_space!}
+              property, value = key_val_pair.split(':', 2).map{|kv| kv.strip_side_space!}
               break unless property && value
               rules << "#{property}:#{value};"
             end
