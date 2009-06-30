@@ -1,3 +1,4 @@
+*.swp
 *.svn
 *.DS_Store
 tmp/*
