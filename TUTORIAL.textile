@@ -6,7 +6,7 @@ h2. About Blueprint
   
 Blueprint is a CSS framework, designed to cut down on your development time. It gives you a solid foundation to build your CSS on top of, including some sensible default typography, a customizable grid, a print stylesheet and much more.
 
-However, BP is not a silver bullet, and it's best suited for websites where each page may require it's own design. Take a look at existing BP pages before deciding if the framework is right for you. You may also check out the test files in the @tests@ directory, which demonstrates most of the features in Blueprint.
+However, BP is not a silver bullet, and it's best suited for websites where each page may require its own design. Take a look at existing BP pages before deciding if the framework is right for you. You may also check out the test files in the @tests@ directory, which demonstrates most of the features in Blueprint.
 
 The word "framework" may be a bit misleading in this context, since BP does not make suggestions on how you should organize or write your CSS. It's more like a "css toolbox" with helpful bits and pieces, from which you may pick and choose based on your needs. 
 
@@ -18,7 +18,7 @@ From the bottom up, here are the CSS layers in Blueprint:
 #	*Typography*: Gives you some nice default typography and colors.
 #	*Grid*: Provides a set of CSS classes for making grid layouts.
 
-The second part of Blueprint are the scripts, which lets you customize most
+The second part of Blueprint are the scripts, which let you customize most
 aspects of the framework, from column count and widths, to output paths and
 CSS class namespaces. We have two scripts:
 
@@ -49,7 +49,7 @@ Remember to add trailing slashes if you're using XHTML (" />").
 
 h2. Using the CSS in Blueprint
 
-As mentioned before, there's basically three layers of CSS in Blueprint. The first two layers, the browser CSS reset and the default typography, apply themselves by changing CSS of standard HTML elements. In other words, you don't need to change anything in these files. If you for instance want to change the font size, do this in your own stylesheet, so that it's easy to upgrade Blueprint when new versions arrive.
+As mentioned before, there's basically three layers of CSS in Blueprint. The first two layers, the browser CSS reset and the default typography, apply themselves by changing the CSS of standard HTML elements. In other words, you don't need to change anything in these files. If you, for instance, want to change the font size, do this in your own stylesheet, so that it's easy to upgrade Blueprint when new versions arrive.
 
 h3. Classes for Typography
 	
@@ -78,7 +78,7 @@ have the class @.text@, or @.title@, where @.text@ is the normal size,
 and @.title@ gives you an input field with larger text.
 
 There's also a few classes you may use for success and error messages:
-		
+
 <dl>
 	<dt>@div.error@</dt><dd>Creates an error box (red).</dd>
 	<dt>@div.notice@</dt><dd>Creates a box for notices (yellow).</dd>
