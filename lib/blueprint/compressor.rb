@@ -144,13 +144,14 @@ module Blueprint
       return css unless self.custom_path and self.custom_css[current_file_name]
 
       self.custom_css[current_file_name].each do |custom_css|
-        overwrite_path = File.join(destination_path, (custom_css || "my-#{current_file_name}"))
+        overwrite_base = custom_css || "my-#{current_file_name}"
+        overwrite_path = File.join(destination_path, overwrite_base)
         overwrite_css = File.exists?(overwrite_path) ? File.path_to_string(overwrite_path) : ""
     
         # if there's CSS present, add it to the CSS output
         unless overwrite_css.blank?
           puts "      + custom styles (#{custom_css})\n"
-          css += "/* #{overwrite_path} */\n"
+          css += "/* #{overwrite_base} */\n"
           css += CSSParser.new(overwrite_css).to_s + "\n"
         end
       end
