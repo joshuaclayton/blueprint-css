@@ -119,11 +119,11 @@ module Blueprint
           css_output += "\n"
         end
       
-        # append CSS from custom files
-        css_output = append_custom_css(css_output, output_file_name)
-      
         #append CSS from plugins
         css_output = append_plugin_css(css_output, output_file_name)
+      
+        # append CSS from custom files
+        css_output = append_custom_css(css_output, output_file_name)
       
         #save CSS to correct path, stripping out any extra whitespace at the end of the file
         File.string_to_file(css_output.rstrip, css_output_path)
