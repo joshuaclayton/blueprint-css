@@ -51,7 +51,7 @@ module Blueprint
             end
           end
           # now keeps track of index as hashes don't keep track of position (which will be fixed in Ruby 1.9)
-          css_out << {:tags => tags, :rules => rules.to_s, :idx => index} unless tags.blank? || rules.to_s.blank?
+          css_out << {:tags => tags, :rules => rules.join, :idx => index} unless tags.blank? || rules.to_s.blank?
         end
       end
       css_out
