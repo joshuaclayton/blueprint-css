@@ -37,6 +37,7 @@ hr {
 hr.space {
   background: #fff;
   color: #fff;
+  visibility: hidden;
 }
 
 
