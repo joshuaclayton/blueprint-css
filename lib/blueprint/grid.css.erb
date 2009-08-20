@@ -29,8 +29,8 @@
 /* Use these classes to set the width of a column. */
 .span-1 {width: <%= column_width %>px;}
 <% (2..column_count-1).each do |column| %>
-.span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin: 0;" if column == column_count %>}<% end %>
-.span-<%= column_count %>, div.span-<%= column_count %> { width:<%= page_width %>px; margin:0; }
+.span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin-right: 0;" if column == column_count %>}<% end %>
+.span-<%= column_count %>, div.span-<%= column_count %> { width:<%= page_width %>px; margin-right:0; }
 
 /* Use these classes to set the width of an input. */
 <%= (1..column_count).map {|column| "input.span-#{column}, textarea.span-#{column}"}.join(", ") %> {

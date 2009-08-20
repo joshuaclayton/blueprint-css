@@ -22,6 +22,7 @@ blockquote, q {quotes:"" "";}
 a img {border:none;}
 
 /* typography.css */
+html {font-size:100.01%;}
 body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
@@ -122,7 +123,7 @@ form.inline p {margin-bottom:0;}
 .span-21 {width:830px;}
 .span-22 {width:870px;}
 .span-23 {width:910px;}
-.span-24, div.span-24 {width:950px;margin:0;}
+.span-24, div.span-24 {width:950px;margin-right:0;}
 input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {border-left-width:1px!important;border-right-width:1px!important;padding-left:5px!important;padding-right:5px!important;}
 input.span-1, textarea.span-1 {width:18px!important;}
 input.span-2, textarea.span-2 {width:58px!important;}

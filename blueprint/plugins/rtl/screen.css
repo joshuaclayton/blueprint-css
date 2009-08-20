@@ -8,10 +8,11 @@
 -------------------------------------------------------------- */
 
 body .container { direction: rtl; }
-body .column {
+body .column, body div.span-1, body div.span-2, body div.span-3, body div.span-4, body div.span-5, body div.span-6, body div.span-7, body div.span-8, body div.span-9, body div.span-10, body div.span-11, body div.span-12, body div.span-13, body div.span-14, body div.span-15, body div.span-16, body div.span-17, body div.span-18, body div.span-19, body div.span-20, body div.span-21, body div.span-22, body div.span-23, body div.span-24 {
   float: right;
   margin-right: 0;
   margin-left: 10px;
+  text-align:right; 
 }
 
 body div.last { margin-left: 0; }
