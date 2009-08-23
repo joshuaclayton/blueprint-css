@@ -1,17 +1,15 @@
 /* --------------------------------------------------------------
+       grid.css
+       * Sets up an easy-to-use grid of 24 columns.
 
-	grid.css
-	* Sets up an easy-to-use grid of 24 columns.
-	
-	By default, the grid is 950px wide, with 24 columns
-	spanning 30px, and a 10px margin between columns.
-	
-	If you need fewer or more columns, namespaces or semantic
-	element names, use the compressor script (lib/compress.rb)
-	
-	Note: Changes made in this file will not be applied when
-	using the compressor: make changes in lib/blueprint/grid.css.rb
-	
+       By default, the grid is 950px wide, with 24 columns
+       spanning 30px, and a 10px margin between columns.
+
+       If you need fewer or more columns, namespaces or semantic
+       element names, use the compressor script (lib/compress.rb)
+
+       Note: Changes made in this file will not be applied when
+       using the compressor: make changes in lib/blueprint/grid.css.rb
 -------------------------------------------------------------- */
 
 /* A container should group all your columns. */
@@ -21,8 +19,8 @@
 }
 
 /* Use this class on any div.span / container to see the grid. */
-.showgrid { 
-  background: url(src/grid.png); 
+.showgrid {
+  background: url(src/grid.png);
 }
 
 
@@ -63,7 +61,7 @@
 .span-21 {width: 830px;}
 .span-22 {width: 870px;}
 .span-23 {width: 910px;}
-.span-24, div.span-24 { width: 950px; margin-right: 0; }
+.span-24, div.span-24 { width:950px; margin-right:0; }
 
 /* Use these classes to set the width of an input. */
 input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
@@ -166,7 +164,7 @@ div.colborder {
 }
 
 
-/* Use these classes on an element to push it into the 
+/* Use these classes on an element to push it into the
 next column, or to pull it into the previous column.  */
 
 
@@ -230,34 +228,36 @@ next column, or to pull it into the previous column.  */
 -------------------------------------------------------------- */
 
 /* In case you need to add a gutter above/below an element */
-.prepend-top { 
-  margin-top:1.5em; 
+.prepend-top {
+  margin-top:1.5em;
 }
-.append-bottom { 
-  margin-bottom:1.5em; 
+.append-bottom {
+  margin-bottom:1.5em;
 }
 
-/* Use a .box to create a padded box inside a column.  */ 
-.box { 
-  padding: 1.5em; 
-  margin-bottom: 1.5em; 
-  background: #E5ECF9; 
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #E5ECF9;
 }
 
 /* Use this to create a horizontal ruler across a column. */
 hr {
-  background: #ddd; 
+  background: #ddd;
   color: #ddd;
-  clear: both; 
-  float: none; 
-  width: 100%; 
+  clear: both;
+  float: none;
+  width: 100%;
   height: .1em;
   margin: 0 0 1.45em;
-  border: none; 
+  border: none;
 }
+
 hr.space {
   background: #fff;
   color: #fff;
+  visibility: hidden;
 }
 
 
@@ -266,12 +266,12 @@ hr.space {
    [http://www.positioniseverything.net/easyclearing.html] */
 
 .clearfix:after, .container:after {
-  content: "\0020"; 
-  display: block; 
-  height: 0; 
-  clear: both; 
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
   visibility: hidden;
-  overflow:hidden; 
+  overflow:hidden;
 }
 .clearfix, .container {display: block;}
 
