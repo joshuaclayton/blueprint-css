@@ -1,5 +1,14 @@
 /* --------------------------------------------------------------
-   grid.css - mirror version of src/grid.css
+
+   grid.css
+   * Sets up an easy-to-use grid of 24 columns.
+
+   By default, the grid is 950px wide, with 24 columns
+   spanning 30px, and a 10px margin between columns.
+
+   If you need fewer or more columns, namespaces or semantic
+   element names, use the compressor script (lib/compress.rb)
+
 -------------------------------------------------------------- */
 
 /* A container should group all your columns. */
@@ -18,19 +27,19 @@
 -------------------------------------------------------------- */
 
 /* Sets up basic grid floating and margin. */
-.column, <%= (1..column_count).map {|c| "div.span-#{c}" }.join(", ") %> {
+.column, <%= (1..column_count).map {|c| ".span-#{c}" }.join(", ") %> {
   float: left;
   margin-right: <%= gutter_width %>px;
 }
 
 /* The last column in a row needs this class. */
-.last, div.last { margin-right: 0; }
+.last { margin-right: 0; }
 
 /* Use these classes to set the width of a column. */
 .span-1 {width: <%= column_width %>px;}
 <% (2..column_count-1).each do |column| %>
 .span-<%= column %> {width: <%= (column_width + ((column - 1) * (column_width + gutter_width))).to_i %>px;<%= "margin-right: 0;" if column == column_count %>}<% end %>
-.span-<%= column_count %>, div.span-<%= column_count %> { width:<%= page_width %>px; margin-right:0; }
+.span-<%= column_count %> {width:<%= page_width %>px; margin-right:0;}
 
 /* Use these classes to set the width of an input. */
 <%= (1..column_count).map {|column| "input.span-#{column}, textarea.span-#{column}"}.join(", ") %> {

@@ -1,15 +1,14 @@
 /* --------------------------------------------------------------
-       grid.css
-       * Sets up an easy-to-use grid of 24 columns.
 
-       By default, the grid is 950px wide, with 24 columns
-       spanning 30px, and a 10px margin between columns.
+   grid.css
+   * Sets up an easy-to-use grid of 24 columns.
 
-       If you need fewer or more columns, namespaces or semantic
-       element names, use the compressor script (lib/compress.rb)
+   By default, the grid is 950px wide, with 24 columns
+   spanning 30px, and a 10px margin between columns.
 
-       Note: Changes made in this file will not be applied when
-       using the compressor: make changes in lib/blueprint/grid.css.rb
+   If you need fewer or more columns, namespaces or semantic
+   element names, use the compressor script (lib/compress.rb)
+
 -------------------------------------------------------------- */
 
 /* A container should group all your columns. */
@@ -28,13 +27,13 @@
 -------------------------------------------------------------- */
 
 /* Sets up basic grid floating and margin. */
-.column, div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, div.span-11, div.span-12, div.span-13, div.span-14, div.span-15, div.span-16, div.span-17, div.span-18, div.span-19, div.span-20, div.span-21, div.span-22, div.span-23, div.span-24 {
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
   float: left;
   margin-right: 10px;
 }
 
 /* The last column in a row needs this class. */
-.last, div.last { margin-right: 0; }
+.last { margin-right: 0; }
 
 /* Use these classes to set the width of a column. */
 .span-1 {width: 30px;}
@@ -61,7 +60,7 @@
 .span-21 {width: 830px;}
 .span-22 {width: 870px;}
 .span-23 {width: 910px;}
-.span-24, div.span-24 { width:950px; margin-right:0; }
+.span-24 {width:950px; margin-right:0;}
 
 /* Use these classes to set the width of an input. */
 input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
