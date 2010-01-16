@@ -196,8 +196,8 @@ input.span-24, textarea.span-24 {width:938px!important;}
 .prepend-21 {padding-left:840px;}
 .prepend-22 {padding-left:880px;}
 .prepend-23 {padding-left:920px;}
-div.border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
-div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;}
+.border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
+.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;}
 .pull-1 {margin-left:-40px;}
 .pull-2 {margin-left:-80px;}
 .pull-3 {margin-left:-120px;}

@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-/* Use this class on any div.span / container to see the grid. */
+/* Use this class on any .span / container to see the grid. */
 .showgrid {
   background: url(src/grid.png);
 }
@@ -149,14 +149,14 @@ input.span-24, textarea.span-24 { width: 938px!important; }
 
 
 /* Border on right hand side of a column. */
-div.border {
+.border {
   padding-right: 4px;
   margin-right: 5px;
   border-right: 1px solid #eee;
 }
 
 /* Border with more whitespace, spans one column. */
-div.colborder {
+.colborder {
   padding-right: 24px;
   margin-right: 25px;
   border-right: 1px solid #eee;

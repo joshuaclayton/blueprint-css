@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-/* Use this class on any div.span / container to see the grid. */
+/* Use this class on any .span-# / .container to see the grid. */
 .showgrid {
   background: url(src/grid.png);
 }
@@ -61,14 +61,14 @@ input.span-<%= column %>, textarea.span-<%= column %> { width: <%= ((column_widt
 
 
 /* Border on right hand side of a column. */
-div.border {
+.border {
   padding-right: <%= (gutter_width * 0.5 - 1).to_i %>px;
   margin-right: <%= (gutter_width * 0.5).to_i %>px;
   border-right: 1px solid #eee;
 }
 
 /* Border with more whitespace, spans one column. */
-div.colborder {
+.colborder {
   padding-right: <%= (column_width + 2*gutter_width - 1)/2.to_i %>px;
   margin-right: <%= (column_width + 2 * gutter_width)/2.to_i %>px;
   border-right: 1px solid #eee;
