@@ -27,7 +27,7 @@ module Blueprint
       #loads full stylesheet into an array of hashes
       blueprint_assignments = CSSParser.new(File.path_to_string(self.source_file)).parse
     
-      # iterates through each class assignment ('#footer' => '.span-24 div.span-24', '#header' => '.span-24 div.span-24')
+      # iterates through each class assignment ('#footer' => '.span-24', '#header' => '.span-24')
       assignments.each do |semantic_class, blueprint_classes|
         # gathers all BP classes we're going to be mimicing
         blueprint_classes = blueprint_classes.split(/,|\s/).find_all {|c| !c.blank? }.flatten.map {|c| c.strip }

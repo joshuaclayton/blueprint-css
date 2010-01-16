@@ -1,10 +1,10 @@
-/* -------------------------------------------------------------- 
-   
+/* --------------------------------------------------------------
+
    ie.css
-   
+
    Contains every hack for Internet Explorer,
    so that our core files stay sweet and nimble.
-   
+
 -------------------------------------------------------------- */
 
 /* Make sure the layout is centered in IE5 */
@@ -12,15 +12,15 @@ body { text-align: center; }
 .container { text-align: left; }
 
 /* Fixes IE margin bugs */
-* html .column, * html div.span-1, * html div.span-2, 
-* html div.span-3, * html div.span-4, * html div.span-5, 
-* html div.span-6, * html div.span-7, * html div.span-8, 
-* html div.span-9, * html div.span-10, * html div.span-11, 
-* html div.span-12, * html div.span-13, * html div.span-14, 
-* html div.span-15, * html div.span-16, * html div.span-17, 
-* html div.span-18, * html div.span-19, * html div.span-20, 
-* html div.span-21, * html div.span-22, * html div.span-23, 
-* html div.span-24 { display:inline; overflow-x: hidden; }
+* html .column, * html .span-1, * html .span-2,
+* html .span-3, * html .span-4, * html .span-5,
+* html .span-6, * html .span-7, * html .span-8,
+* html .span-9, * html .span-10, * html .span-11,
+* html .span-12, * html .span-13, * html .span-14,
+* html .span-15, * html .span-16, * html .span-17,
+* html .span-18, * html .span-19, * html .span-20,
+* html .span-21, * html .span-22, * html .span-23,
+* html .span-24 { display:inline; overflow-x: hidden; }
 
 
 /* Elements
@@ -34,7 +34,7 @@ sup { vertical-align:text-top; }
 sub { vertical-align:text-bottom; }
 
 /* Fixes IE7 missing wrapping of code elements. */
-html>body p code { *white-space: normal; } 
+html>body p code { *white-space: normal; }
 
 /* IE 6&7 has problems with setting proper <hr> margins. */
 hr  { margin:-8px auto 11px; }
@@ -42,16 +42,16 @@ hr  { margin:-8px auto 11px; }
 /* Explicitly set interpolation, allowing dynamically resized images to not look horrible */
 img { -ms-interpolation-mode:bicubic; }
 
-/* Clearing 
+/* Clearing
 -------------------------------------------------------------- */
 
-/* Makes clearfix actually work in IE */ 
+/* Makes clearfix actually work in IE */
 .clearfix, .container { display:inline-block; }
 * html .clearfix,
 * html .container { height:1%; }
 
 
-/* Forms 
+/* Forms
 -------------------------------------------------------------- */
 
 /* Fixes padding on fieldset */
@@ -66,11 +66,11 @@ input.text:focus, input.title:focus { border-color:#666; }
 input.text, input.title, textarea, select { margin:0.5em 0; }
 input.checkbox, input.radio { position:relative; top:.25em; }
 
-/* Fixes alignment of inline form elements */ 
+/* Fixes alignment of inline form elements */
 form.inline div, form.inline p { vertical-align:middle; }
 form.inline label { position:relative;top:-0.25em; }
 form.inline input.checkbox, form.inline input.radio,
-form.inline input.button, form.inline button { 
-  margin:0.5em 0; 
+form.inline input.button, form.inline button {
+  margin:0.5em 0;
 }
 button, input.button { position:relative;top:0.25em; }

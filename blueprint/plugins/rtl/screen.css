@@ -2,23 +2,23 @@
 
    rtl.css
    * Mirrors Blueprint for left-to-right languages
-   
+
    By Ran Yaniv Hartstein [ranh.co.il]
-   
+
 -------------------------------------------------------------- */
 
 body .container { direction: rtl; }
-body .column, body div.span-1, body div.span-2, body div.span-3, body div.span-4, body div.span-5, body div.span-6, body div.span-7, body div.span-8, body div.span-9, body div.span-10, body div.span-11, body div.span-12, body div.span-13, body div.span-14, body div.span-15, body div.span-16, body div.span-17, body div.span-18, body div.span-19, body div.span-20, body div.span-21, body div.span-22, body div.span-23, body div.span-24 {
+body .column, body .span-1, body .span-2, body .span-3, body .span-4, body .span-5, body .span-6, body .span-7, body .span-8, body .span-9, body .span-10, body .span-11, body .span-12, body .span-13, body .span-14, body .span-15, body .span-16, body .span-17, body .span-18, body .span-19, body .span-20, body .span-21, body .span-22, body .span-23, body .span-24 {
   float: right;
   margin-right: 0;
   margin-left: 10px;
-  text-align:right; 
+  text-align:right;
 }
 
 body div.last { margin-left: 0; }
 body table .last { padding-left: 0; }
 
-body .append-1   { padding-right: 0; padding-left: 40px; }  
+body .append-1   { padding-right: 0; padding-left: 40px; }
 body .append-2   { padding-right: 0; padding-left: 80px; }
 body .append-3   { padding-right: 0; padding-left: 120px; }
 body .append-4   { padding-right: 0; padding-left: 160px; }
@@ -42,7 +42,7 @@ body .append-21  { padding-right: 0; padding-left: 840px; }
 body .append-22  { padding-right: 0; padding-left: 880px; }
 body .append-23  { padding-right: 0; padding-left: 920px; }
 
-body .prepend-1   { padding-left: 0; padding-right: 40px; }  
+body .prepend-1   { padding-left: 0; padding-right: 40px; }
 body .prepend-2   { padding-left: 0; padding-right: 80px; }
 body .prepend-3   { padding-left: 0; padding-right: 120px; }
 body .prepend-4   { padding-left: 0; padding-right: 160px; }

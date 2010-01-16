@@ -24,10 +24,10 @@ project2:
     screen.css:
       - custom_screen.css
   semantic_classes:
-    "#footer, #header": ".span-24, div.span-24"
-    "#content": ".span-17, div.span-17, div.colborder"
-    "#extra-content": ".span-6, div.span-6"
-    "div#navigation": "div.span_24, .span-24"
-    "div.section, div.entry, .feeds": ".span-6 div.span-6"
+    "#footer, #header": ".span-24"
+    "#content": ".span-17, .colborder"
+    "#extra-content": ".span-6"
+    "div#navigation": ".span_24"
+    "div.section, div.entry, .feeds": ".span-6"
 project3:
   path: /path/to/another/projects/styles
