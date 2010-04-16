@@ -43,13 +43,13 @@
 
 /* Use these classes to set the width of an input. */
 <%= (1..column_count).map {|column| "input.span-#{column}, textarea.span-#{column}"}.join(", ") %> {
-  border-left-width: <%= input_border %>px!important;
-  border-right-width: <%= input_border %>px!important;
-  padding-left: <%= input_padding %>px!important;
-  padding-right: <%= input_padding %>px!important;
+  border-left-width: <%= input_border %>px;
+  border-right-width: <%= input_border %>px;
+  padding-left: <%= input_padding %>px;
+  padding-right: <%= input_padding %>px;
 }
 <% (1..column_count).each do |column| %>
-input.span-<%= column %>, textarea.span-<%= column %> { width: <%= ((column_width + gutter_width) * (column - 1) + column_width - 2*(input_padding + input_border))%>px!important; }<% end %>
+input.span-<%= column %>, textarea.span-<%= column %> { width: <%= ((column_width + gutter_width) * (column - 1) + column_width - 2*(input_padding + input_border))%>px; }<% end %>
 
 /* Add these to a column to append empty cols. */
 <% (1..(column_count-1)).each do |column| %>
