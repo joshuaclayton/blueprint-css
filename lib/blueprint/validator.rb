@@ -2,7 +2,7 @@ module Blueprint
   # Validates generated CSS against the W3 using Java
   class Validator
     attr_reader :error_count
-    
+
     def initialize
       @error_count = 0
     end
@@ -11,21 +11,21 @@ module Blueprint
     def validate
       java_path = `which java`.rstrip
       raise "You do not have a Java installed, but it is required." if java_path.blank?
-    
+
       output_header
-    
+
       Blueprint::CSS_FILES.keys.each do |file_name|
         css_output_path = File.join(Blueprint::BLUEPRINT_ROOT_PATH, file_name)
         puts "\n\n  Testing #{css_output_path}"
         puts "  Output ============================================================\n\n"
         @error_count += 1 if !system("#{java_path} -jar '#{Blueprint::VALIDATOR_FILE}' -e '#{css_output_path}'")
       end
-    
+
       output_footer
     end
-    
+
     private
-    
+
     def output_header
       puts "\n\n"
       puts "  ************************************************************"
