@@ -14,9 +14,6 @@ project1:
     column_count: 12
     column_width: 70
     gutter_width: 10
-  plugins:
-    - fancy-type
-    - buttons
 project2:
   path: /path/to/different/stylesheets
   namespace: different-namespace-

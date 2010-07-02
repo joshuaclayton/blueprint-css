@@ -10,8 +10,6 @@ module Blueprint
   TEST_PATH =             File.join(Blueprint::ROOT_PATH, 'tests')
   # path to the root of the Blueprint scripts
   LIB_PATH =              File.join(Blueprint::ROOT_PATH, 'lib', 'blueprint')
-  # path to where Blueprint plugins are stored
-  PLUGINS_PATH =          File.join(Blueprint::BLUEPRINT_ROOT_PATH, 'plugins')
   # settings YAML file where custom user settings are saved
   SETTINGS_FILE =         File.join(Blueprint::ROOT_PATH, 'lib', 'settings.yml')
   # path to validator jar file to validate generated CSS files

@@ -78,10 +78,6 @@ require File.join(File.dirname(__FILE__), "blueprint", "blueprint")
 #           "#extra-content": last span-6 column
 #           "div#navigation": last span-24 column
 #           "div.section, div.entry, .feeds": span-6 column
-#         plugins:
-#           - fancy-type
-#           - buttons
-#           - validations
 #       project3:
 #         path: /path/to/another/projects/styles
 # 
@@ -104,10 +100,6 @@ require File.join(File.dirname(__FILE__), "blueprint", "blueprint")
 #     in project2 above, for '#footer, #header', elements with id's of footer and header will be assigned all the rules from the 
 #     classes 'span-24, column, and last', while divs with classes either entry or section, as well as any element with class of feed, is 
 #     assigned all the rules from 'span-6 and column'.  Although it is a crude way do accomplish this, it keeps the generated CSS separate from the core BP CSS.
-#     
-#     Also supported is plugins.  The compressor looks within BLUEPRINT_DIR/blueprint/plugins to match against what's passed.  If the plugin name 
-#     matches, it will append PLUGIN/(screen|print|ie).css to the corresponding CSS file.  It will append the plugin CSS to all three CSS files if
-#     there is a CSS file present named as the plugin (e.g. the fancy-type plugin with a fancy-type.css file found within the plugin directory)
 #     
 #     In Ruby, the structure would look like this:
 #     
@@ -138,8 +130,7 @@ require File.join(File.dirname(__FILE__), "blueprint", "blueprint")
 #           '#extra-content' => 'last span-6 column',
 #           'div#navigation' => 'last span-24 column',
 #           'div.section, div.entry, .feeds' => 'span-6 column'
-#         },
-#         'plugins' => ['fancy-type', 'buttons', 'validations']
+#         }
 #       },
 #       'project3' => {
 #         'path' => '/path/to/another/projects/styles'

@@ -8,7 +8,7 @@ module Blueprint
                   'parts/grid.html', 
                   'parts/sample.html']
     
-    attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name, :plugins
+    attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name
     attr_reader   :custom_path, :loaded_from_settings, :destination_path, :script_name
     
     # overridden setter method for destination_path
@@ -30,7 +30,6 @@ module Blueprint
       self.project_name = nil
       self.custom_css = {}
       self.semantic_classes = {}
-      self.plugins = []
     
       self.options.parse!(ARGV)
       initialize_project_from_yaml(self.project_name)
@@ -86,7 +85,6 @@ module Blueprint
         self.destination_path = (self.destination_path == Blueprint::BLUEPRINT_ROOT_PATH ? project['path'] : self.destination_path) || Blueprint::BLUEPRINT_ROOT_PATH
         self.custom_css =       project['custom_css']       || {}
         self.semantic_classes = project['semantic_classes'] || {}
-        self.plugins =          project['plugins']          || []
       
         if (layout = project['custom_layout'])
           self.custom_layout = CustomLayout.new(:column_count => layout['column_count'], :column_width => layout['column_width'], :gutter_width => layout['gutter_width'], :input_padding => layout['input_padding'], :input_border => layout['input_border'])
@@ -118,9 +116,6 @@ module Blueprint
           css_output += Blueprint::CSSParser.new(source_options, :namespace => namespace).to_s
           css_output += "\n"
         end
-      
-        #append CSS from plugins
-        css_output = append_plugin_css(css_output, output_file_name)
       
         # append CSS from custom files
         css_output = append_custom_css(css_output, output_file_name)
@@ -157,39 +152,6 @@ module Blueprint
       end
     
       css
-    end
-
-    def append_plugin_css(css, current_file_name)
-      return css unless self.plugins.any?
-    
-      plugin_css = ""
-    
-      self.plugins.each do |plugin|
-        plugin_file_specific  = File.join(Blueprint::PLUGINS_PATH, plugin, current_file_name)
-        plugin_file_generic   = File.join(Blueprint::PLUGINS_PATH, plugin, "#{plugin}.css")
-      
-        file = if File.exists?(plugin_file_specific)
-          plugin_file_specific
-        elsif File.exists?(plugin_file_generic) && current_file_name =~ /^screen|print/
-          plugin_file_generic
-        end
-      
-        if file
-          puts "      + #{plugin} plugin\n"
-          plugin_css += "/* #{plugin} */\n"
-          plugin_css += CSSParser.new(File.path_to_string(file)).to_s + "\n"
-
-          Dir.glob(File.join(File.dirname(file), "**", "**")).each do |cp|
-            short_path = cp.gsub(/#{File.dirname(file)}./ , '')
-            # make directory if it doesn't exist
-            directory = File.dirname(short_path)
-            FileUtils.mkdir_p(File.join(destination_path, directory)) unless directory == "."
-            FileUtils.cp cp, File.join(destination_path, short_path) unless File.directory?(File.join(File.dirname(file), short_path)) || cp == file
-          end
-        end
-      end
-    
-      css += plugin_css
     end
     
     def append_semantic_classes
