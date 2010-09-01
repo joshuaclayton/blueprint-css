@@ -152,14 +152,14 @@ input.span-24, textarea.span-24 { width: 938px; }
 .border {
   padding-right: 4px;
   margin-right: 5px;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #ddd;
 }
 
 /* Border with more whitespace, spans one column. */
 .colborder {
   padding-right: 24px;
   margin-right: 25px;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #ddd;
 }
 
 
@@ -227,10 +227,10 @@ next column, or to pull it into the previous column.  */
 -------------------------------------------------------------- */
 
 /* In case you need to add a gutter above/below an element */
-.prepend-top {
+div.prepend-top, .prepend-top {
   margin-top:1.5em;
 }
-.append-bottom {
+div.append-bottom, .append-bottom {
   margin-bottom:1.5em;
 }
 
@@ -248,7 +248,7 @@ hr {
   clear: both;
   float: none;
   width: 100%;
-  height: .1em;
+  height: 1px;
   margin: 0 0 1.45em;
   border: none;
 }

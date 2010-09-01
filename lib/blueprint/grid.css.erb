@@ -64,14 +64,14 @@ input.span-<%= column %>, textarea.span-<%= column %> { width: <%= ((column_widt
 .border {
   padding-right: <%= (gutter_width * 0.5 - 1).to_i %>px;
   margin-right: <%= (gutter_width * 0.5).to_i %>px;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #ddd;
 }
 
 /* Border with more whitespace, spans one column. */
 .colborder {
   padding-right: <%= (column_width + 2*gutter_width - 1)/2.to_i %>px;
   margin-right: <%= (column_width + 2 * gutter_width)/2.to_i %>px;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #ddd;
 }
 
 
@@ -93,10 +93,10 @@ next column, or to pull it into the previous column.  */
 -------------------------------------------------------------- */
 
 /* In case you need to add a gutter above/below an element */
-.prepend-top {
+div.prepend-top, .prepend-top {
   margin-top:1.5em;
 }
-.append-bottom {
+div.append-bottom, .append-bottom {
   margin-bottom:1.5em;
 }
 
@@ -114,7 +114,7 @@ hr {
   clear: both;
   float: none;
   width: 100%;
-  height: .1em;
+  height: 1px;
   margin: 0 0 1.45em;
   border: none;
 }
