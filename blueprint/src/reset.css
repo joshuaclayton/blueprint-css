@@ -23,19 +23,22 @@ hgroup, nav, section {
   vertical-align: baseline;
 }
 
+/* This helps to make newer HTML5 elements behave like DIVs in older browers */ 
 article, aside, dialog, figure, footer, header,
 hgroup, nav, section {
     display:block;
 }
 
+/* Line-height should always be unitless! */
 body {
   line-height: 1.5;
 }
 
 /* Tables still need 'cellspacing="0"' in the markup. */
 table { border-collapse: separate; border-spacing: 0; }
-caption, th, td { text-align: left; font-weight: normal; }
-table, td, th { vertical-align: middle; }
+/* float:none prevents the span-x classes from breaking table-cell display */
+caption, th, td { text-align: left; font-weight: normal; float:none !important; }
+table, th, td { vertical-align: middle; }
 
 /* Remove possible quote marks (") from <q>, <blockquote>. */
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
