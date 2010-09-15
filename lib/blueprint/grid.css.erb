@@ -86,7 +86,7 @@ next column, or to pull it into the previous column.  */
 <% (1..(column_count)).each do |column| %>
 .push-<%= column %> { margin: 0 -<%= (column * (column_width + gutter_width)).to_i %>px 1.5em <%= (column * (column_width + gutter_width)).to_i %>px; }<% end %>
 
-<%= (1..column_count).map {|c| ".push-#{c}" }.join(", ") %> {float: right; position:relative;}
+<%= (1..column_count).map {|c| ".push-#{c}" }.join(", ") %> {float: left; position:relative;}
 
 
 /* Misc classes and elements
@@ -104,7 +104,7 @@ div.append-bottom, .append-bottom {
 .box {
   padding: 1.5em;
   margin-bottom: 1.5em;
-  background: #E5ECF9;
+  background: #e5eCf9;
 }
 
 /* Use this to create a horizontal ruler across a column. */

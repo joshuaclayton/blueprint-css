@@ -220,7 +220,7 @@ next column, or to pull it into the previous column.  */
 .push-23 { margin: 0 -920px 1.5em 920px; }
 .push-24 { margin: 0 -960px 1.5em 960px; }
 
-.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: right; position:relative;}
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
 
 
 /* Misc classes and elements
@@ -238,7 +238,7 @@ div.append-bottom, .append-bottom {
 .box {
   padding: 1.5em;
   margin-bottom: 1.5em;
-  background: #E5ECF9;
+  background: #e5eCf9;
 }
 
 /* Use this to create a horizontal ruler across a column. */
