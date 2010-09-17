@@ -56,6 +56,7 @@ img { -ms-interpolation-mode:bicubic; }
 
 /* Fixes padding on fieldset */
 fieldset { padding-top:0; }
+legend { margin-top:-1.4em; margin-bottom:1.4em; }
 
 /* Makes classic textareas in IE 6 resemble other browsers */
 textarea { overflow:auto; }
