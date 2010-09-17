@@ -38,17 +38,20 @@ h4 img, h5 img, h6 img {
 -------------------------------------------------------------- */
 
 p           { margin: 0 0 1.5em; }
-p img.left  { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
-p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
+/* 
+	These can be used to pull an image at the start of a paragraph, so 
+	that the text flows around it (usage: <p><img class="left">Text</p>) 
+ */
+.left  			{ float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+.right 			{ float: right; margin: 1.5em 0 1.5em 1.5em; }
 
 a:focus,
 a:hover     { color: #09f; }
 a           { color: #06c; text-decoration: underline; }
 
 blockquote  { margin: 1.5em; color: #666; font-style: italic; }
-strong      { font-weight: bold; }
+strong,dfn	{ font-weight: bold; }
 em,dfn      { font-style: italic; }
-dfn         { font-weight: bold; }
 sup, sub    { line-height: 0; }
 
 abbr,
@@ -78,11 +81,23 @@ dd          { margin-left: 1.5em;}
 /* Tables
 -------------------------------------------------------------- */
 
+/* 
+	Because of the need for padding on TH and TD, the vertical rhythm 
+	on table cells has to be 27px, instead of the standard 18px or 36px 
+	of other elements. 
+ */ 
 table       { margin-bottom: 1.4em; width:100%; }
 th          { font-weight: bold; }
 thead th    { background: #c3d9ff; }
 th,td,caption { padding: 4px 10px 4px 5px; }
-tr.even td  { background: #e5ecf9; }
+/*
+	You can zebra-stripe your tables in outdated browsers by adding 
+	the class "even" to every other table row. 
+ */
+tbody tr:nth-child(even) td, 
+tbody tr.even td  { 
+	background: #e5ecf9; 
+}
 tfoot       { font-style: italic; }
 caption     { background: #eee; }
 

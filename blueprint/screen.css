@@ -36,14 +36,13 @@ h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 p {margin:0 0 1.5em;}
-p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
-p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+.right {float:right;margin:1.5em 0 1.5em 1.5em;}
 a:focus, a:hover {color:#09f;}
 a {color:#06c;text-decoration:underline;}
 blockquote {margin:1.5em;color:#666;font-style:italic;}
-strong {font-weight:bold;}
+strong, dfn {font-weight:bold;}
 em, dfn {font-style:italic;}
-dfn {font-weight:bold;}
 sup, sub {line-height:0;}
 abbr, acronym {border-bottom:1px dotted #666;}
 address {margin:0 0 1.5em;font-style:italic;}
@@ -61,7 +60,7 @@ table {margin-bottom:1.4em;width:100%;}
 th {font-weight:bold;}
 thead th {background:#c3d9ff;}
 th, td, caption {padding:4px 10px 4px 5px;}
-tr.even td {background:#e5ecf9;}
+tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}
 tfoot {font-style:italic;}
 caption {background:#eee;}
 .small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
