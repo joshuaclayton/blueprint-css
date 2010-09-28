@@ -24,7 +24,7 @@ img {-ms-interpolation-mode:bicubic;}
 .clearfix, .container {display:inline-block;}
 * html .clearfix, * html .container {height:1%;}
 fieldset {padding-top:0;}
-legend {margin-top:-1.4em;margin-bottom:1.4em;}
+legend {margin-top:-0.2em;margin-bottom:1em;margin-left:-0.5em;}
 textarea {overflow:auto;}
 input.text, input.title, textarea {background-color:#fff;border:1px solid #bbb;}
 input.text:focus, input.title:focus {border-color:#666;}
