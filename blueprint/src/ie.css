@@ -61,6 +61,9 @@ legend { margin-top:-0.2em; margin-bottom:1em; margin-left:-0.5em; }
 /* Makes classic textareas in IE 6 resemble other browsers */
 textarea { overflow:auto; }
 
+/* Makes labels behave correctly in IE 6 and 7 */
+label { vertical-align:middle; position:relative; top:-0.25em; }
+
 /* Fixes rule that IE 6 ignores */
 input.text, input.title, textarea { background-color:#fff; border:1px solid #bbb; }
 input.text:focus, input.title:focus { border-color:#666; }
@@ -69,7 +72,6 @@ input.checkbox, input.radio { position:relative; top:.25em; }
 
 /* Fixes alignment of inline form elements */
 form.inline div, form.inline p { vertical-align:middle; }
-form.inline label { position:relative;top:-0.25em; }
 form.inline input.checkbox, form.inline input.radio,
 form.inline input.button, form.inline button {
   margin:0.5em 0;
