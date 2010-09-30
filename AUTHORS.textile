@@ -16,7 +16,7 @@ Admins:
 
 Contributors:
 * "Franz Josef Kaiser":http://github.com/franz-josef-kaiser
-* "Glenn Rempe":http://blog.rempe.us/
+* "Glenn Rempe":http://www.rempe.us/
 * "Chris Eppstein":http://chriseppstein.github.com/
 * "Sean K. Stewart":http://seankstewart.com/
 
@@ -27,7 +27,7 @@ and ideas that were developed by true CSS experts.
 
 The grid and typography is based on work by:
 * "Jeff Croft":http://jeffcroft.com
-* "Nathan Borror":http://www.playgroundblues.com
+* "Nathan Borror":http://nathanborror.com/
 * "Christian Metts":http://mintchaos.com
 * "Wilson Miner":http://www.wilsonminer.com
 
