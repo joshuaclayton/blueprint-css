@@ -272,7 +272,7 @@ module Blueprint
 %(/* -----------------------------------------------------------------------
 
 
- Blueprint CSS Framework 0.9
+ Blueprint CSS Framework 1.0
  http://blueprintcss.org
 
    * Copyright (c) 2007-Present. See LICENSE for more info.

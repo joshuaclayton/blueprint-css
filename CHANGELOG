@@ -1,6 +1,15 @@
 Blueprint CSS Framework Change Log
 ----------------------------------------------------------------
 
+Version 1.0 - Date September 29, 2010
+--
+  New features:
+    * Added detailed explanations to core uncompressed CSS files [CMM]
+    * Added .info and .alert classes to forms.css [CMM]
+    * Fixed numerous bugs in forms, including the fieldset padding bug in IE6-8 [CMM]
+    * Fixed specificity problems in typography.css and grid.css [CMM]
+    * See Lighthouse for more bug fixes 
+
 Version 0.9 - Date May 29, 2009
 --
   New features:

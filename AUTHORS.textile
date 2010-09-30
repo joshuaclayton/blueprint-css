@@ -15,6 +15,7 @@ Admins:
 * "Josh Clayton":http://jdclayton.com
 
 Contributors:
+* "FRANZ"
 * "Glenn Rempe":http://blog.rempe.us/
 * "Chris Eppstein":http://twitter.com/chriseppstein
 * "Sean K. Stewart":http://seankstewart.com/
@@ -38,5 +39,5 @@ The Fancy Type plugin is based on work by:
 * "Typogrify":http://typogrify.googlecode.com
 
 (However, remember that these people are not involved with the
-framework, so please don't waste their or your time asking them
-for support.)
+framework, so please don't waste their time or yours by asking 
+them for support.)
