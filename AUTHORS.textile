@@ -15,9 +15,9 @@ Admins:
 * "Josh Clayton":http://jdclayton.com
 
 Contributors:
-* "FRANZ"
+* "Franz Josef Kaiser":http://github.com/franz-josef-kaiser
 * "Glenn Rempe":http://blog.rempe.us/
-* "Chris Eppstein":http://twitter.com/chriseppstein
+* "Chris Eppstein":http://chriseppstein.github.com/
 * "Sean K. Stewart":http://seankstewart.com/
 
 h2. Original CSS authors
