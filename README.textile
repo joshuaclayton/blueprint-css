@@ -1,14 +1,16 @@
-h1. BlueScreen CSS Framework Readme
+h1. GreenScreen CSS Framework Readme
 
-Welcome to BlueScreen! This is a CSS framework forked by "Blueprint" designed to cut down on your CSS development time. It gives you a solid foundation to build your own CSS on. Here are some of the features BP provides out-of-the-box:
+Welcome to GreenScreen! This is a CSS framework forked by "Blueprint" designed to cut down on your CSS development time.
+It gives you a solid foundation and fast to build your own CSS on.
 
-* An easily customizable grid
-* Sensible default typography
-* A typographic baseline
-* Perfected browser CSS reset
-* A stylesheet for printing
-* Powerful scripts for customization
-* Absolutely no bloat!
+h2. Some Difference by Blueprint Css
+ * Deleted margins, all of columns are adjacent with out margin, if you would margins you must add inner div with margins
+ * More modularized with extracting Debuging propertyes and Pull & Push selectors into new files
+ * Is no 960, not 950 such as blueprint
+ * Deleted "borders" selectors...
+ * .. and more
+
+We make "GreenScreen" more powerfull and more modularized then BluePrint.
 
 h2. Setup Instructions
 
