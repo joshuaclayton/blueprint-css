@@ -15,6 +15,7 @@ XXX CSS Framework Change Log
 
 
   Modify:
+    * Deleted "Lib" folder
     * Changed ".container width from 950px into 960px
     * Deleted all of ".input.span-*" classes
     * Deleted all right margin by ".span" selectors
