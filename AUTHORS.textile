@@ -1,6 +1,6 @@
-h1. BlueScreen CSS Framework Authors and Contributors
+h1. GreenScreen CSS Framework Authors and Contributors
 
-BlueScreen is based on the Blueprint Css Framework
+GreenScreen is based on the Blueprint Css Framework
 
 h1. Author's Fork
  * Domenico Monaco, aka Kiuz
