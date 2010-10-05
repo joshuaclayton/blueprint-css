@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------------
 
 
- Blueprint CSS Framework 1.0
+ Blueprint CSS Framework 0.9
  http://blueprintcss.org
 
    * Copyright (c) 2007-Present. See LICENSE for more info.
@@ -24,13 +24,13 @@ img {-ms-interpolation-mode:bicubic;}
 .clearfix, .container {display:inline-block;}
 * html .clearfix, * html .container {height:1%;}
 fieldset {padding-top:0;}
-legend {margin-top:-0.2em;margin-bottom:1em;margin-left:-0.5em;}
+legend {margin-top:-1.4em;margin-bottom:1.4em;}
 textarea {overflow:auto;}
-label {vertical-align:middle;position:relative;top:-0.25em;}
 input.text, input.title, textarea {background-color:#fff;border:1px solid #bbb;}
 input.text:focus, input.title:focus {border-color:#666;}
 input.text, input.title, textarea, select {margin:0.5em 0;}
 input.checkbox, input.radio {position:relative;top:.25em;}
 form.inline div, form.inline p {vertical-align:middle;}
+form.inline label {position:relative;top:-0.25em;}
 form.inline input.checkbox, form.inline input.radio, form.inline input.button, form.inline button {margin:0.5em 0;}
 button, input.button {position:relative;top:0.25em;}

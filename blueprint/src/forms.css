@@ -10,16 +10,10 @@
 
 -------------------------------------------------------------- */
 
-/* 
-	A special hack is included for IE8 since it does not apply padding 
-	correctly on fieldsets
- */ 
 label       { font-weight: bold; }
-fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
-legend      { font-weight: bold; font-size:1.2em; margin-top:-0.2em; margin-bottom:1em; }
+fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend      { font-weight: bold; font-size:1.2em; }
 
-fieldset, #IE8#HACK { padding-top:1.4em; } 
-legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
 
 /* Form fields
 -------------------------------------------------------------- */
@@ -32,16 +26,15 @@ legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
  */
 input[type=text], input[type=password],
 input.text, input.title,
-textarea {
+textarea, select {
   background-color:#fff;
   border:1px solid #bbb;
 }
 input[type=text]:focus, input[type=password]:focus,
 input.text:focus, input.title:focus,
-textarea:focus {
+textarea:focus, select:focus {
   border-color:#666;
 }
-select { background-color:#fff; border-width:1px; border-style:solid; }
 
 input[type=text], input[type=password],
 input.text, input.title,
@@ -62,20 +55,19 @@ form.inline { line-height:3; }
 form.inline p { margin-bottom:0; }
 
 
-/* Success, info, notice and error/alert boxes
+/* Success, info, notice and error boxes
 -------------------------------------------------------------- */
 
 .error,
-.alert, 
 .notice,
 .success, 
 .info 			{ padding: 0.8em; margin-bottom: 1em; border: 2px solid #ddd; }
 
-.error, .alert { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+.error      { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 .notice     { background: #fff6bf; color: #514721; border-color: #ffd324; }
 .success    { background: #e6efc2; color: #264409; border-color: #c6d880; }
 .info 			{ background: #d5edf8; color: #205791; border-color: #92cae4; }
-.error a, .alert a { color: #8a1f11; }
+.error a    { color: #8a1f11; }
 .notice a   { color: #514721; }
 .success a  { color: #264409; }
 .info a			{ color: #205791; }

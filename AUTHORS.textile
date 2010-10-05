@@ -15,9 +15,8 @@ Admins:
 * "Josh Clayton":http://jdclayton.com
 
 Contributors:
-* "Franz Josef Kaiser":http://github.com/franz-josef-kaiser
-* "Glenn Rempe":http://www.rempe.us/
-* "Chris Eppstein":http://chriseppstein.github.com/
+* "Glenn Rempe":http://blog.rempe.us/
+* "Chris Eppstein":http://twitter.com/chriseppstein
 * "Sean K. Stewart":http://seankstewart.com/
 
 h2. Original CSS authors
@@ -27,7 +26,7 @@ and ideas that were developed by true CSS experts.
 
 The grid and typography is based on work by:
 * "Jeff Croft":http://jeffcroft.com
-* "Nathan Borror":http://nathanborror.com/
+* "Nathan Borror":http://www.playgroundblues.com
 * "Christian Metts":http://mintchaos.com
 * "Wilson Miner":http://www.wilsonminer.com
 
@@ -39,5 +38,5 @@ The Fancy Type plugin is based on work by:
 * "Typogrify":http://typogrify.googlecode.com
 
 (However, remember that these people are not involved with the
-framework, so please don't waste their time or yours by asking 
-them for support.)
+framework, so please don't waste their or your time asking them
+for support.)

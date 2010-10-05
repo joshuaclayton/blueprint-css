@@ -22,7 +22,6 @@ body { text-align: center; }
 * html .span-21, * html .span-22, * html .span-23,
 * html .span-24 { display:inline; overflow-x: hidden; }
 
-
 /* Elements
 -------------------------------------------------------------- */
 
@@ -50,19 +49,15 @@ img { -ms-interpolation-mode:bicubic; }
 * html .clearfix,
 * html .container { height:1%; }
 
-
 /* Forms
 -------------------------------------------------------------- */
 
 /* Fixes padding on fieldset */
 fieldset { padding-top:0; }
-legend { margin-top:-0.2em; margin-bottom:1em; margin-left:-0.5em; }
+legend { margin-top:-1.4em; margin-bottom:1.4em; }
 
 /* Makes classic textareas in IE 6 resemble other browsers */
 textarea { overflow:auto; }
-
-/* Makes labels behave correctly in IE 6 and 7 */
-label { vertical-align:middle; position:relative; top:-0.25em; }
 
 /* Fixes rule that IE 6 ignores */
 input.text, input.title, textarea { background-color:#fff; border:1px solid #bbb; }
@@ -72,6 +67,7 @@ input.checkbox, input.radio { position:relative; top:.25em; }
 
 /* Fixes alignment of inline form elements */
 form.inline div, form.inline p { vertical-align:middle; }
+form.inline label { position:relative;top:-0.25em; }
 form.inline input.checkbox, form.inline input.radio,
 form.inline input.button, form.inline button {
   margin:0.5em 0;

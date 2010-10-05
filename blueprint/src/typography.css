@@ -42,10 +42,8 @@ p           { margin: 0 0 1.5em; }
 	These can be used to pull an image at the start of a paragraph, so 
 	that the text flows around it (usage: <p><img class="left">Text</p>) 
  */
-.left  			{ float: left !important; }
-p .left			{ margin: 1.5em 1.5em 1.5em 0; padding: 0; }
-.right 			{ float: right !important; }
-p .right 		{ margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+.left  			{ float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+.right 			{ float: right; margin: 1.5em 0 1.5em 1.5em; }
 
 a:focus,
 a:hover     { color: #09f; }

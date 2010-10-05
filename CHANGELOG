@@ -1,14 +1,37 @@
-Blueprint CSS Framework Change Log
+XXX CSS Framework Change Log
 ----------------------------------------------------------------
 
-Version 1.0 - Date September 29, 2010
+2010-10-04  Domenico Monaco  <domenico.monaco@kiuz.it>
 --
   New features:
-    * Added detailed explanations to core uncompressed CSS files [CMM]
-    * Added .info and .alert classes to forms.css [CMM]
-    * Fixed numerous bugs in forms, including the fieldset padding bug in IE6-8 [CMM]
-    * Fixed specificity problems in typography.css and grid.css [CMM]
-    * See Lighthouse for more bug fixes 
+    * Created new file "debug.css"
+        * Exported into debug.css ".showgird" eredited from grid.css
+        * Added few conditions on "hover" pseudoclasses
+
+    * Created new file "misc.css"
+
+    * Created new file "grid-pull-push.css"
+        * Exported into grid-pull-push.css all of ".pull" and ".push" classes eredited from grid.css
+
+
+  Modify:
+    * Changed ".container width from 950px into 960px
+    * Deleted all of ".input.span-*" classes
+    * Deleted all right margin by ".span" selectors
+        * In Conseguence have added 10px of width into all of columns classes
+        * Deleted ".last" class
+    * Renamed ".span" into ".col"
+    * Renamed ".append" into ".post"
+    * Renamed ".prepend" into ".pre"
+
+
+2010-10-03  Domenico Monaco  <domenico.monaco@kiuz.it>
+--
+    * Initial release of XXXX (Derived by Blueprint Css Framework).
+
+
+Blueprint CSS Framework Change Log
+----------------------------------------------------------------
 
 Version 0.9 - Date May 29, 2009
 --
