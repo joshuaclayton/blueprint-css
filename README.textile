@@ -1,62 +1,62 @@
 h1. GreenScreen CSS Framework Readme
 
-Welcome to GreenScreen! This is a CSS framework forked by "Blueprint" designed to cut down on your CSS development time.
+Welcome to GreenScreen! This is a CSS framework forked by "Greenscreen" designed to cut down on your CSS development time.
 It gives you a solid foundation and fast to build your own CSS on.
 
-h2. Some Difference by Blueprint Css
+h2. Some Difference by Greenscreen Css
  * Deleted margins, all of columns are adjacent with out margin, if you would margins you must add inner div with margins
  * More modularized with extracting Debuging propertyes and Pull & Push selectors into new files
- * Is no 960, not 950 such as blueprint
+ * Is no 960, not 950 such as Greenscreen
  * Deleted "borders" selectors...
  * .. and more
 
-We make "GreenScreen" more powerfull and more modularized then BluePrint.
+We make "GreenScreen" more powerfull and more modularized then Blueprint.
 
 h2. Setup Instructions
 
-Here's how you set up Blueprint on your site.
+Here's how you set up Greenscreen on your site.
 
-# Upload the "blueprint" folder in this folder to your server, and place it in whatever folder you'd like. A good choice would be your CSS folder.
+# Upload the "Greenscreen" folder in this folder to your server, and place it in whatever folder you'd like. A good choice would be your CSS folder.
 # Add the following three lines to every @<head/>@ of your site. Make sure the three @href@ paths are correct (here, BP is in my CSS folder): <pre><code>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
+<link rel="stylesheet" href="css/Greenscreen/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/Greenscreen/print.css" type="text/css" media="print">
 <!--[if lt IE 8]>
-  <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="css/Greenscreen/ie.css" type="text/css" media="screen, projection">
 <![endif]--></code></pre>
 Remember to include trailing slashes (" />") in these lines if you're using XHTML.
 # For development, add the .showgrid class to any container or column to see the underlying grid. Check out the @plugins@ directory for more advanced functionality.
 
-h2. Files in Blueprint
+h2. Files in Greenscreen
 
 The framework has a few files you should check out. Every file in the @src@ directory contains lots of (hopefully) clarifying comments.
 
 Compressed files (these go in the HTML):
 
-* @blueprint/screen.css@
-* @blueprint/print.css@
-* @blueprint/ie.css@
+* @Greenscreen/screen.css@
+* @Greenscreen/print.css@
+* @Greenscreen/ie.css@
 
 Source files:
-* @blueprint/src/reset.css@<br/>
+* @Greenscreen/src/reset.css@<br/>
 This file resets CSS values that browsers tend to set for you.
-* @blueprint/src/grid.css@<br/>
+* @Greenscreen/src/grid.css@<br/>
 This file sets up the grid (it's true). It has a lot of classes you apply to @<div/>@ elements to set up any sort of column-based grid.
-* @blueprint/lib/blueprint/grid.css.erb@<br/>
+* @Greenscreen/lib/Greenscreen/grid.css.erb@<br/>
 This file is used by the compressor (see below) when generating grids. All changes to grid.css are mirrored in this file, manually. 
-* @blueprint/src/typography.css@<br/>
+* @Greenscreen/src/typography.css@<br/>
 This file sets some default typography. It also has a few methods for some really fancy stuff to do with your text.
-* @blueprint/src/forms.css@<br/>
+* @Greenscreen/src/forms.css@<br/>
 Includes some minimal styling of forms.
-* @blueprint/src/print.css@<br/>
+* @Greenscreen/src/print.css@<br/>
 This file sets some default print rules, so that printed versions of your site looks better than they usually would. It should be included on every page.
-* @blueprint/src/ie.css@<br/>
+* @Greenscreen/src/ie.css@<br/>
 Includes every hack for our beloved IE6 and 7.
 
 Other:
-* @blueprint/plugins/@<br/>
-Contains additional functionality in the form of simple plugins for Blueprint. See individual readme files in the directory of each plugin for further instructions.
+* @Greenscreen/plugins/@<br/>
+Contains additional functionality in the form of simple plugins for Greenscreen. See individual readme files in the directory of each plugin for further instructions.
 * @tests/@<br/>
-Contains html files which tests most aspects of Blueprint. Open @tests/index.html@ for further instructions.
+Contains html files which tests most aspects of Greenscreen. Open @tests/index.html@ for further instructions.
 
 h2. Extra Information
 
