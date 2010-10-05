@@ -1,6 +1,6 @@
-h1. Blueprint CSS Framework Readme
+h1. BlueScreen CSS Framework Readme
 
-Welcome to Blueprint! This is a CSS framework designed to cut down on your CSS development time. It gives you a solid foundation to build your own CSS on. Here are some of the features BP provides out-of-the-box:
+Welcome to BlueScreen! This is a CSS framework forked by "Blueprint" designed to cut down on your CSS development time. It gives you a solid foundation to build your own CSS on. Here are some of the features BP provides out-of-the-box:
 
 * An easily customizable grid
 * Sensible default typography
@@ -9,13 +9,6 @@ Welcome to Blueprint! This is a CSS framework designed to cut down on your CSS d
 * A stylesheet for printing
 * Powerful scripts for customization
 * Absolutely no bloat!
-
-h2. Project Info
-
-* *Web*: "http://blueprintcss.org":http://blueprintcss.org
-* *Source*: "http://github.com/joshuaclayton/blueprint-css":http://github.com/joshuaclayton/blueprint-css
-* *Wiki*: "http://github.com/joshuaclayton/blueprint-css/wikis/home":http://github.com/joshuaclayton/blueprint-css/wikis/home
-* *Bug/Feature Tracking*: "http://blueprintcss.lighthouseapp.com":http://blueprintcss.lighthouseapp.com
 
 h2. Setup Instructions
 
@@ -30,13 +23,6 @@ Here's how you set up Blueprint on your site.
 <![endif]--></code></pre>
 Remember to include trailing slashes (" />") in these lines if you're using XHTML.
 # For development, add the .showgrid class to any container or column to see the underlying grid. Check out the @plugins@ directory for more advanced functionality.
-
-
-h2. Tutorials
-
-* "How to customize BP with the compressor script":http://jdclayton.com/blueprints_compress_a_walkthrough.html
-* "How to use a grid in a layout":http://subtraction.com/2007/03/18/oh-yeeaahh
-* "How to use a baseline in your typography":http://alistapart.com/articles/settingtypeontheweb
 
 h2. Files in Blueprint
 
@@ -63,12 +49,6 @@ Includes some minimal styling of forms.
 This file sets some default print rules, so that printed versions of your site looks better than they usually would. It should be included on every page.
 * @blueprint/src/ie.css@<br/>
 Includes every hack for our beloved IE6 and 7.
-
-Scripts:
-* @lib/compress.rb@<br/>
-A Ruby script for compressing and customizing your CSS. Set a custom namespace, column count, widths, output paths, multiple projects, and semantic class names. See commenting in @compress.rb@ or run @$ruby compress.rb -h@ for more information.
-* @lib/validate.rb@<br/>
-Validates the Blueprint core files with the W3C CSS validator.
 
 Other:
 * @blueprint/plugins/@<br/>
