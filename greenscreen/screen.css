@@ -1,15 +1,14 @@
 /* -----------------------------------------------------------------------
 
-
- Greenprint CSS Framework 0.9
- http://blueprintcss.org
+ Greenprint CSS Framework 0.9 based on Blueprintcss
 
    * Copyright (c) 2010-Present. See LICENSE for more info.
-   * See README for instructions on how to use Blueprint.
+   * See README for instructions on how to use Greenscreen.
    * For credits and origins, see AUTHORS.
-   * This is a compressed file. See the sources in the 'src' directory.
 
 ----------------------------------------------------------------------- */
+
+@import 'src/reset.css';
 
 @import 'src/grid.css';
 

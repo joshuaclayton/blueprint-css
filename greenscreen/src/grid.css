@@ -1,4 +1,7 @@
 /* --------------------------------------------------------------
+
+   Greenprint CSS Framework based on Blueprintcss
+
    grid.css
    * Sets up an easy-to-use grid of 24 columns.
    
@@ -91,6 +94,7 @@
 .pre-21 {padding-left: 840px;}
 .pre-22 {padding-left: 880px;}
 .pre-23 {padding-left: 920px;}
+
 /* Clearing floats without extra markup
    Based on How To Clear Floats Without Structural Markup by PiE
    [http://www.positioniseverything.net/easyclearing.html] */
@@ -104,6 +108,7 @@
     overflow:hidden;
 }
 .clearfix, .container {display: block;}
+
 /* Regular clearing
    apply to column that should drop below previous ones. */
 .clear { clear:both; }
