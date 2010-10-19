@@ -32,7 +32,6 @@ Greenscreen CSS Framework Change Log
     * Renamed ".append" into ".post"
     * Renamed ".prepend" into ".pre"
 
-
 2010-10-03  Domenico Monaco  <domenico.monaco@kiuz.it>
 --
     * Initial release of XXXX (Derived by Blueprint Css Framework).
