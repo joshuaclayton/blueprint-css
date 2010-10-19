@@ -5,4 +5,4 @@ GreenScreen is based on the Blueprint Css Framework
 h1. Author's Fork
  * Domenico Monaco, aka Kiuz
     * domenico.monaco[@]kiuz.it
-    * Initial [DM]
+    * Initial Fork [DM]

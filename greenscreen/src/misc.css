@@ -20,18 +20,25 @@
  */
 
 .txtright {
-	text-align: right;
+    text-align: right;
 }
 .txtleft {
-	text-align: left;
+    text-align: left;
 }
 .txtcenter {
-	text-align: center;
+    text-align: center;
 }
 
 .boxright{
-	float: right;
+    float: right;
 }
 .boxleft{
-	float: left;
+    float: left;
+}
+
+/* Cleaner list Style */
+ul.nonelist li{
+    list-style: none;
+    list-style-image: none;
+    list-style-type: none;
 }

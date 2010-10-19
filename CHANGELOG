@@ -1,6 +1,14 @@
-XXX CSS Framework Change Log
+Greenscreen CSS Framework Change Log
 ----------------------------------------------------------------
 
+2010-10-19  Domenico Monaco  <domenico.monaco@kiuz.it>
+--
+  New features:
+	* New classes into "misc.css"
+	
+  Modify:
+	* Some inifluent changes into help texts
+	
 2010-10-04  Domenico Monaco  <domenico.monaco@kiuz.it>
 --
   New features:
@@ -12,7 +20,6 @@ XXX CSS Framework Change Log
 
     * Created new file "grid-pull-push.css"
         * Exported into grid-pull-push.css all of ".pull" and ".push" classes eredited from grid.css
-
 
   Modify:
     * Deleted "Lib" folder
@@ -41,7 +48,6 @@ Version 0.9 - Date May 29, 2009
     * Updated forms code to align inline form elements, with additions for IE 6 [CMM]
       * Use <form class="inline"> for inline forms
       * Use classes "text", "button", "radio" and "checkbox" on inputs for IE 6 compatibility
-
 
 Version 0.8 - Date November 11, 2008
 --
