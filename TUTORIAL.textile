@@ -38,13 +38,13 @@ To use Blueprint, you must include three files in your HTML:
 * @blueprint/ie.css@:	A few needed corrections for Internet Explorer
 
 To include them, use the following HTML (make sure the href paths are correct):
-<pre>
+<pre><code>
   <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
   <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
   <![endif]-->
-</pre>
+</code></pre>
 Remember to add trailing slashes if you're using XHTML (" />"). 
 
 h2. Using the CSS in Blueprint
