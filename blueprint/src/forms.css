@@ -35,6 +35,7 @@ input.text, input.title,
 textarea {
   background-color:#fff;
   border:1px solid #bbb;
+  color:#000; 
 }
 input[type=text]:focus, input[type=password]:focus,
 input.text:focus, input.title:focus,
