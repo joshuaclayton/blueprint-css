@@ -1,0 +1,61 @@
+h2. Debugger
+
+version: _v0.1.3_ ^(beta)^ 
+
+* Gives you a safe rapid prototyping environment  
+* Helps you avoid misuse of Blueprint classes 
+
+Guaranteed to work in the following browsers... 
+* Firefox 1.0+
+* Opera 7.0+
+* Konquerer 3.4+
+* Safari 1.2+
+...and won't work in IE due to missing support for +outline+
+
+
+----------------------------------------------------------------
+h3. Credits
+
+_author:_ Created by Franz Josef Kaiser "say hello code!":http://say-hello-code.com
+
+
+----------------------------------------------------------------
+h3. Usage
+
+* Make a copy of debug.html and give it a unique name for your test (for example, debug-test1.html)
+* Adjust the <head> of this debug environment page to your needs:
+* Uncomment the plugins you want to use in your page.
+** _optional_ only needed for the mailing list: describe your goals, trials & errors in the head container.
+* Add your basic html structure (div, h1-h6, p, span, a).
+* Add some "lorem ipsum" dummy text and sample IMGs to your html (search for lorem ipsum, there are lots of resources). 
+* Add your Blueprint classes to the structure.
+* Uncomment the css/html debugger stylesheet in the head.
+* Open the sample in your browser.
+** _optional_ if you see elements outlined, you've forgotten declarations or added bad classes. In this case take a look at the head of the debugger plugin to check color codes & find out what exactly went wrong (it's easy).
+* Basic structure: _*done*_
+* Now you can add your own styles in a separate stylesheet to the <head> section and develop further. 
+
+
+----------------------------------------------------------------
+h4. Changelog
+
+_v0.1 (alpha)_ 
+* first version
+** a basic html page structure
+** debugger offers outlining of classical misstakes
+ 
+_v0.1 (beta)_
+* debugger now offers help for missing declarations
+** dev page reworked to split between description & content
+
+_v01.1 (beta)_
+* bugfix: colborder & border were missing dot in front of class
+
+_v01.2 (beta)_
+* switched to textile mark-up file for readme to inherit bp core
+
+_v01.2.1 (beta)_
+* tried to fix textile mark-up for readme
+
+_v01.3 (beta)_
+* switched pathes for all style-links in the head of blueprint.html to work out of the box from the debug plugin directory.
