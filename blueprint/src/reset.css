@@ -22,16 +22,14 @@ hgroup, nav, section {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: inherit;
-  font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font: inherit; 
   vertical-align: baseline;
 }
 
 /* This helps to make newer HTML5 elements behave like DIVs in older browers */ 
-article, aside, dialog, figure, footer, header,
-hgroup, nav, section {
+article, aside, details, figcaption, figure, dialog, 
+footer, header, hgroup, menu, nav, section {
     display:block;
 }
 
