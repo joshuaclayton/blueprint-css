@@ -98,7 +98,8 @@ module Blueprint
                                                 :column_width =>  layout["column_width"],
                                                 :gutter_width =>  layout["gutter_width"],
                                                 :input_padding => layout["input_padding"],
-                                                :input_border =>  layout["input_border"])
+                                                :input_border =>  layout["input_border"],
+                                                :font_size => layout["font_size"])
         end
         @loaded_from_settings = true
       end
@@ -120,6 +121,8 @@ module Blueprint
 
           source_options = if self.custom_layout && css_source_file == "grid.css"
             self.custom_layout.generate_grid_css
+          elsif self.custom_layout && css_source_file == "typography.css"
+            self.custom_layout.generate_typography_css
           else
             File.path_to_string File.join(Blueprint::SOURCE_PATH, css_source_file)
           end
@@ -145,6 +148,7 @@ module Blueprint
       #attempt to generate a grid.png file
       if (grid_builder = GridBuilder.new(:column_width => self.custom_layout.column_width,
                                          :gutter_width => self.custom_layout.gutter_width,
+                                         :font_size => self.custom_layout.font_size,
                                          :output_path => File.join(self.destination_path, "src")))
         grid_builder.generate!
       end
@@ -254,6 +258,7 @@ module Blueprint
       puts "  **     - Column Width: #{self.custom_layout.column_width}px"
       puts "  **     - Gutter Width: #{self.custom_layout.gutter_width}px"
       puts "  **     - Total Width : #{self.custom_layout.page_width}px"
+      puts "  **     - Font Size   : #{self.custom_layout.font_size}px"
       puts "  **"
       puts "  #{"*" * 100}"
     end
