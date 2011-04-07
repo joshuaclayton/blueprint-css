@@ -14,6 +14,7 @@ project1:
     column_count: 12
     column_width: 70
     gutter_width: 10
+    font_size: 16
   plugins:
     - fancy-type
     - buttons
