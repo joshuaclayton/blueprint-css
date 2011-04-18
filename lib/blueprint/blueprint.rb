@@ -32,7 +32,7 @@ module Blueprint
   
   INPUT_PADDING =         5
   INPUT_BORDER =          1
-  FONT_SIZE =             12       
+  FONT_SIZE =             12
 end
 
 Dir["#{File.join(Blueprint::LIB_PATH)}/*"].each do |file|
