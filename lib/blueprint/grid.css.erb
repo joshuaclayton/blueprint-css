@@ -69,8 +69,8 @@ input.span-<%= column %>, textarea.span-<%= column %> { width: <%= ((column_widt
 
 /* Border with more whitespace, spans one column. */
 .colborder {
-  padding-right: <%= (column_width + 2*gutter_width - 1)/2.to_i %>px;
-  margin-right: <%= (column_width + 2 * gutter_width)/2.to_i %>px;
+  padding-right: <%= (column_width + gutter_width - 1)/2.to_i %>px;
+  margin-right: <%= (column_width + gutter_width)/2.to_i %>px;
   border-right: 1px solid #ddd;
 }
 
