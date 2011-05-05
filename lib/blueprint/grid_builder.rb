@@ -30,16 +30,17 @@ module Blueprint
     def initialize(options={})
       @able_to_generate = Magick::Long_version rescue false
       return unless @able_to_generate
-      @column_width = options[:column_width] || Blueprint::COLUMN_WIDTH
-      @gutter_width = options[:gutter_width] || Blueprint::GUTTER_WIDTH
-      @output_path  = options[:output_path]  || Blueprint::SOURCE_PATH
+      @column_width    = options[:column_width] || Blueprint::COLUMN_WIDTH
+      @gutter_width    = options[:gutter_width] || Blueprint::GUTTER_WIDTH
+      @output_path     = options[:output_path]  || Blueprint::SOURCE_PATH
+      @baseline_height = (options[:font_size] || Blueprint::FONT_SIZE) * 1.5
     end
 
     # generates (overwriting if necessary) grid.png image to be tiled in background
     def generate!
       return false unless self.able_to_generate
       total_width = self.column_width + self.gutter_width
-      height = 18
+      height = @baseline_height
       RVG::dpi = 100
 
       width_in_inches = (total_width.to_f/RVG::dpi).in
