@@ -3,3 +3,4 @@
 *.DS_Store
 tmp/*
 lib/settings.yml
+capybara-*
