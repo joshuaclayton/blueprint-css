@@ -27,7 +27,6 @@ module Blueprint
       self.namespace = ""
       self.destination_path = Blueprint::BLUEPRINT_ROOT_PATH
       self.custom_layout = CustomLayout.new
-      self.project_name = nil
       self.custom_css = {}
       self.semantic_classes = {}
       self.plugins = []

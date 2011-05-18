@@ -1,4 +1,4 @@
-Bundler.require
+Bundler.require(:test)
 
 require "aruba/cucumber"
 require "capybara/cucumber"

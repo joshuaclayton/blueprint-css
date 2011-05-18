@@ -3,13 +3,13 @@ begin
   gem "rmagick"
   require "rvg/rvg"
 rescue Exception => e
-  puts "  #{"*" * 100}"
-  puts "  **"
-  puts "  **   Warning:"
-  puts "  **   Could not load the Rmagick gem.  Please check your installation."
-  puts "  **   grid.png will not be generated."
-  puts "  **"
-  puts "  #{"*" * 100}\n"
+  puts "  #{"*" * 100}".red
+  puts "  **".red
+  puts "  **   Warning:".red
+  puts "  **   Could not load the Rmagick gem.  Please check your installation.".red
+  puts "  **   grid.png will not be generated.".red
+  puts "  **".red
+  puts "  #{"*" * 100}\n".red
 end
 
 module Blueprint
