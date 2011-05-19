@@ -143,12 +143,7 @@ module Blueprint
       # append semantic class names if set
       append_semantic_classes
 
-      #attempt to generate a grid.png file
-      if (grid_builder = GridBuilder.new(:column_width => self.custom_layout.column_width,
-                                         :gutter_width => self.custom_layout.gutter_width,
-                                         :output_path => File.join(self.destination_path, "src")))
-        grid_builder.generate!
-      end
+      generate_grid_png
     end
 
     def append_custom_css(css, current_file_name)
@@ -240,6 +235,12 @@ module Blueprint
         puts "      + #{file}"
         Namespace.new(file, namespace)
       end
+    end
+
+    def generate_grid_png
+      GridBuilder.new(:column_width => self.custom_layout.column_width,
+                      :gutter_width => self.custom_layout.gutter_width,
+                      :output_path  => File.join(self.destination_path, "src")).generate!
     end
 
     def output_header

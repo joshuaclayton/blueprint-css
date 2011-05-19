@@ -20,6 +20,7 @@ GEM
     celerity (0.8.9)
     childprocess (0.1.9)
       ffi (~> 1.0.6)
+    chunky_png (1.2.0)
     colored (1.2)
     cucumber (0.10.2)
       builder (>= 2.1.2)
@@ -39,7 +40,6 @@ GEM
     rack (1.2.2)
     rack-test (0.6.0)
       rack (>= 1.0)
-    rmagick (2.13.1)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -65,7 +65,7 @@ DEPENDENCIES
   aruba (= 0.3.6)
   capybara (= 0.4.1.2)
   capybara-webkit (= 0.3.0)
+  chunky_png
   colored
   cucumber (= 0.10.2)
-  rmagick
   rspec (= 2.6.0)
