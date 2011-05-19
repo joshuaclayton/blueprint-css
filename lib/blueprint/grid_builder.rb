@@ -1,6 +1,5 @@
 begin
-  require "rubygems"
-  gem "rmagick"
+  require "rmagick"
   require "rvg/rvg"
 rescue Exception => e
   puts "  #{"*" * 100}".red

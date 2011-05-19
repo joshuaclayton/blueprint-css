@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem "colored"
+gem "rmagick"
 
 group :test do
   gem "cucumber", "0.10.2"

@@ -39,6 +39,7 @@ GEM
     rack (1.2.2)
     rack-test (0.6.0)
       rack (>= 1.0)
+    rmagick (2.13.1)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -66,4 +67,5 @@ DEPENDENCIES
   capybara-webkit (= 0.3.0)
   colored
   cucumber (= 0.10.2)
+  rmagick
   rspec (= 2.6.0)
