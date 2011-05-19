@@ -8,7 +8,7 @@ module Blueprint
                   "parts/grid.html",
                   "parts/sample.html"]
 
-    attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name, :plugins
+    attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name, :plugins, :custom_tests_path
     attr_reader   :custom_path, :loaded_from_settings, :destination_path, :script_name
 
     # overridden setter method for destination_path
@@ -66,6 +66,8 @@ module Blueprint
               "Set a new gutter width (in pixels) for the output grid") {|gw| self.custom_layout.gutter_width = gw }
         o.on( "--column_count=COLUMN_COUNT", Integer,
               "Set a new column count for the output grid") {|cc| self.custom_layout.column_count = cc }
+        o.on( "--custom_tests_path=TESTS_OUTPUT_PATH", String,
+              "Define a different path to output generated test files to") {|test_path| self.custom_tests_path = test_path }
         #o.on("-v", "--verbose", "Turn on verbose output.") { |$verbose| }
         o.on("-h", "--help", "Show this help message.") { puts o; exit }
       end
@@ -229,7 +231,7 @@ module Blueprint
     def generate_tests
       puts "\n    Updating namespace to \"#{namespace}\" in test files:"
       test_files = Compressor::TEST_FILES.map do |file|
-        File.join(Blueprint::TEST_PATH, *file.split(/\//))
+        File.join(self.custom_tests_path || Blueprint::TEST_PATH, *file.split(/\//))
       end
 
       test_files.each do |file|
