@@ -35,3 +35,23 @@ end
 Then /^the "([^"]*)" should have a background color of "([^"]*)"$/ do |selector, rgb|
   element(selector).background.color.should == rgb
 end
+
+Then /^the "([^"]*)" should be underlined$/ do |selector|
+  element(selector).text.decoration.should == "underline"
+end
+
+Then /^the "([^"]*)" should be visible$/ do |selector|
+  element(selector).should be_visible
+end
+
+Then /^the "([^"]*)" should be hidden$/ do |selector|
+  element(selector).should_not be_visible
+end
+
+Then /^the "([^"]*)" should be bold$/ do |selector|
+  element(selector).font.weight.should == "bold"
+end
+
+Then /^the "([^"]*)" should be italic$/ do |selector|
+  element(selector).font.style.should == "italic"
+end
