@@ -1,6 +1,12 @@
 require "rubygems"
-require "bundler"
-Bundler.require(:default)
+
+begin
+  require "bundler"
+  Bundler.require(:default)
+rescue LoadError
+  puts "Bundler is required to run the compression script\n\n"
+  puts "    gem install bundler"
+end
 
 require 'fileutils'
 module Blueprint
