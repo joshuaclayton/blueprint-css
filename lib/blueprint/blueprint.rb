@@ -6,6 +6,11 @@ begin
 rescue LoadError
   puts "Bundler is required to run the compression script\n\n"
   puts "    gem install bundler"
+  exit(1)
+rescue Bundler::GemNotFound
+  puts "You need to bundle in order to run the compression script\n\n"
+  puts "    bundle install --without test\n\n"
+  exit(1)
 end
 
 require 'fileutils'
