@@ -30,9 +30,8 @@ legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
   add classes for each one. ".title" simply creates a large text
   field, this is purely for looks.
  */
-input[type=text], input[type=password], input[type=url], input[type=email],
-input.text, input.title,
-textarea {
+
+input, select, textarea {
   background-color:#fff;
   border:1px solid #bbb;
   color:#000;
@@ -42,7 +41,6 @@ input.text:focus, input.title:focus,
 textarea:focus {
   border-color:#666;
 }
-select { background-color:#fff; border-width:1px; border-style:solid; }
 
 input[type=text], input[type=password], input[type=url], input[type=email],
 input.text, input.title,
