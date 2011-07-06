@@ -95,3 +95,12 @@ a.negative:active {
   border:1px solid #d12f19;
   color:#fff;
 }
+
+/* Disabled */
+button:disabled {
+    color: gray;
+    background: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    border-top-color: #efefef;
+    border-left-color: #efefef;
+}
