@@ -8,7 +8,7 @@ module Blueprint
                   "parts/grid.html",
                   "parts/sample.html"]
 
-    attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name, :plugins, :custom_tests_path
+    attr_accessor :namespace, :custom_css, :custom_layout, :semantic_classes, :project_name, :plugins, :custom_tests_path, :do_grid_png
     attr_reader   :custom_path, :loaded_from_settings, :destination_path, :script_name
 
     # overridden setter method for destination_path
@@ -30,6 +30,7 @@ module Blueprint
       self.custom_css = {}
       self.semantic_classes = {}
       self.plugins = []
+      self.do_grid_png = false
 
       self.options.parse!(ARGV)
       initialize_project_from_yaml(self.project_name)
@@ -67,6 +68,8 @@ module Blueprint
               "Set a new column count for the output grid") {|cc| self.custom_layout.column_count = cc }
         o.on( "--custom_tests_path=TESTS_OUTPUT_PATH", String,
               "Define a different path to output generated test files to") {|test_path| self.custom_tests_path = test_path }
+        o.on( "-g", "--grid",
+              "Generate grid PNG") { self.do_grid_png = true }
         #o.on("-v", "--verbose", "Turn on verbose output.") { |$verbose| }
         o.on("-h", "--help", "Show this help message.") { puts o; exit }
       end
@@ -143,7 +146,7 @@ module Blueprint
       # append semantic class names if set
       append_semantic_classes
 
-      generate_grid_png
+      generate_grid_png if self.do_grid_png
     end
 
     def append_custom_css(css, current_file_name)

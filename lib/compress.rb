@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require File.join(File.dirname(__FILE__), "blueprint", "blueprint")
+require_relative File.join("blueprint", "blueprint.rb")
 
 # **Basic
 #
