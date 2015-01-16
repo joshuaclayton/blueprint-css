@@ -1,0 +1,5 @@
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install libqt4-dev qt4-qmake
+
+script: "bundle exec rake"

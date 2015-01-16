@@ -1,7 +1,12 @@
 *.swp
 *.svn
 *.DS_Store
+
 .bundle
+vendor
+
 tmp/*
+
 lib/settings.yml
+
 capybara-*
