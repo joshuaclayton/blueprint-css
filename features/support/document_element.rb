@@ -1,10 +1,16 @@
 class DocumentElement
   class Dimension  < Struct.new(:top, :right, :bottom, :left);       end
   class Background < Struct.new(:color, :image, :repeat, :position); end
+  class Text       < Struct.new(:decoration);                        end
+  class Font       < Struct.new(:weight, :style);                    end
 
   def initialize(page, selector)
     @page     = page
     @selector = selector
+  end
+
+  def visible?
+    @page.evaluate_script(%{$("#{@selector}").is(":visible")})
   end
 
   def height
@@ -40,5 +46,18 @@ class DocumentElement
     background.repeat   = @page.evaluate_script(%{$("#{@selector}").css("backgroundRepeat")})
     background.position = @page.evaluate_script(%{$("#{@selector}").css("backgroundPosition")})
     background
+  end
+
+  def font
+    font = Font.new
+    font.weight = @page.evaluate_script(%{$("#{@selector}").css("fontWeight")})
+    font.style  = @page.evaluate_script(%{$("#{@selector}").css("fontStyle")})
+    font
+  end
+
+  def text
+    text = Text.new
+    text.decoration = @page.evaluate_script(%{$("#{@selector}").css("textDecoration")})
+    text
   end
 end
